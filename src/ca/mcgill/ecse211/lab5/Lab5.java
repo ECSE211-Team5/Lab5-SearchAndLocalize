@@ -142,8 +142,19 @@ public class Lab5 {
     }).start();
     
     //STEP 2: MOVE TO START OF SEARCH AREA
+    navigation.travelTo(30.48*LLx, 30.48*LLy);
+    navigation.turnTo(90);
     
     //STEP 3: SEARCH ALL COORDINATES
+    for (int i = 0; i < URx+1; i++) {
+    	for (int j = 0; j < URy+1; j++) {
+    		//LIGHT SENSOR RING DETECTION CODE NEEDED IN NAVIGATION TO SLOW DOWN.
+    		navigation.travelTo(i, j);
+    		visitedSearchAreaCoordinates[i][j] = true;
+    	}
+    }
+    
+    //STEP 4: NAVIGATE TO URx, URy
 
     while (Button.waitForAnyPress() != Button.ID_ESCAPE);
     System.exit(0);
