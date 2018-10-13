@@ -23,7 +23,8 @@ import lejos.robotics.SampleProvider;
 public class Lab5 {
   // Motor Objects, and Robot related parameters
   private static final Port usPort = LocalEV3.get().getPort("S1");
-  private static final Port lgPort = LocalEV3.get().getPort("S2");
+  //initialize multiple light ports in main
+  private static Port[] lgPorts;
   private static final TextLCD lcd = LocalEV3.get().getTextLCD();
 
   /**
@@ -47,7 +48,7 @@ public class Lab5 {
    * This variable denotes the track distance between the center of the wheels in cm (measured and
    * adjusted based on trial and error).
    */
-  public static final double TRACK = 10.7;
+  public static final double TRACK = 10.4;
   
   /**
    * This variables holds the starting corner coordinates for our robot.
@@ -96,11 +97,16 @@ public class Lab5 {
     float[] usData = new float[usDistance.sampleSize()];
 
     // Light sesnor sensor stuff
-    @SuppressWarnings("resource")
-    SensorModes lgSensor = new EV3ColorSensor(lgPort);
-    SampleProvider lgLight = lgSensor.getMode("Red");
-    float[] lgData = new float[lgLight.sampleSize()];
+    //@SuppressWarnings("resource")
+    lgPorts[0] = LocalEV3.get().getPort("S2");
+    lgPorts[1] = LocalEV3.get().getPort("S3");
+    lgPorts[2] = LocalEV3.get().getPort("S4");
+    //SensorModes lgSensor = new EV3ColorSensor(lgPort);
+    //SampleProvider lgLight = lgSensor.getMode("Red");
+    //float[] lgData = new float[lgLight.sampleSize()];
 
+    
+    //STEP 1: LOCALIZE to (1,1)
     // ButtonChoice left or right
     lcd.clear();
     lcd.drawString("<  Left  |  Right >", 0, 0);
@@ -117,8 +123,8 @@ public class Lab5 {
     // Start ultrasonic and light sensors
     Thread usPoller = new UltrasonicPoller(usDistance, usData, sensorData);
     usPoller.start();
-    Thread lgPoller = new LightPoller(lgLight, lgData, sensorData);
-    lgPoller.start();
+    //Thread lgPoller = new LightPoller(lgLight, lgData, sensorData);
+    //lgPoller.start();
 
     // Start localizing
     final Navigation navigation = new Navigation(leftMotor, rightMotor);
@@ -133,6 +139,10 @@ public class Lab5 {
         // nav.travelToCoordinate(0, 0); nav.turnTo(0);
       }
     }).start();
+    
+    //STEP 2: MOVE TO START OF SEARCH AREA
+    
+    //STEP 3: SEARCH ALL COORDINATES
 
     while (Button.waitForAnyPress() != Button.ID_ESCAPE);
     System.exit(0);
