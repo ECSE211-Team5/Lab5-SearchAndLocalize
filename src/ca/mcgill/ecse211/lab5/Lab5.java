@@ -49,7 +49,7 @@ public class Lab5 {
    * adjusted based on trial and error).
    */
   public static final double TRACK = 10.7;
-  //last TRACK value: 10.7
+  //last TRACK value: 10.4
   
   /**
    * This variables holds the starting corner coordinates for our robot.
