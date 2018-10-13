@@ -48,6 +48,33 @@ public class Lab5 {
    * adjusted based on trial and error).
    */
   public static final double TRACK = 10.7;
+  
+  /**
+   * This variables holds the starting corner coordinates for our robot.
+   */
+  public static final int[] SC = {1,1};
+  
+  /**
+   * This variable holds the color of the target ring in the range [1,4].
+   * 1 indicates a ORANGE ring
+   * 2 indicates a GREEN ring
+   * 3 indicates a BLUE ring
+   * 4 indicates a YELLOW ring
+   */
+  public static final int TR = 1;
+  
+  /**
+   * These are the coordinates for our search area.
+   * LL = Lower Left
+   * UR = Upper Right
+   */
+  public static final int LLx = 3, LLy = 3, URx = 7, URy = 7;
+    
+  /**
+   * This array contains the set of all coordinates that our robot has visited.
+   * By default all values are set to false.
+   */
+  public static boolean[][] visitedSearchAreaCoordinates = new boolean[URx-LLx+1][URy-LLy+1]; 
 
   /**
    * This method is our main entry point - instantiate objects used and set up sensor.
