@@ -39,7 +39,7 @@ public class Navigation {
     for (EV3LargeRegulatedMotor motor : new EV3LargeRegulatedMotor[] {this.leftMotor,
         this.rightMotor}) {
       motor.stop();
-      motor.setAcceleration(1000);
+      motor.setAcceleration(300);
     }
   }
 

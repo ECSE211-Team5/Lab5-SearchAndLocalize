@@ -2,9 +2,7 @@
 package ca.mcgill.ecse211.lab5;
 
 import ca.mcgill.ecse211.odometer.*;
-import ca.mcgill.ecse211.sensors.LightPoller;
-import ca.mcgill.ecse211.sensors.UltrasonicPoller;
-import ca.mcgill.ecse211.sensors.SensorData;
+import ca.mcgill.ecse211.sensors.*;
 import lejos.hardware.Button;
 import lejos.hardware.ev3.LocalEV3;
 import lejos.hardware.lcd.TextLCD;
@@ -102,9 +100,17 @@ public class Lab5 {
     lgPorts[0] = LocalEV3.get().getPort("S2");
     lgPorts[1] = LocalEV3.get().getPort("S3");
     lgPorts[2] = LocalEV3.get().getPort("S4");
-    //SensorModes lgSensor = new EV3ColorSensor(lgPort);
-    //SampleProvider lgLight = lgSensor.getMode("Red");
-    //float[] lgData = new float[lgLight.sampleSize()];
+    EV3ColorSensor[] lgSensors = new EV3ColorSensor[2];
+    for(int i = 0; i < lgSensors.length; i++) {
+    	lgSensors[i] = new EV3ColorSensor(lgPorts[i]);
+    }
+    
+    SampleProvider backLight = lgSensors[0].getRedMode();
+    SampleProvider frontLight1 = lgSensors[1].getRGBMode();
+    SampleProvider frontLight2 = lgSensors[2].getRGBMode();
+    
+    //target color
+    ColorCalibrator.Color targetColor = ColorCalibrator.Color.values()[TR-1];
 
     
     //STEP 1: LOCALIZE to (1,1)
@@ -124,8 +130,15 @@ public class Lab5 {
     // Start ultrasonic and light sensors
     Thread usPoller = new UltrasonicPoller(usDistance, usData, sensorData);
     usPoller.start();
-    //Thread lgPoller = new LightPoller(lgLight, lgData, sensorData);
-    //lgPoller.start();
+    Thread bLgPoller = new LightPoller(backLight, new float[backLight.sampleSize()], sensorData);
+    bLgPoller.start();
+    Thread fLgPoller1 = new RGBPoller(frontLight1, new float[frontLight1.sampleSize()], sensorData);
+    fLgPoller1.start();
+    Thread fLgPoller2 = new RGBPoller(frontLight2, new float[frontLight2.sampleSize()], sensorData);
+    fLgPoller2.start();
+    
+    //Set up color calibrator
+    ColorCalibrator cCalibrator = new ColorCalibrator();
 
     // Start localizing
     final Navigation navigation = new Navigation(leftMotor, rightMotor);
@@ -138,23 +151,24 @@ public class Lab5 {
         usLoc.localize(buttonChoice);
         lgLoc.localize();
         // nav.travelToCoordinate(0, 0); nav.turnTo(0);
+        
+        //set coordinate to (1,1)
+
+        //STEP 2: MOVE TO START OF SEARCH AREA
+        navigation.travelTo(30.48*LLx, 30.48*LLy);
+        navigation.turnTo(90);
+        //STEP 3: SEARCH ALL COORDINATES
+        for (int i = 0; i < URx+1; i++) {
+        	for (int j = 0; j < URy+1; j++) {
+        		//LIGHT SENSOR RING DETECTION CODE NEEDED IN NAVIGATION TO SLOW DOWN.
+        		navigation.travelTo(i, j);
+        		visitedSearchAreaCoordinates[i][j] = true;
+        	}
+        }
+        
+        //STEP 4: NAVIGATE TO URx, URy
       }
     }).start();
-    
-    //STEP 2: MOVE TO START OF SEARCH AREA
-    navigation.travelTo(30.48*LLx, 30.48*LLy);
-    navigation.turnTo(90);
-    
-    //STEP 3: SEARCH ALL COORDINATES
-    for (int i = 0; i < URx+1; i++) {
-    	for (int j = 0; j < URy+1; j++) {
-    		//LIGHT SENSOR RING DETECTION CODE NEEDED IN NAVIGATION TO SLOW DOWN.
-    		navigation.travelTo(i, j);
-    		visitedSearchAreaCoordinates[i][j] = true;
-    	}
-    }
-    
-    //STEP 4: NAVIGATE TO URx, URy
 
     while (Button.waitForAnyPress() != Button.ID_ESCAPE);
     System.exit(0);
