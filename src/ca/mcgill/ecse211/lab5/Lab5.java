@@ -124,8 +124,13 @@ public class Lab5 {
     lcd.drawString("<  Left  |  Right >", 0, 0);
     lcd.drawString(" falling | rising  ", 0, 1);
     lcd.drawString("  edge   |  edge   ", 0, 2);
+    lcd.drawString("        \\/        ", 0, 3);
+    lcd.drawString("  Color Detection  ", 0, 4);
+    
+    
     final int buttonChoice = Button.waitForAnyPress(); // Record choice (left or right press)
-
+    
+    
     // Start odometer and odometer display
     Thread odoThread = new Thread(odometer);
     odoThread.start();
@@ -142,8 +147,11 @@ public class Lab5 {
     //Thread fLgPoller2 = new RGBPoller(frontLight2, new float[frontLight2.sampleSize()], sensorData);
     //fLgPoller2.start();
     
-    //Set up color calibrator
-
+    //Run color classification
+    if(buttonChoice == Button.ID_DOWN) {
+    	while (Button.waitForAnyPress() != Button.ID_ESCAPE);
+        System.exit(0);
+    };
 
     // Start localizing
     final Navigation navigation = new Navigation(leftMotor, rightMotor);
