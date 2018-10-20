@@ -124,7 +124,6 @@ public class UltrasonicLocalizer {
     navigation.turnTo(theta);
     odometer.setTheta(0);
     // wait for any button pressure
-    Button.waitForAnyPress();
   }
 
 

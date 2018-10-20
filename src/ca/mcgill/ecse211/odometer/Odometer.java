@@ -10,6 +10,7 @@
 
 package ca.mcgill.ecse211.odometer;
 
+import ca.mcgill.ecse211.lab5.Lab5;
 import lejos.hardware.motor.EV3LargeRegulatedMotor;
 
 /**
@@ -128,7 +129,7 @@ public class Odometer extends OdometerData implements Runnable {
 
 
       // TODO Update odometer values with new calculated values
-      odometer.update(dX, dY, Math.toDegrees(deltaT));
+      odometer.update(dX/Lab5.TILE, dY/Lab5.TILE, Math.toDegrees(deltaT));
 
 
       // this ensures that the odometer only runs once every period

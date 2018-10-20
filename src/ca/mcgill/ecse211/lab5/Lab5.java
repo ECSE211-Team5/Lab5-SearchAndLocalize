@@ -22,21 +22,26 @@ public class Lab5 {
   // Motor Objects, and Robot related parameters
   private static final Port usPort = LocalEV3.get().getPort("S1");
   //initialize multiple light ports in main
-  private static Port[] lgPorts;
+  private static Port[] lgPorts = new Port[2];
   private static final TextLCD lcd = LocalEV3.get().getTextLCD();
 
   /**
    * Motor object instance that allows control of the left motor connected to port B
    */
   public static final EV3LargeRegulatedMotor leftMotor =
-      new EV3LargeRegulatedMotor(LocalEV3.get().getPort("B"));
+      new EV3LargeRegulatedMotor(LocalEV3.get().getPort("A"));
 
   /**
    * Motor object instance that allows control of the right motor connected to port A
    */
   public static final EV3LargeRegulatedMotor rightMotor =
-      new EV3LargeRegulatedMotor(LocalEV3.get().getPort("A"));
+      new EV3LargeRegulatedMotor(LocalEV3.get().getPort("D"));
 
+  /**
+   * length of the tile 
+   */
+  public static final double TILE = 30.48;
+  
   /**
    * This variable denotes the radius of our wheels in cm.
    */
@@ -99,7 +104,7 @@ public class Lab5 {
     //@SuppressWarnings("resource")
     lgPorts[0] = LocalEV3.get().getPort("S2");
     lgPorts[1] = LocalEV3.get().getPort("S3");
-    lgPorts[2] = LocalEV3.get().getPort("S4");
+    //lgPorts[2] = LocalEV3.get().getPort("S4");
     EV3ColorSensor[] lgSensors = new EV3ColorSensor[2];
     for(int i = 0; i < lgSensors.length; i++) {
     	lgSensors[i] = new EV3ColorSensor(lgPorts[i]);
@@ -107,7 +112,7 @@ public class Lab5 {
     
     SampleProvider backLight = lgSensors[0].getRedMode();
     SampleProvider frontLight1 = lgSensors[1].getRGBMode();
-    SampleProvider frontLight2 = lgSensors[2].getRGBMode();
+    //SampleProvider frontLight2 = lgSensors[2].getRGBMode();
     
     //target color
     ColorCalibrator.Color targetColor = ColorCalibrator.Color.values()[TR-1];
@@ -134,8 +139,8 @@ public class Lab5 {
     bLgPoller.start();
     Thread fLgPoller1 = new RGBPoller(frontLight1, new float[frontLight1.sampleSize()], sensorData);
     fLgPoller1.start();
-    Thread fLgPoller2 = new RGBPoller(frontLight2, new float[frontLight2.sampleSize()], sensorData);
-    fLgPoller2.start();
+    //Thread fLgPoller2 = new RGBPoller(frontLight2, new float[frontLight2.sampleSize()], sensorData);
+    //fLgPoller2.start();
     
     //Set up color calibrator
     ColorCalibrator cCalibrator = new ColorCalibrator();
@@ -149,21 +154,27 @@ public class Lab5 {
     (new Thread() {
       public void run() {
         usLoc.localize(buttonChoice);
-        lgLoc.localize();
-        // nav.travelToCoordinate(0, 0); nav.turnTo(0);
+        lgLoc.localize(SC);
+        //nav.travelToCoordinate(0, 0); nav.turnTo(0);
         
-        //set coordinate to (1,1)
-
         //STEP 2: MOVE TO START OF SEARCH AREA
-        navigation.travelTo(30.48*LLx, 30.48*LLy);
-        navigation.turnTo(90);
+        navigation.travelTo(LLx, LLy, false);
         //STEP 3: SEARCH ALL COORDINATES
-        for (int i = 0; i < URx+1; i++) {
-        	for (int j = 0; j < URy+1; j++) {
-        		//LIGHT SENSOR RING DETECTION CODE NEEDED IN NAVIGATION TO SLOW DOWN.
-        		navigation.travelTo(i, j);
-        		visitedSearchAreaCoordinates[i][j] = true;
+        for (int i = LLx; i < URx+1; i++) {
+        	if((i - LLx)%2 == 0) {
+        		for (int j = LLy; j < URy+1; j++) {
+            		//LIGHT SENSOR RING DETECTION CODE NEEDED IN NAVIGATION TO SLOW DOWN.
+            		navigation.travelTo(i, j, true);
+            		visitedSearchAreaCoordinates[URx-i][URy-j] = true;
+            	}
+        	}else {
+        		for (int j = URy; j >= LLy; j--) {
+            		//LIGHT SENSOR RING DETECTION CODE NEEDED IN NAVIGATION TO SLOW DOWN.
+            		navigation.travelTo(i, j, true);
+            		visitedSearchAreaCoordinates[URx-i][URy-j] = true;
+            	}
         	}
+        	
         }
         
         //STEP 4: NAVIGATE TO URx, URy

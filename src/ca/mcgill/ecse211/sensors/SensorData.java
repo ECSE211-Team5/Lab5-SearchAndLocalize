@@ -43,7 +43,7 @@ public class SensorData {
 	protected SensorData() {
 		this.distance = 40;
 		this.light = 0.5;
-		rgb = new double[2][3];
+		rgb = new double[1][3];
 		for (int i = 0; i < rgb.length; i++) {
 			for (int j = 0; j < rgb[i].length; j++) {
 				rgb[i][j] = 0.5;

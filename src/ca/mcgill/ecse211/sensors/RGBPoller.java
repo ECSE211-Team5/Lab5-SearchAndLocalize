@@ -18,6 +18,6 @@ public class RGBPoller extends LightPoller {
 		int r = (int) (lgData[0] * 100); // extract from buffer, cast to int
 		int g = (int) (lgData[1] * 100); // extract from buffer, cast to int
 		int b = (int) (lgData[2] * 100); // extract from buffer, cast to int
-		cont.setRGB(index, r, b, b); // now take action depending on value
+		cont.setRGB(index, r, g, b); // now take action depending on value
 	}
 }

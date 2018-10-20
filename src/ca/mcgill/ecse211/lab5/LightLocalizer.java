@@ -20,6 +20,8 @@ public class LightLocalizer {
   private Navigation navigation;
 
   private static final int FORWARD_SPEED = 150;
+  private static final double SENSOR_DIS = 16.1;
+  private static final int blackLineColor = 25;
   private double TRACK = 10.7;
   private double WHEEL_RAD = 2.2;
 
@@ -43,14 +45,14 @@ public class LightLocalizer {
    * Once the robot know what angle it is facing, this method looks for the x,y axis origins knowing
    * it is in the first tile facing north.
    */
-  public void localize() {
+  public void localize(int[] sC) {
     leftMotor.setSpeed(FORWARD_SPEED);
     rightMotor.setSpeed(FORWARD_SPEED);
-
+    
     // 1. GO forward find the y=0 line
     leftMotor.forward();
     rightMotor.forward();
-    while (data.getDL()[1] > 15);
+    while (data.getDL()[1] > blackLineColor);
     Sound.beep();
     odometer.setY(0);
 
@@ -58,19 +60,23 @@ public class LightLocalizer {
     navigation.turnTo(95);
     leftMotor.forward();
     rightMotor.forward();
-    while (data.getDL()[1] > 15);
+    while (data.getDL()[1] > blackLineColor);
     Sound.beep();
     odometer.setX(0);
 
     // 3. Go backwards by sensor-wheel center distance in x-direction
-    leftMotor.rotate(Navigation.convertDistance(Lab5.WHEEL_RAD, -17), true);
-    rightMotor.rotate(Navigation.convertDistance(Lab5.WHEEL_RAD, -17), false);
+    leftMotor.rotate(Navigation.convertDistance(Lab5.WHEEL_RAD, -SENSOR_DIS), true);
+    rightMotor.rotate(Navigation.convertDistance(Lab5.WHEEL_RAD, -SENSOR_DIS), false);
     // 4. Go backwards by sensor-wheel center distance in y-direction
     navigation.turnTo(0);
-    leftMotor.rotate(Navigation.convertDistance(Lab5.WHEEL_RAD, -17), true);
-    rightMotor.rotate(Navigation.convertDistance(Lab5.WHEEL_RAD, -17), false);
-
-    // Now at 0,0 ! :)
+    leftMotor.rotate(Navigation.convertDistance(Lab5.WHEEL_RAD, -SENSOR_DIS), true);
+    rightMotor.rotate(Navigation.convertDistance(Lab5.WHEEL_RAD, -SENSOR_DIS), false);
+    odometer.setTheta(0);
+    odometer.setX(sC[0]);
+    odometer.setY(sC[1]);
+    
+    
+    // Now at SC ! :)
   }
 
   /**

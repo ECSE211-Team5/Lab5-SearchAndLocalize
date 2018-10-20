@@ -2,6 +2,8 @@ package ca.mcgill.ecse211.lab5;
 
 import ca.mcgill.ecse211.odometer.Odometer;
 import ca.mcgill.ecse211.odometer.OdometerExceptions;
+import ca.mcgill.ecse211.sensors.SensorData;
+import lejos.hardware.Button;
 import lejos.hardware.motor.EV3LargeRegulatedMotor;
 
 /**
@@ -53,7 +55,7 @@ public class Navigation {
    * @param x The x coordinate to travel to (in cm)
    * @param y The y coordinate to travel to (in cm)
    */
-  public void travelTo(double x, double y) {
+  public void travelTo(double x, double y, boolean canGiveup) {
     double dX = x - odometer.getXYT()[0];
     double dY = y - odometer.getXYT()[1];
     double theta = Math.atan(dX / dY);
@@ -66,8 +68,24 @@ public class Navigation {
     leftMotor.setSpeed(FORWARD_SPEED);
     rightMotor.setSpeed(FORWARD_SPEED);
 
-    leftMotor.rotate(convertDistance(Lab5.WHEEL_RAD, distance), true);
-    rightMotor.rotate(convertDistance(Lab5.WHEEL_RAD, distance), false);
+    leftMotor.rotate(convertDistance(Lab5.WHEEL_RAD, distance*Lab5.TILE), true);
+    rightMotor.rotate(convertDistance(Lab5.WHEEL_RAD, distance*Lab5.TILE), true);
+    
+    double[] rgb;
+    while(leftMotor.isMoving() && rightMotor.isMoving()) {
+    	try {
+			rgb = SensorData.getSensorData().getRGB()[0];
+	    	if(rgb[0] > 3 || rgb[1] > 3 || rgb[2] > 3) {
+	    		leftMotor.stop(true);
+	    		rightMotor.stop();
+	    	    Button.waitForAnyPress();
+	    	}
+		} catch (OdometerExceptions e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+    }
   }
 
   /**

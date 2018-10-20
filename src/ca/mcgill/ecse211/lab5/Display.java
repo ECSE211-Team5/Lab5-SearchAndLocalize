@@ -15,6 +15,7 @@ public class Display implements Runnable {
   private TextLCD lcd;
   private double[] position;
   private double[] data;
+  private double[] rgb;
   private final long DISPLAY_PERIOD = 25;
   private long timeout = Long.MAX_VALUE;
 
@@ -58,7 +59,8 @@ public class Display implements Runnable {
       // Retrieve x, y and Theta information
       position = odo.getXYT();
       data = sensdata.getDL();
-
+      rgb = sensdata.getRGB()[0];
+      
       // Print x,y, and theta information
       DecimalFormat numberFormat = new DecimalFormat("######0.00");
       lcd.drawString("X: " + numberFormat.format(position[0]), 0, 0);
@@ -66,7 +68,8 @@ public class Display implements Runnable {
       lcd.drawString("T: " + numberFormat.format(position[2]), 0, 2);
       lcd.drawString("D: " + numberFormat.format(data[0]), 0, 3);
       lcd.drawString("L: " + numberFormat.format(data[1]), 0, 4);
-
+      lcd.drawString(String.format("(r: %d, g: %d, b: %d)", (int)rgb[0],(int)rgb[1],(int)rgb[2]), 0, 5);
+      
       // this ensures that the data is updated only once every period
       updateEnd = System.currentTimeMillis();
       if (updateEnd - updateStart < DISPLAY_PERIOD) {
