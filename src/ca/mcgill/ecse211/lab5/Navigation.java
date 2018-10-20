@@ -99,9 +99,6 @@ public class Navigation {
     if (dTheta < 0)
       dTheta += 360;
 
-    // 360 270
-    // 0 90
-
     // TURN RIGHT
     if (dTheta > 180) {
       leftMotor.setSpeed(ROTATE_SPEED);

@@ -120,7 +120,7 @@ public class UltrasonicLocalizer {
     if (angle1 < angle2)
       theta = -222 + (angle1 + angle2) / 2;
     else
-      theta = -46 + (angle1 + angle2) / 2;
+      theta = -45 + (angle1 + angle2) / 2;
     navigation.turnTo(theta);
     odometer.setTheta(0);
     // wait for any button pressure
