@@ -14,7 +14,7 @@ public class SensorData {
 	// Sensor data parameters
 	private volatile double light; // Head angle
 	private volatile double distance;
-	private volatile double rgb[][];
+	private volatile int rgb[][];
 
 	// Class control variables
 	private volatile static int numberOfIntances = 0; // Number of OdometerData
@@ -43,10 +43,10 @@ public class SensorData {
 	protected SensorData() {
 		this.distance = 40;
 		this.light = 0.5;
-		rgb = new double[1][3];
+		rgb = new int[1][3];
 		for (int i = 0; i < rgb.length; i++) {
 			for (int j = 0; j < rgb[i].length; j++) {
-				rgb[i][j] = 0.5;
+				rgb[i][j] = 0;
 			}
 		}
 	}
@@ -105,7 +105,7 @@ public class SensorData {
 	 * get the rgb data for color sensor
 	 * @return: rgb data
 	 */
-	public double[][] getRGB() {
+	public int[][] getRGB() {
 		lock.lock();
 		try {
 			while (isReseting) {
@@ -144,7 +144,7 @@ public class SensorData {
 	 * @param g: green value
 	 * @param b: blue value
 	 */
-	public void setRGB(int i, double r, double g, double b) {
+	public void setRGB(int i, int r, int g, int b) {
 		lock.lock();
 		isReseting = true;
 		try {

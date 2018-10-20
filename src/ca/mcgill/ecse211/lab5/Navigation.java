@@ -71,11 +71,11 @@ public class Navigation {
     leftMotor.rotate(convertDistance(Lab5.WHEEL_RAD, distance*Lab5.TILE), true);
     rightMotor.rotate(convertDistance(Lab5.WHEEL_RAD, distance*Lab5.TILE), true);
     
-    double[] rgb;
+    int[] rgb;
     while(leftMotor.isMoving() && rightMotor.isMoving()) {
     	try {
 			rgb = SensorData.getSensorData().getRGB()[0];
-	    	if(rgb[0] > 3 || rgb[1] > 3 || rgb[2] > 3) {
+	    	if(ColorCalibrator.getColor(rgb[0], rgb[1], rgb[2]) != ColorCalibrator.Color.Other) {
 	    		leftMotor.stop(true);
 	    		rightMotor.stop();
 	    	    Button.waitForAnyPress();
@@ -118,6 +118,20 @@ public class Navigation {
     }
   }
 
+  public void stop() {
+	  leftMotor.stop(true);
+	  rightMotor.stop(false);
+  }
+  
+  
+	/**
+	 * Rotate theta degree
+	 * @param theta
+	 */
+	public synchronized void rotate(double theta) {
+		leftMotor.rotate(convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, theta), true);
+		rightMotor.rotate(-1*convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, theta), false);
+	}
   /**
    * This method allows the conversion of a distance to the total rotation of each wheel need to
    * cover that distance.

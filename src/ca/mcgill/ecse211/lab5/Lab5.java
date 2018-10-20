@@ -51,7 +51,7 @@ public class Lab5 {
    * This variable denotes the track distance between the center of the wheels in cm (measured and
    * adjusted based on trial and error).
    */
-  public static final double TRACK = 10.7;
+  public static final double TRACK = 11;
   //last TRACK value: 10.4
   
   /**
@@ -112,7 +112,7 @@ public class Lab5 {
     
     SampleProvider backLight = lgSensors[0].getRedMode();
     SampleProvider frontLight1 = lgSensors[1].getRGBMode();
-    //SampleProvider frontLight2 = lgSensors[2].getRGBMode();
+    //SampleProvider frontLight2 = lgSensors[2].getRedMode();
     
     //target color
     ColorCalibrator.Color targetColor = ColorCalibrator.Color.values()[TR-1];
@@ -143,7 +143,7 @@ public class Lab5 {
     //fLgPoller2.start();
     
     //Set up color calibrator
-    ColorCalibrator cCalibrator = new ColorCalibrator();
+
 
     // Start localizing
     final Navigation navigation = new Navigation(leftMotor, rightMotor);
@@ -160,12 +160,12 @@ public class Lab5 {
         //STEP 2: MOVE TO START OF SEARCH AREA
         navigation.travelTo(LLx, LLy, false);
         navigation.turnTo(0);
-        lgLoc.correctRotation();
         //STEP 3: SEARCH ALL COORDINATES
         for (int i = LLx; i < URx+1; i++) {
         	if((i - LLx)%2 == 0) {
         		for (int j = LLy; j < URy+1; j++) {
             		//LIGHT SENSOR RING DETECTION CODE NEEDED IN NAVIGATION TO SLOW DOWN.
+        			if(i == LLx && j == LLy) continue;
             		navigation.travelTo(i, j, true);
             		visitedSearchAreaCoordinates[URx-i][URy-j] = true;
             	}
@@ -175,10 +175,8 @@ public class Lab5 {
             		navigation.travelTo(i, j, true);
             		visitedSearchAreaCoordinates[URx-i][URy-j] = true;
             	}
-        	}
-        	
+        	}	
         }
-        
         //STEP 4: NAVIGATE TO URx, URy
       }
     }).start();
