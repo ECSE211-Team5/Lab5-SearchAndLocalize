@@ -143,7 +143,7 @@ public class Lab5 {
     //fLgPoller2.start();
     
     //Set up color calibrator
-    ColorCalibrator cCalibrator = new ColorCalibrator();
+
 
     // Start localizing
     final Navigation navigation = new Navigation(leftMotor, rightMotor);

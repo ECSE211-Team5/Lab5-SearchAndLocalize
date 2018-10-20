@@ -66,9 +66,12 @@ public class Display implements Runnable {
       lcd.drawString("X: " + numberFormat.format(position[0]), 0, 0);
       lcd.drawString("Y: " + numberFormat.format(position[1]), 0, 1);
       lcd.drawString("T: " + numberFormat.format(position[2]), 0, 2);
-      lcd.drawString("D: " + numberFormat.format(data[0]), 0, 3);
-      lcd.drawString("L: " + numberFormat.format(data[1]), 0, 4);
-      lcd.drawString(String.format("(r: %d, g: %d, b: %d)", (int)rgb[0],(int)rgb[1],(int)rgb[2]), 0, 5);
+      
+      lcd.drawString(String.format("Color:  %s", ColorCalibrator.getColor((int)rgb[0], (int)rgb[1],(int) rgb[2])).toString(), 0, 3);
+      
+//      lcd.drawString(String.format("(r: %f", rgb[0]), 0, 3);
+//      lcd.drawString(String.format("(g: %f", rgb[1]), 0, 4);
+//      lcd.drawString(String.format("(b: %f", rgb[2]), 0, 5);
       
       // this ensures that the data is updated only once every period
       updateEnd = System.currentTimeMillis();
