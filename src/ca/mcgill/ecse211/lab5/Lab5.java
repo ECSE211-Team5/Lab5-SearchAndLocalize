@@ -51,7 +51,7 @@ public class Lab5 {
    * This variable denotes the track distance between the center of the wheels in cm (measured and
    * adjusted based on trial and error).
    */
-  public static final double TRACK = 10.7;
+  public static final double TRACK = 10.8;
   //last TRACK value: 10.4
   
   /**

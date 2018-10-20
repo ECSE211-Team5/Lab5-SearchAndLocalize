@@ -21,10 +21,10 @@ public class LightLocalizer {
 	private static final double GO_BACK_DISTANCE = 0.6;
 	private static final int CORRECT_ANGLE_FACTOR = 265; 
 
-	private static final int FORWARD_SPEED = 150;
+	private static final int FORWARD_SPEED = 200;
 	private static final double SENSOR_DIS = 16.3;
 	private static final int blackLineColor = 25;
-	private double TRACK = 10.7;
+	private double TRACK = 10.8;
 	private double WHEEL_RAD = 2.2;
 
 	/**
@@ -73,67 +73,12 @@ public class LightLocalizer {
 		rightMotor.rotate(Navigation.convertDistance(Lab5.WHEEL_RAD, -SENSOR_DIS), false);
 		// 4. Go backwards by sensor-wheel center distance in y-direction
 		navigation.turnTo(0);
-	    leftMotor.rotate(Navigation.convertDistance(Lab5.WHEEL_RAD, -SENSOR_DIS), true);
-	    rightMotor.rotate(Navigation.convertDistance(Lab5.WHEEL_RAD, -SENSOR_DIS), false);
+	    leftMotor.rotate(Navigation.convertDistance(Lab5.WHEEL_RAD, -SENSOR_DIS-5), true);
+	    rightMotor.rotate(Navigation.convertDistance(Lab5.WHEEL_RAD, -SENSOR_DIS-5), false);
 		odometer.setTheta(0);
 		odometer.setX(sC[0]);
 		odometer.setY(sC[1]);
-		// turn 40 degree relative to current rotation (likely to be 0)
-//		navigation.turnTo(45);
-//		leftMotor.setSpeed(300);
-//		rightMotor.setSpeed(300);
-//		// first go forward until reaches a black line
-//		while (!isBlackLineTriggered()) {
-//			leftMotor.forward();
-//			rightMotor.forward();
-//			try {
-//				Thread.sleep(50);
-//			} catch (InterruptedException e) {
-//				// TODO Auto-generated catch block
-//				e.printStackTrace();
-//			}
-//		}
-//		navigation.stop();
-//
-//		// Then go back until the center of the robot rotation is in the position to
-//		// perform color
-//		// sensor localization
-//		double[] position = odometer.getXYT();
-//		navigation.travelTo(position[0] - GO_BACK_DISTANCE, position[1] - GO_BACK_DISTANCE, false);
-//
-//		// go back to 0 rotation to prepare for the localization
-//		navigation.turnTo(0);
-//
-//		// prepare input for the localization, rotate to detect 4 black lines and record
-//		// the angle
-//		double thetaX1, thetaX2, thetaY1, thetaY2;
-//		thetaX1 = getRorationOnBlackLine();
-//		thetaY1 = getRorationOnBlackLine();
-//		thetaX2 = getRorationOnBlackLine();
-//		thetaY2 = getRorationOnBlackLine();
-//		navigation.turnTo(thetaY2);
-//
-//		// start using formula to calculate deltaX and deltaY to the origin, as well as
-//		// a more
-//		// precise angle
-//		double thetaY = (thetaY2 - thetaY1) / 2;
-//		double thetaX = (thetaX2 - thetaX1) / 2;
-//		double deltaX = -SENSOR_DIS * Math.cos(Math.toRadians((thetaY)));
-//		double deltaY = -SENSOR_DIS * Math.cos(Math.toRadians((thetaX)));
-//		double deltaTheta = 90 + deltaY - (thetaY2 - 180);
-//
-//		// correct to 0 rotation
-//		navigation.rotate(deltaTheta - CORRECT_ANGLE_FACTOR);
-//		odometer.setTheta(0);
-//
-//		// go to origin and turn to 0 rotation
-//		odometer.setXYT(deltaX / Lab5.TILE, deltaY / Lab5.TILE, 0);
-//		navigation.travelTo(0, 0, false);
-//		navigation.turnTo(0);
-//
-//		odometer.setX(1);
-//		odometer.setY(1);
-		// Now at SC ! :)
+
 	}
 	
 	public double getRorationOnBlackLine() {
