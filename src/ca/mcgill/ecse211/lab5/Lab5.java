@@ -159,6 +159,8 @@ public class Lab5 {
         
         //STEP 2: MOVE TO START OF SEARCH AREA
         navigation.travelTo(LLx, LLy, false);
+        navigation.turnTo(0);
+        lgLoc.correctRotation();
         //STEP 3: SEARCH ALL COORDINATES
         for (int i = LLx; i < URx+1; i++) {
         	if((i - LLx)%2 == 0) {
