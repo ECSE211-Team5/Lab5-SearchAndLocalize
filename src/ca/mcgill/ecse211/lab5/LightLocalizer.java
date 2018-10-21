@@ -18,14 +18,9 @@ public class LightLocalizer {
 	private Odometer odometer;
 	private SensorData data;
 	private Navigation navigation;
-	private static final double GO_BACK_DISTANCE = 0.6;
-	private static final int CORRECT_ANGLE_FACTOR = 265; 
-
 	private static final int FORWARD_SPEED = 200;
 	private static final double SENSOR_DIS = 16.3;
 	private static final int blackLineColor = 25;
-	private double TRACK = 10.8;
-	private double WHEEL_RAD = 2.2;
 
 	/**
 	 * This is the class constructor
@@ -60,41 +55,28 @@ public class LightLocalizer {
 		odometer.setY(0);
 
 		// 2. Turn and go forward find the x=0 line
-		navigation.turnTo(90);
+		navigation.turnTo(90, false);
 		leftMotor.forward();
 		rightMotor.forward();
 		while (data.getDL()[1] > blackLineColor)
 			;
 		Sound.beep();
 		odometer.setX(0);
-
+		leftMotor.setSpeed(100);
+		rightMotor.setSpeed(100);
 		// 3. Go backwards by sensor-wheel center distance in x-direction
 		leftMotor.rotate(Navigation.convertDistance(Lab5.WHEEL_RAD, -SENSOR_DIS), true);
 		rightMotor.rotate(Navigation.convertDistance(Lab5.WHEEL_RAD, -SENSOR_DIS), false);
 		// 4. Go backwards by sensor-wheel center distance in y-direction
-		navigation.turnTo(0);
-	    leftMotor.rotate(Navigation.convertDistance(Lab5.WHEEL_RAD, -SENSOR_DIS-5), true);
-	    rightMotor.rotate(Navigation.convertDistance(Lab5.WHEEL_RAD, -SENSOR_DIS-5), false);
+		navigation.turnTo(0, false);
+		leftMotor.setSpeed(100);
+		rightMotor.setSpeed(100);
+	    leftMotor.rotate(Navigation.convertDistance(Lab5.WHEEL_RAD, -SENSOR_DIS-4), true);
+	    rightMotor.rotate(Navigation.convertDistance(Lab5.WHEEL_RAD, -SENSOR_DIS-4), false);
 		odometer.setTheta(0);
 		odometer.setX(sC[0]);
 		odometer.setY(sC[1]);
 
-	}
-	
-	public double getRorationOnBlackLine() {
-		leftMotor.setSpeed(100);
-		rightMotor.setSpeed(100);
-		while (!isBlackLineTriggered()) {
-			leftMotor.forward();
-			rightMotor.backward();
-		}
-		Sound.beep();
-
-		return odometer.getXYT()[2];
-	}
-	
-	private boolean isBlackLineTriggered() {
-		return data.getDL()[1] < blackLineColor;
 	}
 
 	/**

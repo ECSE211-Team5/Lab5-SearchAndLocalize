@@ -113,9 +113,6 @@ public class Lab5 {
     SampleProvider backLight = lgSensors[0].getRedMode();
     SampleProvider frontLight1 = lgSensors[1].getRGBMode();
     //SampleProvider frontLight2 = lgSensors[2].getRedMode();
-    
-    //target color
-    ColorCalibrator.Color targetColor = ColorCalibrator.Color.values()[TR-1];
 
     
     //STEP 1: LOCALIZE to (1,1)
@@ -157,10 +154,12 @@ public class Lab5 {
     final Navigation navigation = new Navigation(leftMotor, rightMotor);
     final UltrasonicLocalizer usLoc = new UltrasonicLocalizer(navigation, leftMotor, rightMotor);
     final LightLocalizer lgLoc = new LightLocalizer(navigation, leftMotor, rightMotor);
-
+    final RingSearcher searcher = new RingSearcher(navigation, leftMotor,rightMotor);
     // spawn a new Thread to avoid localization from blocking
     (new Thread() {
       public void run() {
+    	//target color
+    	ColorCalibrator.Color targetColor = ColorCalibrator.Color.values()[TR-1];
         usLoc.localize(buttonChoice);
         lgLoc.localize(SC);
         //nav.travelToCoordinate(0, 0); nav.turnTo(0);
@@ -169,21 +168,21 @@ public class Lab5 {
         navigation.travelTo(LLx, LLy, false);
        
         
-        navigation.turnTo(0);
+        navigation.turnTo(0, false);
         //STEP 3: SEARCH ALL COORDINATES
-        for (int i = LLx; i < URx+1; i++) {
+        for (double i = LLx + 0.5; i < URx; i+=2) {
         	if((i - LLx)%2 == 0) {
         		for (int j = LLy; j < URy+1; j++) {
-            		//LIGHT SENSOR RING DETECTION CODE NEEDED IN NAVIGATION TO SLOW DOWN.
-        			if(i == LLx && j == LLy) continue;
+            		searcher.search(70, targetColor);
+            		searcher.search(-70, targetColor);
             		navigation.travelTo(i, j, true);
-            		visitedSearchAreaCoordinates[URx-i][URy-j] = true;
+            		//visitedSearchAreaCoordinates[URx-i][URy-j] = true;
             	}
         	}else {
-        		for (int j = URy; j >= LLy; j--) {
+        		for (int j = URy-1; j >= LLy; j--) {
             		//LIGHT SENSOR RING DETECTION CODE NEEDED IN NAVIGATION TO SLOW DOWN.
             		navigation.travelTo(i, j, true);
-            		visitedSearchAreaCoordinates[URx-i][URy-j] = true;
+            		//visitedSearchAreaCoordinates[URx-i][URy-j] = true;
             	}
         	}	
         }
