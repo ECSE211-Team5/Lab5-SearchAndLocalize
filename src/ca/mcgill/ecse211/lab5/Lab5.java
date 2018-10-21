@@ -160,28 +160,47 @@ public class Lab5 {
       public void run() {
     	//target color
     	ColorCalibrator.Color targetColor = ColorCalibrator.Color.values()[TR-1];
-        usLoc.localize(buttonChoice);
-        lgLoc.localize(SC);
-        //nav.travelToCoordinate(0, 0); nav.turnTo(0);
-        
+    	
+//        usLoc.localize(buttonChoice);
+//        lgLoc.localize(SC);
+    	//TODO: delete test code
+        try {
+			Odometer.getOdometer().setXYT(3, 3, 0);
+		} catch (OdometerExceptions e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
         //STEP 2: MOVE TO START OF SEARCH AREA
-        navigation.travelTo(LLx, LLy, false);
+        //navigation.travelTo(LLx, LLy, false);
        
         
-        navigation.turnTo(0, false);
         //STEP 3: SEARCH ALL COORDINATES
-        for (double i = LLx + 0.5; i < URx; i+=2) {
-        	if((i - LLx)%2 == 0) {
-        		for (int j = LLy; j < URy+1; j++) {
-            		searcher.search(70, targetColor);
-            		searcher.search(-70, targetColor);
+        for (double i = LLx + 0.5; i < URx+1; i+=2) {
+        	if((i - LLx)%2 < 1) {
+        		for (double j = LLy + 0.5; j < URy; j++) {
             		navigation.travelTo(i, j, true);
+            		navigation.turnTo(0, false);
+            		if(searcher.search(70, targetColor)) {
+            			break;
+            		}
+            		navigation.turnTo(0, false);
+            		if(searcher.search(-70, targetColor)) {
+            			break;
+            		}
+            		navigation.turnTo(0, false);
             		//visitedSearchAreaCoordinates[URx-i][URy-j] = true;
             	}
         	}else {
-        		for (int j = URy-1; j >= LLy; j--) {
+        		for (double j = URy-1 + 0.5; j >= LLy; j--) {
             		//LIGHT SENSOR RING DETECTION CODE NEEDED IN NAVIGATION TO SLOW DOWN.
             		navigation.travelTo(i, j, true);
+            		navigation.turnTo(180, false);
+            		if(searcher.search(70, targetColor)) {
+            			 break;
+            		}
+            		navigation.turnTo(180, false);
+            		searcher.search(-70, targetColor);
+            		navigation.turnTo(180, false);
             		//visitedSearchAreaCoordinates[URx-i][URy-j] = true;
             	}
         	}	
