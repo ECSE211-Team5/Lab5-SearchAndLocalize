@@ -67,7 +67,7 @@ public class Display implements Runnable {
       lcd.drawString("X: " + numberFormat.format(position[0]), 0, 0);
       lcd.drawString("Y: " + numberFormat.format(position[1]), 0, 1);
       lcd.drawString("T: " + numberFormat.format(position[2]), 0, 2);
-      
+      lcd.drawString("D: " + numberFormat.format(data[0]), 0, 5);
       if (ColorCalibrator.getColor((int)rgb[0], (int)rgb[1],(int) rgb[2]) != ColorCalibrator.Color.Other) {
     	  lcd.drawString("Object Detected", 0, 3);
       } else { 
