@@ -9,16 +9,16 @@ public class ColorCalibrator {
 	
 	//TODO: Implement color Calibration
 	public static Color getColor(int r, int g, int b) {
-		if ((r >= 7 && r <= 8) && (g >= 3 && g <= 6) && (b >=0 && b <= 1)) {
+		if ((r >= 8 && r <= 12) && (g >= 6 && g <= 8) && (b >=0 && b <= 1)) {
 			currentColor = Color.Yellow;
 		} 
-		else if ((r >= 0 && r <= 1) && (g >= 5 && g <= 8) && (b >=3 && b <= 5)) {
+		else if ((r >= 1 && r <= 2) && (g >= 4 && g <= 12) && (b >=5 && b <= 10)) {
 			currentColor = Color.Blue;
 		}
-		else if ((r >= 2 && r <= 3) && (g >= 6 && g <= 8) && (b >= 0 && b <= 1)) {
+		else if ((r >= 2 && r <= 4) && (g >= 6 && g <= 9) && (b >= 0 && b <= 1)) {
 			currentColor = Color.Green;
 		}
-		else if ((r >= 4 && r <= 5) && (g >= 0 && g <= 1) && (b == 0)) {
+		else if ((r >= 6 && r <= 10) && (g >= 1 && g <= 3 ) && (b == 0)) {
 			currentColor = Color.Orange;
 		}
 		else {

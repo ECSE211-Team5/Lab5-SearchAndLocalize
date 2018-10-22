@@ -56,6 +56,8 @@ public class LightLocalizer {
 
 		// 2. Turn and go forward find the x=0 line
 		navigation.turnTo(90, false);
+		leftMotor.setSpeed(100);
+		rightMotor.setSpeed(100);
 		leftMotor.forward();
 		rightMotor.forward();
 		while (data.getDL()[1] > blackLineColor)
@@ -71,8 +73,8 @@ public class LightLocalizer {
 		navigation.turnTo(0, false);
 		leftMotor.setSpeed(100);
 		rightMotor.setSpeed(100);
-	    leftMotor.rotate(Navigation.convertDistance(Lab5.WHEEL_RAD, -SENSOR_DIS-4), true);
-	    rightMotor.rotate(Navigation.convertDistance(Lab5.WHEEL_RAD, -SENSOR_DIS-4), false);
+	    leftMotor.rotate(Navigation.convertDistance(Lab5.WHEEL_RAD, -SENSOR_DIS-3.5), true);
+	    rightMotor.rotate(Navigation.convertDistance(Lab5.WHEEL_RAD, -SENSOR_DIS-3.5), false);
 		odometer.setTheta(0);
 		odometer.setX(sC[0]);
 		odometer.setY(sC[1]);
