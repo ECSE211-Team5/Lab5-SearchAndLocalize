@@ -158,17 +158,17 @@ public class Lab5 {
 				// target color
 				ColorCalibrator.Color targetColor = ColorCalibrator.Color.values()[TR - 1];
 
-        usLoc.localize(buttonChoice);
-        lgLoc.localize(SC);
+//        usLoc.localize(buttonChoice);
+//        lgLoc.localize(SC);
 				// TODO: delete test code
-//				try {
-//					Odometer.getOdometer().setXYT(3, 3, 0);
-//				} catch (OdometerExceptions e) {
-//					// TODO Auto-generated catch block
-//					e.printStackTrace();
-//				}
+				try {
+					Odometer.getOdometer().setXYT(3, 3, 0);
+				} catch (OdometerExceptions e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 				// STEP 2: MOVE TO START OF SEARCH AREA
-				 navigation.travelTo(LLx, LLy, false);
+				 //navigation.travelTo(LLx, LLy, false);
 
 				// STEP 3: SEARCH ALL COORDINATES
 				searchArea(navigation, searcher, targetColor);
@@ -191,15 +191,15 @@ public class Lab5 {
 	 */
 	public static void searchArea(Navigation navigation, RingSearcher searcher, ColorCalibrator.Color targetColor) {
 		int counter = 0;
-		for (double i = LLx + 0.7; i < URx + 1; ) {
+		for (double i = LLx + 0.5; i < URx + 1; ) {
 			// if we are at the first, third...etc verticle zone, search up
 			if (counter % 2 == 0) {
 				for (double j = LLy + 0.7; j < URy; j++) {
 					navigation.travelTo(i, j, true);
 					navigation.turnTo(0, false);
-					if (searcher.search(55, targetColor)) return;
+					if (searcher.search(90, targetColor)) return;
 					navigation.turnTo(0, false);
-					if (searcher.search(-55, targetColor)) return;
+					if (searcher.search(-90, targetColor)) return;
 					navigation.turnTo(0, false);
 				}
 			} else {
@@ -207,14 +207,14 @@ public class Lab5 {
 				for (double j = URy - 1 + 0.7; j > LLy; j--) {
 					navigation.travelTo(i, j, true);
 					navigation.turnTo(180, false);
-					if (searcher.search(125, targetColor)) return;
+					if (searcher.search(90, targetColor)) return;
 					navigation.turnTo(180, false);
-					if (searcher.search(225, targetColor)) return;
+					if (searcher.search(240, targetColor)) return;
 					navigation.turnTo(180, false);
 				}
 			}
 			counter ++;
-			i = (i+2 < URx+1)? i+2 : (URx-0.7);
+			i = (i+2 < URx+1)? i+2 : (URx-0.5);
 		}
 	}
 }

@@ -52,27 +52,31 @@ public class RingSearcher {
 		navigation.turnTo(angle, true);
 		//while turnninng, check the value from the us sensor to see if there is a ring
 		while(leftMotor.isMoving() || rightMotor.isMoving()) {
-			if(data.getDL()[0] < RING_DISTANCE) {
+			if(ColorCalibrator.getColor() == target) {
 				navigation.stop();
-				Sound.beepSequenceUp();
+				Sound.twoBeeps();
 				foundRing = true;
+				break;
+			}else if(ColorCalibrator.getColor() != ColorCalibrator.Color.Other) {
+				Sound.beep();
+				navigation.stop();
 				break;
 			}
 		}
 		//if we found a ring, got for the ring and check its color 
 		//if the color matches, return true
-		if(foundRing) {
-			ColorCalibrator.Color color = goForRingColor();
-			navigation.travelBackTo(position[0], position[1]);
-			if(color == target) {
-				Sound.twoBeeps();
-				ColorMatched = true;
-			}
-		}else {
-			Sound.beepSequence();;
-		}
+//		if(foundRing) {
+//			ColorCalibrator.Color color = goForRingColor();
+//			//navigation.travelBackTo(position[0], position[1]);
+//			if(color == target) {
+//				Sound.twoBeeps();
+//				ColorMatched = true;
+//			}
+//		}else {
+//			Sound.beepSequence();;
+//		}
 		
-		return ColorMatched;
+		return foundRing;
 	}
 
 	/**

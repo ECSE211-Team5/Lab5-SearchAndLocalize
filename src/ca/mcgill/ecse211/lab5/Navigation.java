@@ -74,17 +74,17 @@ public class Navigation {
 
 		int[] rgb;
 		while (leftMotor.isMoving() && rightMotor.isMoving()) {
-			try {
-				rgb = SensorData.getSensorData().getRGB()[0];
-				if (ColorCalibrator.getColor(rgb[0], rgb[1], rgb[2]) != ColorCalibrator.Color.Other) {
-					leftMotor.stop(true);
-					rightMotor.stop();
-					Button.waitForAnyPress();
-				}
-			} catch (OdometerExceptions e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
+//			try {
+//				rgb = SensorData.getSensorData().getRGB()[0];
+//				if (ColorCalibrator.getColor(rgb[0], rgb[1], rgb[2]) != ColorCalibrator.Color.Other) {
+//					leftMotor.stop(true);
+//					rightMotor.stop();
+//					Button.waitForAnyPress();
+//				}
+//			} catch (OdometerExceptions e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
 
 		}
 	}
