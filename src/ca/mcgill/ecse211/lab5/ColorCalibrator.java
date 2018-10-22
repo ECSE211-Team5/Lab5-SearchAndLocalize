@@ -1,7 +1,5 @@
 package ca.mcgill.ecse211.lab5;
 
-import ca.mcgill.ecse211.sensors.SensorData;
-
 public class ColorCalibrator {
 	private static Color currentColor;
 	

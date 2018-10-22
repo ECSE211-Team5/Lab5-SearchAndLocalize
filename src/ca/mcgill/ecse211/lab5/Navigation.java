@@ -133,11 +133,18 @@ public class Navigation {
 		}
 	}
 
+	/**
+	 * Rotate the robot by certain angle
+	 * @param angle
+	 */
 	public void rotate(int angle) {
 		leftMotor.rotate(convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, angle), true);
 		rightMotor.rotate(-convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, angle), false);
 	}
 	
+	/**
+	 * Stop the motor
+	 */
 	public void stop() {
 		leftMotor.stop(true);
 		rightMotor.stop(false);
