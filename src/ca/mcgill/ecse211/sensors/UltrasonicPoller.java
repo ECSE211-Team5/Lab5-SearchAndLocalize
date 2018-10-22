@@ -77,11 +77,10 @@ public class UltrasonicPoller extends Thread {
       }
       
       cont.setD(distance); // now take action depending on value
-      
       sample_index = (sample_index + 1) % 5;
       
       try {
-        Thread.sleep(50);
+        Thread.sleep(30);
       } catch (Exception e) {
       } // Poor man's timed sampling
     }

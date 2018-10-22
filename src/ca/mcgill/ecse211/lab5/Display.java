@@ -68,13 +68,14 @@ public class Display implements Runnable {
       lcd.drawString("Y: " + numberFormat.format(position[1]), 0, 1);
       lcd.drawString("T: " + numberFormat.format(position[2]), 0, 2);
       lcd.drawString("D: "+ numberFormat.format(data[0]),0,3 );
+      lcd.drawString(String.format("(R: %d G: %d B: %d)",(int)rgb[0],(int)rgb[1],(int)rgb[2]), 0, 4);
       if (ColorCalibrator.getColor((int)rgb[0], (int)rgb[1],(int) rgb[2]) != ColorCalibrator.Color.Other) {
-    	  lcd.drawString("Object Detected", 0, 4);
+    	  lcd.drawString("Object Detected", 0, 5);
       } else { 
-    	  lcd.drawString("                   ", 0, 4);
+    	  lcd.drawString("                   ", 0, 5);
       }
       
-      lcd.drawString(String.format("%1$-10s", ColorCalibrator.getColor().toString()), 0, 5);
+      lcd.drawString(String.format("%1$-10s", ColorCalibrator.getColor().toString()), 0, 6);
       
 //      lcd.drawString(String.format("(r: %f", rgb[0]), 0, 3);
 //      lcd.drawString(String.format("(g: %f", rgb[1]), 0, 4);

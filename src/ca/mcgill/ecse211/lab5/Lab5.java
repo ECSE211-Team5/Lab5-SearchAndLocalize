@@ -180,11 +180,11 @@ public class Lab5 {
         		for (double j = LLy + 0.5; j < URy; j++) {
             		navigation.travelTo(i, j, true);
             		navigation.turnTo(0, false);
-            		if(searcher.search(70, targetColor)) {
+            		if(searcher.search(55, targetColor)) {
             			break;
             		}
             		navigation.turnTo(0, false);
-            		if(searcher.search(-70, targetColor)) {
+            		if(searcher.search(-55, targetColor)) {
             			break;
             		}
             		navigation.turnTo(0, false);
@@ -195,11 +195,11 @@ public class Lab5 {
             		//LIGHT SENSOR RING DETECTION CODE NEEDED IN NAVIGATION TO SLOW DOWN.
             		navigation.travelTo(i, j, true);
             		navigation.turnTo(180, false);
-            		if(searcher.search(70, targetColor)) {
+            		if(searcher.search(55, targetColor)) {
             			 break;
             		}
             		navigation.turnTo(180, false);
-            		searcher.search(-70, targetColor);
+            		searcher.search(-55, targetColor);
             		navigation.turnTo(180, false);
             		//visitedSearchAreaCoordinates[URx-i][URy-j] = true;
             	}

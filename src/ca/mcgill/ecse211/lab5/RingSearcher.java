@@ -9,7 +9,7 @@ import lejos.hardware.motor.EV3LargeRegulatedMotor;
 public class RingSearcher {
 	private static final int FORWARD_SPEED = 150;
 	private static final int ROTATE_SPEED = 50;
-	private static final int RING_DISTANCE = 20;
+	private static final int RING_DISTANCE = 30;
 	private EV3LargeRegulatedMotor leftMotor;
 	private EV3LargeRegulatedMotor rightMotor;
 	private Navigation navigation;
@@ -43,13 +43,17 @@ public class RingSearcher {
 		navigation.turnTo(angle, true);
 		while(leftMotor.isMoving() || rightMotor.isMoving()) {
 			if(data.getDL()[0] < RING_DISTANCE) {
+				navigation.stop();
+//				if(angle > 0) {
+//					navigation.rotate(-8);
+//				}else {
+//					navigation.rotate(8);
+//				}
 				Sound.beepSequenceUp();
 				foundRing = true;
 				break;
 			}
 		}
-		leftMotor.stop(true);
-		rightMotor.stop(false);
 		if(foundRing) {
 			ColorCalibrator.Color color = goForRingColor();
 			navigation.travelBackTo(position[0], position[1]);
@@ -59,9 +63,10 @@ public class RingSearcher {
 				leftMotor.stop(false);
 				ColorMatched = true;
 			}
+		}else {
+			Sound.beepSequence();;
 		}
 		
-		Sound.beepSequence();;
 		return ColorMatched;
 	}
 
@@ -69,13 +74,14 @@ public class RingSearcher {
 	private ColorCalibrator.Color goForRingColor() {
 		leftMotor.setSpeed(100);
 		rightMotor.setSpeed(100);
-		while(ColorCalibrator.getColor() == ColorCalibrator.Color.Other) {
+		ColorCalibrator.Color color;
+		while((color=ColorCalibrator.getColor()) == ColorCalibrator.Color.Other) {
 			leftMotor.forward();
 			rightMotor.forward();
 		}
 		leftMotor.stop(true);
 		rightMotor.stop(false);
-		ColorCalibrator.Color color = ColorCalibrator.getColor();
+		//ColorCalibrator.Color color = ColorCalibrator.getColor();
 		return color;
 	}
 }

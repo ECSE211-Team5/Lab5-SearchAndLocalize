@@ -21,8 +21,8 @@ import lejos.hardware.motor.EV3LargeRegulatedMotor;
  * specific features for future milestones such as retrieving an object.
  */
 public class Navigation {
-	private static final int FORWARD_SPEED = 150;
-	private static final int ROTATE_SPEED = 80;
+	private static final int FORWARD_SPEED = 250;
+	private static final int ROTATE_SPEED = 50;
 	private EV3LargeRegulatedMotor leftMotor;
 	private EV3LargeRegulatedMotor rightMotor;
 	private Odometer odometer;
@@ -103,7 +103,7 @@ public class Navigation {
 		rightMotor.setSpeed(FORWARD_SPEED);
 
 		leftMotor.rotate(-convertDistance(Lab5.WHEEL_RAD, distance * Lab5.TILE), true);
-		rightMotor.rotate(-convertDistance(Lab5.WHEEL_RAD, distance * Lab5.TILE), true);
+		rightMotor.rotate(-convertDistance(Lab5.WHEEL_RAD, distance * Lab5.TILE), false);
 	}
 
 	/**
@@ -133,6 +133,11 @@ public class Navigation {
 		}
 	}
 
+	public void rotate(int angle) {
+		leftMotor.rotate(convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, angle), true);
+		rightMotor.rotate(-convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, angle), false);
+	}
+	
 	public void stop() {
 		leftMotor.stop(true);
 		rightMotor.stop(false);
