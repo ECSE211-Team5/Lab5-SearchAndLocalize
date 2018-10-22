@@ -1,0 +1,147 @@
+.TH "ca.mcgill.ecse211.sensors.SensorData" 3 "Mon Oct 22 2018" "Version 1.0" "ECSE211 - Fall 2018 - Lab 5 - Search and Localize" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ca.mcgill.ecse211.sensors.SensorData
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "double [] \fBgetDL\fP ()"
+.br
+.ti -1c
+.RI "int [][] \fBgetRGB\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetD\fP (double d)"
+.br
+.ti -1c
+.RI "void \fBsetRGB\fP (int i, int r, int g, int b)"
+.br
+.ti -1c
+.RI "void \fBsetL\fP (double l)"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static synchronized \fBSensorData\fP \fBgetSensorData\fP ()  throws OdometerExceptions "
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSensorData\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This class implements methods to manage data from our sensors
+.PP
+\fBAuthor:\fP
+.RS 4
+Caspar Cedro & Patrick Erath 
+.RE
+.PP
+
+.PP
+Definition at line 13 of file SensorData\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ca\&.mcgill\&.ecse211\&.sensors\&.SensorData\&.SensorData ()\fC [protected]\fP"
+Default constructor\&. The constructor is private\&. A factory is used instead such that only one instance of this class is ever created\&. 
+.PP
+Definition at line 43 of file SensorData\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "double [] ca\&.mcgill\&.ecse211\&.sensors\&.SensorData\&.getDL ()"
+Return the Sensor data\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIposition\fP the array to store the sensor data 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+the sensor data\&. 
+.RE
+.PP
+
+.PP
+Definition at line 82 of file SensorData\&.java\&.
+.SS "int [][] ca\&.mcgill\&.ecse211\&.sensors\&.SensorData\&.getRGB ()"
+get the rgb data for color sensor 
+.PP
+\fBReturns:\fP
+.RS 4
+: rgb data 
+.RE
+.PP
+
+.PP
+Definition at line 108 of file SensorData\&.java\&.
+.SS "static synchronized \fBSensorData\fP ca\&.mcgill\&.ecse211\&.sensors\&.SensorData\&.getSensorData () throws \fBOdometerExceptions\fP\fC [static]\fP"
+OdometerData factory\&. Returns an OdometerData instance and makes sure that only one instance is ever created\&. If the user tries to instantiate multiple objects, the method throws a MultipleOdometerDataException\&.
+.PP
+\fBReturns:\fP
+.RS 4
+An OdometerData object 
+.RE
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIOdometerExceptions\fP 
+.RE
+.PP
+
+.PP
+Definition at line 62 of file SensorData\&.java\&.
+.SS "void ca\&.mcgill\&.ecse211\&.sensors\&.SensorData\&.setD (double d)"
+Overrides distance\&. Use for ultra sonic sensor\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fId\fP the value of d 
+.RE
+.PP
+
+.PP
+Definition at line 127 of file SensorData\&.java\&.
+.SS "void ca\&.mcgill\&.ecse211\&.sensors\&.SensorData\&.setL (double l)"
+Overrides light\&. Use for light sensor\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIl\fP the value of l 
+.RE
+.PP
+
+.PP
+Definition at line 167 of file SensorData\&.java\&.
+.SS "void ca\&.mcgill\&.ecse211\&.sensors\&.SensorData\&.setRGB (int i, int r, int g, int b)"
+set rgb data for color sensor with specific id 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIi\fP id for the color sensor 
+.br
+\fIr\fP red value 
+.br
+\fIg\fP green value 
+.br
+\fIb\fP blue value 
+.RE
+.PP
+
+.PP
+Definition at line 147 of file SensorData\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ECSE211 - Fall 2018 - Lab 5 - Search and Localize from the source code\&.

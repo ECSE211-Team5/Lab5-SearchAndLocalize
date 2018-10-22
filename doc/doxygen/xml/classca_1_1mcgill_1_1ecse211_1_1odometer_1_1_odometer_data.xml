@@ -1,0 +1,424 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data" kind="class" language="Java" prot="public">
+    <compoundname>ca::mcgill::ecse211::odometer::OdometerData</compoundname>
+    <derivedcompoundref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer" prot="public" virt="non-virtual">ca.mcgill.ecse211.odometer.Odometer</derivedcompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a7af0ba326a6db62ae0623102b6562e31" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>volatile double ca.mcgill.ecse211.odometer.OdometerData.x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerData.java" line="19" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerData.java" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a8aced6c7fa5e9ce414b1ce76514c9e68" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>volatile double ca.mcgill.ecse211.odometer.OdometerData.y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerData.java" line="20" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerData.java" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a2aec8729764590629af23cb825308154" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>volatile double ca.mcgill.ecse211.odometer.OdometerData.theta</definition>
+        <argsstring></argsstring>
+        <name>theta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerData.java" line="21" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerData.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a0b4c3cd31cd1b9d18cf58d6202fd2359" prot="private" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>volatile boolean ca.mcgill.ecse211.odometer.OdometerData.isReseting</definition>
+        <argsstring></argsstring>
+        <name>isReseting</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerData.java" line="33" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerData.java" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a73c7ba7d64aadea2b4b8c11b8084d376" prot="private" static="no" mutable="no">
+        <type>Condition</type>
+        <definition>Condition ca.mcgill.ecse211.odometer.OdometerData.doneReseting</definition>
+        <argsstring></argsstring>
+        <name>doneReseting</name>
+        <initializer>= lock.newCondition()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerData.java" line="36" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerData.java" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a52424fd40d4fb61711197aea0264292e" prot="private" static="yes" mutable="no">
+        <type>int</type>
+        <definition>volatile int ca.mcgill.ecse211.odometer.OdometerData.numberOfIntances</definition>
+        <argsstring></argsstring>
+        <name>numberOfIntances</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerData.java" line="24" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerData.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a66c32fd3776a568d9ccd814f83dc232d" prot="private" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int ca.mcgill.ecse211.odometer.OdometerData.MAX_INSTANCES</definition>
+        <argsstring></argsstring>
+        <name>MAX_INSTANCES</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerData.java" line="27" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerData.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1aed14f0ab504fb58826fb167d4e106a67" prot="private" static="yes" mutable="no">
+        <type>Lock</type>
+        <definition>Lock ca.mcgill.ecse211.odometer.OdometerData.lock</definition>
+        <argsstring></argsstring>
+        <name>lock</name>
+        <initializer>= new ReentrantLock(true)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerData.java" line="31" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerData.java" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a75d7ab8153e577c4a3596220e1d6be85" prot="private" static="yes" mutable="no">
+        <type><ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data" kindref="compound">OdometerData</ref></type>
+        <definition>OdometerData ca.mcgill.ecse211.odometer.OdometerData.odoData</definition>
+        <argsstring></argsstring>
+        <name>odoData</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerData.java" line="41" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerData.java" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a91412854b75c41bf3af7c8892ec0fe87" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ca.mcgill.ecse211.odometer.OdometerData.OdometerData</definition>
+        <argsstring>()</argsstring>
+        <name>OdometerData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default constructor. The constructor is private. A factory is used instead such that only one instance of this class is ever created. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerData.java" line="47" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerData.java" bodystart="47" bodyend="51"/>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1afff2d760dd1f861b580f3eacef37f1cc" compoundref="_odometer_data_8java" startline="61" endline="73">ca.mcgill.ecse211.odometer.OdometerData.getOdometerData</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1afff2d760dd1f861b580f3eacef37f1cc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>synchronized <ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data" kindref="compound">OdometerData</ref></type>
+        <definition>static synchronized OdometerData ca.mcgill.ecse211.odometer.OdometerData.getOdometerData</definition>
+        <argsstring>()</argsstring>
+        <name>getOdometerData</name>
+        <exceptions> throws <ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions" kindref="compound">OdometerExceptions</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data" kindref="compound">OdometerData</ref> factory. Returns an <ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data" kindref="compound">OdometerData</ref> instance and makes sure that only one instance is ever created. If the user tries to instantiate multiple objects, the method throws a MultipleOdometerDataException.</para><para><simplesect kind="return"><para>An <ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data" kindref="compound">OdometerData</ref> object </para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions" kindref="compound">OdometerExceptions</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerData.java" line="61" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerData.java" bodystart="61" bodyend="73"/>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a91412854b75c41bf3af7c8892ec0fe87" compoundref="_odometer_data_8java" startline="47" endline="51">ca.mcgill.ecse211.odometer.OdometerData.OdometerData</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a8f40f0264c68f0cbed4fff1723ae7863" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double []</type>
+        <definition>double [] ca.mcgill.ecse211.odometer.OdometerData.getXYT</definition>
+        <argsstring>()</argsstring>
+        <name>getXYT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the Odomometer data. </para><para>Writes the current position and orientation of the robot onto the odoData array. odoData[0] = x, odoData[1] = y; odoData[2] = theta;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the array to store the odometer data </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the odometer data. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerData.java" line="84" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerData.java" bodystart="84" bodyend="106"/>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_1a047e885f7170ba80f60fd3b4b2bc79a9" compoundref="_display_8java" startline="50" endline="94">ca.mcgill.ecse211.lab5.Display.run</referencedby>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a0f3288c38c7c28b495ae4d7e95d85f78" compoundref="_navigation_8java" startline="59" endline="90">ca.mcgill.ecse211.lab5.Navigation.travelTo</referencedby>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a2b39928c8062fe6863de8e818d009e91" compoundref="_navigation_8java" startline="115" endline="134">ca.mcgill.ecse211.lab5.Navigation.turnTo</referencedby>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1a88a4c77f3c76d74edc8bfd0229f0902f" compoundref="_ring_searcher_8java" startline="47" endline="76">ca.mcgill.ecse211.lab5.RingSearcher.search</referencedby>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1a7fd82ab7240a07ae6947313c0769d4bc" compoundref="_ultrasonic_localizer_8java" startline="49" endline="55">ca.mcgill.ecse211.lab5.UltrasonicLocalizer.localize</referencedby>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1af0ff4c5121973a8310cf986e25fa0d87" compoundref="_odometer_8java" startline="104" endline="145">ca.mcgill.ecse211.odometer.Odometer.run</referencedby>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometry_correction_1aad66a7030ac00f3a9cbe7bc33c25acbf" compoundref="_odometry_correction_8java" startline="40" endline="82">ca.mcgill.ecse211.odometer.OdometryCorrection.run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1aaa06f190d634299fcb1b97a1891dad85" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ca.mcgill.ecse211.odometer.OdometerData.update</definition>
+        <argsstring>(double dx, double dy, double dtheta)</argsstring>
+        <name>update</name>
+        <param>
+          <type>double</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dy</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dtheta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adds dx, dy and dtheta to the current values of x, y and theta, respectively. Useful for odometry.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dtheta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerData.java" line="116" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerData.java" bodystart="116" bodyend="132"/>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1af0ff4c5121973a8310cf986e25fa0d87" compoundref="_odometer_8java" startline="104" endline="145">ca.mcgill.ecse211.odometer.Odometer.run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a2ebc18a13aea6276122d9ef4ee100bb9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ca.mcgill.ecse211.odometer.OdometerData.setXYT</definition>
+        <argsstring>(double x, double y, double theta)</argsstring>
+        <name>setXYT</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>theta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overrides the values of x, y and theta. Use for odometry correction.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value of x </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value of y </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>theta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value of theta </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerData.java" line="141" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerData.java" bodystart="141" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a2911d7215e47f3064defe016b46bfeef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ca.mcgill.ecse211.odometer.OdometerData.setX</definition>
+        <argsstring>(double x)</argsstring>
+        <name>setX</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overrides x. Use for odometry correction.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value of x </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerData.java" line="161" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerData.java" bodystart="161" bodyend="172"/>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a441f56a899fae5bc9c1d6a6d25fbe0bb" compoundref="_light_localizer_8java" startline="45" endline="82">ca.mcgill.ecse211.lab5.LightLocalizer.localize</referencedby>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometry_correction_1aad66a7030ac00f3a9cbe7bc33c25acbf" compoundref="_odometry_correction_8java" startline="40" endline="82">ca.mcgill.ecse211.odometer.OdometryCorrection.run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a82986438cd462e66520bc62bb4bd2b75" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ca.mcgill.ecse211.odometer.OdometerData.setY</definition>
+        <argsstring>(double y)</argsstring>
+        <name>setY</name>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overrides y. Use for odometry correction.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value of y </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerData.java" line="179" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerData.java" bodystart="179" bodyend="190"/>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a441f56a899fae5bc9c1d6a6d25fbe0bb" compoundref="_light_localizer_8java" startline="45" endline="82">ca.mcgill.ecse211.lab5.LightLocalizer.localize</referencedby>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometry_correction_1aad66a7030ac00f3a9cbe7bc33c25acbf" compoundref="_odometry_correction_8java" startline="40" endline="82">ca.mcgill.ecse211.odometer.OdometryCorrection.run</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a419b8f07c2c5374411c8e62298e9a402" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ca.mcgill.ecse211.odometer.OdometerData.setTheta</definition>
+        <argsstring>(double theta)</argsstring>
+        <name>setTheta</name>
+        <param>
+          <type>double</type>
+          <declname>theta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Overrides theta. Use for odometry correction.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>theta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the value of theta </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerData.java" line="197" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerData.java" bodystart="197" bodyend="208"/>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a441f56a899fae5bc9c1d6a6d25fbe0bb" compoundref="_light_localizer_8java" startline="45" endline="82">ca.mcgill.ecse211.lab5.LightLocalizer.localize</referencedby>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1a7fd82ab7240a07ae6947313c0769d4bc" compoundref="_ultrasonic_localizer_8java" startline="49" endline="55">ca.mcgill.ecse211.lab5.UltrasonicLocalizer.localize</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class stores and provides thread safe access to the odometer data.</para><para><simplesect kind="author"><para>Rodrigo Silva </para></simplesect>
+<simplesect kind="author"><para>Dirk Dubois </para></simplesect>
+<simplesect kind="author"><para>Derek Yu </para></simplesect>
+<simplesect kind="author"><para>Karim El-Baba </para></simplesect>
+<simplesect kind="author"><para>Michael Smith </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="29">
+        <label>ca.mcgill.ecse211.odometer.Odometer</label>
+        <link refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>ca.mcgill.ecse211.odometer.OdometerData</label>
+        <link refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerData.java" line="16" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerData.java" bodystart="16" bodyend="210"/>
+    <listofallmembers>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a73c7ba7d64aadea2b4b8c11b8084d376" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::OdometerData</scope><name>doneReseting</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1afff2d760dd1f861b580f3eacef37f1cc" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::OdometerData</scope><name>getOdometerData</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a8f40f0264c68f0cbed4fff1723ae7863" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::OdometerData</scope><name>getXYT</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a0b4c3cd31cd1b9d18cf58d6202fd2359" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::OdometerData</scope><name>isReseting</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1aed14f0ab504fb58826fb167d4e106a67" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::OdometerData</scope><name>lock</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a66c32fd3776a568d9ccd814f83dc232d" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::OdometerData</scope><name>MAX_INSTANCES</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a52424fd40d4fb61711197aea0264292e" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::OdometerData</scope><name>numberOfIntances</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a75d7ab8153e577c4a3596220e1d6be85" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::OdometerData</scope><name>odoData</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a91412854b75c41bf3af7c8892ec0fe87" prot="protected" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::OdometerData</scope><name>OdometerData</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a419b8f07c2c5374411c8e62298e9a402" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::OdometerData</scope><name>setTheta</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a2911d7215e47f3064defe016b46bfeef" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::OdometerData</scope><name>setX</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a2ebc18a13aea6276122d9ef4ee100bb9" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::OdometerData</scope><name>setXYT</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a82986438cd462e66520bc62bb4bd2b75" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::OdometerData</scope><name>setY</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a2aec8729764590629af23cb825308154" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::OdometerData</scope><name>theta</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1aaa06f190d634299fcb1b97a1891dad85" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::OdometerData</scope><name>update</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a7af0ba326a6db62ae0623102b6562e31" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::OdometerData</scope><name>x</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a8aced6c7fa5e9ce414b1ce76514c9e68" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::OdometerData</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

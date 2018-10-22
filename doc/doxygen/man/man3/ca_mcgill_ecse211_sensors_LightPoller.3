@@ -1,0 +1,95 @@
+.TH "ca.mcgill.ecse211.sensors.LightPoller" 3 "Mon Oct 22 2018" "Version 1.0" "ECSE211 - Fall 2018 - Lab 5 - Search and Localize" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ca.mcgill.ecse211.sensors.LightPoller
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits Thread\&.
+.PP
+Inherited by \fBca\&.mcgill\&.ecse211\&.sensors\&.RGBPoller\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBLightPoller\fP (SampleProvider us, float[] lgData, \fBSensorData\fP cont)  throws OdometerExceptions "
+.br
+.ti -1c
+.RI "void \fBrun\fP ()"
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBprocessData\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "SampleProvider \fBus\fP"
+.br
+.ti -1c
+.RI "\fBSensorData\fP \fBcont\fP"
+.br
+.ti -1c
+.RI "float [] \fBlgData\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This class implements the Light Sensor Poller for our robot
+.PP
+\fBAuthor:\fP
+.RS 4
+Caspar Cedro & Patrick Erath 
+.RE
+.PP
+
+.PP
+Definition at line 11 of file LightPoller\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ca\&.mcgill\&.ecse211\&.sensors\&.LightPoller\&.LightPoller (SampleProvider us, float [] lgData, \fBSensorData\fP cont) throws \fBOdometerExceptions\fP"
+This constructor creates an instance of the \fBLightPoller\fP class to provide distance data from an light sensor to our robot\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIus\fP a SampleProvider class instance that helps us to store an array of ultrasonic sensor data\&. 
+.br
+\fIlgData\fP an array of distance data to be used by our Wall Follower's UltrasonicControllers\&. 
+.br
+\fIcont\fP a BangBangController or PController instance that has accumulated distance data stored in usData passed to it\&. 
+.RE
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIOdometerExceptions\fP 
+.RE
+.PP
+
+.PP
+Definition at line 28 of file LightPoller\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void ca\&.mcgill\&.ecse211\&.sensors\&.LightPoller\&.run ()"
+This method is called by a \fBUltrasonicPoller\fP (Thread) instance when it is asked to start executing
+.PP
+Sensors now return floats using a uniform protocol\&. Need to convert US result to an integer [0,255] (non-Javadoc)
+.PP
+\fBSee also:\fP
+.RS 4
+java\&.lang\&.Thread::run() 
+.RE
+.PP
+
+.PP
+Definition at line 43 of file LightPoller\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ECSE211 - Fall 2018 - Lab 5 - Search and Localize from the source code\&.

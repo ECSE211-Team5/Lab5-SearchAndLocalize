@@ -1,0 +1,67 @@
+.TH "ca.mcgill.ecse211.lab5.RingSearcher" 3 "Mon Oct 22 2018" "Version 1.0" "ECSE211 - Fall 2018 - Lab 5 - Search and Localize" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ca.mcgill.ecse211.lab5.RingSearcher
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBRingSearcher\fP (\fBNavigation\fP nav, EV3LargeRegulatedMotor leftMotor, EV3LargeRegulatedMotor rightMotor)  throws OdometerExceptions "
+.br
+.ti -1c
+.RI "boolean \fBsearch\fP (int angle, ColorCalibrator\&.Color target)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line 9 of file RingSearcher\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ca\&.mcgill\&.ecse211\&.lab5\&.RingSearcher\&.RingSearcher (\fBNavigation\fP nav, EV3LargeRegulatedMotor leftMotor, EV3LargeRegulatedMotor rightMotor) throws \fBOdometerExceptions\fP"
+This class provides method to check if there is a ring and if the ring is the color we want 
+.PP
+\fBParameters:\fP
+.RS 4
+\fInav\fP 
+.br
+\fIleftMotor\fP 
+.br
+\fIrightMotor\fP 
+.RE
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIOdometerExceptions\fP 
+.RE
+.PP
+
+.PP
+Definition at line 27 of file RingSearcher\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "boolean ca\&.mcgill\&.ecse211\&.lab5\&.RingSearcher\&.search (int angle, ColorCalibrator\&.Color target)"
+This method turn the robot for certain angle and see if there is a right if there is, it will go to that ring to check its color 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIangle\fP angle to turn in order to check the ring 
+.br
+\fItarget\fP target color 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+: true if it found a ring and the ring has the right color 
+.RE
+.PP
+
+.PP
+Definition at line 47 of file RingSearcher\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ECSE211 - Fall 2018 - Lab 5 - Search and Localize from the source code\&.

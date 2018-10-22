@@ -1,0 +1,108 @@
+.TH "ca.mcgill.ecse211.lab5.LightLocalizer" 3 "Mon Oct 22 2018" "Version 1.0" "ECSE211 - Fall 2018 - Lab 5 - Search and Localize" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ca.mcgill.ecse211.lab5.LightLocalizer
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBLightLocalizer\fP (\fBNavigation\fP nav, EV3LargeRegulatedMotor leftMotor, EV3LargeRegulatedMotor rightMotor)  throws OdometerExceptions "
+.br
+.ti -1c
+.RI "void \fBlocalize\fP (int[] sC)"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static int \fBconvertDistance\fP (double radius, double distance)"
+.br
+.ti -1c
+.RI "static int \fBconvertAngle\fP (double radius, double width, double angle)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This class helps our robot to localize itself using the light sensor
+.PP
+\fBAuthor:\fP
+.RS 4
+Caspar Cedro & Patrick Erath 
+.RE
+.PP
+
+.PP
+Definition at line 14 of file LightLocalizer\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ca\&.mcgill\&.ecse211\&.lab5\&.LightLocalizer\&.LightLocalizer (\fBNavigation\fP nav, EV3LargeRegulatedMotor leftMotor, EV3LargeRegulatedMotor rightMotor) throws \fBOdometerExceptions\fP"
+This is the class constructor
+.PP
+\fBParameters:\fP
+.RS 4
+\fIleftMotor\fP 
+.br
+\fIrightMotor\fP 
+.RE
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIOdometerExceptions\fP 
+.RE
+.PP
+
+.PP
+Definition at line 32 of file LightLocalizer\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "static int ca\&.mcgill\&.ecse211\&.lab5\&.LightLocalizer\&.convertAngle (double radius, double width, double angle)\fC [static]\fP"
+This method allows the conversion of an angle value
+.PP
+\fBParameters:\fP
+.RS 4
+\fIradius\fP The radius of our wheels 
+.br
+\fIdistance\fP The distance travelled 
+.br
+\fIangle\fP The angle to convert 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A converted angle 
+.RE
+.PP
+
+.PP
+Definition at line 104 of file LightLocalizer\&.java\&.
+.SS "static int ca\&.mcgill\&.ecse211\&.lab5\&.LightLocalizer\&.convertDistance (double radius, double distance)\fC [static]\fP"
+This method allows the conversion of a distance to the total rotation of each wheel need to cover that distance\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIradius\fP The radius of our wheels 
+.br
+\fIdistance\fP The distance travelled 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A converted distance 
+.RE
+.PP
+
+.PP
+Definition at line 92 of file LightLocalizer\&.java\&.
+.SS "void ca\&.mcgill\&.ecse211\&.lab5\&.LightLocalizer\&.localize (int [] sC)"
+Once the robot know what angle it is facing, this method looks for the x,y axis origins knowing it is in the first tile facing north\&. 
+.PP
+Definition at line 45 of file LightLocalizer\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ECSE211 - Fall 2018 - Lab 5 - Search and Localize from the source code\&.

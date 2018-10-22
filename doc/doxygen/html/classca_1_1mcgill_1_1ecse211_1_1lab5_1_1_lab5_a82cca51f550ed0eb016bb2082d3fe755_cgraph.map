@@ -1,0 +1,19 @@
+<map id="ca.mcgill.ecse211.lab5.Lab5.main" name="ca.mcgill.ecse211.lab5.Lab5.main">
+<area shape="rect" id="node2" href="$classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer.html#a99171f11e34dea918fa9dd069d721439" title="ca.mcgill.ecse211.odometer.\lOdometer.getOdometer" alt="" coords="306,123,495,164"/>
+<area shape="rect" id="node3" href="$classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html#ab8aef4bdb5d9f3dad399656e00af2539" title="ca.mcgill.ecse211.sensors.\lSensorData.getSensorData" alt="" coords="940,5,1123,47"/>
+<area shape="rect" id="node5" href="$classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer.html#a7fd82ab7240a07ae6947313c0769d4bc" title="ca.mcgill.ecse211.lab5.Ultrasonic\lLocalizer.localize" alt="" coords="604,408,823,449"/>
+<area shape="rect" id="node10" href="$classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer.html#a441f56a899fae5bc9c1d6a6d25fbe0bb" title="ca.mcgill.ecse211.lab5.Light\lLocalizer.localize" alt="" coords="620,473,807,515"/>
+<area shape="rect" id="node14" href="$classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a0f3288c38c7c28b495ae4d7e95d85f78" title="ca.mcgill.ecse211.lab5.Navigation.travelTo" alt="" coords="577,239,849,266"/>
+<area shape="rect" id="node16" href="$classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a0e80ac0068ef1ab41cfb571b8c65845c" title="ca.mcgill.ecse211.lab5.Lab5.searchArea" alt="" coords="272,297,529,323"/>
+<area shape="rect" id="node4" href="$classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html#a41b9929f62455a15364385a339b4b910" title="ca.mcgill.ecse211.sensors.\lSensorData.SensorData" alt="" coords="1217,5,1399,47"/>
+<area shape="rect" id="node6" href="$classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data.html#a8f40f0264c68f0cbed4fff1723ae7863" title="ca.mcgill.ecse211.odometer.\lOdometerData.getXYT" alt="" coords="1213,291,1403,332"/>
+<area shape="rect" id="node7" href="$classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a2b39928c8062fe6863de8e818d009e91" title="ca.mcgill.ecse211.lab5.Navigation.turnTo" alt="" coords="900,357,1163,383"/>
+<area shape="rect" id="node8" href="$classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data.html#a419b8f07c2c5374411c8e62298e9a402" title="ca.mcgill.ecse211.odometer.\lOdometerData.setTheta" alt="" coords="937,525,1126,567"/>
+<area shape="rect" id="node9" href="$classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html#a4e0eabd547726c90bd0b7252557d7ad7" title="ca.mcgill.ecse211.sensors.\lSensorData.getDL" alt="" coords="941,408,1122,449"/>
+<area shape="rect" id="node11" href="$classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data.html#a82986438cd462e66520bc62bb4bd2b75" title="ca.mcgill.ecse211.odometer.\lOdometerData.setY" alt="" coords="937,656,1126,697"/>
+<area shape="rect" id="node12" href="$classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data.html#a2911d7215e47f3064defe016b46bfeef" title="ca.mcgill.ecse211.odometer.\lOdometerData.setX" alt="" coords="937,591,1126,632"/>
+<area shape="rect" id="node13" href="$classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a85122ad723d0988c118866f367073be6" title="ca.mcgill.ecse211.lab5.Navigation.convert\lDistance" alt="" coords="897,291,1165,332"/>
+<area shape="rect" id="node15" href="$classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html#a0abd08431dae67c7ee0e7a18b5305f91" title="ca.mcgill.ecse211.sensors.\lSensorData.getRGB" alt="" coords="941,123,1122,164"/>
+<area shape="rect" id="node17" href="$classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher.html#a88a4c77f3c76d74edc8bfd0229f0902f" title="ca.mcgill.ecse211.lab5.Ring\lSearcher.search" alt="" coords="620,291,807,332"/>
+<area shape="rect" id="node18" href="$classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#afe038af6692e7ad28c3587cd979d7223" title="ca.mcgill.ecse211.lab5.Navigation.stop" alt="" coords="906,189,1157,215"/>
+</map>

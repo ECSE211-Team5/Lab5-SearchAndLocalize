@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespaceca_1_1mcgill_1_1ecse211_1_1odometer" kind="namespace" language="Java">
+    <compoundname>ca::mcgill::ecse211::odometer</compoundname>
+    <innerclass refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer" prot="public">ca::mcgill::ecse211::odometer::Odometer</innerclass>
+    <innerclass refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data" prot="public">ca::mcgill::ecse211::odometer::OdometerData</innerclass>
+    <innerclass refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions" prot="public">ca::mcgill::ecse211::odometer::OdometerExceptions</innerclass>
+    <innerclass refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometry_correction" prot="public">ca::mcgill::ecse211::odometer::OdometryCorrection</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class is meant as a skeleton for the odometer class to be used.</para><para><simplesect kind="author"><para>Rodrigo Silva </para></simplesect>
+<simplesect kind="author"><para>Dirk Dubois </para></simplesect>
+<simplesect kind="author"><para>Derek Yu </para></simplesect>
+<simplesect kind="author"><para>Karim El-Baba </para></simplesect>
+<simplesect kind="author"><para>Michael Smith </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="11" column="1"/>
+  </compounddef>
+</doxygen>

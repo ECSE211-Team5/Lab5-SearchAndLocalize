@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller" kind="class" language="Java" prot="public">
+    <compoundname>ca::mcgill::ecse211::sensors::LightPoller</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Thread</basecompoundref>
+    <derivedcompoundref refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_r_g_b_poller" prot="public" virt="non-virtual">ca.mcgill.ecse211.sensors.RGBPoller</derivedcompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller_1a697ac7826ad649b453cf9cdd1b5f723b" prot="protected" static="no" mutable="no">
+        <type>SampleProvider</type>
+        <definition>SampleProvider ca.mcgill.ecse211.sensors.LightPoller.us</definition>
+        <argsstring></argsstring>
+        <name>us</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" line="12" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller_1a2c208445d4fb1feedd269c0fda447d6f" prot="protected" static="no" mutable="no">
+        <type><ref refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data" kindref="compound">SensorData</ref></type>
+        <definition>SensorData ca.mcgill.ecse211.sensors.LightPoller.cont</definition>
+        <argsstring></argsstring>
+        <name>cont</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" line="13" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller_1af014631d513b89ba9a55f0e7d0e8d754" prot="protected" static="no" mutable="no">
+        <type>float []</type>
+        <definition>float [] ca.mcgill.ecse211.sensors.LightPoller.lgData</definition>
+        <argsstring></argsstring>
+        <name>lgData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" line="14" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller_1aa284d0f6d7e032d3610a7ad428f16132" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ca.mcgill.ecse211.sensors.LightPoller.LightPoller</definition>
+        <argsstring>(SampleProvider us, float[] lgData, SensorData cont)</argsstring>
+        <name>LightPoller</name>
+        <param>
+          <type>SampleProvider</type>
+          <declname>us</declname>
+        </param>
+        <param>
+          <type>float []</type>
+          <declname>lgData</declname>
+        </param>
+        <param>
+          <type><ref refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data" kindref="compound">SensorData</ref></type>
+          <declname>cont</declname>
+        </param>
+        <exceptions> throws <ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions" kindref="compound">OdometerExceptions</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This constructor creates an instance of the <ref refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller" kindref="compound">LightPoller</ref> class to provide distance data from an light sensor to our robot.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>us</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a SampleProvider class instance that helps us to store an array of ultrasonic sensor data. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lgData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an array of distance data to be used by our Wall Follower&apos;s UltrasonicControllers. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cont</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a BangBangController or PController instance that has accumulated distance data stored in usData passed to it. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>OdometerExceptions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" line="28" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" bodystart="28" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller_1a31751b40132d9402de493aa9ec11d9d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ca.mcgill.ecse211.sensors.LightPoller.run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is called by a <ref refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller" kindref="compound">UltrasonicPoller</ref> (Thread) instance when it is asked to start executing</para><para>Sensors now return floats using a uniform protocol. Need to convert US result to an integer [0,255] (non-Javadoc)</para><para><simplesect kind="see"><para>java.lang.Thread::run() </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" line="43" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" bodystart="43" bodyend="51"/>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1aeafd49ce71819e8e1a5d5ff6287e7819" compoundref="_sensor_data_8java" startline="167" endline="178">ca.mcgill.ecse211.sensors.SensorData.setL</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller_1af7c5e71f9ef2c6bebd4a67ba6b533f28" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ca.mcgill.ecse211.sensors.LightPoller.processData</definition>
+        <argsstring>()</argsstring>
+        <name>processData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" line="53" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" bodystart="53" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class implements the Light Sensor Poller for our robot</para><para><simplesect kind="author"><para>Caspar Cedro &amp; Patrick Erath </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="13">
+        <label>ca.mcgill.ecse211.sensors.LightPoller</label>
+        <link refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>Thread</label>
+      </node>
+      <node id="15">
+        <label>ca.mcgill.ecse211.sensors.RGBPoller</label>
+        <link refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_r_g_b_poller"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="19">
+        <label>ca.mcgill.ecse211.sensors.SensorData</label>
+        <link refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data"/>
+      </node>
+      <node id="16">
+        <label>ca.mcgill.ecse211.sensors.LightPoller</label>
+        <link refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>us</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>cont</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>SampleProvider</label>
+      </node>
+      <node id="17">
+        <label>Thread</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" line="11" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" bodystart="11" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller_1a2c208445d4fb1feedd269c0fda447d6f" prot="protected" virt="non-virtual"><scope>ca::mcgill::ecse211::sensors::LightPoller</scope><name>cont</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller_1af014631d513b89ba9a55f0e7d0e8d754" prot="protected" virt="non-virtual"><scope>ca::mcgill::ecse211::sensors::LightPoller</scope><name>lgData</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller_1aa284d0f6d7e032d3610a7ad428f16132" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::sensors::LightPoller</scope><name>LightPoller</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller_1af7c5e71f9ef2c6bebd4a67ba6b533f28" prot="protected" virt="non-virtual"><scope>ca::mcgill::ecse211::sensors::LightPoller</scope><name>processData</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller_1a31751b40132d9402de493aa9ec11d9d5" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::sensors::LightPoller</scope><name>run</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller_1a697ac7826ad649b453cf9cdd1b5f723b" prot="protected" virt="non-virtual"><scope>ca::mcgill::ecse211::sensors::LightPoller</scope><name>us</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

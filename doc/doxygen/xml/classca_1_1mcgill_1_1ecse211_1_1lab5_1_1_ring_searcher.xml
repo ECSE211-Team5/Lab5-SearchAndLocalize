@@ -1,0 +1,253 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher" kind="class" language="Java" prot="public">
+    <compoundname>ca::mcgill::ecse211::lab5::RingSearcher</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1a28b799f18420f0e031f72b1fd17fc203" prot="private" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int ca.mcgill.ecse211.lab5.RingSearcher.FORWARD_SPEED</definition>
+        <argsstring></argsstring>
+        <name>FORWARD_SPEED</name>
+        <initializer>= 100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/RingSearcher.java" line="10" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/RingSearcher.java" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1a574fa45096175b587717e8a3c80ee0d1" prot="private" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int ca.mcgill.ecse211.lab5.RingSearcher.ROTATE_SPEED</definition>
+        <argsstring></argsstring>
+        <name>ROTATE_SPEED</name>
+        <initializer>= 50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/RingSearcher.java" line="11" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/RingSearcher.java" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1a02862007d23c6404af101246b136e3dd" prot="private" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int ca.mcgill.ecse211.lab5.RingSearcher.RING_DISTANCE</definition>
+        <argsstring></argsstring>
+        <name>RING_DISTANCE</name>
+        <initializer>= 30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/RingSearcher.java" line="12" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/RingSearcher.java" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1aa16fb05db54f4531a0b7e3b0987cfcd0" prot="private" static="no" mutable="no">
+        <type>EV3LargeRegulatedMotor</type>
+        <definition>EV3LargeRegulatedMotor ca.mcgill.ecse211.lab5.RingSearcher.leftMotor</definition>
+        <argsstring></argsstring>
+        <name>leftMotor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/RingSearcher.java" line="13" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/RingSearcher.java" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1aa9659bf6252eadff7d08f828c2c03112" prot="private" static="no" mutable="no">
+        <type>EV3LargeRegulatedMotor</type>
+        <definition>EV3LargeRegulatedMotor ca.mcgill.ecse211.lab5.RingSearcher.rightMotor</definition>
+        <argsstring></argsstring>
+        <name>rightMotor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/RingSearcher.java" line="14" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/RingSearcher.java" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1aa49d7a2bf4f92661c2210c035d58c211" prot="private" static="no" mutable="no">
+        <type><ref refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation" kindref="compound">Navigation</ref></type>
+        <definition>Navigation ca.mcgill.ecse211.lab5.RingSearcher.navigation</definition>
+        <argsstring></argsstring>
+        <name>navigation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/RingSearcher.java" line="15" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/RingSearcher.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1af7af4b9d7e21a6d05030349b9f6b94a0" prot="private" static="no" mutable="no">
+        <type><ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer" kindref="compound">Odometer</ref></type>
+        <definition>Odometer ca.mcgill.ecse211.lab5.RingSearcher.odometer</definition>
+        <argsstring></argsstring>
+        <name>odometer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/RingSearcher.java" line="16" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/RingSearcher.java" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1a719360b1408e96a658a2c6ad1afbe21f" prot="private" static="no" mutable="no">
+        <type><ref refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data" kindref="compound">SensorData</ref></type>
+        <definition>SensorData ca.mcgill.ecse211.lab5.RingSearcher.data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/RingSearcher.java" line="17" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/RingSearcher.java" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1aa3f2d76984b3b80f32b6ddd6770e24b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ca.mcgill.ecse211.lab5.RingSearcher.RingSearcher</definition>
+        <argsstring>(Navigation nav, EV3LargeRegulatedMotor leftMotor, EV3LargeRegulatedMotor rightMotor)</argsstring>
+        <name>RingSearcher</name>
+        <param>
+          <type><ref refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation" kindref="compound">Navigation</ref></type>
+          <declname>nav</declname>
+        </param>
+        <param>
+          <type>EV3LargeRegulatedMotor</type>
+          <declname>leftMotor</declname>
+        </param>
+        <param>
+          <type>EV3LargeRegulatedMotor</type>
+          <declname>rightMotor</declname>
+        </param>
+        <exceptions> throws <ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions" kindref="compound">OdometerExceptions</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This class provides method to check if there is a ring and if the ring is the color we want <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nav</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>leftMotor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rightMotor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>OdometerExceptions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/RingSearcher.java" line="27" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/RingSearcher.java" bodystart="27" bodyend="38"/>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a99171f11e34dea918fa9dd069d721439" compoundref="_odometer_8java" startline="74" endline="83">ca.mcgill.ecse211.odometer.Odometer.getOdometer</references>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1ab8aef4bdb5d9f3dad399656e00af2539" compoundref="_sensor_data_8java" startline="62" endline="74">ca.mcgill.ecse211.sensors.SensorData.getSensorData</references>
+      </memberdef>
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1a88a4c77f3c76d74edc8bfd0229f0902f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean ca.mcgill.ecse211.lab5.RingSearcher.search</definition>
+        <argsstring>(int angle, ColorCalibrator.Color target)</argsstring>
+        <name>search</name>
+        <param>
+          <type>int</type>
+          <declname>angle</declname>
+        </param>
+        <param>
+          <type>ColorCalibrator.Color</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method turn the robot for certain angle and see if there is a right if there is, it will go to that ring to check its color <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>angle to turn in order to check the ring </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>target color </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>: true if it found a ring and the ring has the right color </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/RingSearcher.java" line="47" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/RingSearcher.java" bodystart="47" bodyend="76"/>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a8f40f0264c68f0cbed4fff1723ae7863" compoundref="_odometer_data_8java" startline="84" endline="106">ca.mcgill.ecse211.odometer.OdometerData.getXYT</references>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a2b39928c8062fe6863de8e818d009e91" compoundref="_navigation_8java" startline="115" endline="134">ca.mcgill.ecse211.lab5.Navigation.turnTo</references>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1a4e0eabd547726c90bd0b7252557d7ad7" compoundref="_sensor_data_8java" startline="82" endline="102">ca.mcgill.ecse211.sensors.SensorData.getDL</references>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1afe038af6692e7ad28c3587cd979d7223" compoundref="_navigation_8java" startline="148" endline="151">ca.mcgill.ecse211.lab5.Navigation.stop</references>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a0e80ac0068ef1ab41cfb571b8c65845c" compoundref="_lab5_8java" startline="192" endline="219">ca.mcgill.ecse211.lab5.Lab5.searchArea</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1a4e2df6a04f9660c027f25d9ed99c106f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ColorCalibrator.Color</type>
+        <definition>ColorCalibrator.Color ca.mcgill.ecse211.lab5.RingSearcher.goForRingColor</definition>
+        <argsstring>()</argsstring>
+        <name>goForRingColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method moves the car to the ring and check its color <simplesect kind="return"><para>the color of the ring </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/RingSearcher.java" line="82" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/RingSearcher.java" bodystart="82" bodyend="93"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/RingSearcher.java" line="9" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/RingSearcher.java" bodystart="9" bodyend="94"/>
+    <listofallmembers>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1a719360b1408e96a658a2c6ad1afbe21f" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::RingSearcher</scope><name>data</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1a28b799f18420f0e031f72b1fd17fc203" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::RingSearcher</scope><name>FORWARD_SPEED</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1a4e2df6a04f9660c027f25d9ed99c106f" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::RingSearcher</scope><name>goForRingColor</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1aa16fb05db54f4531a0b7e3b0987cfcd0" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::RingSearcher</scope><name>leftMotor</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1aa49d7a2bf4f92661c2210c035d58c211" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::RingSearcher</scope><name>navigation</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1af7af4b9d7e21a6d05030349b9f6b94a0" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::RingSearcher</scope><name>odometer</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1aa9659bf6252eadff7d08f828c2c03112" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::RingSearcher</scope><name>rightMotor</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1a02862007d23c6404af101246b136e3dd" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::RingSearcher</scope><name>RING_DISTANCE</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1aa3f2d76984b3b80f32b6ddd6770e24b0" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::RingSearcher</scope><name>RingSearcher</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1a574fa45096175b587717e8a3c80ee0d1" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::RingSearcher</scope><name>ROTATE_SPEED</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1a88a4c77f3c76d74edc8bfd0229f0902f" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::RingSearcher</scope><name>search</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

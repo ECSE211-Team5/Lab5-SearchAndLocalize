@@ -1,0 +1,126 @@
+.TH "ca.mcgill.ecse211.lab5.Navigation" 3 "Mon Oct 22 2018" "Version 1.0" "ECSE211 - Fall 2018 - Lab 5 - Search and Localize" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ca.mcgill.ecse211.lab5.Navigation
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBNavigation\fP (EV3LargeRegulatedMotor leftMotor, EV3LargeRegulatedMotor rightMotor)  throws OdometerExceptions "
+.br
+.ti -1c
+.RI "void \fBtravelTo\fP (double x, double y, boolean canGiveup)"
+.br
+.ti -1c
+.RI "void \fBtravelBackTo\fP (double x, double y)"
+.br
+.ti -1c
+.RI "void \fBturnTo\fP (double angle, boolean async)"
+.br
+.ti -1c
+.RI "void \fBrotate\fP (int angle)"
+.br
+.ti -1c
+.RI "void \fBstop\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static int \fBconvertDistance\fP (double radius, double distance)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+The Navigator class extends the functionality of the \fBNavigation\fP class\&. It offers an alternative \fBtravelTo()\fP method which uses a state machine to implement obstacle avoidance\&.
+.PP
+The Navigator class does not override any of the methods in \fBNavigation\fP\&. All methods with the same name are overloaded i\&.e\&. the Navigator version takes different parameters than the \fBNavigation\fP version\&.
+.PP
+This is useful if, for instance, you want to force travel without obstacle detection over small distances\&. One place where you might want to do this is in the ObstacleAvoidance class\&. Another place is methods that implement specific features for future milestones such as retrieving an object\&. 
+.PP
+Definition at line 23 of file Navigation\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ca\&.mcgill\&.ecse211\&.lab5\&.Navigation\&.Navigation (EV3LargeRegulatedMotor leftMotor, EV3LargeRegulatedMotor rightMotor) throws \fBOdometerExceptions\fP"
+This navigation class constructor sets up our robot to begin navigating a particular map
+.PP
+\fBParameters:\fP
+.RS 4
+\fIleftMotor\fP The EV3LargeRegulatedMotor instance for our left motor 
+.br
+\fIrightMotor\fP The EV3LargeRegulatedMotor instance for our right motor 
+.RE
+.PP
+
+.PP
+Definition at line 37 of file Navigation\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "static int ca\&.mcgill\&.ecse211\&.lab5\&.Navigation\&.convertDistance (double radius, double distance)\fC [static]\fP"
+This method allows the conversion of a distance to the total rotation of each wheel need to cover that distance\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIradius\fP The radius of our wheels 
+.br
+\fIdistance\fP The distance travelled 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A converted distance 
+.RE
+.PP
+
+.PP
+Definition at line 161 of file Navigation\&.java\&.
+.SS "void ca\&.mcgill\&.ecse211\&.lab5\&.Navigation\&.rotate (int angle)"
+Rotate the robot by certain angle 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIangle\fP 
+.RE
+.PP
+
+.PP
+Definition at line 140 of file Navigation\&.java\&.
+.SS "void ca\&.mcgill\&.ecse211\&.lab5\&.Navigation\&.stop ()"
+Stop the motor 
+.PP
+Definition at line 148 of file Navigation\&.java\&.
+.SS "void ca\&.mcgill\&.ecse211\&.lab5\&.Navigation\&.travelTo (double x, double y, boolean canGiveup)"
+TravelTo function which takes as arguments the x and y position in cm Will travel to designated position, while constantly updating it's heading
+.PP
+When avoid=true, the nav thread will handle traveling\&. If you want to travel without avoidance, this is also possible\&. In this case, the method in the \fBNavigation\fP class is used\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIx\fP The x coordinate to travel to (in cm) 
+.br
+\fIy\fP The y coordinate to travel to (in cm) 
+.RE
+.PP
+
+.PP
+Definition at line 59 of file Navigation\&.java\&.
+.SS "void ca\&.mcgill\&.ecse211\&.lab5\&.Navigation\&.turnTo (double angle, boolean async)"
+This method is where the logic for the odometer will run\&. Use the methods provided from the OdometerData class to implement the odometer\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIangle\fP The angle we want our robot to turn to (in degrees) 
+.RE
+.PP
+
+.PP
+Definition at line 115 of file Navigation\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ECSE211 - Fall 2018 - Lab 5 - Search and Localize from the source code\&.

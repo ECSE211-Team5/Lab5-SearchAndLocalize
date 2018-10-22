@@ -1,0 +1,67 @@
+.TH "ca.mcgill.ecse211.lab5.UltrasonicLocalizer" 3 "Mon Oct 22 2018" "Version 1.0" "ECSE211 - Fall 2018 - Lab 5 - Search and Localize" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ca.mcgill.ecse211.lab5.UltrasonicLocalizer
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBUltrasonicLocalizer\fP (\fBNavigation\fP nav, EV3LargeRegulatedMotor leftMotor, EV3LargeRegulatedMotor rightMotor)  throws OdometerExceptions "
+.br
+.ti -1c
+.RI "void \fBlocalize\fP (int buttonChoice)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This class helps our robot to localize itself using the ultrasonic sensor
+.PP
+\fBAuthor:\fP
+.RS 4
+Caspar Cedro & Patrick Erath 
+.RE
+.PP
+
+.PP
+Definition at line 15 of file UltrasonicLocalizer\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ca\&.mcgill\&.ecse211\&.lab5\&.UltrasonicLocalizer\&.UltrasonicLocalizer (\fBNavigation\fP nav, EV3LargeRegulatedMotor leftMotor, EV3LargeRegulatedMotor rightMotor) throws \fBOdometerExceptions\fP"
+This is the class constructor
+.PP
+\fBParameters:\fP
+.RS 4
+\fIleftMotor\fP 
+.br
+\fIrightMotor\fP 
+.RE
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIOdometerExceptions\fP 
+.RE
+.PP
+
+.PP
+Definition at line 35 of file UltrasonicLocalizer\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void ca\&.mcgill\&.ecse211\&.lab5\&.UltrasonicLocalizer\&.localize (int buttonChoice)"
+Wrapper for risingEdge or falling edge methods\&. Left or Right button option\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIbuttonChoice\fP The left or right button on the EV3 brick 
+.RE
+.PP
+
+.PP
+Definition at line 49 of file UltrasonicLocalizer\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ECSE211 - Fall 2018 - Lab 5 - Search and Localize from the source code\&.

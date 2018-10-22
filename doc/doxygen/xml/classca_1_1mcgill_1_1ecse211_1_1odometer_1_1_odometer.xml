@@ -1,0 +1,359 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer" kind="class" language="Java" prot="public">
+    <compoundname>ca::mcgill::ecse211::odometer::Odometer</compoundname>
+    <basecompoundref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data" prot="public" virt="non-virtual">ca.mcgill.ecse211.odometer.OdometerData</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">Runnable</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a1620a2577db52d78890e5f723ccf6f58" prot="private" static="no" mutable="no">
+        <type><ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data" kindref="compound">OdometerData</ref></type>
+        <definition>OdometerData ca.mcgill.ecse211.odometer.Odometer.odoData</definition>
+        <argsstring></argsstring>
+        <name>odoData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="23" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a0006f533b077d53157e58721ef8f94fb" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ca.mcgill.ecse211.odometer.Odometer.leftMotorTachoCount</definition>
+        <argsstring></argsstring>
+        <name>leftMotorTachoCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="27" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a787e7280c6c6edcefbdfb05262d864ce" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ca.mcgill.ecse211.odometer.Odometer.rightMotorTachoCount</definition>
+        <argsstring></argsstring>
+        <name>rightMotorTachoCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="28" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a932c1fb932f786de031438cd74237e9b" prot="private" static="no" mutable="no">
+        <type>EV3LargeRegulatedMotor</type>
+        <definition>EV3LargeRegulatedMotor ca.mcgill.ecse211.odometer.Odometer.leftMotor</definition>
+        <argsstring></argsstring>
+        <name>leftMotor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="29" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a42f35a412340515993b37b7efe036abd" prot="private" static="no" mutable="no">
+        <type>EV3LargeRegulatedMotor</type>
+        <definition>EV3LargeRegulatedMotor ca.mcgill.ecse211.odometer.Odometer.rightMotor</definition>
+        <argsstring></argsstring>
+        <name>rightMotor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="30" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a99ef86de4be24ae080fb89f527919679" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ca.mcgill.ecse211.odometer.Odometer.TRACK</definition>
+        <argsstring></argsstring>
+        <name>TRACK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="32" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a3d3c39d7d2af951aebbe1fd89c5c06fd" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ca.mcgill.ecse211.odometer.Odometer.WHEEL_RAD</definition>
+        <argsstring></argsstring>
+        <name>WHEEL_RAD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="33" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a95ba1a076a2da4f81c763acb9fa8d78e" prot="private" static="no" mutable="no">
+        <type>double []</type>
+        <definition>double [] ca.mcgill.ecse211.odometer.Odometer.position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="35" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1ae750cbcf6da2eda26aa2504717e75edf" prot="private" static="yes" mutable="no">
+        <type><ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer" kindref="compound">Odometer</ref></type>
+        <definition>Odometer ca.mcgill.ecse211.odometer.Odometer.odometer</definition>
+        <argsstring></argsstring>
+        <name>odometer</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="24" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a8f9cda8aa5c624593fed505bbcf1da76" prot="private" static="yes" mutable="no">
+        <type>final long</type>
+        <definition>final long ca.mcgill.ecse211.odometer.Odometer.ODOMETER_PERIOD</definition>
+        <argsstring></argsstring>
+        <name>ODOMETER_PERIOD</name>
+        <initializer>= 25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="38" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1aea1ccf304eb40ea60b75079901ca31e6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ca.mcgill.ecse211.odometer.Odometer.Odometer</definition>
+        <argsstring>(EV3LargeRegulatedMotor leftMotor, EV3LargeRegulatedMotor rightMotor, final double TRACK, final double WHEEL_RAD)</argsstring>
+        <name>Odometer</name>
+        <param>
+          <type>EV3LargeRegulatedMotor</type>
+          <declname>leftMotor</declname>
+        </param>
+        <param>
+          <type>EV3LargeRegulatedMotor</type>
+          <declname>rightMotor</declname>
+        </param>
+        <param>
+          <type>final double</type>
+          <declname>TRACK</declname>
+        </param>
+        <param>
+          <type>final double</type>
+          <declname>WHEEL_RAD</declname>
+        </param>
+        <exceptions> throws <ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions" kindref="compound">OdometerExceptions</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the default constructor of this class. It initiates all motors and variables once.It cannot be accessed externally.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>leftMotor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The EV3LargeRegulatedMotor instance for our left motor </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rightMotor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The EV3LargeRegulatedMotor instance for our right motor </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions" kindref="compound">OdometerExceptions</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="48" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="48" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a99171f11e34dea918fa9dd069d721439" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>synchronized <ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer" kindref="compound">Odometer</ref></type>
+        <definition>static synchronized Odometer ca.mcgill.ecse211.odometer.Odometer.getOdometer</definition>
+        <argsstring>(EV3LargeRegulatedMotor leftMotor, EV3LargeRegulatedMotor rightMotor, final double TRACK, final double WHEEL_RAD)</argsstring>
+        <name>getOdometer</name>
+        <param>
+          <type>EV3LargeRegulatedMotor</type>
+          <declname>leftMotor</declname>
+        </param>
+        <param>
+          <type>EV3LargeRegulatedMotor</type>
+          <declname>rightMotor</declname>
+        </param>
+        <param>
+          <type>final double</type>
+          <declname>TRACK</declname>
+        </param>
+        <param>
+          <type>final double</type>
+          <declname>WHEEL_RAD</declname>
+        </param>
+        <exceptions> throws <ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions" kindref="compound">OdometerExceptions</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is meant to ensure only one instance of the odometer is used throughout the code.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>leftMotor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The EV3LargeRegulatedMotor instance for our left motor </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rightMotor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The EV3LargeRegulatedMotor instance for our right motor </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>new or existing <ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer" kindref="compound">Odometer</ref> Object </para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions" kindref="compound">OdometerExceptions</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="74" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="74" bodyend="83"/>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_1aeb15906f02c60c1ca449d4c37922739b" compoundref="_display_8java" startline="29" endline="33">ca.mcgill.ecse211.lab5.Display.Display</referencedby>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a82cca51f550ed0eb016bb2082d3fe755" compoundref="_lab5_8java" startline="88" endline="182">ca.mcgill.ecse211.lab5.Lab5.main</referencedby>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a83dbb9eaea19092e27f6f9acdd35d37a" compoundref="_light_localizer_8java" startline="32" endline="39">ca.mcgill.ecse211.lab5.LightLocalizer.LightLocalizer</referencedby>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a93b746f61226c3b14532c43d0c2f61dd" compoundref="_navigation_8java" startline="37" endline="46">ca.mcgill.ecse211.lab5.Navigation.Navigation</referencedby>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1aa3f2d76984b3b80f32b6ddd6770e24b0" compoundref="_ring_searcher_8java" startline="27" endline="38">ca.mcgill.ecse211.lab5.RingSearcher.RingSearcher</referencedby>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1a47c08f2d2ec2ba664867231ca62020da" compoundref="_ultrasonic_localizer_8java" startline="35" endline="42">ca.mcgill.ecse211.lab5.UltrasonicLocalizer.UltrasonicLocalizer</referencedby>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometry_correction_1ad80b45e0bc4bf935494e075edcec739c" compoundref="_odometry_correction_8java" startline="29" endline="33">ca.mcgill.ecse211.odometer.OdometryCorrection.OdometryCorrection</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a4e069b5a96cd43b29af0785244a99b51" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>synchronized <ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer" kindref="compound">Odometer</ref></type>
+        <definition>static synchronized Odometer ca.mcgill.ecse211.odometer.Odometer.getOdometer</definition>
+        <argsstring>()</argsstring>
+        <name>getOdometer</name>
+        <exceptions> throws <ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions" kindref="compound">OdometerExceptions</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This class is meant to return the existing <ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer" kindref="compound">Odometer</ref> Object. It is meant to be used only if an odometer object has been created</para><para><simplesect kind="return"><para>error if no previous odometer exists </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="91" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="91" bodyend="98"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1af0ff4c5121973a8310cf986e25fa0d87" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ca.mcgill.ecse211.odometer.Odometer.run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is called when our <ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer" kindref="compound">Odometer</ref> object is started as a thread and begins to keep track of motor rotations </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="104" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="104" bodyend="145"/>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a8f40f0264c68f0cbed4fff1723ae7863" compoundref="_odometer_data_8java" startline="84" endline="106">ca.mcgill.ecse211.odometer.OdometerData.getXYT</references>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1aaa06f190d634299fcb1b97a1891dad85" compoundref="_odometer_data_8java" startline="116" endline="132">ca.mcgill.ecse211.odometer.OdometerData.update</references>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a099ba21be1cd8d54a57c40cd0d35701d" compoundref="_lab5_8java" startline="43">ca.mcgill.ecse211.lab5.Lab5.TILE</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class implements odometry on our robot.</para><para><simplesect kind="author"><para>Caspar Cedro &amp; Patrick Erath </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="22">
+        <label>ca.mcgill.ecse211.odometer.Odometer</label>
+        <link refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>ca.mcgill.ecse211.odometer.OdometerData</label>
+        <link refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data"/>
+      </node>
+      <node id="24">
+        <label>Runnable</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="25">
+        <label>ca.mcgill.ecse211.odometer.Odometer</label>
+        <link refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer"/>
+        <childnode refid="26" relation="public-inheritance">
+        </childnode>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>ca.mcgill.ecse211.odometer.OdometerData</label>
+        <link refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data"/>
+      </node>
+      <node id="27">
+        <label>Runnable</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="21" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="21" bodyend="146"/>
+    <listofallmembers>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a99171f11e34dea918fa9dd069d721439" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::Odometer</scope><name>getOdometer</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a4e069b5a96cd43b29af0785244a99b51" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::Odometer</scope><name>getOdometer</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1afff2d760dd1f861b580f3eacef37f1cc" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::Odometer</scope><name>getOdometerData</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a8f40f0264c68f0cbed4fff1723ae7863" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::Odometer</scope><name>getXYT</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a932c1fb932f786de031438cd74237e9b" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::Odometer</scope><name>leftMotor</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a0006f533b077d53157e58721ef8f94fb" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::Odometer</scope><name>leftMotorTachoCount</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a1620a2577db52d78890e5f723ccf6f58" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::Odometer</scope><name>odoData</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1ae750cbcf6da2eda26aa2504717e75edf" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::Odometer</scope><name>odometer</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1aea1ccf304eb40ea60b75079901ca31e6" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::Odometer</scope><name>Odometer</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a8f9cda8aa5c624593fed505bbcf1da76" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::Odometer</scope><name>ODOMETER_PERIOD</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a91412854b75c41bf3af7c8892ec0fe87" prot="protected" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::Odometer</scope><name>OdometerData</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a95ba1a076a2da4f81c763acb9fa8d78e" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::Odometer</scope><name>position</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a42f35a412340515993b37b7efe036abd" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::Odometer</scope><name>rightMotor</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a787e7280c6c6edcefbdfb05262d864ce" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::Odometer</scope><name>rightMotorTachoCount</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1af0ff4c5121973a8310cf986e25fa0d87" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::Odometer</scope><name>run</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a419b8f07c2c5374411c8e62298e9a402" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::Odometer</scope><name>setTheta</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a2911d7215e47f3064defe016b46bfeef" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::Odometer</scope><name>setX</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a2ebc18a13aea6276122d9ef4ee100bb9" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::Odometer</scope><name>setXYT</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a82986438cd462e66520bc62bb4bd2b75" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::Odometer</scope><name>setY</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a99ef86de4be24ae080fb89f527919679" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::Odometer</scope><name>TRACK</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1aaa06f190d634299fcb1b97a1891dad85" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::Odometer</scope><name>update</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a3d3c39d7d2af951aebbe1fd89c5c06fd" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::Odometer</scope><name>WHEEL_RAD</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
