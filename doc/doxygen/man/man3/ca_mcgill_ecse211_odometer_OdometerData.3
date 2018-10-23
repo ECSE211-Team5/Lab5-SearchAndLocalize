@@ -1,0 +1,175 @@
+.TH "ca.mcgill.ecse211.odometer.OdometerData" 3 "Mon Oct 22 2018" "Version 1.0" "ECSE211 - Fall 2018 - Lab 5 - Search and Localize" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ca.mcgill.ecse211.odometer.OdometerData
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBca\&.mcgill\&.ecse211\&.odometer\&.Odometer\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "double [] \fBgetXYT\fP ()"
+.br
+.ti -1c
+.RI "void \fBupdate\fP (double dx, double dy, double dtheta)"
+.br
+.ti -1c
+.RI "void \fBsetXYT\fP (double x, double y, double theta)"
+.br
+.ti -1c
+.RI "void \fBsetX\fP (double x)"
+.br
+.ti -1c
+.RI "void \fBsetY\fP (double y)"
+.br
+.ti -1c
+.RI "void \fBsetTheta\fP (double theta)"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static synchronized \fBOdometerData\fP \fBgetOdometerData\fP ()  throws OdometerExceptions "
+.br
+.in -1c
+.SS "Protected Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBOdometerData\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This class stores and provides thread safe access to the odometer data\&.
+.PP
+\fBAuthor:\fP
+.RS 4
+Rodrigo Silva 
+.PP
+Dirk Dubois 
+.PP
+Derek Yu 
+.PP
+Karim El-Baba 
+.PP
+Michael Smith 
+.RE
+.PP
+
+.PP
+Definition at line 16 of file OdometerData\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ca\&.mcgill\&.ecse211\&.odometer\&.OdometerData\&.OdometerData ()\fC [protected]\fP"
+Default constructor\&. The constructor is private\&. A factory is used instead such that only one instance of this class is ever created\&. 
+.PP
+Definition at line 47 of file OdometerData\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "static synchronized \fBOdometerData\fP ca\&.mcgill\&.ecse211\&.odometer\&.OdometerData\&.getOdometerData () throws \fBOdometerExceptions\fP\fC [static]\fP"
+\fBOdometerData\fP factory\&. Returns an \fBOdometerData\fP instance and makes sure that only one instance is ever created\&. If the user tries to instantiate multiple objects, the method throws a MultipleOdometerDataException\&.
+.PP
+\fBReturns:\fP
+.RS 4
+An \fBOdometerData\fP object 
+.RE
+.PP
+\fBExceptions:\fP
+.RS 4
+\fI\fBOdometerExceptions\fP\fP 
+.RE
+.PP
+
+.PP
+Definition at line 61 of file OdometerData\&.java\&.
+.SS "double [] ca\&.mcgill\&.ecse211\&.odometer\&.OdometerData\&.getXYT ()"
+Return the Odomometer data\&. 
+.PP
+Writes the current position and orientation of the robot onto the odoData array\&. odoData[0] = x, odoData[1] = y; odoData[2] = theta;
+.PP
+\fBParameters:\fP
+.RS 4
+\fIposition\fP the array to store the odometer data 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+the odometer data\&. 
+.RE
+.PP
+
+.PP
+Definition at line 84 of file OdometerData\&.java\&.
+.SS "void ca\&.mcgill\&.ecse211\&.odometer\&.OdometerData\&.setTheta (double theta)"
+Overrides theta\&. Use for odometry correction\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fItheta\fP the value of theta 
+.RE
+.PP
+
+.PP
+Definition at line 197 of file OdometerData\&.java\&.
+.SS "void ca\&.mcgill\&.ecse211\&.odometer\&.OdometerData\&.setX (double x)"
+Overrides x\&. Use for odometry correction\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIx\fP the value of x 
+.RE
+.PP
+
+.PP
+Definition at line 161 of file OdometerData\&.java\&.
+.SS "void ca\&.mcgill\&.ecse211\&.odometer\&.OdometerData\&.setXYT (double x, double y, double theta)"
+Overrides the values of x, y and theta\&. Use for odometry correction\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIx\fP the value of x 
+.br
+\fIy\fP the value of y 
+.br
+\fItheta\fP the value of theta 
+.RE
+.PP
+
+.PP
+Definition at line 141 of file OdometerData\&.java\&.
+.SS "void ca\&.mcgill\&.ecse211\&.odometer\&.OdometerData\&.setY (double y)"
+Overrides y\&. Use for odometry correction\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIy\fP the value of y 
+.RE
+.PP
+
+.PP
+Definition at line 179 of file OdometerData\&.java\&.
+.SS "void ca\&.mcgill\&.ecse211\&.odometer\&.OdometerData\&.update (double dx, double dy, double dtheta)"
+Adds dx, dy and dtheta to the current values of x, y and theta, respectively\&. Useful for odometry\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIdx\fP 
+.br
+\fIdy\fP 
+.br
+\fIdtheta\fP 
+.RE
+.PP
+
+.PP
+Definition at line 116 of file OdometerData\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ECSE211 - Fall 2018 - Lab 5 - Search and Localize from the source code\&.

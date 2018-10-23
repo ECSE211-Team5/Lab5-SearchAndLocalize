@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_558c94cca1eb0abc4916791299d28e3e" kind="dir">
+    <compoundname>/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer</compoundname>
+    <innerfile refid="_odometer_8java">Odometer.java</innerfile>
+    <innerfile refid="_odometer_data_8java">OdometerData.java</innerfile>
+    <innerfile refid="_odometer_exceptions_8java">OdometerExceptions.java</innerfile>
+    <innerfile refid="_odometry_correction_8java">OdometryCorrection.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/"/>
+  </compounddef>
+</doxygen>

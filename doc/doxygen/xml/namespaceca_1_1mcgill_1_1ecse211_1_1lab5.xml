@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespaceca_1_1mcgill_1_1ecse211_1_1lab5" kind="namespace" language="Java">
+    <compoundname>ca::mcgill::ecse211::lab5</compoundname>
+    <innerclass refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator" prot="public">ca::mcgill::ecse211::lab5::ColorCalibrator</innerclass>
+    <innerclass refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display" prot="public">ca::mcgill::ecse211::lab5::Display</innerclass>
+    <innerclass refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5" prot="public">ca::mcgill::ecse211::lab5::Lab5</innerclass>
+    <innerclass refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer" prot="public">ca::mcgill::ecse211::lab5::LightLocalizer</innerclass>
+    <innerclass refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation" prot="public">ca::mcgill::ecse211::lab5::Navigation</innerclass>
+    <innerclass refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher" prot="public">ca::mcgill::ecse211::lab5::RingSearcher</innerclass>
+    <innerclass refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer" prot="public">ca::mcgill::ecse211::lab5::UltrasonicLocalizer</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions" kind="class" language="Java" prot="public">
+    <compoundname>ca::mcgill::ecse211::odometer::OdometerExceptions</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Exception</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions_1a25aa31baebe4906716a920929f0284d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ca.mcgill.ecse211.odometer.OdometerExceptions.OdometerExceptions</definition>
+        <argsstring>(String Error)</argsstring>
+        <name>OdometerExceptions</name>
+        <param>
+          <type>String</type>
+          <declname>Error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is an <ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions" kindref="compound">OdometerExceptions</ref> class constructor that accepts a descriptive error message.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a String that contains an error message </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerExceptions.java" line="16" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerExceptions.java" bodystart="16" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class is used to handle errors regarding the singleton pattern used for the odometer and odometerData</para><para><simplesect kind="author"><para>Caspar Cedro &amp; Patrick Erath </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="32">
+        <label>Exception</label>
+      </node>
+      <node id="31">
+        <label>ca.mcgill.ecse211.odometer.OdometerExceptions</label>
+        <link refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="34">
+        <label>Exception</label>
+      </node>
+      <node id="33">
+        <label>ca.mcgill.ecse211.odometer.OdometerExceptions</label>
+        <link refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions"/>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerExceptions.java" line="10" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerExceptions.java" bodystart="10" bodyend="19"/>
+    <listofallmembers>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions_1a25aa31baebe4906716a920929f0284d2" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::OdometerExceptions</scope><name>OdometerExceptions</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

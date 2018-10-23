@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_24e0133fafbf6480a78080d5fb6b48c3" kind="dir">
+    <compoundname>/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5</compoundname>
+    <innerfile refid="_color_calibrator_8java">ColorCalibrator.java</innerfile>
+    <innerfile refid="_display_8java">Display.java</innerfile>
+    <innerfile refid="_lab5_8java">Lab5.java</innerfile>
+    <innerfile refid="_light_localizer_8java">LightLocalizer.java</innerfile>
+    <innerfile refid="_navigation_8java">Navigation.java</innerfile>
+    <innerfile refid="_ring_searcher_8java">RingSearcher.java</innerfile>
+    <innerfile refid="_ultrasonic_localizer_8java">UltrasonicLocalizer.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,248 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display" kind="class" language="Java" prot="public">
+    <compoundname>ca::mcgill::ecse211::lab5::Display</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Runnable</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_1acf98e2c0d7447fd63f69cdb07ed1c526" prot="private" static="no" mutable="no">
+        <type><ref refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data" kindref="compound">SensorData</ref></type>
+        <definition>SensorData ca.mcgill.ecse211.lab5.Display.sensdata</definition>
+        <argsstring></argsstring>
+        <name>sensdata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Display.java" line="13" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Display.java" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_1a9d8e5f5426df90dbfd80155d28d75340" prot="private" static="no" mutable="no">
+        <type><ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer" kindref="compound">Odometer</ref></type>
+        <definition>Odometer ca.mcgill.ecse211.lab5.Display.odo</definition>
+        <argsstring></argsstring>
+        <name>odo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Display.java" line="14" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Display.java" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_1a4d49725b9773e5dc57f25a53086eb536" prot="private" static="no" mutable="no">
+        <type>TextLCD</type>
+        <definition>TextLCD ca.mcgill.ecse211.lab5.Display.lcd</definition>
+        <argsstring></argsstring>
+        <name>lcd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Display.java" line="15" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Display.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_1ae8f3253e6734df4cd8d3404f8d722bf0" prot="private" static="no" mutable="no">
+        <type>double []</type>
+        <definition>double [] ca.mcgill.ecse211.lab5.Display.position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Display.java" line="16" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Display.java" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_1a14a32cc5d04717bf3f51ffafce7ea150" prot="private" static="no" mutable="no">
+        <type>double []</type>
+        <definition>double [] ca.mcgill.ecse211.lab5.Display.data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Display.java" line="17" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Display.java" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_1a91d4c6b03b80f2654ad6c1b0d34de36f" prot="private" static="no" mutable="no">
+        <type>int []</type>
+        <definition>int [] ca.mcgill.ecse211.lab5.Display.rgb</definition>
+        <argsstring></argsstring>
+        <name>rgb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Display.java" line="18" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Display.java" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_1a3f6778335f9da6ae6fc915d9310d0110" prot="private" static="no" mutable="no">
+        <type>final long</type>
+        <definition>final long ca.mcgill.ecse211.lab5.Display.DISPLAY_PERIOD</definition>
+        <argsstring></argsstring>
+        <name>DISPLAY_PERIOD</name>
+        <initializer>= 25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Display.java" line="19" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Display.java" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_1a65630e990fcc16115a785eb37b8a3f76" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long ca.mcgill.ecse211.lab5.Display.timeout</definition>
+        <argsstring></argsstring>
+        <name>timeout</name>
+        <initializer>= Long.MAX_VALUE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Display.java" line="20" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Display.java" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_1aeb15906f02c60c1ca449d4c37922739b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ca.mcgill.ecse211.lab5.Display.Display</definition>
+        <argsstring>(TextLCD lcd)</argsstring>
+        <name>Display</name>
+        <param>
+          <type>TextLCD</type>
+          <declname>lcd</declname>
+        </param>
+        <exceptions> throws <ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions" kindref="compound">OdometerExceptions</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the class constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>odoData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>OdometerExceptions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Display.java" line="29" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Display.java" bodystart="29" bodyend="33"/>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a99171f11e34dea918fa9dd069d721439" compoundref="_odometer_8java" startline="74" endline="83">ca.mcgill.ecse211.odometer.Odometer.getOdometer</references>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1ab8aef4bdb5d9f3dad399656e00af2539" compoundref="_sensor_data_8java" startline="62" endline="74">ca.mcgill.ecse211.sensors.SensorData.getSensorData</references>
+      </memberdef>
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_1abb1c01962b84cfad6ff897ce490b365a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ca.mcgill.ecse211.lab5.Display.Display</definition>
+        <argsstring>(TextLCD lcd, long timeout)</argsstring>
+        <name>Display</name>
+        <param>
+          <type>TextLCD</type>
+          <declname>lcd</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>timeout</declname>
+        </param>
+        <exceptions> throws <ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions" kindref="compound">OdometerExceptions</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the overloaded class constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>odoData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>OdometerExceptions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Display.java" line="41" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Display.java" bodystart="41" bodyend="45"/>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a99171f11e34dea918fa9dd069d721439" compoundref="_odometer_8java" startline="74" endline="83">ca.mcgill.ecse211.odometer.Odometer.getOdometer</references>
+      </memberdef>
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_1a047e885f7170ba80f60fd3b4b2bc79a9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ca.mcgill.ecse211.lab5.Display.run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is called when the <ref refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display" kindref="compound">Display</ref> thread is started. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Display.java" line="50" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Display.java" bodystart="50" bodyend="94"/>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a8f40f0264c68f0cbed4fff1723ae7863" compoundref="_odometer_data_8java" startline="84" endline="106">ca.mcgill.ecse211.odometer.OdometerData.getXYT</references>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1a4e0eabd547726c90bd0b7252557d7ad7" compoundref="_sensor_data_8java" startline="82" endline="102">ca.mcgill.ecse211.sensors.SensorData.getDL</references>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1a0abd08431dae67c7ee0e7a18b5305f91" compoundref="_sensor_data_8java" startline="108" endline="120">ca.mcgill.ecse211.sensors.SensorData.getRGB</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class is used to display the content of the odometer variables (x, y, Theta) </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>ca.mcgill.ecse211.lab5.Display</label>
+        <link refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Runnable</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>ca.mcgill.ecse211.lab5.Display</label>
+        <link refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Runnable</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Display.java" line="12" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Display.java" bodystart="12" bodyend="95"/>
+    <listofallmembers>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_1a14a32cc5d04717bf3f51ffafce7ea150" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::Display</scope><name>data</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_1aeb15906f02c60c1ca449d4c37922739b" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::Display</scope><name>Display</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_1abb1c01962b84cfad6ff897ce490b365a" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::Display</scope><name>Display</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_1a3f6778335f9da6ae6fc915d9310d0110" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::Display</scope><name>DISPLAY_PERIOD</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_1a4d49725b9773e5dc57f25a53086eb536" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::Display</scope><name>lcd</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_1a9d8e5f5426df90dbfd80155d28d75340" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::Display</scope><name>odo</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_1ae8f3253e6734df4cd8d3404f8d722bf0" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::Display</scope><name>position</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_1a91d4c6b03b80f2654ad6c1b0d34de36f" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::Display</scope><name>rgb</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_1a047e885f7170ba80f60fd3b4b2bc79a9" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::Display</scope><name>run</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_1acf98e2c0d7447fd63f69cdb07ed1c526" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::Display</scope><name>sensdata</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_1a65630e990fcc16115a785eb37b8a3f76" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::Display</scope><name>timeout</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,100 @@
+\hypertarget{classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller}{}\section{ca.\+mcgill.\+ecse211.\+sensors.\+Ultrasonic\+Poller Class Reference}
+\label{classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller}\index{ca.\+mcgill.\+ecse211.\+sensors.\+Ultrasonic\+Poller@{ca.\+mcgill.\+ecse211.\+sensors.\+Ultrasonic\+Poller}}
+
+
+Inheritance diagram for ca.\+mcgill.\+ecse211.\+sensors.\+Ultrasonic\+Poller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for ca.\+mcgill.\+ecse211.\+sensors.\+Ultrasonic\+Poller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller_a3007841893144cccb37d023f34fb3cfc}{Ultrasonic\+Poller} (Sample\+Provider us, float\mbox{[}$\,$\mbox{]} us\+Data, \hyperlink{classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data}{Sensor\+Data} cont)
+\item 
+void \hyperlink{classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller_acc71fac612a72c197244c71d6cf7b6e1}{run} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class implements the Ultrasonic Sensor Poller for our Wall Follower.
+
+Control of the wall follower is applied periodically by the \hyperlink{classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller}{Ultrasonic\+Poller} thread. The while loop at the bottom executes in a loop. Assuming that the us.\+fetch\+Sample, and cont.\+process\+U\+S\+Data methods operate in about 20mS, and that the thread sleeps for 50 mS at the end of each loop, then one cycle through the loop is approximately 70 mS. This corresponds to a sampling rate of 1/70mS or about 14 Hz.
+
+\begin{DoxyAuthor}{Author}
+Caspar Cedro \& Patrick Erath 
+\end{DoxyAuthor}
+
+
+Definition at line 18 of file Ultrasonic\+Poller.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller_a3007841893144cccb37d023f34fb3cfc}\label{classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller_a3007841893144cccb37d023f34fb3cfc}} 
+\index{ca\+::mcgill\+::ecse211\+::sensors\+::\+Ultrasonic\+Poller@{ca\+::mcgill\+::ecse211\+::sensors\+::\+Ultrasonic\+Poller}!Ultrasonic\+Poller@{Ultrasonic\+Poller}}
+\index{Ultrasonic\+Poller@{Ultrasonic\+Poller}!ca\+::mcgill\+::ecse211\+::sensors\+::\+Ultrasonic\+Poller@{ca\+::mcgill\+::ecse211\+::sensors\+::\+Ultrasonic\+Poller}}
+\subsubsection{\texorpdfstring{Ultrasonic\+Poller()}{UltrasonicPoller()}}
+{\footnotesize\ttfamily ca.\+mcgill.\+ecse211.\+sensors.\+Ultrasonic\+Poller.\+Ultrasonic\+Poller (\begin{DoxyParamCaption}\item[{Sample\+Provider}]{us,  }\item[{float \mbox{[}$\,$\mbox{]}}]{us\+Data,  }\item[{\hyperlink{classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data}{Sensor\+Data}}]{cont }\end{DoxyParamCaption})}
+
+This constructor creates an instance of the \hyperlink{classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller}{Ultrasonic\+Poller} class to provide distance data from an ultrasonic sensor to our Wall Follower.
+
+
+\begin{DoxyParams}{Parameters}
+{\em us} & a Sample\+Provider class instance that helps us to store an array of ultrasonic sensor data. \\
+\hline
+{\em us\+Data} & an array of distance data to be used by our Wall Follower\textquotesingle{}s Ultrasonic\+Controllers. \\
+\hline
+{\em cont} & a Bang\+Bang\+Controller or P\+Controller instance that has accumulated distance data stored in us\+Data passed to it. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 34 of file Ultrasonic\+Poller.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller_acc71fac612a72c197244c71d6cf7b6e1}\label{classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller_acc71fac612a72c197244c71d6cf7b6e1}} 
+\index{ca\+::mcgill\+::ecse211\+::sensors\+::\+Ultrasonic\+Poller@{ca\+::mcgill\+::ecse211\+::sensors\+::\+Ultrasonic\+Poller}!run@{run}}
+\index{run@{run}!ca\+::mcgill\+::ecse211\+::sensors\+::\+Ultrasonic\+Poller@{ca\+::mcgill\+::ecse211\+::sensors\+::\+Ultrasonic\+Poller}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void ca.\+mcgill.\+ecse211.\+sensors.\+Ultrasonic\+Poller.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This method is called by a \hyperlink{classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller}{Ultrasonic\+Poller} (Thread) instance when it is asked to start executing
+
+Sensors now return floats using a uniform protocol. Need to convert US result to an integer \mbox{[}0,255\mbox{]} (non-\/\+Javadoc)
+
+\begin{DoxySeeAlso}{See also}
+java.\+lang.\+Thread\+::run() 
+\end{DoxySeeAlso}
+
+
+Definition at line 49 of file Ultrasonic\+Poller.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller_acc71fac612a72c197244c71d6cf7b6e1_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/ccc/\+Eclipse-\/\+Workspace-\/\+Oxygen/\+Lab5-\/\+Search\+And\+Localize/src/ca/mcgill/ecse211/sensors/Ultrasonic\+Poller.\+java\end{DoxyCompactItemize}

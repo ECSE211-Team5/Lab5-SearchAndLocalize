@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_r_g_b_poller" kind="class" language="Java" prot="public">
+    <compoundname>ca::mcgill::ecse211::sensors::RGBPoller</compoundname>
+    <basecompoundref refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller" prot="public" virt="non-virtual">ca.mcgill.ecse211.sensors.LightPoller</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_r_g_b_poller_1aeed84849b3e4725a16c2b446ec7265ea" prot="private" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int ca.mcgill.ecse211.sensors.RGBPoller.numPoller</definition>
+        <argsstring></argsstring>
+        <name>numPoller</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/RGBPoller.java" line="7" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/RGBPoller.java" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_r_g_b_poller_1a897f2c1078795f9eae4dabd2b1f41383" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ca.mcgill.ecse211.sensors.RGBPoller.index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/RGBPoller.java" line="8" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/RGBPoller.java" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_r_g_b_poller_1aa0e804f9185cb172aa1f63c62d13d168" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ca.mcgill.ecse211.sensors.RGBPoller.RGBPoller</definition>
+        <argsstring>(SampleProvider us, float[] usData, SensorData cont)</argsstring>
+        <name>RGBPoller</name>
+        <param>
+          <type>SampleProvider</type>
+          <declname>us</declname>
+        </param>
+        <param>
+          <type>float []</type>
+          <declname>usData</declname>
+        </param>
+        <param>
+          <type><ref refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data" kindref="compound">SensorData</ref></type>
+          <declname>cont</declname>
+        </param>
+        <exceptions> throws <ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions" kindref="compound">OdometerExceptions</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/RGBPoller.java" line="10" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/RGBPoller.java" bodystart="10" bodyend="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_r_g_b_poller_1aa24f4b9ce7425a82fbee017619a49234" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ca.mcgill.ecse211.sensors.RGBPoller.processData</definition>
+        <argsstring>()</argsstring>
+        <name>processData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/RGBPoller.java" line="16" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/RGBPoller.java" bodystart="16" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="40">
+        <label>ca.mcgill.ecse211.sensors.LightPoller</label>
+        <link refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller"/>
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>Thread</label>
+      </node>
+      <node id="39">
+        <label>ca.mcgill.ecse211.sensors.RGBPoller</label>
+        <link refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_r_g_b_poller"/>
+        <childnode refid="40" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="46">
+        <label>ca.mcgill.ecse211.sensors.SensorData</label>
+        <link refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data"/>
+      </node>
+      <node id="43">
+        <label>ca.mcgill.ecse211.sensors.LightPoller</label>
+        <link refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller"/>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+        <childnode refid="45" relation="usage">
+          <edgelabel>us</edgelabel>
+        </childnode>
+        <childnode refid="46" relation="usage">
+          <edgelabel>cont</edgelabel>
+        </childnode>
+      </node>
+      <node id="45">
+        <label>SampleProvider</label>
+      </node>
+      <node id="44">
+        <label>Thread</label>
+      </node>
+      <node id="42">
+        <label>ca.mcgill.ecse211.sensors.RGBPoller</label>
+        <link refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_r_g_b_poller"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/RGBPoller.java" line="6" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/RGBPoller.java" bodystart="6" bodyend="23"/>
+    <listofallmembers>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller_1a2c208445d4fb1feedd269c0fda447d6f" prot="protected" virt="non-virtual"><scope>ca::mcgill::ecse211::sensors::RGBPoller</scope><name>cont</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_r_g_b_poller_1a897f2c1078795f9eae4dabd2b1f41383" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::sensors::RGBPoller</scope><name>index</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller_1af014631d513b89ba9a55f0e7d0e8d754" prot="protected" virt="non-virtual"><scope>ca::mcgill::ecse211::sensors::RGBPoller</scope><name>lgData</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller_1aa284d0f6d7e032d3610a7ad428f16132" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::sensors::RGBPoller</scope><name>LightPoller</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_r_g_b_poller_1aeed84849b3e4725a16c2b446ec7265ea" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::sensors::RGBPoller</scope><name>numPoller</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_r_g_b_poller_1aa24f4b9ce7425a82fbee017619a49234" prot="protected" virt="non-virtual"><scope>ca::mcgill::ecse211::sensors::RGBPoller</scope><name>processData</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_r_g_b_poller_1aa0e804f9185cb172aa1f63c62d13d168" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::sensors::RGBPoller</scope><name>RGBPoller</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller_1a31751b40132d9402de493aa9ec11d9d5" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::sensors::RGBPoller</scope><name>run</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller_1a697ac7826ad649b453cf9cdd1b5f723b" prot="protected" virt="non-virtual"><scope>ca::mcgill::ecse211::sensors::RGBPoller</scope><name>us</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

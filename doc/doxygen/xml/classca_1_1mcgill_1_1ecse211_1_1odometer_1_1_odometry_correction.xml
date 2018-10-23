@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometry_correction" kind="class" language="Java" prot="public">
+    <compoundname>ca::mcgill::ecse211::odometer::OdometryCorrection</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Runnable</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometry_correction_1a93af515465a6fe959c4fa06e649533b2" prot="private" static="yes" mutable="no">
+        <type>final long</type>
+        <definition>final long ca.mcgill.ecse211.odometer.OdometryCorrection.CORRECTION_PERIOD</definition>
+        <argsstring></argsstring>
+        <name>CORRECTION_PERIOD</name>
+        <initializer>= 10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometryCorrection.java" line="17" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometryCorrection.java" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometry_correction_1a772b665357b7c07c133ae385d512bb31" prot="private" static="yes" mutable="no">
+        <type>final SensorModes</type>
+        <definition>final SensorModes ca.mcgill.ecse211.odometer.OdometryCorrection.myColor</definition>
+        <argsstring></argsstring>
+        <name>myColor</name>
+        <initializer>= new EV3ColorSensor(LocalEV3.get().getPort(&quot;S2&quot;))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometryCorrection.java" line="19" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometryCorrection.java" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometry_correction_1a96a8da570111cf8da08f421d2a34b7bc" prot="private" static="yes" mutable="no">
+        <type>SampleProvider</type>
+        <definition>SampleProvider ca.mcgill.ecse211.odometer.OdometryCorrection.myColorSample</definition>
+        <argsstring></argsstring>
+        <name>myColorSample</name>
+        <initializer>= myColor.getMode(&quot;Red&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometryCorrection.java" line="20" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometryCorrection.java" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometry_correction_1a8cb0ad451c9bf9a732ceaffe4c850678" prot="private" static="yes" mutable="no">
+        <type>float []</type>
+        <definition>float [] ca.mcgill.ecse211.odometer.OdometryCorrection.sampleColor</definition>
+        <argsstring></argsstring>
+        <name>sampleColor</name>
+        <initializer>= new float[myColor.sampleSize()]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometryCorrection.java" line="21" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometryCorrection.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometry_correction_1af2f5f52a0d4f9d413dfc63a531feaedb" prot="private" static="no" mutable="no">
+        <type><ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer" kindref="compound">Odometer</ref></type>
+        <definition>Odometer ca.mcgill.ecse211.odometer.OdometryCorrection.odometer</definition>
+        <argsstring></argsstring>
+        <name>odometer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometryCorrection.java" line="18" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometryCorrection.java" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometry_correction_1ad80b45e0bc4bf935494e075edcec739c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ca.mcgill.ecse211.odometer.OdometryCorrection.OdometryCorrection</definition>
+        <argsstring>()</argsstring>
+        <name>OdometryCorrection</name>
+        <exceptions> throws <ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions" kindref="compound">OdometerExceptions</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the default class constructor. An existing instance of the odometer is used. This is to ensure thread safety.</para><para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions" kindref="compound">OdometerExceptions</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometryCorrection.java" line="29" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometryCorrection.java" bodystart="29" bodyend="33"/>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a99171f11e34dea918fa9dd069d721439" compoundref="_odometer_8java" startline="74" endline="83">ca.mcgill.ecse211.odometer.Odometer.getOdometer</references>
+      </memberdef>
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometry_correction_1aad66a7030ac00f3a9cbe7bc33c25acbf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ca.mcgill.ecse211.odometer.OdometryCorrection.run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Here is where the odometer correction code should be run.</para><para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions" kindref="compound">OdometerExceptions</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometryCorrection.java" line="40" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometryCorrection.java" bodystart="40" bodyend="82"/>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a8f40f0264c68f0cbed4fff1723ae7863" compoundref="_odometer_data_8java" startline="84" endline="106">ca.mcgill.ecse211.odometer.OdometerData.getXYT</references>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a2911d7215e47f3064defe016b46bfeef" compoundref="_odometer_data_8java" startline="161" endline="172">ca.mcgill.ecse211.odometer.OdometerData.setX</references>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a82986438cd462e66520bc62bb4bd2b75" compoundref="_odometer_data_8java" startline="179" endline="190">ca.mcgill.ecse211.odometer.OdometerData.setY</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class implements correction for the odometry on our robot using a light sensor.</para><para><simplesect kind="author"><para>Caspar Cedro &amp; Patrick Erath </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="35">
+        <label>ca.mcgill.ecse211.odometer.OdometryCorrection</label>
+        <link refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometry_correction"/>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>Runnable</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="37">
+        <label>ca.mcgill.ecse211.odometer.OdometryCorrection</label>
+        <link refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometry_correction"/>
+        <childnode refid="38" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>Runnable</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometryCorrection.java" line="16" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometryCorrection.java" bodystart="16" bodyend="83"/>
+    <listofallmembers>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometry_correction_1a93af515465a6fe959c4fa06e649533b2" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::OdometryCorrection</scope><name>CORRECTION_PERIOD</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometry_correction_1a772b665357b7c07c133ae385d512bb31" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::OdometryCorrection</scope><name>myColor</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometry_correction_1a96a8da570111cf8da08f421d2a34b7bc" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::OdometryCorrection</scope><name>myColorSample</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometry_correction_1af2f5f52a0d4f9d413dfc63a531feaedb" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::OdometryCorrection</scope><name>odometer</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometry_correction_1ad80b45e0bc4bf935494e075edcec739c" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::OdometryCorrection</scope><name>OdometryCorrection</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometry_correction_1aad66a7030ac00f3a9cbe7bc33c25acbf" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::OdometryCorrection</scope><name>run</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometry_correction_1a8cb0ad451c9bf9a732ceaffe4c850678" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::OdometryCorrection</scope><name>sampleColor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

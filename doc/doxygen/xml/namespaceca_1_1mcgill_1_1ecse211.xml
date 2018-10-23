@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespaceca_1_1mcgill_1_1ecse211" kind="namespace" language="Java">
+    <compoundname>ca::mcgill::ecse211</compoundname>
+    <innernamespace refid="namespaceca_1_1mcgill_1_1ecse211_1_1lab5">ca::mcgill::ecse211::lab5</innernamespace>
+    <innernamespace refid="namespaceca_1_1mcgill_1_1ecse211_1_1odometer">ca::mcgill::ecse211::odometer</innernamespace>
+    <innernamespace refid="namespaceca_1_1mcgill_1_1ecse211_1_1sensors">ca::mcgill::ecse211::sensors</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="[generated]" line="1" column="1"/>
+  </compounddef>
+</doxygen>

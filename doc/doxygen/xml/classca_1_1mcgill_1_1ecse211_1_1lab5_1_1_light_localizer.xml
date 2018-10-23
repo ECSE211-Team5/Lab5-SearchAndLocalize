@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer" kind="class" language="Java" prot="public">
+    <compoundname>ca::mcgill::ecse211::lab5::LightLocalizer</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1ac63d36b43a618b2d43424567c9914002" prot="private" static="no" mutable="no">
+        <type>EV3LargeRegulatedMotor</type>
+        <definition>EV3LargeRegulatedMotor ca.mcgill.ecse211.lab5.LightLocalizer.leftMotor</definition>
+        <argsstring></argsstring>
+        <name>leftMotor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="15" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a32bcc392509dfd249a5e32498d726ac3" prot="private" static="no" mutable="no">
+        <type>EV3LargeRegulatedMotor</type>
+        <definition>EV3LargeRegulatedMotor ca.mcgill.ecse211.lab5.LightLocalizer.rightMotor</definition>
+        <argsstring></argsstring>
+        <name>rightMotor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="16" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a19c143fed412784a55b804abfe16fd26" prot="private" static="no" mutable="no">
+        <type><ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer" kindref="compound">Odometer</ref></type>
+        <definition>Odometer ca.mcgill.ecse211.lab5.LightLocalizer.odometer</definition>
+        <argsstring></argsstring>
+        <name>odometer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="18" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1ae28eb3871b20141c511589656fb90f48" prot="private" static="no" mutable="no">
+        <type><ref refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data" kindref="compound">SensorData</ref></type>
+        <definition>SensorData ca.mcgill.ecse211.lab5.LightLocalizer.data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="19" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a1c69a2c2d0af2ea90de2dd429a7f4596" prot="private" static="no" mutable="no">
+        <type><ref refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation" kindref="compound">Navigation</ref></type>
+        <definition>Navigation ca.mcgill.ecse211.lab5.LightLocalizer.navigation</definition>
+        <argsstring></argsstring>
+        <name>navigation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="20" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1ac743926537d3ada7af095f1165690616" prot="private" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int ca.mcgill.ecse211.lab5.LightLocalizer.FORWARD_SPEED</definition>
+        <argsstring></argsstring>
+        <name>FORWARD_SPEED</name>
+        <initializer>= 200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="21" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a80ce180591ec488e199b898b44324aa0" prot="private" static="yes" mutable="no">
+        <type>final double</type>
+        <definition>final double ca.mcgill.ecse211.lab5.LightLocalizer.SENSOR_DIS</definition>
+        <argsstring></argsstring>
+        <name>SENSOR_DIS</name>
+        <initializer>= 16.3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="22" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a5ea141865d0d5bee7f7ccb6805daccbf" prot="private" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int ca.mcgill.ecse211.lab5.LightLocalizer.blackLineColor</definition>
+        <argsstring></argsstring>
+        <name>blackLineColor</name>
+        <initializer>= 25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="23" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a83dbb9eaea19092e27f6f9acdd35d37a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ca.mcgill.ecse211.lab5.LightLocalizer.LightLocalizer</definition>
+        <argsstring>(Navigation nav, EV3LargeRegulatedMotor leftMotor, EV3LargeRegulatedMotor rightMotor)</argsstring>
+        <name>LightLocalizer</name>
+        <param>
+          <type><ref refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation" kindref="compound">Navigation</ref></type>
+          <declname>nav</declname>
+        </param>
+        <param>
+          <type>EV3LargeRegulatedMotor</type>
+          <declname>leftMotor</declname>
+        </param>
+        <param>
+          <type>EV3LargeRegulatedMotor</type>
+          <declname>rightMotor</declname>
+        </param>
+        <exceptions> throws <ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions" kindref="compound">OdometerExceptions</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the class constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>leftMotor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rightMotor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>OdometerExceptions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="32" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="32" bodyend="39"/>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a99171f11e34dea918fa9dd069d721439" compoundref="_odometer_8java" startline="74" endline="83">ca.mcgill.ecse211.odometer.Odometer.getOdometer</references>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1ab8aef4bdb5d9f3dad399656e00af2539" compoundref="_sensor_data_8java" startline="62" endline="74">ca.mcgill.ecse211.sensors.SensorData.getSensorData</references>
+      </memberdef>
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a441f56a899fae5bc9c1d6a6d25fbe0bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ca.mcgill.ecse211.lab5.LightLocalizer.localize</definition>
+        <argsstring>(int[] sC)</argsstring>
+        <name>localize</name>
+        <param>
+          <type>int []</type>
+          <declname>sC</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Once the robot know what angle it is facing, this method looks for the x,y axis origins knowing it is in the first tile facing north. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="45" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="45" bodyend="82"/>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1a4e0eabd547726c90bd0b7252557d7ad7" compoundref="_sensor_data_8java" startline="82" endline="102">ca.mcgill.ecse211.sensors.SensorData.getDL</references>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a82986438cd462e66520bc62bb4bd2b75" compoundref="_odometer_data_8java" startline="179" endline="190">ca.mcgill.ecse211.odometer.OdometerData.setY</references>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a2b39928c8062fe6863de8e818d009e91" compoundref="_navigation_8java" startline="115" endline="134">ca.mcgill.ecse211.lab5.Navigation.turnTo</references>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a2911d7215e47f3064defe016b46bfeef" compoundref="_odometer_data_8java" startline="161" endline="172">ca.mcgill.ecse211.odometer.OdometerData.setX</references>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a85122ad723d0988c118866f367073be6" compoundref="_navigation_8java" startline="161" endline="163">ca.mcgill.ecse211.lab5.Navigation.convertDistance</references>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1ab9b6fc96d3fb1ac6c7d69d1727b3bbdd" compoundref="_lab5_8java" startline="48">ca.mcgill.ecse211.lab5.Lab5.WHEEL_RAD</references>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a419b8f07c2c5374411c8e62298e9a402" compoundref="_odometer_data_8java" startline="197" endline="208">ca.mcgill.ecse211.odometer.OdometerData.setTheta</references>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a82cca51f550ed0eb016bb2082d3fe755" compoundref="_lab5_8java" startline="88" endline="182">ca.mcgill.ecse211.lab5.Lab5.main</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a9eebe889aa2d4d2e881f413cc727cd9c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int ca.mcgill.ecse211.lab5.LightLocalizer.convertDistance</definition>
+        <argsstring>(double radius, double distance)</argsstring>
+        <name>convertDistance</name>
+        <param>
+          <type>double</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>distance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method allows the conversion of a distance to the total rotation of each wheel need to cover that distance.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The radius of our wheels </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>distance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The distance travelled </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A converted distance </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="92" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="92" bodyend="94"/>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1ab9d7289c4badf692fd5c83635305f2c5" compoundref="_light_localizer_8java" startline="104" endline="106">ca.mcgill.ecse211.lab5.LightLocalizer.convertAngle</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1ab9d7289c4badf692fd5c83635305f2c5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int ca.mcgill.ecse211.lab5.LightLocalizer.convertAngle</definition>
+        <argsstring>(double radius, double width, double angle)</argsstring>
+        <name>convertAngle</name>
+        <param>
+          <type>double</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method allows the conversion of an angle value</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The radius of our wheels </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>distance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The distance travelled </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The angle to convert </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A converted angle </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="104" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="104" bodyend="106"/>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a9eebe889aa2d4d2e881f413cc727cd9c" compoundref="_light_localizer_8java" startline="92" endline="94">ca.mcgill.ecse211.lab5.LightLocalizer.convertDistance</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class helps our robot to localize itself using the light sensor</para><para><simplesect kind="author"><para>Caspar Cedro &amp; Patrick Erath </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="14" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="14" bodyend="107"/>
+    <listofallmembers>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a5ea141865d0d5bee7f7ccb6805daccbf" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::LightLocalizer</scope><name>blackLineColor</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1ab9d7289c4badf692fd5c83635305f2c5" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::LightLocalizer</scope><name>convertAngle</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a9eebe889aa2d4d2e881f413cc727cd9c" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::LightLocalizer</scope><name>convertDistance</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1ae28eb3871b20141c511589656fb90f48" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::LightLocalizer</scope><name>data</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1ac743926537d3ada7af095f1165690616" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::LightLocalizer</scope><name>FORWARD_SPEED</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1ac63d36b43a618b2d43424567c9914002" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::LightLocalizer</scope><name>leftMotor</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a83dbb9eaea19092e27f6f9acdd35d37a" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::LightLocalizer</scope><name>LightLocalizer</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a441f56a899fae5bc9c1d6a6d25fbe0bb" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::LightLocalizer</scope><name>localize</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a1c69a2c2d0af2ea90de2dd429a7f4596" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::LightLocalizer</scope><name>navigation</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a19c143fed412784a55b804abfe16fd26" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::LightLocalizer</scope><name>odometer</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a32bcc392509dfd249a5e32498d726ac3" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::LightLocalizer</scope><name>rightMotor</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a80ce180591ec488e199b898b44324aa0" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::LightLocalizer</scope><name>SENSOR_DIS</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

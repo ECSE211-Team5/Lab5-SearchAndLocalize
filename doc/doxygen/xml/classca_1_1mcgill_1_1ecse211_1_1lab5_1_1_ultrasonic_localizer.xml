@@ -1,0 +1,291 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer" kind="class" language="Java" prot="public">
+    <compoundname>ca::mcgill::ecse211::lab5::UltrasonicLocalizer</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1a76ea5fdaec0e96b00836b31600cfb6de" prot="private" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int ca.mcgill.ecse211.lab5.UltrasonicLocalizer.ROTATE_SPEED</definition>
+        <argsstring></argsstring>
+        <name>ROTATE_SPEED</name>
+        <initializer>= 80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/UltrasonicLocalizer.java" line="16" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/UltrasonicLocalizer.java" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1a9e7c65e27cf7f6b09f97742baabe924f" prot="private" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int ca.mcgill.ecse211.lab5.UltrasonicLocalizer.READINGS_THRESHOLD</definition>
+        <argsstring></argsstring>
+        <name>READINGS_THRESHOLD</name>
+        <initializer>= 10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/UltrasonicLocalizer.java" line="24" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/UltrasonicLocalizer.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1a70e45dd9b11c849b0ea0e277b2a5059d" prot="private" static="yes" mutable="no">
+        <type>final double</type>
+        <definition>final double ca.mcgill.ecse211.lab5.UltrasonicLocalizer.wallDistance</definition>
+        <argsstring></argsstring>
+        <name>wallDistance</name>
+        <initializer>= 40.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/UltrasonicLocalizer.java" line="25" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/UltrasonicLocalizer.java" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1a9fbefd2333f8a32f4b0f6652fc3f45b1" prot="private" static="yes" mutable="no">
+        <type>final double</type>
+        <definition>final double ca.mcgill.ecse211.lab5.UltrasonicLocalizer.wallDistanceError</definition>
+        <argsstring></argsstring>
+        <name>wallDistanceError</name>
+        <initializer>= 5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/UltrasonicLocalizer.java" line="26" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/UltrasonicLocalizer.java" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1a147ab813662c835d31b888ba16e2689e" prot="private" static="no" mutable="no">
+        <type>EV3LargeRegulatedMotor</type>
+        <definition>EV3LargeRegulatedMotor ca.mcgill.ecse211.lab5.UltrasonicLocalizer.leftMotor</definition>
+        <argsstring></argsstring>
+        <name>leftMotor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/UltrasonicLocalizer.java" line="17" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/UltrasonicLocalizer.java" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1a6e2bdea60bdffa9692e5f745eb88c419" prot="private" static="no" mutable="no">
+        <type>EV3LargeRegulatedMotor</type>
+        <definition>EV3LargeRegulatedMotor ca.mcgill.ecse211.lab5.UltrasonicLocalizer.rightMotor</definition>
+        <argsstring></argsstring>
+        <name>rightMotor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/UltrasonicLocalizer.java" line="18" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/UltrasonicLocalizer.java" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1adb2789367da681872ca8c171ac1f74cb" prot="private" static="no" mutable="no">
+        <type><ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer" kindref="compound">Odometer</ref></type>
+        <definition>Odometer ca.mcgill.ecse211.lab5.UltrasonicLocalizer.odometer</definition>
+        <argsstring></argsstring>
+        <name>odometer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/UltrasonicLocalizer.java" line="20" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/UltrasonicLocalizer.java" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1a029cf02398c2eca3d0c40d19bcf3a64c" prot="private" static="no" mutable="no">
+        <type><ref refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data" kindref="compound">SensorData</ref></type>
+        <definition>SensorData ca.mcgill.ecse211.lab5.UltrasonicLocalizer.data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/UltrasonicLocalizer.java" line="21" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/UltrasonicLocalizer.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1a71b6bfe12a26b4ccd3af63588a654b8e" prot="private" static="no" mutable="no">
+        <type><ref refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation" kindref="compound">Navigation</ref></type>
+        <definition>Navigation ca.mcgill.ecse211.lab5.UltrasonicLocalizer.navigation</definition>
+        <argsstring></argsstring>
+        <name>navigation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/UltrasonicLocalizer.java" line="22" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/UltrasonicLocalizer.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1a47c08f2d2ec2ba664867231ca62020da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ca.mcgill.ecse211.lab5.UltrasonicLocalizer.UltrasonicLocalizer</definition>
+        <argsstring>(Navigation nav, EV3LargeRegulatedMotor leftMotor, EV3LargeRegulatedMotor rightMotor)</argsstring>
+        <name>UltrasonicLocalizer</name>
+        <param>
+          <type><ref refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation" kindref="compound">Navigation</ref></type>
+          <declname>nav</declname>
+        </param>
+        <param>
+          <type>EV3LargeRegulatedMotor</type>
+          <declname>leftMotor</declname>
+        </param>
+        <param>
+          <type>EV3LargeRegulatedMotor</type>
+          <declname>rightMotor</declname>
+        </param>
+        <exceptions> throws <ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions" kindref="compound">OdometerExceptions</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This is the class constructor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>leftMotor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rightMotor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>OdometerExceptions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/UltrasonicLocalizer.java" line="35" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/UltrasonicLocalizer.java" bodystart="35" bodyend="42"/>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a99171f11e34dea918fa9dd069d721439" compoundref="_odometer_8java" startline="74" endline="83">ca.mcgill.ecse211.odometer.Odometer.getOdometer</references>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1ab8aef4bdb5d9f3dad399656e00af2539" compoundref="_sensor_data_8java" startline="62" endline="74">ca.mcgill.ecse211.sensors.SensorData.getSensorData</references>
+      </memberdef>
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1a7fd82ab7240a07ae6947313c0769d4bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ca.mcgill.ecse211.lab5.UltrasonicLocalizer.localize</definition>
+        <argsstring>(int buttonChoice)</argsstring>
+        <name>localize</name>
+        <param>
+          <type>int</type>
+          <declname>buttonChoice</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Wrapper for risingEdge or falling edge methods. Left or Right button option.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>buttonChoice</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The left or right button on the EV3 brick </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/UltrasonicLocalizer.java" line="49" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/UltrasonicLocalizer.java" bodystart="49" bodyend="55"/>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a8f40f0264c68f0cbed4fff1723ae7863" compoundref="_odometer_data_8java" startline="84" endline="106">ca.mcgill.ecse211.odometer.OdometerData.getXYT</references>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a2b39928c8062fe6863de8e818d009e91" compoundref="_navigation_8java" startline="115" endline="134">ca.mcgill.ecse211.lab5.Navigation.turnTo</references>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a419b8f07c2c5374411c8e62298e9a402" compoundref="_odometer_data_8java" startline="197" endline="208">ca.mcgill.ecse211.odometer.OdometerData.setTheta</references>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1a4e0eabd547726c90bd0b7252557d7ad7" compoundref="_sensor_data_8java" startline="82" endline="102">ca.mcgill.ecse211.sensors.SensorData.getDL</references>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a82cca51f550ed0eb016bb2082d3fe755" compoundref="_lab5_8java" startline="88" endline="182">ca.mcgill.ecse211.lab5.Lab5.main</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1aebd3f69a2133912d4a54bc935352e6b8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ca.mcgill.ecse211.lab5.UltrasonicLocalizer.risingEdge</definition>
+        <argsstring>()</argsstring>
+        <name>risingEdge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Make the robot find North by using the rising edge, start facing left of x-axis wall </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/UltrasonicLocalizer.java" line="60" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/UltrasonicLocalizer.java" bodystart="60" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1a0ed9fdfd098935cc10e1bc15095a4eba" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ca.mcgill.ecse211.lab5.UltrasonicLocalizer.fallingEdge</definition>
+        <argsstring>()</argsstring>
+        <name>fallingEdge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Make the robot find North by using the falling edge, start facing top of y-axis wall </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/UltrasonicLocalizer.java" line="96" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/UltrasonicLocalizer.java" bodystart="96" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1a1968d5ccc7613ae03c9e6a72f49a6cba" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ca.mcgill.ecse211.lab5.UltrasonicLocalizer.turnToWall</definition>
+        <argsstring>()</argsstring>
+        <name>turnToWall</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Keep turning until robot is sure to have seen the wall. Takes 10 readings to be sure. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/UltrasonicLocalizer.java" line="133" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/UltrasonicLocalizer.java" bodystart="133" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1a0bb60d9a30cf3aeb3ea7a319c6943259" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ca.mcgill.ecse211.lab5.UltrasonicLocalizer.turnAwayFromWall</definition>
+        <argsstring>()</argsstring>
+        <name>turnAwayFromWall</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Keep turning until robot is sure to have not seen the wall. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/UltrasonicLocalizer.java" line="145" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/UltrasonicLocalizer.java" bodystart="145" bodyend="152"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class helps our robot to localize itself using the ultrasonic sensor</para><para><simplesect kind="author"><para>Caspar Cedro &amp; Patrick Erath </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/UltrasonicLocalizer.java" line="15" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/UltrasonicLocalizer.java" bodystart="15" bodyend="153"/>
+    <listofallmembers>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1a029cf02398c2eca3d0c40d19bcf3a64c" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::UltrasonicLocalizer</scope><name>data</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1a0ed9fdfd098935cc10e1bc15095a4eba" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::UltrasonicLocalizer</scope><name>fallingEdge</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1a147ab813662c835d31b888ba16e2689e" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::UltrasonicLocalizer</scope><name>leftMotor</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1a7fd82ab7240a07ae6947313c0769d4bc" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::UltrasonicLocalizer</scope><name>localize</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1a71b6bfe12a26b4ccd3af63588a654b8e" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::UltrasonicLocalizer</scope><name>navigation</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1adb2789367da681872ca8c171ac1f74cb" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::UltrasonicLocalizer</scope><name>odometer</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1a9e7c65e27cf7f6b09f97742baabe924f" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::UltrasonicLocalizer</scope><name>READINGS_THRESHOLD</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1a6e2bdea60bdffa9692e5f745eb88c419" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::UltrasonicLocalizer</scope><name>rightMotor</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1aebd3f69a2133912d4a54bc935352e6b8" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::UltrasonicLocalizer</scope><name>risingEdge</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1a76ea5fdaec0e96b00836b31600cfb6de" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::UltrasonicLocalizer</scope><name>ROTATE_SPEED</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1a0bb60d9a30cf3aeb3ea7a319c6943259" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::UltrasonicLocalizer</scope><name>turnAwayFromWall</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1a1968d5ccc7613ae03c9e6a72f49a6cba" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::UltrasonicLocalizer</scope><name>turnToWall</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1a47c08f2d2ec2ba664867231ca62020da" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::UltrasonicLocalizer</scope><name>UltrasonicLocalizer</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1a70e45dd9b11c849b0ea0e277b2a5059d" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::UltrasonicLocalizer</scope><name>wallDistance</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1a9fbefd2333f8a32f4b0f6652fc3f45b1" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::UltrasonicLocalizer</scope><name>wallDistanceError</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

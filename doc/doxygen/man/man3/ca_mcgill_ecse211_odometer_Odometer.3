@@ -1,0 +1,84 @@
+.TH "ca.mcgill.ecse211.odometer.Odometer" 3 "Mon Oct 22 2018" "Version 1.0" "ECSE211 - Fall 2018 - Lab 5 - Search and Localize" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ca.mcgill.ecse211.odometer.Odometer
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBca\&.mcgill\&.ecse211\&.odometer\&.OdometerData\fP, and Runnable\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBrun\fP ()"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static synchronized \fBOdometer\fP \fBgetOdometer\fP (EV3LargeRegulatedMotor leftMotor, EV3LargeRegulatedMotor rightMotor, final double TRACK, final double WHEEL_RAD)  throws OdometerExceptions "
+.br
+.ti -1c
+.RI "static synchronized \fBOdometer\fP \fBgetOdometer\fP ()  throws OdometerExceptions "
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+This class implements odometry on our robot\&.
+.PP
+\fBAuthor:\fP
+.RS 4
+Caspar Cedro & Patrick Erath 
+.RE
+.PP
+
+.PP
+Definition at line 21 of file Odometer\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "static synchronized \fBOdometer\fP ca\&.mcgill\&.ecse211\&.odometer\&.Odometer\&.getOdometer (EV3LargeRegulatedMotor leftMotor, EV3LargeRegulatedMotor rightMotor, final double TRACK, final double WHEEL_RAD) throws \fBOdometerExceptions\fP\fC [static]\fP"
+This method is meant to ensure only one instance of the odometer is used throughout the code\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIleftMotor\fP The EV3LargeRegulatedMotor instance for our left motor 
+.br
+\fIrightMotor\fP The EV3LargeRegulatedMotor instance for our right motor 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+new or existing \fBOdometer\fP Object 
+.RE
+.PP
+\fBExceptions:\fP
+.RS 4
+\fI\fBOdometerExceptions\fP\fP 
+.RE
+.PP
+
+.PP
+Definition at line 74 of file Odometer\&.java\&.
+.SS "static synchronized \fBOdometer\fP ca\&.mcgill\&.ecse211\&.odometer\&.Odometer\&.getOdometer () throws \fBOdometerExceptions\fP\fC [static]\fP"
+This class is meant to return the existing \fBOdometer\fP Object\&. It is meant to be used only if an odometer object has been created
+.PP
+\fBReturns:\fP
+.RS 4
+error if no previous odometer exists 
+.RE
+.PP
+
+.PP
+Definition at line 91 of file Odometer\&.java\&.
+.SS "void ca\&.mcgill\&.ecse211\&.odometer\&.Odometer\&.run ()"
+This method is called when our \fBOdometer\fP object is started as a thread and begins to keep track of motor rotations 
+.PP
+Definition at line 104 of file Odometer\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ECSE211 - Fall 2018 - Lab 5 - Search and Localize from the source code\&.

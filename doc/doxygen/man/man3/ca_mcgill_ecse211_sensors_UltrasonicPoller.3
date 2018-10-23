@@ -1,0 +1,70 @@
+.TH "ca.mcgill.ecse211.sensors.UltrasonicPoller" 3 "Mon Oct 22 2018" "Version 1.0" "ECSE211 - Fall 2018 - Lab 5 - Search and Localize" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ca.mcgill.ecse211.sensors.UltrasonicPoller
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits Thread\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBUltrasonicPoller\fP (SampleProvider us, float[] usData, \fBSensorData\fP cont)"
+.br
+.ti -1c
+.RI "void \fBrun\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This class implements the Ultrasonic Sensor Poller for our Wall Follower\&.
+.PP
+Control of the wall follower is applied periodically by the \fBUltrasonicPoller\fP thread\&. The while loop at the bottom executes in a loop\&. Assuming that the us\&.fetchSample, and cont\&.processUSData methods operate in about 20mS, and that the thread sleeps for 50 mS at the end of each loop, then one cycle through the loop is approximately 70 mS\&. This corresponds to a sampling rate of 1/70mS or about 14 Hz\&.
+.PP
+\fBAuthor:\fP
+.RS 4
+Caspar Cedro & Patrick Erath 
+.RE
+.PP
+
+.PP
+Definition at line 18 of file UltrasonicPoller\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ca\&.mcgill\&.ecse211\&.sensors\&.UltrasonicPoller\&.UltrasonicPoller (SampleProvider us, float [] usData, \fBSensorData\fP cont)"
+This constructor creates an instance of the \fBUltrasonicPoller\fP class to provide distance data from an ultrasonic sensor to our Wall Follower\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIus\fP a SampleProvider class instance that helps us to store an array of ultrasonic sensor data\&. 
+.br
+\fIusData\fP an array of distance data to be used by our Wall Follower's UltrasonicControllers\&. 
+.br
+\fIcont\fP a BangBangController or PController instance that has accumulated distance data stored in usData passed to it\&. 
+.RE
+.PP
+
+.PP
+Definition at line 34 of file UltrasonicPoller\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void ca\&.mcgill\&.ecse211\&.sensors\&.UltrasonicPoller\&.run ()"
+This method is called by a \fBUltrasonicPoller\fP (Thread) instance when it is asked to start executing
+.PP
+Sensors now return floats using a uniform protocol\&. Need to convert US result to an integer [0,255] (non-Javadoc)
+.PP
+\fBSee also:\fP
+.RS 4
+java\&.lang\&.Thread::run() 
+.RE
+.PP
+
+.PP
+Definition at line 49 of file UltrasonicPoller\&.java\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ECSE211 - Fall 2018 - Lab 5 - Search and Localize from the source code\&.

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_odometer_exceptions_8java" kind="file" language="Java">
+    <compoundname>OdometerExceptions.java</compoundname>
+    <innerclass refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions" prot="public">ca::mcgill::ecse211::odometer::OdometerExceptions</innerclass>
+    <innernamespace refid="namespaceca_1_1mcgill_1_1ecse211_1_1odometer">ca::mcgill::ecse211::odometer</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">ca.mcgill.ecse211.odometer;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">@SuppressWarnings(</highlight><highlight class="stringliteral">&quot;serial&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="10" refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions" refkind="compound"><highlight class="normal">public<sp/>class<sp/><ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions" kindref="compound">OdometerExceptions</ref><sp/>extends<sp/>Exception<sp/>{</highlight></codeline>
+<codeline lineno="16" refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions_1a25aa31baebe4906716a920929f0284d2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions_1a25aa31baebe4906716a920929f0284d2" kindref="member">OdometerExceptions</ref>(String<sp/>Error)<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>super(Error);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerExceptions.java"/>
+  </compounddef>
+</doxygen>
