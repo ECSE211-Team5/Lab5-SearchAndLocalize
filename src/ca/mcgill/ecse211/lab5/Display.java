@@ -76,7 +76,8 @@ public class Display implements Runnable {
       }
       
       lcd.drawString(String.format("%1$-10s", ColorCalibrator.getColor().toString()), 0, 6);
-      
+      lcd.drawString("A:" + numberFormat.format(sensdata.getA()), 0, 7);
+
 //      lcd.drawString(String.format("(r: %f", rgb[0]), 0, 3);
 //      lcd.drawString(String.format("(g: %f", rgb[1]), 0, 4);
 //      lcd.drawString(String.format("(b: %f", rgb[2]), 0, 5);

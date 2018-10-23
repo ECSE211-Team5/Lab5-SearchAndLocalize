@@ -14,6 +14,7 @@ public class SensorData {
 	// Sensor data parameters
 	private volatile double light; // Head angle
 	private volatile double distance;
+	private volatile double angle;
 	private volatile int rgb[][];
 
 	// Class control variables
@@ -118,6 +119,20 @@ public class SensorData {
 		}
 		return rgb.clone();
 	}
+	
+	public double getA() {
+		lock.lock();
+		try {
+			while (isReseting) {
+				doneReseting.await();
+			}
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}finally {
+			lock.unlock();
+		}
+		return angle;
+	}
 
 	/**
 	 * Overrides distance. Use for ultra sonic sensor.
@@ -129,6 +144,19 @@ public class SensorData {
 		isReseting = true;
 		try {
 			this.distance = d;
+			isReseting = false; // Done reseting
+			doneReseting.signalAll(); // Let the other threads know that you are
+										// done reseting
+		} finally {
+			lock.unlock();
+		}
+	}
+	
+	public void setA(double a) {
+		lock.lock();
+		isReseting = true;
+		try {
+			this.angle = a;
 			isReseting = false; // Done reseting
 			doneReseting.signalAll(); // Let the other threads know that you are
 										// done reseting

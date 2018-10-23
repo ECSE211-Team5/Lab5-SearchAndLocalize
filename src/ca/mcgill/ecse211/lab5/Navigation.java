@@ -4,6 +4,7 @@ import ca.mcgill.ecse211.odometer.Odometer;
 import ca.mcgill.ecse211.odometer.OdometerExceptions;
 import ca.mcgill.ecse211.sensors.SensorData;
 import lejos.hardware.Button;
+import lejos.hardware.Sound;
 import lejos.hardware.motor.EV3LargeRegulatedMotor;
 
 /**
@@ -22,23 +23,28 @@ import lejos.hardware.motor.EV3LargeRegulatedMotor;
  */
 public class Navigation {
 	private static final int FORWARD_SPEED = 250;
-	private static final int ROTATE_SPEED = 50;
+	private static final int ROTATE_SPEED = 80;
+	private static final double SENSOR_DIS = 15.5;
+
 	private EV3LargeRegulatedMotor leftMotor;
 	private EV3LargeRegulatedMotor rightMotor;
 	private Odometer odometer;
-
+	private SensorData data;
+	
 	/**
 	 * This navigation class constructor sets up our robot to begin navigating a
 	 * particular map
 	 * 
-	 * @param leftMotor  The EV3LargeRegulatedMotor instance for our left motor
-	 * @param rightMotor The EV3LargeRegulatedMotor instance for our right motor
+	 * @param leftMotor
+	 *            The EV3LargeRegulatedMotor instance for our left motor
+	 * @param rightMotor
+	 *            The EV3LargeRegulatedMotor instance for our right motor
 	 */
 	public Navigation(EV3LargeRegulatedMotor leftMotor, EV3LargeRegulatedMotor rightMotor) throws OdometerExceptions {
 		this.odometer = Odometer.getOdometer();
 		this.leftMotor = leftMotor;
 		this.rightMotor = rightMotor;
-
+		this.data = SensorData.getSensorData();
 		for (EV3LargeRegulatedMotor motor : new EV3LargeRegulatedMotor[] { this.leftMotor, this.rightMotor }) {
 			motor.stop();
 			motor.setAcceleration(300);
@@ -53,10 +59,12 @@ public class Navigation {
 	 * without avoidance, this is also possible. In this case, the method in the
 	 * Navigation class is used.
 	 * 
-	 * @param x The x coordinate to travel to (in cm)
-	 * @param y The y coordinate to travel to (in cm)
+	 * @param x
+	 *            The x coordinate to travel to (in cm)
+	 * @param y
+	 *            The y coordinate to travel to (in cm)
 	 */
-	public void travelTo(double x, double y, boolean canGiveup) {
+	public void travelTo(double x, double y, boolean doCorrection) {
 		double dX = x - odometer.getXYT()[0];
 		double dY = y - odometer.getXYT()[1];
 		double theta = Math.atan(dX / dY);
@@ -70,22 +78,16 @@ public class Navigation {
 		rightMotor.setSpeed(FORWARD_SPEED);
 
 		leftMotor.rotate(convertDistance(Lab5.WHEEL_RAD, distance * Lab5.TILE), true);
-		rightMotor.rotate(convertDistance(Lab5.WHEEL_RAD, distance * Lab5.TILE), true);
-
-		int[] rgb;
+		rightMotor.rotate(convertDistance(Lab5.WHEEL_RAD, distance * Lab5.TILE), doCorrection);
+		boolean corrected = false;
+		if (!doCorrection)
+			return;
 		while (leftMotor.isMoving() && rightMotor.isMoving()) {
-//			try {
-//				rgb = SensorData.getSensorData().getRGB()[0];
-//				if (ColorCalibrator.getColor(rgb[0], rgb[1], rgb[2]) != ColorCalibrator.Color.Other) {
-//					leftMotor.stop(true);
-//					rightMotor.stop();
-//					Button.waitForAnyPress();
-//				}
-//			} catch (OdometerExceptions e) {
-//				// TODO Auto-generated catch block
-//				e.printStackTrace();
-//			}
-
+				if (data.getDL()[1] < 25 && !corrected) {
+					Sound.beep();
+					doCorrection(data.getA());
+					corrected = true;
+				}
 		}
 	}
 
@@ -110,38 +112,56 @@ public class Navigation {
 	 * This method is where the logic for the odometer will run. Use the methods
 	 * provided from the OdometerData class to implement the odometer.
 	 * 
-	 * @param angle The angle we want our robot to turn to (in degrees)
+	 * @param angle
+	 *            The angle we want our robot to turn to (in degrees)
 	 */
 	public void turnTo(double angle, boolean async) {
-		double dTheta = angle - odometer.getXYT()[2];
-		if (dTheta < 0)
-			dTheta += 360;
+		double dTheta;
+	
+			dTheta = angle - odometer.getXYT()[2];//SensorData.getSensorData().getA();
+			if (dTheta < 0)
+				dTheta += 360;
 
-		// TURN RIGHT
-		if (dTheta > 180) {
-			leftMotor.setSpeed(ROTATE_SPEED);
-			rightMotor.setSpeed(ROTATE_SPEED);
-			leftMotor.rotate(-convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, 360 - dTheta), true);
-			rightMotor.rotate(convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, 360 - dTheta), async);
-		}
-		// TURN LEFT
-		else {
-			leftMotor.setSpeed(ROTATE_SPEED);
-			rightMotor.setSpeed(ROTATE_SPEED);
-			leftMotor.rotate(convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, dTheta), true);
-			rightMotor.rotate(-convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, dTheta), async);
-		}
+			// TURN RIGHT
+			if (dTheta > 180) {
+				leftMotor.setSpeed(ROTATE_SPEED);
+				rightMotor.setSpeed(ROTATE_SPEED);
+				leftMotor.rotate(-convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, 360 - dTheta), true);
+				rightMotor.rotate(convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, 360 - dTheta), async);
+			}
+			// TURN LEFT
+			else {
+				leftMotor.setSpeed(ROTATE_SPEED);
+				rightMotor.setSpeed(ROTATE_SPEED);
+				leftMotor.rotate(convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, dTheta), true);
+				rightMotor.rotate(-convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, dTheta), async);
+			}
 	}
 
+	public void doCorrection(double angle) {
+		double[] position = odometer.getXYT();
+		if(angle < 5 || angle > 355) {
+			int sensorCoor = (int)Math.round(position[1] - SENSOR_DIS/Lab5.TILE);
+			odometer.setY(sensorCoor + SENSOR_DIS/Lab5.TILE);
+		}else if(angle < 185 && angle > 175) {
+			int sensorCoor = (int)Math.round(position[1] + SENSOR_DIS/Lab5.TILE);
+			odometer.setY(sensorCoor - SENSOR_DIS/Lab5.TILE);
+		}else if(angle < 95 && angle > 85) {
+			int sensorCoor = (int)Math.round(position[0] - SENSOR_DIS/Lab5.TILE);
+			odometer.setX(sensorCoor + SENSOR_DIS/Lab5.TILE);
+		}
+	}
+	
 	/**
 	 * Rotate the robot by certain angle
+	 * 
 	 * @param angle
 	 */
 	public void rotate(int angle) {
 		leftMotor.rotate(convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, angle), true);
 		rightMotor.rotate(-convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, angle), false);
 	}
-	
+
 	/**
 	 * Stop the motor
 	 */
@@ -154,8 +174,10 @@ public class Navigation {
 	 * This method allows the conversion of a distance to the total rotation of each
 	 * wheel need to cover that distance.
 	 * 
-	 * @param radius   The radius of our wheels
-	 * @param distance The distance travelled
+	 * @param radius
+	 *            The radius of our wheels
+	 * @param distance
+	 *            The distance travelled
 	 * @return A converted distance
 	 */
 	public static int convertDistance(double radius, double distance) {
@@ -165,9 +187,12 @@ public class Navigation {
 	/**
 	 * This method allows the conversion of an angle value
 	 * 
-	 * @param radius   The radius of our wheels
-	 * @param distance The distance travelled
-	 * @param angle    The angle to convert
+	 * @param radius
+	 *            The radius of our wheels
+	 * @param distance
+	 *            The distance travelled
+	 * @param angle
+	 *            The angle to convert
 	 * @return A converted angle
 	 */
 	private static int convertAngle(double radius, double width, double angle) {
