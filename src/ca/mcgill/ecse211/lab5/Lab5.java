@@ -9,6 +9,7 @@ import lejos.hardware.lcd.TextLCD;
 import lejos.hardware.motor.EV3LargeRegulatedMotor;
 import lejos.hardware.port.Port;
 import lejos.hardware.sensor.EV3ColorSensor;
+import lejos.hardware.sensor.EV3GyroSensor;
 import lejos.hardware.sensor.EV3UltrasonicSensor;
 import lejos.hardware.sensor.SensorModes;
 import lejos.robotics.SampleProvider;
@@ -25,6 +26,9 @@ public class Lab5 {
 	private static Port[] lgPorts = new Port[2];
 	private static final TextLCD lcd = LocalEV3.get().getTextLCD();
 
+	public static Port gPort = LocalEV3.get().getPort("S4");
+	public static EV3GyroSensor gSensor;
+
 	/**
 	 * Motor object instance that allows control of the left motor connected to port
 	 * B
@@ -36,7 +40,6 @@ public class Lab5 {
 	 * port A
 	 */
 	public static final EV3LargeRegulatedMotor rightMotor = new EV3LargeRegulatedMotor(LocalEV3.get().getPort("D"));
-
 	/**
 	 * length of the tile
 	 */
@@ -111,6 +114,10 @@ public class Lab5 {
 
 		SampleProvider backLight = lgSensors[0].getRedMode();
 		SampleProvider frontLight1 = lgSensors[1].getRGBMode();
+		
+		//gyro motor stuff
+		gSensor = new EV3GyroSensor(gPort);
+		SampleProvider gSample = gSensor.getAngleMode();
 		// SampleProvider frontLight2 = lgSensors[2].getRedMode();
 
 		// STEP 1: LOCALIZE to (1,1)
@@ -137,7 +144,10 @@ public class Lab5 {
 		bLgPoller.start();
 		Thread fLgPoller1 = new RGBPoller(frontLight1, new float[frontLight1.sampleSize()], sensorData);
 		fLgPoller1.start();
-
+		
+		//start gyro thread
+		Thread gThread = new GyroPoller(gSample, new float[gSample.sampleSize()], sensorData);
+		gThread.start();
 		// Run color classification
 		if (buttonChoice == Button.ID_DOWN) {
 			while (Button.waitForAnyPress() != Button.ID_ESCAPE)
@@ -158,24 +168,29 @@ public class Lab5 {
 				// target color
 				ColorCalibrator.Color targetColor = ColorCalibrator.Color.values()[TR - 1];
 
-        usLoc.localize(buttonChoice);
-        lgLoc.localize(SC);
+//        usLoc.localize(buttonChoice);
+//        lgLoc.localize(SC);
 				// TODO: delete test code
-//				try {
-//					Odometer.getOdometer().setXYT(3, 3, 0);
-//				} catch (OdometerExceptions e) {
-//					// TODO Auto-generated catch block
-//					e.printStackTrace();
-//				}
-				// STEP 2: MOVE TO START OF SEARCH AREA
-				 navigation.travelTo(LLx, LLy, false);
-
-				// STEP 3: SEARCH ALL COORDINATES
-				searchArea(navigation, searcher, targetColor);
-				// STEP 4: NAVIGATE TO URx, URy
+				try {
+					Odometer odometer = Odometer.getOdometer();
+					Odometer.getOdometer().setXYT(3, 3, 0);
+					// STEP 2: MOVE TO START OF SEARCH AREA
+					 //navigation.travelTo(LLx, LLy, false);
+					//gSensor.reset();
+					// STEP 3: SEARCH ALL COORDINATES
+					gSensor.reset();
+					searchArea(navigation, searcher, targetColor);
+					navigation.travelTo(odometer.getXYT()[0], URy+0.5, true);
+					navigation.travelTo(URx, URy+0.5, true);
+					navigation.travelTo(URx, URy, false);
+					// STEP 4: NAVIGATE TO URx, URy
+				} catch (OdometerExceptions e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			
 			}
 		}).start();
-
 		while (Button.waitForAnyPress() != Button.ID_ESCAPE)
 			;
 		System.exit(0);
@@ -191,30 +206,43 @@ public class Lab5 {
 	 */
 	public static void searchArea(Navigation navigation, RingSearcher searcher, ColorCalibrator.Color targetColor) {
 		int counter = 0;
-		for (double i = LLx + 0.7; i < URx + 1; ) {
-			// if we are at the first, third...etc verticle zone, search up
+		for (double i = LLx + 0.5; i < URx + 1; ) {
 			if (counter % 2 == 0) {
+				// if we are at the first, third...etc verticle zone, search up
+				navigation.travelTo(i, LLy+0.3, false);
+				navigation.turnTo(180, false);
+				if (searcher.search(110, targetColor)) return;
+				navigation.turnTo(0, false);
+				//gSensor.reset();
 				for (double j = LLy + 0.7; j < URy; j++) {
 					navigation.travelTo(i, j, true);
+				//	gSensor.reset();
+					if (searcher.search(70, targetColor)) return;
 					navigation.turnTo(0, false);
-					if (searcher.search(55, targetColor)) return;
+				//	gSensor.reset();
+					if (searcher.search(290, targetColor)) return;
 					navigation.turnTo(0, false);
-					if (searcher.search(-55, targetColor)) return;
-					navigation.turnTo(0, false);
+					//gSensor.reset();	
 				}
 			} else {
+				System.out.println("i: " + i + " URy " + (URy-0.3));
+				navigation.travelTo(i, URy-0.3, true);
+				navigation.turnTo(0, false);
+				if (searcher.search(50, targetColor)) return;
+				navigation.turnTo(0, false);
+				if (searcher.search(310, targetColor)) return;
+				navigation.turnTo(180, false);
 				//when we are at the second, fourth... verticle zone, search down
-				for (double j = URy - 1 + 0.7; j > LLy; j--) {
+				for (double j = URy - 1 + 0.3; j > LLy; j--) {
 					navigation.travelTo(i, j, true);
+					if (searcher.search(130, targetColor)) return;
 					navigation.turnTo(180, false);
-					if (searcher.search(125, targetColor)) return;
-					navigation.turnTo(180, false);
-					if (searcher.search(225, targetColor)) return;
+					if (searcher.search(230, targetColor)) return;
 					navigation.turnTo(180, false);
 				}
 			}
 			counter ++;
-			i = (i+2 < URx+1)? i+2 : (URx-0.7);
+			i = (i+2 < URx+1)? i+2 : (URx-0.5);
 		}
 	}
 }
