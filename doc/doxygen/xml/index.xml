@@ -25,10 +25,21 @@
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_1abb1c01962b84cfad6ff897ce490b365a" kind="function"><name>Display</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_1a047e885f7170ba80f60fd3b4b2bc79a9" kind="function"><name>run</name></member>
   </compound>
+  <compound refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_gyro_poller" kind="class"><name>ca::mcgill::ecse211::sensors::GyroPoller</name>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_gyro_poller_1a98fc98dff0acec54cec2d14284bd686a" kind="variable"><name>us</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_gyro_poller_1af938c0d98e85a2b52a892b3060a16e55" kind="variable"><name>cont</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_gyro_poller_1a6e6759875b42b8ac6947aac140e74fce" kind="variable"><name>lgData</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_gyro_poller_1a2df6c86572aff4ee54e4b7cfcac1f71b" kind="variable"><name>Instance</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_gyro_poller_1a284eec4434708068ce9cb8a9635f7830" kind="function"><name>GyroPoller</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_gyro_poller_1a2a52059192555ece72190fa44a761d28" kind="function"><name>run</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_gyro_poller_1affd8cf8f49c8619b9617445e54e574f6" kind="function"><name>processData</name></member>
+  </compound>
   <compound refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5" kind="class"><name>ca::mcgill::ecse211::lab5::Lab5</name>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1aec878f6f5e57e3b9bb3277f8cc5d08d0" kind="variable"><name>usPort</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1ae96cd27167afc136b11f3632fbb7f27d" kind="variable"><name>lgPorts</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a94ecc8327140aee9515702c39fd0f3bd" kind="variable"><name>lcd</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a2415c0078b42b8813c3cc9304d6335ce" kind="variable"><name>gPort</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a0e63e3a6920344136ebfa14780670ee3" kind="variable"><name>gSensor</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a613e69d8f1e90a1161b78020571110fc" kind="variable"><name>leftMotor</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a70575e1c6e84cd9d22cadd141ad6ceae" kind="variable"><name>rightMotor</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a099ba21be1cd8d54a57c40cd0d35701d" kind="variable"><name>TILE</name></member>
@@ -69,13 +80,16 @@
   <compound refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation" kind="class"><name>ca::mcgill::ecse211::lab5::Navigation</name>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1ac39091bff884ffdfb7a9edc194609c94" kind="variable"><name>FORWARD_SPEED</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a731feece6164603180a933d862a25c29" kind="variable"><name>ROTATE_SPEED</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1ae2dbd39c06f074cd57f68017a1cc105f" kind="variable"><name>SENSOR_DIS</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1abdf83a9c8c01d36dde6147db1abb4be9" kind="variable"><name>leftMotor</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a4cb1f0d70c4c95ba044bff1876882049" kind="variable"><name>rightMotor</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1ab2a74a850d883ba6d35a9ac17f6a2bbc" kind="variable"><name>odometer</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a38a0ddccc485ae9a0d8c560ca8c12390" kind="variable"><name>data</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a93b746f61226c3b14532c43d0c2f61dd" kind="function"><name>Navigation</name></member>
-    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a0f3288c38c7c28b495ae4d7e95d85f78" kind="function"><name>travelTo</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a318969f4776d0bf4a8721be3d2444a5c" kind="function"><name>travelTo</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1aacb83ee18419dcd6095e331975cf2167" kind="function"><name>travelBackTo</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a2b39928c8062fe6863de8e818d009e91" kind="function"><name>turnTo</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a73a89ddd822e0ba1cfd7a29c18aa7aea" kind="function"><name>doCorrection</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a5fcce0063a6b557d349a6fb5bf144c64" kind="function"><name>rotate</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1afe038af6692e7ad28c3587cd979d7223" kind="function"><name>stop</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a85122ad723d0988c118866f367073be6" kind="function"><name>convertDistance</name></member>
@@ -150,6 +164,7 @@
   <compound refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data" kind="class"><name>ca::mcgill::ecse211::sensors::SensorData</name>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1afd69657f252c634cefc3fdc1eef21772" kind="variable"><name>light</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1ab9c5af6f1bc0ef5d92797a39a21455fc" kind="variable"><name>distance</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1aeb3f2cc7d016c3fe9144883b0e313b1d" kind="variable"><name>angle</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1ac7f99eb990974f250a5e9539c0f1a8fd" kind="variable"><name>rgb</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1a9338b722add706ae989ee15cf24f4040" kind="variable"><name>isReseting</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1aa1994be142487cad5a77bfd56dd4de24" kind="variable"><name>doneReseting</name></member>
@@ -161,7 +176,9 @@
     <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1ab8aef4bdb5d9f3dad399656e00af2539" kind="function"><name>getSensorData</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1a4e0eabd547726c90bd0b7252557d7ad7" kind="function"><name>getDL</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1a0abd08431dae67c7ee0e7a18b5305f91" kind="function"><name>getRGB</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1a7ad543db5c907b4bd3329dbb34b4e9d9" kind="function"><name>getA</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1ae20bf127c57dcfcb3b7632ca05b6d482" kind="function"><name>setD</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1a9828d8b4dfb9b197e8fd149fb7deb63b" kind="function"><name>setA</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1ae5e2528566b53218673ebc1ae4683204" kind="function"><name>setRGB</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1aeafd49ce71819e8e1a5d5ff6287e7819" kind="function"><name>setL</name></member>
   </compound>
@@ -224,6 +241,8 @@
   <compound refid="_odometer_exceptions_8java" kind="file"><name>OdometerExceptions.java</name>
   </compound>
   <compound refid="_odometry_correction_8java" kind="file"><name>OdometryCorrection.java</name>
+  </compound>
+  <compound refid="_gyro_poller_8java" kind="file"><name>GyroPoller.java</name>
   </compound>
   <compound refid="_light_poller_8java" kind="file"><name>LightPoller.java</name>
   </compound>

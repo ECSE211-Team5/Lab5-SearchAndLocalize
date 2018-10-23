@@ -1,5 +1,8 @@
 <map id="ca.mcgill.ecse211.odometer.OdometerData.setY" name="ca.mcgill.ecse211.odometer.OdometerData.setY">
-<area shape="rect" id="node2" href="$classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer.html#a441f56a899fae5bc9c1d6a6d25fbe0bb" title="ca.mcgill.ecse211.lab5.Light\lLocalizer.localize" alt="" coords="244,5,431,47"/>
-<area shape="rect" id="node4" href="$classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometry_correction.html#aad66a7030ac00f3a9cbe7bc33c25acbf" title="ca.mcgill.ecse211.odometer.\lOdometryCorrection.run" alt="" coords="243,71,432,112"/>
-<area shape="rect" id="node3" href="$classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a82cca51f550ed0eb016bb2082d3fe755" title="ca.mcgill.ecse211.lab5.Lab5.main" alt="" coords="480,13,699,39"/>
+<area shape="rect" id="node2" href="$classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer.html#a441f56a899fae5bc9c1d6a6d25fbe0bb" title="ca.mcgill.ecse211.lab5.Light\lLocalizer.localize" alt="" coords="269,5,455,47"/>
+<area shape="rect" id="node3" href="$classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a73a89ddd822e0ba1cfd7a29c18aa7aea" title="ca.mcgill.ecse211.lab5.Navigation.do\lCorrection" alt="" coords="243,71,481,112"/>
+<area shape="rect" id="node7" href="$classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometry_correction.html#aad66a7030ac00f3a9cbe7bc33c25acbf" title="ca.mcgill.ecse211.odometer.\lOdometryCorrection.run" alt="" coords="267,136,457,177"/>
+<area shape="rect" id="node4" href="$classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a318969f4776d0bf4a8721be3d2444a5c" title="ca.mcgill.ecse211.lab5.Navigation.travelTo" alt="" coords="529,78,801,105"/>
+<area shape="rect" id="node5" href="$classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a82cca51f550ed0eb016bb2082d3fe755" title="ca.mcgill.ecse211.lab5.Lab5.main" alt="" coords="1155,78,1373,105"/>
+<area shape="rect" id="node6" href="$classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a0e80ac0068ef1ab41cfb571b8c65845c" title="ca.mcgill.ecse211.lab5.Lab5.searchArea" alt="" coords="849,103,1107,130"/>
 </map>

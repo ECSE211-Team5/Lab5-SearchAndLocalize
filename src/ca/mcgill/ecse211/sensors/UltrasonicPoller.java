@@ -1,7 +1,6 @@
 package ca.mcgill.ecse211.sensors;
 
 import java.util.Arrays;
-
 import lejos.robotics.SampleProvider;
 
 /**
@@ -13,7 +12,8 @@ import lejos.robotics.SampleProvider;
  * one cycle through the loop is approximately 70 mS. This corresponds to a sampling rate of 1/70mS
  * or about 14 Hz.
  * 
- * @author Caspar Cedro & Patrick Erath
+ * @author Caspar Cedro & Percy Chen & Patrick Erath & Anssam Ghezala & Susan Matuszewski & Kamy
+ *         Moussavi Kafi
  */
 public class UltrasonicPoller extends Thread {
   private SampleProvider us;
@@ -48,37 +48,37 @@ public class UltrasonicPoller extends Thread {
    */
   public void run() {
     int distance;
-    int sample [] = new int[5];
-    int sorted_sample [] = new int [5];
+    int sample[] = new int[5];
+    int sorted_sample[] = new int[5];
     int sample_index = 0;
     boolean first_five = true;
     int first_five_counter = 0;
     while (true) {
       us.fetchSample(usData, 0); // acquire data
       distance = (int) (usData[0] * 100.0); // extract from buffer, cast to int
-      
-      //filter value
+
+      // filter value
       sample[sample_index] = distance;
       sorted_sample = sample.clone();
       Arrays.sort(sorted_sample);
 
-      //keep track of how many samples have been taken up to 5
-      if(first_five) {
-    	  first_five_counter ++;
-    	  if (first_five_counter > 4) {
-    		  first_five = false;
-    	  }
+      // keep track of how many samples have been taken up to 5
+      if (first_five) {
+        first_five_counter++;
+        if (first_five_counter > 4) {
+          first_five = false;
+        }
       }
-      //no adjustments for first 5 samples to fill array
-      if(!first_five) {
-	      if (distance > sorted_sample[2]) {
-	    	  distance = sorted_sample[2];
-	      }
+      // no adjustments for first 5 samples to fill array
+      if (!first_five) {
+        if (distance > sorted_sample[2]) {
+          distance = sorted_sample[2];
+        }
       }
-      
+
       cont.setD(distance); // now take action depending on value
       sample_index = (sample_index + 1) % 5;
-      
+
       try {
         Thread.sleep(30);
       } catch (Exception e) {

@@ -10,7 +10,8 @@ import lejos.hardware.motor.EV3LargeRegulatedMotor;
 /**
  * This class helps our robot to localize itself using the ultrasonic sensor
  * 
- * @author Caspar Cedro & Patrick Erath
+ * @author Caspar Cedro & Percy Chen & Patrick Erath & Anssam Ghezala & Susan Matuszewski & Kamy
+ *         Moussavi Kafi
  */
 public class UltrasonicLocalizer {
   private static final int ROTATE_SPEED = 80;

@@ -4,7 +4,8 @@ package ca.mcgill.ecse211.odometer;
  * This class is used to handle errors regarding the singleton pattern used for the odometer and
  * odometerData
  *
- * @author Caspar Cedro & Patrick Erath
+ * @author Caspar Cedro & Percy Chen & Patrick Erath & Anssam Ghezala & Susan Matuszewski & Kamy
+ *         Moussavi Kafi
  */
 @SuppressWarnings("serial")
 public class OdometerExceptions extends Exception {

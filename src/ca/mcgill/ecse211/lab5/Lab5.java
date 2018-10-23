@@ -1,8 +1,13 @@
 // Lab2.java
 package ca.mcgill.ecse211.lab5;
 
-import ca.mcgill.ecse211.odometer.*;
-import ca.mcgill.ecse211.sensors.*;
+import ca.mcgill.ecse211.odometer.Odometer;
+import ca.mcgill.ecse211.odometer.OdometerExceptions;
+import ca.mcgill.ecse211.sensors.GyroPoller;
+import ca.mcgill.ecse211.sensors.LightPoller;
+import ca.mcgill.ecse211.sensors.RGBPoller;
+import ca.mcgill.ecse211.sensors.SensorData;
+import ca.mcgill.ecse211.sensors.UltrasonicPoller;
 import lejos.hardware.Button;
 import lejos.hardware.ev3.LocalEV3;
 import lejos.hardware.lcd.TextLCD;
@@ -15,9 +20,10 @@ import lejos.hardware.sensor.SensorModes;
 import lejos.robotics.SampleProvider;
 
 /**
- * This class implements the main starting point for the Localization lab
+ * This class implements the main starting point for the Search and Localize lab
  * 
- * @author Caspar Cedro & Patrick Erath
+ * @author Caspar Cedro & Percy Chen & Patrick Erath & Anssam Ghezala & Susan Matuszewski & Kamy
+ *         Moussavi Kafi
  */
 public class Lab5 {
 	// Motor Objects, and Robot related parameters

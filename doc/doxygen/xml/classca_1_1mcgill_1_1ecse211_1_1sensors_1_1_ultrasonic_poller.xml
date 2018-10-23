@@ -105,33 +105,33 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/UltrasonicPoller.java" line="49" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/UltrasonicPoller.java" bodystart="49" bodyend="87"/>
-        <references refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1ae20bf127c57dcfcb3b7632ca05b6d482" compoundref="_sensor_data_8java" startline="127" endline="138">ca.mcgill.ecse211.sensors.SensorData.setD</references>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1ae20bf127c57dcfcb3b7632ca05b6d482" compoundref="_sensor_data_8java" startline="144" endline="155">ca.mcgill.ecse211.sensors.SensorData.setD</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>This class implements the Ultrasonic Sensor Poller for our Wall Follower.</para><para>Control of the wall follower is applied periodically by the <ref refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller" kindref="compound">UltrasonicPoller</ref> thread. The while loop at the bottom executes in a loop. Assuming that the us.fetchSample, and cont.processUSData methods operate in about 20mS, and that the thread sleeps for 50 mS at the end of each loop, then one cycle through the loop is approximately 70 mS. This corresponds to a sampling rate of 1/70mS or about 14 Hz.</para><para><simplesect kind="author"><para>Caspar Cedro &amp; Patrick Erath </para></simplesect>
+<para>This class implements the Ultrasonic Sensor Poller for our Wall Follower.</para><para>Control of the wall follower is applied periodically by the <ref refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller" kindref="compound">UltrasonicPoller</ref> thread. The while loop at the bottom executes in a loop. Assuming that the us.fetchSample, and cont.processUSData methods operate in about 20mS, and that the thread sleeps for 50 mS at the end of each loop, then one cycle through the loop is approximately 70 mS. This corresponds to a sampling rate of 1/70mS or about 14 Hz.</para><para><simplesect kind="author"><para>Caspar Cedro &amp; Percy Chen &amp; Patrick Erath &amp; Anssam Ghezala &amp; Susan Matuszewski &amp; Kamy Moussavi Kafi </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="53">
+      <node id="61">
         <label>ca.mcgill.ecse211.sensors.UltrasonicPoller</label>
         <link refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller"/>
-        <childnode refid="54" relation="public-inheritance">
+        <childnode refid="62" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="54">
+      <node id="62">
         <label>Thread</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="55">
+      <node id="63">
         <label>ca.mcgill.ecse211.sensors.UltrasonicPoller</label>
         <link refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller"/>
-        <childnode refid="56" relation="public-inheritance">
+        <childnode refid="64" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="56">
+      <node id="64">
         <label>Thread</label>
       </node>
     </collaborationgraph>

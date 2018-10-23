@@ -7,7 +7,13 @@ double \mbox{[}$\,$\mbox{]} \hyperlink{classca_1_1mcgill_1_1ecse211_1_1sensors_1
 \item 
 int \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \hyperlink{classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_a0abd08431dae67c7ee0e7a18b5305f91}{get\+R\+GB} ()
 \item 
+\mbox{\Hypertarget{classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_a7ad543db5c907b4bd3329dbb34b4e9d9}\label{classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_a7ad543db5c907b4bd3329dbb34b4e9d9}} 
+double {\bfseries getA} ()
+\item 
 void \hyperlink{classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_ae20bf127c57dcfcb3b7632ca05b6d482}{setD} (double d)
+\item 
+\mbox{\Hypertarget{classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_a9828d8b4dfb9b197e8fd149fb7deb63b}\label{classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_a9828d8b4dfb9b197e8fd149fb7deb63b}} 
+void {\bfseries setA} (double a)
 \item 
 void \hyperlink{classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_ae5e2528566b53218673ebc1ae4683204}{set\+R\+GB} (int i, int r, int g, int b)
 \item 
@@ -29,11 +35,11 @@ static synchronized \hyperlink{classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_senso
 This class implements methods to manage data from our sensors
 
 \begin{DoxyAuthor}{Author}
-Caspar Cedro \& Patrick Erath 
+Caspar Cedro \& Percy Chen \& Patrick Erath \& Anssam Ghezala \& Susan Matuszewski \& Kamy Moussavi Kafi 
 \end{DoxyAuthor}
 
 
-Definition at line 13 of file Sensor\+Data.\+java.
+Definition at line 14 of file Sensor\+Data.\+java.
 
 
 
@@ -46,7 +52,7 @@ Definition at line 13 of file Sensor\+Data.\+java.
 
 Default constructor. The constructor is private. A factory is used instead such that only one instance of this class is ever created. 
 
-Definition at line 43 of file Sensor\+Data.\+java.
+Definition at line 45 of file Sensor\+Data.\+java.
 
 Here is the caller graph for this function\+:
 \nopagebreak
@@ -77,7 +83,7 @@ the sensor data.
 \end{DoxyReturn}
 
 
-Definition at line 82 of file Sensor\+Data.\+java.
+Definition at line 84 of file Sensor\+Data.\+java.
 
 Here is the caller graph for this function\+:
 \nopagebreak
@@ -93,12 +99,14 @@ Here is the caller graph for this function\+:
 \subsubsection{\texorpdfstring{get\+R\+G\+B()}{getRGB()}}
 {\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} ca.\+mcgill.\+ecse211.\+sensors.\+Sensor\+Data.\+get\+R\+GB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-get the rgb data for color sensor \begin{DoxyReturn}{Returns}
+get the rgb data for color sensor
+
+\begin{DoxyReturn}{Returns}
 \+: rgb data 
 \end{DoxyReturn}
 
 
-Definition at line 108 of file Sensor\+Data.\+java.
+Definition at line 111 of file Sensor\+Data.\+java.
 
 Here is the caller graph for this function\+:
 \nopagebreak
@@ -126,7 +134,7 @@ An Odometer\+Data object
 \end{DoxyExceptions}
 
 
-Definition at line 62 of file Sensor\+Data.\+java.
+Definition at line 64 of file Sensor\+Data.\+java.
 
 Here is the call graph for this function\+:
 \nopagebreak
@@ -159,7 +167,7 @@ Overrides distance. Use for ultra sonic sensor.
 \end{DoxyParams}
 
 
-Definition at line 127 of file Sensor\+Data.\+java.
+Definition at line 144 of file Sensor\+Data.\+java.
 
 Here is the caller graph for this function\+:
 \nopagebreak
@@ -184,7 +192,7 @@ Overrides light. Use for light sensor.
 \end{DoxyParams}
 
 
-Definition at line 167 of file Sensor\+Data.\+java.
+Definition at line 198 of file Sensor\+Data.\+java.
 
 Here is the caller graph for this function\+:
 \nopagebreak
@@ -200,7 +208,9 @@ Here is the caller graph for this function\+:
 \subsubsection{\texorpdfstring{set\+R\+G\+B()}{setRGB()}}
 {\footnotesize\ttfamily void ca.\+mcgill.\+ecse211.\+sensors.\+Sensor\+Data.\+set\+R\+GB (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{r,  }\item[{int}]{g,  }\item[{int}]{b }\end{DoxyParamCaption})}
 
-set rgb data for color sensor with specific id 
+set rgb data for color sensor with specific id
+
+
 \begin{DoxyParams}{Parameters}
 {\em i} & id for the color sensor \\
 \hline
@@ -213,7 +223,7 @@ set rgb data for color sensor with specific id
 \end{DoxyParams}
 
 
-Definition at line 147 of file Sensor\+Data.\+java.
+Definition at line 178 of file Sensor\+Data.\+java.
 
 
 

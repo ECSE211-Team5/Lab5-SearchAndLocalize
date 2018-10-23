@@ -8,6 +8,9 @@ import lejos.hardware.lcd.TextLCD;
 
 /**
  * This class is used to display the content of the odometer variables (x, y, Theta)
+ * 
+ * @author Caspar Cedro & Percy Chen & Patrick Erath & Anssam Ghezala & Susan Matuszewski & Kamy
+ *         Moussavi Kafi
  */
 public class Display implements Runnable {
   private SensorData sensdata;
@@ -61,27 +64,29 @@ public class Display implements Runnable {
       position = odo.getXYT();
       data = sensdata.getDL();
       rgb = sensdata.getRGB()[0];
-      
+
       // Print x,y, and theta information
       DecimalFormat numberFormat = new DecimalFormat("######0.00");
       lcd.drawString("X: " + numberFormat.format(position[0]), 0, 0);
       lcd.drawString("Y: " + numberFormat.format(position[1]), 0, 1);
       lcd.drawString("T: " + numberFormat.format(position[2]), 0, 2);
-      lcd.drawString("D: "+ numberFormat.format(data[0]),0,3 );
-      lcd.drawString(String.format("(R: %d G: %d B: %d)",(int)rgb[0],(int)rgb[1],(int)rgb[2]), 0, 4);
-      if (ColorCalibrator.getColor((int)rgb[0], (int)rgb[1],(int) rgb[2]) != ColorCalibrator.Color.Other) {
-    	  lcd.drawString("Object Detected", 0, 5);
-      } else { 
-    	  lcd.drawString("                   ", 0, 5);
+      lcd.drawString("D: " + numberFormat.format(data[0]), 0, 3);
+      lcd.drawString(String.format("(R: %d G: %d B: %d)", (int) rgb[0], (int) rgb[1], (int) rgb[2]),
+          0, 4);
+      if (ColorCalibrator.getColor((int) rgb[0], (int) rgb[1],
+          (int) rgb[2]) != ColorCalibrator.Color.Other) {
+        lcd.drawString("Object Detected", 0, 5);
+      } else {
+        lcd.drawString("                   ", 0, 5);
       }
-      
+
       lcd.drawString(String.format("%1$-10s", ColorCalibrator.getColor().toString()), 0, 6);
       lcd.drawString("A:" + numberFormat.format(sensdata.getA()), 0, 7);
 
-//      lcd.drawString(String.format("(r: %f", rgb[0]), 0, 3);
-//      lcd.drawString(String.format("(g: %f", rgb[1]), 0, 4);
-//      lcd.drawString(String.format("(b: %f", rgb[2]), 0, 5);
-      
+      // lcd.drawString(String.format("(r: %f", rgb[0]), 0, 3);
+      // lcd.drawString(String.format("(g: %f", rgb[1]), 0, 4);
+      // lcd.drawString(String.format("(b: %f", rgb[2]), 0, 5);
+
       // this ensures that the data is updated only once every period
       updateEnd = System.currentTimeMillis();
       if (updateEnd - updateStart < DISPLAY_PERIOD) {

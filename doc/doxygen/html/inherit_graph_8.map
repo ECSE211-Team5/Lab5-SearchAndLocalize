@@ -1,5 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_r_g_b_poller.html" title="ca.mcgill.ecse211.sensors.\lRGBPoller" alt="" coords="5,5,187,47"/>
-<area shape="rect" id="node2" href="$classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller.html" title="ca.mcgill.ecse211.sensors.\lLightPoller" alt="" coords="235,5,416,47"/>
-<area shape="rect" id="node3" href="$classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller.html" title="ca.mcgill.ecse211.sensors.\lUltrasonicPoller" alt="" coords="235,71,416,112"/>
+<area shape="rect" id="node2" href="$classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_gyro_poller.html" title="ca.mcgill.ecse211.sensors.\lGyroPoller" alt="" coords="116,5,297,47"/>
+<area shape="rect" id="node3" href="$classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller.html" title="ca.mcgill.ecse211.sensors.\lLightPoller" alt="" coords="116,71,297,112"/>
+<area shape="rect" id="node5" href="$classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller.html" title="ca.mcgill.ecse211.sensors.\lUltrasonicPoller" alt="" coords="116,136,297,177"/>
+<area shape="rect" id="node4" href="$classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_r_g_b_poller.html" title="ca.mcgill.ecse211.sensors.\lRGBPoller" alt="" coords="345,71,527,112"/>
 </map>

@@ -6,13 +6,14 @@ import lejos.robotics.SampleProvider;
 /**
  * This class implements the Light Sensor Poller for our robot
  * 
- * @author Caspar Cedro & Patrick Erath
+ * @author Caspar Cedro & Percy Chen & Patrick Erath & Anssam Ghezala & Susan Matuszewski & Kamy
+ *         Moussavi Kafi
  */
 public class LightPoller extends Thread {
   protected SampleProvider us;
   protected SensorData cont;
   protected float[] lgData;
-  
+
   /**
    * This constructor creates an instance of the LightPoller class to provide distance data from an
    * light sensor to our robot.
@@ -23,7 +24,7 @@ public class LightPoller extends Thread {
    *        UltrasonicControllers.
    * @param cont a BangBangController or PController instance that has accumulated distance data
    *        stored in usData passed to it.
- * @throws OdometerExceptions 
+   * @throws OdometerExceptions
    */
   public LightPoller(SampleProvider us, float[] lgData, SensorData cont) throws OdometerExceptions {
     this.us = us;
@@ -49,10 +50,10 @@ public class LightPoller extends Thread {
       } // Poor man's timed sampling
     }
   }
-  
+
   protected void processData() {
-	  us.fetchSample(lgData, 0); // acquire data
-      int distance = (int) (lgData[0] * 100); // extract from buffer, cast to int
-      cont.setL(distance); // now take action depending on value
+    us.fetchSample(lgData, 0); // acquire data
+    int distance = (int) (lgData[0] * 100); // extract from buffer, cast to int
+    cont.setL(distance); // now take action depending on value
   }
 }

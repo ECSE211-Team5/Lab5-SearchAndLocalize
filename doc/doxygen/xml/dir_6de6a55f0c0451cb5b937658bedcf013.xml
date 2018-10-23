@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="dir_6de6a55f0c0451cb5b937658bedcf013" kind="dir">
     <compoundname>/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors</compoundname>
+    <innerfile refid="_gyro_poller_8java">GyroPoller.java</innerfile>
     <innerfile refid="_light_poller_8java">LightPoller.java</innerfile>
     <innerfile refid="_r_g_b_poller_8java">RGBPoller.java</innerfile>
     <innerfile refid="_sensor_data_8java">SensorData.java</innerfile>

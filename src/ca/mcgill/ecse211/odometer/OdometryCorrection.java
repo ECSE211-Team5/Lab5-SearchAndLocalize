@@ -11,7 +11,8 @@ import lejos.robotics.SampleProvider;
 /**
  * This class implements correction for the odometry on our robot using a light sensor.
  * 
- * @author Caspar Cedro & Patrick Erath
+ * @author Caspar Cedro & Percy Chen & Patrick Erath & Anssam Ghezala & Susan Matuszewski & Kamy
+ *         Moussavi Kafi
  */
 public class OdometryCorrection implements Runnable {
   private static final long CORRECTION_PERIOD = 10;

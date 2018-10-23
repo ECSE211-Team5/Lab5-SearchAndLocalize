@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="23" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="23" bodyend="-1"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="24" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="24" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a0006f533b077d53157e58721ef8f94fb" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="27" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="27" bodyend="-1"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="28" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="28" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a787e7280c6c6edcefbdfb05262d864ce" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -42,7 +42,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="28" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="28" bodyend="-1"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="29" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="29" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a932c1fb932f786de031438cd74237e9b" prot="private" static="no" mutable="no">
         <type>EV3LargeRegulatedMotor</type>
@@ -55,7 +55,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="29" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="29" bodyend="-1"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="30" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="30" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a42f35a412340515993b37b7efe036abd" prot="private" static="no" mutable="no">
         <type>EV3LargeRegulatedMotor</type>
@@ -68,7 +68,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="30" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="30" bodyend="-1"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="31" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="31" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a99ef86de4be24ae080fb89f527919679" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -81,7 +81,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="32" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="32" bodyend="-1"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="33" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="33" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a3d3c39d7d2af951aebbe1fd89c5c06fd" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -94,7 +94,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="33" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="33" bodyend="-1"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="34" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="34" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a95ba1a076a2da4f81c763acb9fa8d78e" prot="private" static="no" mutable="no">
         <type>double []</type>
@@ -107,7 +107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="35" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="35" bodyend="-1"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="36" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="36" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-static-attrib">
@@ -123,7 +123,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="24" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="24" bodyend="-1"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="25" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="25" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a8f9cda8aa5c624593fed505bbcf1da76" prot="private" static="yes" mutable="no">
         <type>final long</type>
@@ -137,7 +137,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="38" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="38" bodyend="-1"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="39" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="39" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -192,7 +192,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="48" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="48" bodyend="64"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="49" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="49" bodyend="65"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -248,14 +248,14 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="74" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="74" bodyend="83"/>
-        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_1aeb15906f02c60c1ca449d4c37922739b" compoundref="_display_8java" startline="29" endline="33">ca.mcgill.ecse211.lab5.Display.Display</referencedby>
-        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a82cca51f550ed0eb016bb2082d3fe755" compoundref="_lab5_8java" startline="88" endline="182">ca.mcgill.ecse211.lab5.Lab5.main</referencedby>
-        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a83dbb9eaea19092e27f6f9acdd35d37a" compoundref="_light_localizer_8java" startline="32" endline="39">ca.mcgill.ecse211.lab5.LightLocalizer.LightLocalizer</referencedby>
-        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a93b746f61226c3b14532c43d0c2f61dd" compoundref="_navigation_8java" startline="37" endline="46">ca.mcgill.ecse211.lab5.Navigation.Navigation</referencedby>
-        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1aa3f2d76984b3b80f32b6ddd6770e24b0" compoundref="_ring_searcher_8java" startline="27" endline="38">ca.mcgill.ecse211.lab5.RingSearcher.RingSearcher</referencedby>
-        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1a47c08f2d2ec2ba664867231ca62020da" compoundref="_ultrasonic_localizer_8java" startline="35" endline="42">ca.mcgill.ecse211.lab5.UltrasonicLocalizer.UltrasonicLocalizer</referencedby>
-        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometry_correction_1ad80b45e0bc4bf935494e075edcec739c" compoundref="_odometry_correction_8java" startline="29" endline="33">ca.mcgill.ecse211.odometer.OdometryCorrection.OdometryCorrection</referencedby>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="75" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="75" bodyend="84"/>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_1aeb15906f02c60c1ca449d4c37922739b" compoundref="_display_8java" startline="32" endline="36">ca.mcgill.ecse211.lab5.Display.Display</referencedby>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a82cca51f550ed0eb016bb2082d3fe755" compoundref="_lab5_8java" startline="102" endline="205">ca.mcgill.ecse211.lab5.Lab5.main</referencedby>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a83dbb9eaea19092e27f6f9acdd35d37a" compoundref="_light_localizer_8java" startline="33" endline="40">ca.mcgill.ecse211.lab5.LightLocalizer.LightLocalizer</referencedby>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a93b746f61226c3b14532c43d0c2f61dd" compoundref="_navigation_8java" startline="41" endline="52">ca.mcgill.ecse211.lab5.Navigation.Navigation</referencedby>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1aa3f2d76984b3b80f32b6ddd6770e24b0" compoundref="_ring_searcher_8java" startline="32" endline="44">ca.mcgill.ecse211.lab5.RingSearcher.RingSearcher</referencedby>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1a47c08f2d2ec2ba664867231ca62020da" compoundref="_ultrasonic_localizer_8java" startline="36" endline="43">ca.mcgill.ecse211.lab5.UltrasonicLocalizer.UltrasonicLocalizer</referencedby>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometry_correction_1ad80b45e0bc4bf935494e075edcec739c" compoundref="_odometry_correction_8java" startline="30" endline="34">ca.mcgill.ecse211.odometer.OdometryCorrection.OdometryCorrection</referencedby>
       </memberdef>
       <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a4e069b5a96cd43b29af0785244a99b51" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>synchronized <ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer" kindref="compound">Odometer</ref></type>
@@ -270,7 +270,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="91" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="91" bodyend="98"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="92" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="92" bodyend="99"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -285,52 +285,52 @@
 <para>This method is called when our <ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer" kindref="compound">Odometer</ref> object is started as a thread and begins to keep track of motor rotations </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="104" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="104" bodyend="145"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="105" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="105" bodyend="146"/>
         <references refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a8f40f0264c68f0cbed4fff1723ae7863" compoundref="_odometer_data_8java" startline="84" endline="106">ca.mcgill.ecse211.odometer.OdometerData.getXYT</references>
         <references refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1aaa06f190d634299fcb1b97a1891dad85" compoundref="_odometer_data_8java" startline="116" endline="132">ca.mcgill.ecse211.odometer.OdometerData.update</references>
-        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a099ba21be1cd8d54a57c40cd0d35701d" compoundref="_lab5_8java" startline="43">ca.mcgill.ecse211.lab5.Lab5.TILE</references>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a099ba21be1cd8d54a57c40cd0d35701d" compoundref="_lab5_8java" startline="60">ca.mcgill.ecse211.lab5.Lab5.TILE</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>This class implements odometry on our robot.</para><para><simplesect kind="author"><para>Caspar Cedro &amp; Patrick Erath </para></simplesect>
+<para>This class implements odometry on our robot.</para><para><simplesect kind="author"><para>Caspar Cedro &amp; Percy Chen &amp; Patrick Erath &amp; Anssam Ghezala &amp; Susan Matuszewski &amp; Kamy Moussavi Kafi </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="22">
+      <node id="30">
         <label>ca.mcgill.ecse211.odometer.Odometer</label>
         <link refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer"/>
-        <childnode refid="23" relation="public-inheritance">
+        <childnode refid="31" relation="public-inheritance">
         </childnode>
-        <childnode refid="24" relation="public-inheritance">
+        <childnode refid="32" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="23">
+      <node id="31">
         <label>ca.mcgill.ecse211.odometer.OdometerData</label>
         <link refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data"/>
       </node>
-      <node id="24">
+      <node id="32">
         <label>Runnable</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="25">
+      <node id="33">
         <label>ca.mcgill.ecse211.odometer.Odometer</label>
         <link refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer"/>
-        <childnode refid="26" relation="public-inheritance">
+        <childnode refid="34" relation="public-inheritance">
         </childnode>
-        <childnode refid="27" relation="public-inheritance">
+        <childnode refid="35" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="26">
+      <node id="34">
         <label>ca.mcgill.ecse211.odometer.OdometerData</label>
         <link refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data"/>
       </node>
-      <node id="27">
+      <node id="35">
         <label>Runnable</label>
       </node>
     </collaborationgraph>
-    <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="21" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="21" bodyend="146"/>
+    <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" line="22" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/Odometer.java" bodystart="22" bodyend="147"/>
     <listofallmembers>
       <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a99171f11e34dea918fa9dd069d721439" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::Odometer</scope><name>getOdometer</name></member>
       <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a4e069b5a96cd43b29af0785244a99b51" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::Odometer</scope><name>getOdometer</name></member>
