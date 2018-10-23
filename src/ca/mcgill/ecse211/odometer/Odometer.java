@@ -16,7 +16,8 @@ import lejos.hardware.motor.EV3LargeRegulatedMotor;
 /**
  * This class implements odometry on our robot.
  * 
- * @author Caspar Cedro & Patrick Erath
+ * @author Caspar Cedro & Percy Chen & Patrick Erath & Anssam Ghezala & Susan Matuszewski & Kamy
+ *         Moussavi Kafi
  */
 public class Odometer extends OdometerData implements Runnable {
 
@@ -129,7 +130,7 @@ public class Odometer extends OdometerData implements Runnable {
 
 
       // TODO Update odometer values with new calculated values
-      odometer.update(dX/Lab5.TILE, dY/Lab5.TILE, Math.toDegrees(deltaT));
+      odometer.update(dX / Lab5.TILE, dY / Lab5.TILE, Math.toDegrees(deltaT));
 
 
       // this ensures that the odometer only runs once every period

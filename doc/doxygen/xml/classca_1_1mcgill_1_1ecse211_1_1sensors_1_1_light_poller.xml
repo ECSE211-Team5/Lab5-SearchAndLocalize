@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" line="12" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" bodystart="12" bodyend="-1"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" line="13" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" bodystart="13" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller_1a2c208445d4fb1feedd269c0fda447d6f" prot="protected" static="no" mutable="no">
         <type><ref refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data" kindref="compound">SensorData</ref></type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" line="13" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" bodystart="13" bodyend="-1"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" line="14" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" bodystart="14" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller_1af014631d513b89ba9a55f0e7d0e8d754" prot="protected" static="no" mutable="no">
         <type>float []</type>
@@ -42,7 +42,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" line="14" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" bodystart="14" bodyend="-1"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" line="15" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" bodystart="15" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -100,7 +100,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" line="28" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" bodystart="28" bodyend="32"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" line="29" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" bodystart="29" bodyend="33"/>
       </memberdef>
       <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller_1a31751b40132d9402de493aa9ec11d9d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -114,8 +114,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" line="43" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" bodystart="43" bodyend="51"/>
-        <references refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1aeafd49ce71819e8e1a5d5ff6287e7819" compoundref="_sensor_data_8java" startline="167" endline="178">ca.mcgill.ecse211.sensors.SensorData.setL</references>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" line="44" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" bodystart="44" bodyend="52"/>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1aeafd49ce71819e8e1a5d5ff6287e7819" compoundref="_sensor_data_8java" startline="198" endline="209">ca.mcgill.ecse211.sensors.SensorData.setL</references>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -130,56 +130,56 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" line="53" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" bodystart="53" bodyend="57"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" line="54" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" bodystart="54" bodyend="58"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>This class implements the Light Sensor Poller for our robot</para><para><simplesect kind="author"><para>Caspar Cedro &amp; Patrick Erath </para></simplesect>
+<para>This class implements the Light Sensor Poller for our robot</para><para><simplesect kind="author"><para>Caspar Cedro &amp; Percy Chen &amp; Patrick Erath &amp; Anssam Ghezala &amp; Susan Matuszewski &amp; Kamy Moussavi Kafi </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="13">
+      <node id="21">
         <label>ca.mcgill.ecse211.sensors.LightPoller</label>
         <link refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller"/>
-        <childnode refid="14" relation="public-inheritance">
+        <childnode refid="22" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="14">
+      <node id="22">
         <label>Thread</label>
       </node>
-      <node id="15">
+      <node id="23">
         <label>ca.mcgill.ecse211.sensors.RGBPoller</label>
         <link refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_r_g_b_poller"/>
-        <childnode refid="13" relation="public-inheritance">
+        <childnode refid="21" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="19">
+      <node id="27">
         <label>ca.mcgill.ecse211.sensors.SensorData</label>
         <link refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data"/>
       </node>
-      <node id="16">
+      <node id="24">
         <label>ca.mcgill.ecse211.sensors.LightPoller</label>
         <link refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller"/>
-        <childnode refid="17" relation="public-inheritance">
+        <childnode refid="25" relation="public-inheritance">
         </childnode>
-        <childnode refid="18" relation="usage">
+        <childnode refid="26" relation="usage">
           <edgelabel>us</edgelabel>
         </childnode>
-        <childnode refid="19" relation="usage">
+        <childnode refid="27" relation="usage">
           <edgelabel>cont</edgelabel>
         </childnode>
       </node>
-      <node id="18">
+      <node id="26">
         <label>SampleProvider</label>
       </node>
-      <node id="17">
+      <node id="25">
         <label>Thread</label>
       </node>
     </collaborationgraph>
-    <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" line="11" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" bodystart="11" bodyend="58"/>
+    <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" line="12" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/LightPoller.java" bodystart="12" bodyend="59"/>
     <listofallmembers>
       <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller_1a2c208445d4fb1feedd269c0fda447d6f" prot="protected" virt="non-virtual"><scope>ca::mcgill::ecse211::sensors::LightPoller</scope><name>cont</name></member>
       <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller_1af014631d513b89ba9a55f0e7d0e8d754" prot="protected" virt="non-virtual"><scope>ca::mcgill::ecse211::sensors::LightPoller</scope><name>lgData</name></member>

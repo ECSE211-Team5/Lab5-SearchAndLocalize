@@ -1,4 +1,4 @@
-.TH "ca.mcgill.ecse211.lab5.Lab5" 3 "Mon Oct 22 2018" "Version 1.0" "ECSE211 - Fall 2018 - Lab 5 - Search and Localize" \" -*- nroff -*-
+.TH "ca.mcgill.ecse211.lab5.Lab5" 3 "Tue Oct 23 2018" "Version 1.0" "ECSE211 - Fall 2018 - Lab 5 - Search and Localize" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -20,10 +20,16 @@ ca.mcgill.ecse211.lab5.Lab5
 
 .in +1c
 .ti -1c
-.RI "static final EV3LargeRegulatedMotor \fBleftMotor\fP = new EV3LargeRegulatedMotor(LocalEV3\&.get()\&.getPort('A'))"
+.RI "static Port \fBgPort\fP = LocalEV3\&.get()\&.getPort('S4')"
 .br
 .ti -1c
-.RI "static final EV3LargeRegulatedMotor \fBrightMotor\fP = new EV3LargeRegulatedMotor(LocalEV3\&.get()\&.getPort('D'))"
+.RI "static EV3GyroSensor \fBgSensor\fP"
+.br
+.ti -1c
+.RI "static final EV3LargeRegulatedMotor \fBleftMotor\fP"
+.br
+.ti -1c
+.RI "static final EV3LargeRegulatedMotor \fBrightMotor\fP"
 .br
 .ti -1c
 .RI "static final double \fBTILE\fP = 30\&.48"
@@ -35,7 +41,7 @@ ca.mcgill.ecse211.lab5.Lab5
 .RI "static final double \fBTRACK\fP = 10\&.8"
 .br
 .ti -1c
-.RI "static final int [] \fBSC\fP = { 1, 1 }"
+.RI "static final int [] \fBSC\fP = {1, 1}"
 .br
 .ti -1c
 .RI "static final int \fBTR\fP = 1"
@@ -44,21 +50,21 @@ ca.mcgill.ecse211.lab5.Lab5
 .RI "static final int \fBLLx\fP = 3"
 .br
 .ti -1c
-.RI "static boolean [][] \fBvisitedSearchAreaCoordinates\fP = new boolean[URx \- \fBLLx\fP + 1][URy \- LLy + 1]"
+.RI "static boolean [][] \fBvisitedSearchAreaCoordinates\fP"
 .br
 .in -1c
 .SH "Detailed Description"
 .PP 
-This class implements the main starting point for the Localization lab
+This class implements the main starting point for the Search and Localize lab
 .PP
 \fBAuthor:\fP
 .RS 4
-Caspar Cedro & Patrick Erath 
+Caspar Cedro & Percy Chen & Patrick Erath & Anssam Ghezala & Susan Matuszewski & Kamy Moussavi Kafi 
 .RE
 .PP
 
 .PP
-Definition at line 21 of file Lab5\&.java\&.
+Definition at line 28 of file Lab5\&.java\&.
 .SH "Member Function Documentation"
 .PP 
 .SS "static void ca\&.mcgill\&.ecse211\&.lab5\&.Lab5\&.main (String [] args) throws \fBOdometerExceptions\fP\fC [static]\fP"
@@ -71,60 +77,86 @@ This method is our main entry point - instantiate objects used and set up sensor
 .PP
 
 .PP
-Definition at line 88 of file Lab5\&.java\&.
+Definition at line 102 of file Lab5\&.java\&.
 .SS "static void ca\&.mcgill\&.ecse211\&.lab5\&.Lab5\&.searchArea (\fBNavigation\fP navigation, \fBRingSearcher\fP searcher, ColorCalibrator\&.Color targetColor)\fC [static]\fP"
 This method finished the search process, it returns when it find the targeted run
 .PP
 \fBParameters:\fP
 .RS 4
-\fInavigation\fP 
+\fInavigation\fP A \fBNavigation\fP class object instance to aid the robot navigate the grid 
 .br
-\fIsearcher\fP 
+\fIsearcher\fP A \fBRingSearcher\fP class object instance with methods that search for a ring 
 .br
-\fItargetColor\fP target color 
+\fItargetColor\fP The color of the ring that the robot should search for 
 .RE
 .PP
 
 .PP
-Definition at line 192 of file Lab5\&.java\&.
+Definition at line 214 of file Lab5\&.java\&.
 .SH "Member Data Documentation"
 .PP 
-.SS "final EV3LargeRegulatedMotor ca\&.mcgill\&.ecse211\&.lab5\&.Lab5\&.leftMotor = new EV3LargeRegulatedMotor(LocalEV3\&.get()\&.getPort('A'))\fC [static]\fP"
+.SS "Port ca\&.mcgill\&.ecse211\&.lab5\&.Lab5\&.gPort = LocalEV3\&.get()\&.getPort('S4')\fC [static]\fP"
+Port object instance for our gyroscope sensor 
+.PP
+Definition at line 39 of file Lab5\&.java\&.
+.SS "EV3GyroSensor ca\&.mcgill\&.ecse211\&.lab5\&.Lab5\&.gSensor\fC [static]\fP"
+EV3GyroSensor object instance for our gyroscope sensor 
+.PP
+Definition at line 44 of file Lab5\&.java\&.
+.SS "final EV3LargeRegulatedMotor ca\&.mcgill\&.ecse211\&.lab5\&.Lab5\&.leftMotor\fC [static]\fP"
+\fBInitial value:\fP
+.PP
+.nf
+=
+      new EV3LargeRegulatedMotor(LocalEV3\&.get()\&.getPort("A"))
+.fi
 Motor object instance that allows control of the left motor connected to port B 
 .PP
-Definition at line 32 of file Lab5\&.java\&.
+Definition at line 49 of file Lab5\&.java\&.
 .SS "final int ca\&.mcgill\&.ecse211\&.lab5\&.Lab5\&.LLx = 3\fC [static]\fP"
 These are the coordinates for our search area\&. LL = Lower Left UR = Upper Right 
 .PP
-Definition at line 73 of file Lab5\&.java\&.
-.SS "final EV3LargeRegulatedMotor ca\&.mcgill\&.ecse211\&.lab5\&.Lab5\&.rightMotor = new EV3LargeRegulatedMotor(LocalEV3\&.get()\&.getPort('D'))\fC [static]\fP"
+Definition at line 88 of file Lab5\&.java\&.
+.SS "final EV3LargeRegulatedMotor ca\&.mcgill\&.ecse211\&.lab5\&.Lab5\&.rightMotor\fC [static]\fP"
+\fBInitial value:\fP
+.PP
+.nf
+=
+      new EV3LargeRegulatedMotor(LocalEV3\&.get()\&.getPort("D"))
+.fi
 Motor object instance that allows control of the right motor connected to port A 
 .PP
-Definition at line 38 of file Lab5\&.java\&.
-.SS "final int [] ca\&.mcgill\&.ecse211\&.lab5\&.Lab5\&.SC = { 1, 1 }\fC [static]\fP"
+Definition at line 55 of file Lab5\&.java\&.
+.SS "final int [] ca\&.mcgill\&.ecse211\&.lab5\&.Lab5\&.SC = {1, 1}\fC [static]\fP"
 This variables holds the starting corner coordinates for our robot\&. 
 .PP
-Definition at line 60 of file Lab5\&.java\&.
+Definition at line 77 of file Lab5\&.java\&.
 .SS "final double ca\&.mcgill\&.ecse211\&.lab5\&.Lab5\&.TILE = 30\&.48\fC [static]\fP"
 length of the tile 
 .PP
-Definition at line 43 of file Lab5\&.java\&.
+Definition at line 60 of file Lab5\&.java\&.
 .SS "final int ca\&.mcgill\&.ecse211\&.lab5\&.Lab5\&.TR = 1\fC [static]\fP"
 This variable holds the color of the target ring in the range [1,4]\&. 1 indicates a ORANGE ring 2 indicates a GREEN ring 3 indicates a BLUE ring 4 indicates a YELLOW ring 
 .PP
-Definition at line 67 of file Lab5\&.java\&.
+Definition at line 83 of file Lab5\&.java\&.
 .SS "final double ca\&.mcgill\&.ecse211\&.lab5\&.Lab5\&.TRACK = 10\&.8\fC [static]\fP"
 This variable denotes the track distance between the center of the wheels in cm (measured and adjusted based on trial and error)\&. 
 .PP
-Definition at line 54 of file Lab5\&.java\&.
-.SS "boolean [][] ca\&.mcgill\&.ecse211\&.lab5\&.Lab5\&.visitedSearchAreaCoordinates = new boolean[URx \- \fBLLx\fP + 1][URy \- LLy + 1]\fC [static]\fP"
+Definition at line 71 of file Lab5\&.java\&.
+.SS "boolean [][] ca\&.mcgill\&.ecse211\&.lab5\&.Lab5\&.visitedSearchAreaCoordinates\fC [static]\fP"
+\fBInitial value:\fP
+.PP
+.nf
+=
+      new boolean[URx - LLx + 1][URy - LLy + 1]
+.fi
 This array contains the set of all coordinates that our robot has visited\&. By default all values are set to false\&. 
 .PP
-Definition at line 79 of file Lab5\&.java\&.
+Definition at line 94 of file Lab5\&.java\&.
 .SS "final double ca\&.mcgill\&.ecse211\&.lab5\&.Lab5\&.WHEEL_RAD = 2\&.2\fC [static]\fP"
 This variable denotes the radius of our wheels in cm\&. 
 .PP
-Definition at line 48 of file Lab5\&.java\&.
+Definition at line 65 of file Lab5\&.java\&.
 
 .SH "Author"
 .PP 

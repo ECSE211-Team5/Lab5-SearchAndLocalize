@@ -5,12 +5,14 @@
 \item 
 \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a93b746f61226c3b14532c43d0c2f61dd}{Navigation} (E\+V3\+Large\+Regulated\+Motor left\+Motor, E\+V3\+Large\+Regulated\+Motor right\+Motor)  throws Odometer\+Exceptions 
 \item 
-void \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a0f3288c38c7c28b495ae4d7e95d85f78}{travel\+To} (double x, double y, boolean can\+Giveup)
+void \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a318969f4776d0bf4a8721be3d2444a5c}{travel\+To} (double x, double y, boolean \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a73a89ddd822e0ba1cfd7a29c18aa7aea}{do\+Correction})
 \item 
 \mbox{\Hypertarget{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_aacb83ee18419dcd6095e331975cf2167}\label{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_aacb83ee18419dcd6095e331975cf2167}} 
 void {\bfseries travel\+Back\+To} (double x, double y)
 \item 
 void \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a2b39928c8062fe6863de8e818d009e91}{turn\+To} (double angle, boolean async)
+\item 
+void \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a73a89ddd822e0ba1cfd7a29c18aa7aea}{do\+Correction} (double angle)
 \item 
 void \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a5fcce0063a6b557d349a6fb5bf144c64}{rotate} (int angle)
 \item 
@@ -24,13 +26,18 @@ static int \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a85122
 
 
 \subsection{Detailed Description}
-The Navigator class extends the functionality of the \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation}{Navigation} class. It offers an alternative \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a0f3288c38c7c28b495ae4d7e95d85f78}{travel\+To()} method which uses a state machine to implement obstacle avoidance.
+The Navigator class extends the functionality of the \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation}{Navigation} class. It offers an alternative \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a318969f4776d0bf4a8721be3d2444a5c}{travel\+To()} method which uses a state machine to implement obstacle avoidance.
 
 The Navigator class does not override any of the methods in \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation}{Navigation}. All methods with the same name are overloaded i.\+e. the Navigator version takes different parameters than the \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation}{Navigation} version.
 
-This is useful if, for instance, you want to force travel without obstacle detection over small distances. One place where you might want to do this is in the Obstacle\+Avoidance class. Another place is methods that implement specific features for future milestones such as retrieving an object. 
+This is useful if, for instance, you want to force travel without obstacle detection over small distances. One place where you might want to do this is in the Obstacle\+Avoidance class. Another place is methods that implement specific features for future milestones such as retrieving an object.
 
-Definition at line 23 of file Navigation.\+java.
+\begin{DoxyAuthor}{Author}
+Caspar Cedro \& Percy Chen \& Patrick Erath \& Anssam Ghezala \& Susan Matuszewski \& Kamy Moussavi Kafi 
+\end{DoxyAuthor}
+
+
+Definition at line 25 of file Navigation.\+java.
 
 
 
@@ -52,7 +59,7 @@ This navigation class constructor sets up our robot to begin navigating a partic
 \end{DoxyParams}
 
 
-Definition at line 37 of file Navigation.\+java.
+Definition at line 41 of file Navigation.\+java.
 
 Here is the call graph for this function\+:
 \nopagebreak
@@ -85,7 +92,7 @@ A converted distance
 \end{DoxyReturn}
 
 
-Definition at line 161 of file Navigation.\+java.
+Definition at line 181 of file Navigation.\+java.
 
 Here is the caller graph for this function\+:
 \nopagebreak
@@ -95,20 +102,53 @@ Here is the caller graph for this function\+:
 \includegraphics[width=350pt]{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a85122ad723d0988c118866f367073be6_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a5fcce0063a6b557d349a6fb5bf144c64}\label{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a5fcce0063a6b557d349a6fb5bf144c64}} 
-\index{ca\+::mcgill\+::ecse211\+::lab5\+::\+Navigation@{ca\+::mcgill\+::ecse211\+::lab5\+::\+Navigation}!rotate@{rotate}}
-\index{rotate@{rotate}!ca\+::mcgill\+::ecse211\+::lab5\+::\+Navigation@{ca\+::mcgill\+::ecse211\+::lab5\+::\+Navigation}}
-\subsubsection{\texorpdfstring{rotate()}{rotate()}}
-{\footnotesize\ttfamily void ca.\+mcgill.\+ecse211.\+lab5.\+Navigation.\+rotate (\begin{DoxyParamCaption}\item[{int}]{angle }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a73a89ddd822e0ba1cfd7a29c18aa7aea}\label{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a73a89ddd822e0ba1cfd7a29c18aa7aea}} 
+\index{ca\+::mcgill\+::ecse211\+::lab5\+::\+Navigation@{ca\+::mcgill\+::ecse211\+::lab5\+::\+Navigation}!do\+Correction@{do\+Correction}}
+\index{do\+Correction@{do\+Correction}!ca\+::mcgill\+::ecse211\+::lab5\+::\+Navigation@{ca\+::mcgill\+::ecse211\+::lab5\+::\+Navigation}}
+\subsubsection{\texorpdfstring{do\+Correction()}{doCorrection()}}
+{\footnotesize\ttfamily void ca.\+mcgill.\+ecse211.\+lab5.\+Navigation.\+do\+Correction (\begin{DoxyParamCaption}\item[{double}]{angle }\end{DoxyParamCaption})}
 
-Rotate the robot by certain angle 
+
 \begin{DoxyParams}{Parameters}
 {\em angle} & \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 140 of file Navigation.\+java.
+Definition at line 141 of file Navigation.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a73a89ddd822e0ba1cfd7a29c18aa7aea_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a73a89ddd822e0ba1cfd7a29c18aa7aea_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a5fcce0063a6b557d349a6fb5bf144c64}\label{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a5fcce0063a6b557d349a6fb5bf144c64}} 
+\index{ca\+::mcgill\+::ecse211\+::lab5\+::\+Navigation@{ca\+::mcgill\+::ecse211\+::lab5\+::\+Navigation}!rotate@{rotate}}
+\index{rotate@{rotate}!ca\+::mcgill\+::ecse211\+::lab5\+::\+Navigation@{ca\+::mcgill\+::ecse211\+::lab5\+::\+Navigation}}
+\subsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily void ca.\+mcgill.\+ecse211.\+lab5.\+Navigation.\+rotate (\begin{DoxyParamCaption}\item[{int}]{angle }\end{DoxyParamCaption})}
+
+Rotate the robot by certain angle
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 160 of file Navigation.\+java.
 
 \mbox{\Hypertarget{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_afe038af6692e7ad28c3587cd979d7223}\label{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_afe038af6692e7ad28c3587cd979d7223}} 
 \index{ca\+::mcgill\+::ecse211\+::lab5\+::\+Navigation@{ca\+::mcgill\+::ecse211\+::lab5\+::\+Navigation}!stop@{stop}}
@@ -118,7 +158,7 @@ Definition at line 140 of file Navigation.\+java.
 
 Stop the motor 
 
-Definition at line 148 of file Navigation.\+java.
+Definition at line 168 of file Navigation.\+java.
 
 Here is the caller graph for this function\+:
 \nopagebreak
@@ -128,11 +168,11 @@ Here is the caller graph for this function\+:
 \includegraphics[width=350pt]{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_afe038af6692e7ad28c3587cd979d7223_icgraph}
 \end{center}
 \end{figure}
-\mbox{\Hypertarget{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a0f3288c38c7c28b495ae4d7e95d85f78}\label{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a0f3288c38c7c28b495ae4d7e95d85f78}} 
+\mbox{\Hypertarget{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a318969f4776d0bf4a8721be3d2444a5c}\label{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a318969f4776d0bf4a8721be3d2444a5c}} 
 \index{ca\+::mcgill\+::ecse211\+::lab5\+::\+Navigation@{ca\+::mcgill\+::ecse211\+::lab5\+::\+Navigation}!travel\+To@{travel\+To}}
 \index{travel\+To@{travel\+To}!ca\+::mcgill\+::ecse211\+::lab5\+::\+Navigation@{ca\+::mcgill\+::ecse211\+::lab5\+::\+Navigation}}
 \subsubsection{\texorpdfstring{travel\+To()}{travelTo()}}
-{\footnotesize\ttfamily void ca.\+mcgill.\+ecse211.\+lab5.\+Navigation.\+travel\+To (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{boolean}]{can\+Giveup }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void ca.\+mcgill.\+ecse211.\+lab5.\+Navigation.\+travel\+To (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{boolean}]{do\+Correction }\end{DoxyParamCaption})}
 
 Travel\+To function which takes as arguments the x and y position in cm Will travel to designated position, while constantly updating it\textquotesingle{}s heading
 
@@ -147,14 +187,14 @@ When avoid=true, the nav thread will handle traveling. If you want to travel wit
 \end{DoxyParams}
 
 
-Definition at line 59 of file Navigation.\+java.
+Definition at line 64 of file Navigation.\+java.
 
 Here is the call graph for this function\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a0f3288c38c7c28b495ae4d7e95d85f78_cgraph}
+\includegraphics[width=350pt]{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a318969f4776d0bf4a8721be3d2444a5c_cgraph}
 \end{center}
 \end{figure}
 Here is the caller graph for this function\+:
@@ -162,7 +202,7 @@ Here is the caller graph for this function\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a0f3288c38c7c28b495ae4d7e95d85f78_icgraph}
+\includegraphics[width=350pt]{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a318969f4776d0bf4a8721be3d2444a5c_icgraph}
 \end{center}
 \end{figure}
 \mbox{\Hypertarget{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a2b39928c8062fe6863de8e818d009e91}\label{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a2b39928c8062fe6863de8e818d009e91}} 
@@ -180,7 +220,7 @@ This method is where the logic for the odometer will run. Use the methods provid
 \end{DoxyParams}
 
 
-Definition at line 115 of file Navigation.\+java.
+Definition at line 114 of file Navigation.\+java.
 
 Here is the call graph for this function\+:
 \nopagebreak

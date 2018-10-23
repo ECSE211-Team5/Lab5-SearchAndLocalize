@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['rgbpoller',['RGBPoller',['../classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_r_g_b_poller.html',1,'ca::mcgill::ecse211::sensors']]],
-  ['ringsearcher',['RingSearcher',['../classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher.html',1,'ca::mcgill::ecse211::lab5']]]
+  ['odometer',['Odometer',['../classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer.html',1,'ca::mcgill::ecse211::odometer']]],
+  ['odometerdata',['OdometerData',['../classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data.html',1,'ca::mcgill::ecse211::odometer']]],
+  ['odometerexceptions',['OdometerExceptions',['../classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions.html',1,'ca::mcgill::ecse211::odometer']]],
+  ['odometrycorrection',['OdometryCorrection',['../classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometry_correction.html',1,'ca::mcgill::ecse211::odometer']]]
 ];

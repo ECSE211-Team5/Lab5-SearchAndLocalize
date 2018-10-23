@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_gyro_poller" kind="class" language="Java" prot="public">
+    <compoundname>ca::mcgill::ecse211::sensors::GyroPoller</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Thread</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_gyro_poller_1a98fc98dff0acec54cec2d14284bd686a" prot="protected" static="no" mutable="no">
+        <type>SampleProvider</type>
+        <definition>SampleProvider ca.mcgill.ecse211.sensors.GyroPoller.us</definition>
+        <argsstring></argsstring>
+        <name>us</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/GyroPoller.java" line="12" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/GyroPoller.java" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_gyro_poller_1af938c0d98e85a2b52a892b3060a16e55" prot="protected" static="no" mutable="no">
+        <type><ref refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data" kindref="compound">SensorData</ref></type>
+        <definition>SensorData ca.mcgill.ecse211.sensors.GyroPoller.cont</definition>
+        <argsstring></argsstring>
+        <name>cont</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/GyroPoller.java" line="13" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/GyroPoller.java" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_gyro_poller_1a6e6759875b42b8ac6947aac140e74fce" prot="protected" static="no" mutable="no">
+        <type>float []</type>
+        <definition>float [] ca.mcgill.ecse211.sensors.GyroPoller.lgData</definition>
+        <argsstring></argsstring>
+        <name>lgData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/GyroPoller.java" line="14" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/GyroPoller.java" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_gyro_poller_1a2df6c86572aff4ee54e4b7cfcac1f71b" prot="public" static="no" mutable="no">
+        <type><ref refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_gyro_poller" kindref="compound">GyroPoller</ref></type>
+        <definition>GyroPoller ca.mcgill.ecse211.sensors.GyroPoller.Instance</definition>
+        <argsstring></argsstring>
+        <name>Instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/GyroPoller.java" line="15" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/GyroPoller.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_gyro_poller_1a284eec4434708068ce9cb8a9635f7830" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ca.mcgill.ecse211.sensors.GyroPoller.GyroPoller</definition>
+        <argsstring>(SampleProvider us, float[] lgData, SensorData cont)</argsstring>
+        <name>GyroPoller</name>
+        <param>
+          <type>SampleProvider</type>
+          <declname>us</declname>
+        </param>
+        <param>
+          <type>float []</type>
+          <declname>lgData</declname>
+        </param>
+        <param>
+          <type><ref refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data" kindref="compound">SensorData</ref></type>
+          <declname>cont</declname>
+        </param>
+        <exceptions> throws <ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions" kindref="compound">OdometerExceptions</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This constructor creates an instance of the <ref refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller" kindref="compound">LightPoller</ref> class to provide distance data from an light sensor to our robot.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>us</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a SampleProvider class instance that helps us to store an array of ultrasonic sensor data. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lgData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an array of distance data to be used by our Wall Follower&apos;s UltrasonicControllers. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cont</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a BangBangController or PController instance that has accumulated distance data stored in usData passed to it. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>OdometerExceptions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/GyroPoller.java" line="29" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/GyroPoller.java" bodystart="29" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_gyro_poller_1a2a52059192555ece72190fa44a761d28" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ca.mcgill.ecse211.sensors.GyroPoller.run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method is called by a <ref refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller" kindref="compound">UltrasonicPoller</ref> (Thread) instance when it is asked to start executing</para><para>Sensors now return floats using a uniform protocol. Need to convert US result to an integer [0,255] (non-Javadoc)</para><para><simplesect kind="see"><para>java.lang.Thread::run() </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/GyroPoller.java" line="44" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/GyroPoller.java" bodystart="44" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_gyro_poller_1affd8cf8f49c8619b9617445e54e574f6" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ca.mcgill.ecse211.sensors.GyroPoller.processData</definition>
+        <argsstring>()</argsstring>
+        <name>processData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/GyroPoller.java" line="50" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/GyroPoller.java" bodystart="50" bodyend="61"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Caspar Cedro &amp; Percy Chen &amp; Patrick Erath &amp; Anssam Ghezala &amp; Susan Matuszewski &amp; Kamy Moussavi Kafi </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="9">
+        <label>Thread</label>
+      </node>
+      <node id="8">
+        <label>ca.mcgill.ecse211.sensors.GyroPoller</label>
+        <link refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_gyro_poller"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="13">
+        <label>ca.mcgill.ecse211.sensors.SensorData</label>
+        <link refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data"/>
+      </node>
+      <node id="12">
+        <label>SampleProvider</label>
+      </node>
+      <node id="11">
+        <label>Thread</label>
+      </node>
+      <node id="10">
+        <label>ca.mcgill.ecse211.sensors.GyroPoller</label>
+        <link refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_gyro_poller"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>us</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>cont</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>Instance</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/GyroPoller.java" line="11" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/GyroPoller.java" bodystart="11" bodyend="62"/>
+    <listofallmembers>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_gyro_poller_1af938c0d98e85a2b52a892b3060a16e55" prot="protected" virt="non-virtual"><scope>ca::mcgill::ecse211::sensors::GyroPoller</scope><name>cont</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_gyro_poller_1a284eec4434708068ce9cb8a9635f7830" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::sensors::GyroPoller</scope><name>GyroPoller</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_gyro_poller_1a2df6c86572aff4ee54e4b7cfcac1f71b" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::sensors::GyroPoller</scope><name>Instance</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_gyro_poller_1a6e6759875b42b8ac6947aac140e74fce" prot="protected" virt="non-virtual"><scope>ca::mcgill::ecse211::sensors::GyroPoller</scope><name>lgData</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_gyro_poller_1affd8cf8f49c8619b9617445e54e574f6" prot="protected" virt="non-virtual"><scope>ca::mcgill::ecse211::sensors::GyroPoller</scope><name>processData</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_gyro_poller_1a2a52059192555ece72190fa44a761d28" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::sensors::GyroPoller</scope><name>run</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_gyro_poller_1a98fc98dff0acec54cec2d14284bd686a" prot="protected" virt="non-virtual"><scope>ca::mcgill::ecse211::sensors::GyroPoller</scope><name>us</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

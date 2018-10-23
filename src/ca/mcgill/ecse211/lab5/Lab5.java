@@ -1,8 +1,13 @@
 // Lab2.java
 package ca.mcgill.ecse211.lab5;
 
-import ca.mcgill.ecse211.odometer.*;
-import ca.mcgill.ecse211.sensors.*;
+import ca.mcgill.ecse211.odometer.Odometer;
+import ca.mcgill.ecse211.odometer.OdometerExceptions;
+import ca.mcgill.ecse211.sensors.GyroPoller;
+import ca.mcgill.ecse211.sensors.LightPoller;
+import ca.mcgill.ecse211.sensors.RGBPoller;
+import ca.mcgill.ecse211.sensors.SensorData;
+import ca.mcgill.ecse211.sensors.UltrasonicPoller;
 import lejos.hardware.Button;
 import lejos.hardware.ev3.LocalEV3;
 import lejos.hardware.lcd.TextLCD;
@@ -15,234 +20,244 @@ import lejos.hardware.sensor.SensorModes;
 import lejos.robotics.SampleProvider;
 
 /**
- * This class implements the main starting point for the Localization lab
+ * This class implements the main starting point for the Search and Localize lab
  * 
- * @author Caspar Cedro & Patrick Erath
+ * @author Caspar Cedro & Percy Chen & Patrick Erath & Anssam Ghezala & Susan Matuszewski & Kamy
+ *         Moussavi Kafi
  */
 public class Lab5 {
-	// Motor Objects, and Robot related parameters
-	private static final Port usPort = LocalEV3.get().getPort("S1");
-	// initialize multiple light ports in main
-	private static Port[] lgPorts = new Port[2];
-	private static final TextLCD lcd = LocalEV3.get().getTextLCD();
+  // Motor Objects, and Robot related parameters
+  private static final Port usPort = LocalEV3.get().getPort("S1");
+  // initialize multiple light ports in main
+  private static Port[] lgPorts = new Port[2];
+  // initialize the lcd screen on the EV3 brick
+  private static final TextLCD lcd = LocalEV3.get().getTextLCD();
 
-	public static Port gPort = LocalEV3.get().getPort("S4");
-	public static EV3GyroSensor gSensor;
+  /**
+   * Port object instance for our gyroscope sensor
+   */
+  public static Port gPort = LocalEV3.get().getPort("S4");
 
-	/**
-	 * Motor object instance that allows control of the left motor connected to port
-	 * B
-	 */
-	public static final EV3LargeRegulatedMotor leftMotor = new EV3LargeRegulatedMotor(LocalEV3.get().getPort("A"));
+  /**
+   * EV3GyroSensor object instance for our gyroscope sensor
+   */
+  public static EV3GyroSensor gSensor;
 
-	/**
-	 * Motor object instance that allows control of the right motor connected to
-	 * port A
-	 */
-	public static final EV3LargeRegulatedMotor rightMotor = new EV3LargeRegulatedMotor(LocalEV3.get().getPort("D"));
-	/**
-	 * length of the tile
-	 */
-	public static final double TILE = 30.48;
+  /**
+   * Motor object instance that allows control of the left motor connected to port B
+   */
+  public static final EV3LargeRegulatedMotor leftMotor =
+      new EV3LargeRegulatedMotor(LocalEV3.get().getPort("A"));
 
-	/**
-	 * This variable denotes the radius of our wheels in cm.
-	 */
-	public static final double WHEEL_RAD = 2.2;
+  /**
+   * Motor object instance that allows control of the right motor connected to port A
+   */
+  public static final EV3LargeRegulatedMotor rightMotor =
+      new EV3LargeRegulatedMotor(LocalEV3.get().getPort("D"));
+  /**
+   * length of the tile
+   */
+  public static final double TILE = 30.48;
 
-	/**
-	 * This variable denotes the track distance between the center of the wheels in
-	 * cm (measured and adjusted based on trial and error).
-	 */
-	public static final double TRACK = 10.8;
-	// last TRACK value: 10.4
+  /**
+   * This variable denotes the radius of our wheels in cm.
+   */
+  public static final double WHEEL_RAD = 2.2;
 
-	/**
-	 * This variables holds the starting corner coordinates for our robot.
-	 */
-	public static final int[] SC = { 1, 1 };
+  /**
+   * This variable denotes the track distance between the center of the wheels in cm (measured and
+   * adjusted based on trial and error).
+   */
+  public static final double TRACK = 10.8;
+  // last TRACK value: 10.4
 
-	/**
-	 * This variable holds the color of the target ring in the range [1,4]. 1
-	 * indicates a ORANGE ring 2 indicates a GREEN ring 3 indicates a BLUE ring 4
-	 * indicates a YELLOW ring
-	 */
-	public static final int TR = 1;
+  /**
+   * This variables holds the starting corner coordinates for our robot.
+   */
+  public static final int[] SC = {1, 1};
 
-	/**
-	 * These are the coordinates for our search area. LL = Lower Left UR = Upper
-	 * Right
-	 */
-	public static final int LLx = 3, LLy = 3, URx = 7, URy = 7;
+  /**
+   * This variable holds the color of the target ring in the range [1,4]. 1 indicates a ORANGE ring
+   * 2 indicates a GREEN ring 3 indicates a BLUE ring 4 indicates a YELLOW ring
+   */
+  public static final int TR = 1;
 
-	/**
-	 * This array contains the set of all coordinates that our robot has visited. By
-	 * default all values are set to false.
-	 */
-	public static boolean[][] visitedSearchAreaCoordinates = new boolean[URx - LLx + 1][URy - LLy + 1];
+  /**
+   * These are the coordinates for our search area. LL = Lower Left UR = Upper Right
+   */
+  public static final int LLx = 3, LLy = 3, URx = 7, URy = 7;
 
-	/**
-	 * This method is our main entry point - instantiate objects used and set up
-	 * sensor.
-	 * 
-	 * @param args an array of arguments that can be passed in via commandline or
-	 *             otherwise.
-	 */
-	public static void main(String[] args) throws OdometerExceptions {
-		// Odometer related objects
-		Odometer odometer = Odometer.getOdometer(leftMotor, rightMotor, TRACK, WHEEL_RAD);
-		Display odometryDisplay = new Display(lcd);
+  /**
+   * This array contains the set of all coordinates that our robot has visited. By default all
+   * values are set to false.
+   */
+  public static boolean[][] visitedSearchAreaCoordinates =
+      new boolean[URx - LLx + 1][URy - LLy + 1];
 
-		// Sensor Related Stuff
-		SensorData sensorData = SensorData.getSensorData();
+  /**
+   * This method is our main entry point - instantiate objects used and set up sensor.
+   * 
+   * @param args an array of arguments that can be passed in via commandline or otherwise.
+   */
+  public static void main(String[] args) throws OdometerExceptions {
+    // Odometer related objects
+    Odometer odometer = Odometer.getOdometer(leftMotor, rightMotor, TRACK, WHEEL_RAD);
+    Display odometryDisplay = new Display(lcd);
 
-		// Ultrasonic sensor stuff
-		@SuppressWarnings("resource")
-		SensorModes usSensor = new EV3UltrasonicSensor(usPort);
-		SampleProvider usDistance = usSensor.getMode("Distance");
-		float[] usData = new float[usDistance.sampleSize()];
+    // Sensor Related Stuff
+    SensorData sensorData = SensorData.getSensorData();
 
-		// Light sesnor sensor stuff
-		// @SuppressWarnings("resource")
-		lgPorts[0] = LocalEV3.get().getPort("S2");
-		lgPorts[1] = LocalEV3.get().getPort("S3");
-		// lgPorts[2] = LocalEV3.get().getPort("S4");
-		EV3ColorSensor[] lgSensors = new EV3ColorSensor[2];
-		for (int i = 0; i < lgSensors.length; i++) {
-			lgSensors[i] = new EV3ColorSensor(lgPorts[i]);
-		}
+    // Ultrasonic sensor stuff
+    @SuppressWarnings("resource")
+    SensorModes usSensor = new EV3UltrasonicSensor(usPort);
+    SampleProvider usDistance = usSensor.getMode("Distance");
+    float[] usData = new float[usDistance.sampleSize()];
 
-		SampleProvider backLight = lgSensors[0].getRedMode();
-		SampleProvider frontLight1 = lgSensors[1].getRGBMode();
-		
-		//gyro motor stuff
-		gSensor = new EV3GyroSensor(gPort);
-		SampleProvider gSample = gSensor.getAngleMode();
-		// SampleProvider frontLight2 = lgSensors[2].getRedMode();
+    // Light sesnor sensor stuff
+    // @SuppressWarnings("resource")
+    lgPorts[0] = LocalEV3.get().getPort("S2");
+    lgPorts[1] = LocalEV3.get().getPort("S3");
+    // lgPorts[2] = LocalEV3.get().getPort("S4");
+    EV3ColorSensor[] lgSensors = new EV3ColorSensor[2];
+    for (int i = 0; i < lgSensors.length; i++) {
+      lgSensors[i] = new EV3ColorSensor(lgPorts[i]);
+    }
 
-		// STEP 1: LOCALIZE to (1,1)
-		// ButtonChoice left or right
-		lcd.clear();
-		lcd.drawString("<  Left  |  Right >", 0, 0);
-		lcd.drawString(" falling | rising  ", 0, 1);
-		lcd.drawString("  edge   |  edge   ", 0, 2);
-		lcd.drawString("        \\/        ", 0, 3);
-		lcd.drawString("  Color Detection  ", 0, 4);
+    SampleProvider backLight = lgSensors[0].getRedMode();
+    SampleProvider frontLight1 = lgSensors[1].getRGBMode();
 
-		final int buttonChoice = Button.waitForAnyPress(); // Record choice (left or right press)
+    // gyro motor stuff
+    gSensor = new EV3GyroSensor(gPort);
+    SampleProvider gSample = gSensor.getAngleMode();
+    // SampleProvider frontLight2 = lgSensors[2].getRedMode();
 
-		// Start odometer and odometer display
-		Thread odoThread = new Thread(odometer);
-		odoThread.start();
-		Thread odoDisplayThread = new Thread(odometryDisplay);
-		odoDisplayThread.start();
+    // STEP 1: LOCALIZE to (1,1)
+    // ButtonChoice left or right
+    lcd.clear();
+    lcd.drawString("<  Left  |  Right >", 0, 0);
+    lcd.drawString(" falling | rising  ", 0, 1);
+    lcd.drawString("  edge   |  edge   ", 0, 2);
+    lcd.drawString("        \\/        ", 0, 3);
+    lcd.drawString("  Color Detection  ", 0, 4);
 
-		// Start ultrasonic and light sensors
-		Thread usPoller = new UltrasonicPoller(usDistance, usData, sensorData);
-		usPoller.start();
-		Thread bLgPoller = new LightPoller(backLight, new float[backLight.sampleSize()], sensorData);
-		bLgPoller.start();
-		Thread fLgPoller1 = new RGBPoller(frontLight1, new float[frontLight1.sampleSize()], sensorData);
-		fLgPoller1.start();
-		
-		//start gyro thread
-		Thread gThread = new GyroPoller(gSample, new float[gSample.sampleSize()], sensorData);
-		gThread.start();
-		// Run color classification
-		if (buttonChoice == Button.ID_DOWN) {
-			while (Button.waitForAnyPress() != Button.ID_ESCAPE)
-				;
-			System.exit(0);
-		}
-		;
+    final int buttonChoice = Button.waitForAnyPress(); // Record choice (left or right press)
 
-		// Start localizing
-		final Navigation navigation = new Navigation(leftMotor, rightMotor);
-		final UltrasonicLocalizer usLoc = new UltrasonicLocalizer(navigation, leftMotor, rightMotor);
-		final LightLocalizer lgLoc = new LightLocalizer(navigation, leftMotor, rightMotor);
-		final RingSearcher searcher = new RingSearcher(navigation, leftMotor, rightMotor);
-		
-		// spawn a new Thread to avoid localization from blocking
-		(new Thread() {
-			public void run() {
-				// target color
-				ColorCalibrator.Color targetColor = ColorCalibrator.Color.values()[TR - 1];
+    // Start odometer and odometer display
+    Thread odoThread = new Thread(odometer);
+    odoThread.start();
+    Thread odoDisplayThread = new Thread(odometryDisplay);
+    odoDisplayThread.start();
 
-//        usLoc.localize(buttonChoice);
-//        lgLoc.localize(SC);
-				// TODO: delete test code
-				try {
-					Odometer odometer = Odometer.getOdometer();
-					Odometer.getOdometer().setXYT(3, 3, 0);
-					// STEP 2: MOVE TO START OF SEARCH AREA
-					 //navigation.travelTo(LLx, LLy, false);
-					//gSensor.reset();
-					// STEP 3: SEARCH ALL COORDINATES
-					gSensor.reset();
-					searchArea(navigation, searcher, targetColor);
-					navigation.travelTo(odometer.getXYT()[0], URy+0.5, true);
-					navigation.travelTo(URx, URy+0.5, true);
-					navigation.travelTo(URx, URy, false);
-					// STEP 4: NAVIGATE TO URx, URy
-				} catch (OdometerExceptions e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-			
-			}
-		}).start();
-		while (Button.waitForAnyPress() != Button.ID_ESCAPE)
-			;
-		System.exit(0);
-	}
+    // Start ultrasonic and light sensors
+    Thread usPoller = new UltrasonicPoller(usDistance, usData, sensorData);
+    usPoller.start();
+    Thread bLgPoller = new LightPoller(backLight, new float[backLight.sampleSize()], sensorData);
+    bLgPoller.start();
+    Thread fLgPoller1 = new RGBPoller(frontLight1, new float[frontLight1.sampleSize()], sensorData);
+    fLgPoller1.start();
 
-	/**
-	 * This method finished the search process, it returns when it find the targeted
-	 * run
-	 * 
-	 * @param navigation
-	 * @param searcher
-	 * @param targetColor: target color
-	 */
-	public static void searchArea(Navigation navigation, RingSearcher searcher, ColorCalibrator.Color targetColor) {
-		int counter = 0;
-		for (double i = LLx + 0.5; i < URx + 1; ) {
-			if (counter % 2 == 0) {
-				// if we are at the first, third...etc verticle zone, search up
-				navigation.travelTo(i, LLy+0.3, false);
-				navigation.turnTo(180, false);
-				if (searcher.search(110, targetColor)) return;
-				navigation.turnTo(0, false);
-				//gSensor.reset();
-				for (double j = LLy + 0.7; j < URy; j++) {
-					navigation.travelTo(i, j, true);
-				//	gSensor.reset();
-					if (searcher.search(70, targetColor)) return;
-					navigation.turnTo(0, false);
-				//	gSensor.reset();
-					if (searcher.search(290, targetColor)) return;
-					navigation.turnTo(0, false);
-					//gSensor.reset();	
-				}
-			} else {
-				System.out.println("i: " + i + " URy " + (URy-0.3));
-				navigation.travelTo(i, URy-0.3, true);
-				navigation.turnTo(0, false);
-				if (searcher.search(50, targetColor)) return;
-				navigation.turnTo(0, false);
-				if (searcher.search(310, targetColor)) return;
-				navigation.turnTo(180, false);
-				//when we are at the second, fourth... verticle zone, search down
-				for (double j = URy - 1 + 0.3; j > LLy; j--) {
-					navigation.travelTo(i, j, true);
-					if (searcher.search(130, targetColor)) return;
-					navigation.turnTo(180, false);
-					if (searcher.search(230, targetColor)) return;
-					navigation.turnTo(180, false);
-				}
-			}
-			counter ++;
-			i = (i+2 < URx+1)? i+2 : (URx-0.5);
-		}
-	}
+    // start gyro thread
+    Thread gThread = new GyroPoller(gSample, new float[gSample.sampleSize()], sensorData);
+    gThread.start();
+    // Run color classification
+    if (buttonChoice == Button.ID_DOWN) {
+      while (Button.waitForAnyPress() != Button.ID_ESCAPE);
+      System.exit(0);
+    } ;
+
+    // Start localizing
+    final Navigation navigation = new Navigation(leftMotor, rightMotor);
+    final UltrasonicLocalizer usLoc = new UltrasonicLocalizer(navigation, leftMotor, rightMotor);
+    final LightLocalizer lgLoc = new LightLocalizer(navigation, leftMotor, rightMotor);
+    final RingSearcher searcher = new RingSearcher(navigation, leftMotor, rightMotor);
+
+    // spawn a new Thread to avoid localization from blocking
+    (new Thread() {
+      public void run() {
+        // target color
+        ColorCalibrator.Color targetColor = ColorCalibrator.Color.values()[TR - 1];
+
+        // usLoc.localize(buttonChoice);
+        // lgLoc.localize(SC);
+        // TODO: delete test code
+        try {
+          Odometer odometer = Odometer.getOdometer();
+          Odometer.getOdometer().setXYT(3, 3, 0);
+          // STEP 2: MOVE TO START OF SEARCH AREA
+          // navigation.travelTo(LLx, LLy, false);
+          // gSensor.reset();
+          // STEP 3: SEARCH ALL COORDINATES
+          gSensor.reset();
+          searchArea(navigation, searcher, targetColor);
+          navigation.travelTo(odometer.getXYT()[0], URy + 0.5, true);
+          navigation.travelTo(URx, URy + 0.5, true);
+          navigation.travelTo(URx, URy, false);
+          // STEP 4: NAVIGATE TO URx, URy
+        } catch (OdometerExceptions e) {
+          // TODO Auto-generated catch block
+          e.printStackTrace();
+        }
+
+      }
+    }).start();
+    while (Button.waitForAnyPress() != Button.ID_ESCAPE);
+    System.exit(0);
+  }
+
+  /**
+   * This method finished the search process, it returns when it find the targeted run
+   * 
+   * @param navigation A Navigation class object instance to aid the robot navigate the grid
+   * @param searcher A RingSearcher class object instance with methods that search for a ring
+   * @param targetColor The color of the ring that the robot should search for
+   */
+  public static void searchArea(Navigation navigation, RingSearcher searcher,
+      ColorCalibrator.Color targetColor) {
+    int counter = 0;
+    for (double i = LLx + 0.5; i < URx + 1;) {
+      if (counter % 2 == 0) {
+        // if we are at the first, third...etc verticle zone, search up
+        navigation.travelTo(i, LLy + 0.3, false);
+        navigation.turnTo(180, false);
+        if (searcher.search(110, targetColor))
+          return;
+        navigation.turnTo(0, false);
+        // gSensor.reset();
+        for (double j = LLy + 0.7; j < URy; j++) {
+          navigation.travelTo(i, j, true);
+          // gSensor.reset();
+          if (searcher.search(70, targetColor))
+            return;
+          navigation.turnTo(0, false);
+          // gSensor.reset();
+          if (searcher.search(290, targetColor))
+            return;
+          navigation.turnTo(0, false);
+          // gSensor.reset();
+        }
+      } else {
+        System.out.println("i: " + i + " URy " + (URy - 0.3));
+        navigation.travelTo(i, URy - 0.3, true);
+        navigation.turnTo(0, false);
+        if (searcher.search(50, targetColor))
+          return;
+        navigation.turnTo(0, false);
+        if (searcher.search(310, targetColor))
+          return;
+        navigation.turnTo(180, false);
+        // when we are at the second, fourth... verticle zone, search down
+        for (double j = URy - 1 + 0.3; j > LLy; j--) {
+          navigation.travelTo(i, j, true);
+          if (searcher.search(130, targetColor))
+            return;
+          navigation.turnTo(180, false);
+          if (searcher.search(230, targetColor))
+            return;
+          navigation.turnTo(180, false);
+        }
+      }
+      counter++;
+      i = (i + 2 < URx + 1) ? i + 2 : (URx - 0.5);
+    }
+  }
 }

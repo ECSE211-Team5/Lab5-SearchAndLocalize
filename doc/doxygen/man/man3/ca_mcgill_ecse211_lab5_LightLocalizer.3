@@ -1,4 +1,4 @@
-.TH "ca.mcgill.ecse211.lab5.LightLocalizer" 3 "Mon Oct 22 2018" "Version 1.0" "ECSE211 - Fall 2018 - Lab 5 - Search and Localize" \" -*- nroff -*-
+.TH "ca.mcgill.ecse211.lab5.LightLocalizer" 3 "Tue Oct 23 2018" "Version 1.0" "ECSE211 - Fall 2018 - Lab 5 - Search and Localize" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -32,12 +32,12 @@ This class helps our robot to localize itself using the light sensor
 .PP
 \fBAuthor:\fP
 .RS 4
-Caspar Cedro & Patrick Erath 
+Caspar Cedro & Percy Chen & Patrick Erath & Anssam Ghezala & Susan Matuszewski & Kamy Moussavi Kafi 
 .RE
 .PP
 
 .PP
-Definition at line 14 of file LightLocalizer\&.java\&.
+Definition at line 15 of file LightLocalizer\&.java\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "ca\&.mcgill\&.ecse211\&.lab5\&.LightLocalizer\&.LightLocalizer (\fBNavigation\fP nav, EV3LargeRegulatedMotor leftMotor, EV3LargeRegulatedMotor rightMotor) throws \fBOdometerExceptions\fP"
@@ -57,7 +57,7 @@ This is the class constructor
 .PP
 
 .PP
-Definition at line 32 of file LightLocalizer\&.java\&.
+Definition at line 33 of file LightLocalizer\&.java\&.
 .SH "Member Function Documentation"
 .PP 
 .SS "static int ca\&.mcgill\&.ecse211\&.lab5\&.LightLocalizer\&.convertAngle (double radius, double width, double angle)\fC [static]\fP"
@@ -79,7 +79,7 @@ A converted angle
 .PP
 
 .PP
-Definition at line 104 of file LightLocalizer\&.java\&.
+Definition at line 103 of file LightLocalizer\&.java\&.
 .SS "static int ca\&.mcgill\&.ecse211\&.lab5\&.LightLocalizer\&.convertDistance (double radius, double distance)\fC [static]\fP"
 This method allows the conversion of a distance to the total rotation of each wheel need to cover that distance\&.
 .PP
@@ -97,11 +97,11 @@ A converted distance
 .PP
 
 .PP
-Definition at line 92 of file LightLocalizer\&.java\&.
+Definition at line 91 of file LightLocalizer\&.java\&.
 .SS "void ca\&.mcgill\&.ecse211\&.lab5\&.LightLocalizer\&.localize (int [] sC)"
 Once the robot know what angle it is facing, this method looks for the x,y axis origins knowing it is in the first tile facing north\&. 
 .PP
-Definition at line 45 of file LightLocalizer\&.java\&.
+Definition at line 46 of file LightLocalizer\&.java\&.
 
 .SH "Author"
 .PP 

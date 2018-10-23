@@ -7,7 +7,7 @@ Collaboration diagram for ca.\+mcgill.\+ecse211.\+lab5.\+Lab5\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=220pt]{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5__coll__graph}
+\includegraphics[width=350pt]{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Static Public Member Functions}
@@ -20,9 +20,13 @@ static void \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a0e80ac0068
 \subsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-static final E\+V3\+Large\+Regulated\+Motor \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a613e69d8f1e90a1161b78020571110fc}{left\+Motor} = new E\+V3\+Large\+Regulated\+Motor(Local\+E\+V3.\+get().get\+Port(\char`\"{}A\char`\"{}))
+static Port \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a2415c0078b42b8813c3cc9304d6335ce}{g\+Port} = Local\+E\+V3.\+get().get\+Port(\char`\"{}S4\char`\"{})
 \item 
-static final E\+V3\+Large\+Regulated\+Motor \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a70575e1c6e84cd9d22cadd141ad6ceae}{right\+Motor} = new E\+V3\+Large\+Regulated\+Motor(Local\+E\+V3.\+get().get\+Port(\char`\"{}D\char`\"{}))
+static E\+V3\+Gyro\+Sensor \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a0e63e3a6920344136ebfa14780670ee3}{g\+Sensor}
+\item 
+static final E\+V3\+Large\+Regulated\+Motor \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a613e69d8f1e90a1161b78020571110fc}{left\+Motor}
+\item 
+static final E\+V3\+Large\+Regulated\+Motor \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a70575e1c6e84cd9d22cadd141ad6ceae}{right\+Motor}
 \item 
 static final double \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a099ba21be1cd8d54a57c40cd0d35701d}{T\+I\+LE} = 30.\+48
 \item 
@@ -30,25 +34,25 @@ static final double \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_ab9
 \item 
 static final double \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a3d2e7eb578ce6ef7f7453feed3835e1d}{T\+R\+A\+CK} = 10.\+8
 \item 
-static final int \mbox{[}$\,$\mbox{]} \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a39cbd32759fdb575b92b694f2713085d}{SC} = \{ 1, 1 \}
+static final int \mbox{[}$\,$\mbox{]} \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a39cbd32759fdb575b92b694f2713085d}{SC} = \{1, 1\}
 \item 
 static final int \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a0dd5ea6f697d2221ed8c8bb4df1cac7f}{TR} = 1
 \item 
 static final int \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a957a526ed669e9d8b7fc485e21385ee9}{L\+Lx} = 3
 \item 
-static boolean \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a27ae00bb6fbeed54573af9cc5c3dc32e}{visited\+Search\+Area\+Coordinates} = new boolean\mbox{[}U\+Rx -\/ \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a957a526ed669e9d8b7fc485e21385ee9}{L\+Lx} + 1\mbox{]}\mbox{[}U\+Ry -\/ L\+Ly + 1\mbox{]}
+static boolean \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a27ae00bb6fbeed54573af9cc5c3dc32e}{visited\+Search\+Area\+Coordinates}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-This class implements the main starting point for the Localization lab
+This class implements the main starting point for the Search and Localize lab
 
 \begin{DoxyAuthor}{Author}
-Caspar Cedro \& Patrick Erath 
+Caspar Cedro \& Percy Chen \& Patrick Erath \& Anssam Ghezala \& Susan Matuszewski \& Kamy Moussavi Kafi 
 \end{DoxyAuthor}
 
 
-Definition at line 21 of file Lab5.\+java.
+Definition at line 28 of file Lab5.\+java.
 
 
 
@@ -68,7 +72,7 @@ This method is our main entry point -\/ instantiate objects used and set up sens
 \end{DoxyParams}
 
 
-Definition at line 88 of file Lab5.\+java.
+Definition at line 102 of file Lab5.\+java.
 
 Here is the call graph for this function\+:
 \nopagebreak
@@ -88,16 +92,16 @@ This method finished the search process, it returns when it find the targeted ru
 
 
 \begin{DoxyParams}{Parameters}
-{\em navigation} & \\
+{\em navigation} & A \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation}{Navigation} class object instance to aid the robot navigate the grid \\
 \hline
-{\em searcher} & \\
+{\em searcher} & A \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher}{Ring\+Searcher} class object instance with methods that search for a ring \\
 \hline
-{\em target\+Color} & target color \\
+{\em target\+Color} & The color of the ring that the robot should search for \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 192 of file Lab5.\+java.
+Definition at line 214 of file Lab5.\+java.
 
 Here is the call graph for this function\+:
 \nopagebreak
@@ -118,15 +122,40 @@ Here is the caller graph for this function\+:
 
 
 \subsection{Member Data Documentation}
+\mbox{\Hypertarget{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a2415c0078b42b8813c3cc9304d6335ce}\label{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a2415c0078b42b8813c3cc9304d6335ce}} 
+\index{ca\+::mcgill\+::ecse211\+::lab5\+::\+Lab5@{ca\+::mcgill\+::ecse211\+::lab5\+::\+Lab5}!g\+Port@{g\+Port}}
+\index{g\+Port@{g\+Port}!ca\+::mcgill\+::ecse211\+::lab5\+::\+Lab5@{ca\+::mcgill\+::ecse211\+::lab5\+::\+Lab5}}
+\subsubsection{\texorpdfstring{g\+Port}{gPort}}
+{\footnotesize\ttfamily Port ca.\+mcgill.\+ecse211.\+lab5.\+Lab5.\+g\+Port = Local\+E\+V3.\+get().get\+Port(\char`\"{}S4\char`\"{})\hspace{0.3cm}{\ttfamily [static]}}
+
+Port object instance for our gyroscope sensor 
+
+Definition at line 39 of file Lab5.\+java.
+
+\mbox{\Hypertarget{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a0e63e3a6920344136ebfa14780670ee3}\label{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a0e63e3a6920344136ebfa14780670ee3}} 
+\index{ca\+::mcgill\+::ecse211\+::lab5\+::\+Lab5@{ca\+::mcgill\+::ecse211\+::lab5\+::\+Lab5}!g\+Sensor@{g\+Sensor}}
+\index{g\+Sensor@{g\+Sensor}!ca\+::mcgill\+::ecse211\+::lab5\+::\+Lab5@{ca\+::mcgill\+::ecse211\+::lab5\+::\+Lab5}}
+\subsubsection{\texorpdfstring{g\+Sensor}{gSensor}}
+{\footnotesize\ttfamily E\+V3\+Gyro\+Sensor ca.\+mcgill.\+ecse211.\+lab5.\+Lab5.\+g\+Sensor\hspace{0.3cm}{\ttfamily [static]}}
+
+E\+V3\+Gyro\+Sensor object instance for our gyroscope sensor 
+
+Definition at line 44 of file Lab5.\+java.
+
 \mbox{\Hypertarget{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a613e69d8f1e90a1161b78020571110fc}\label{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a613e69d8f1e90a1161b78020571110fc}} 
 \index{ca\+::mcgill\+::ecse211\+::lab5\+::\+Lab5@{ca\+::mcgill\+::ecse211\+::lab5\+::\+Lab5}!left\+Motor@{left\+Motor}}
 \index{left\+Motor@{left\+Motor}!ca\+::mcgill\+::ecse211\+::lab5\+::\+Lab5@{ca\+::mcgill\+::ecse211\+::lab5\+::\+Lab5}}
 \subsubsection{\texorpdfstring{left\+Motor}{leftMotor}}
-{\footnotesize\ttfamily final E\+V3\+Large\+Regulated\+Motor ca.\+mcgill.\+ecse211.\+lab5.\+Lab5.\+left\+Motor = new E\+V3\+Large\+Regulated\+Motor(Local\+E\+V3.\+get().get\+Port(\char`\"{}A\char`\"{}))\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily final E\+V3\+Large\+Regulated\+Motor ca.\+mcgill.\+ecse211.\+lab5.\+Lab5.\+left\+Motor\hspace{0.3cm}{\ttfamily [static]}}
 
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      \textcolor{keyword}{new} EV3LargeRegulatedMotor(LocalEV3.get().getPort(\textcolor{stringliteral}{"A"}))
+\end{DoxyCode}
 Motor object instance that allows control of the left motor connected to port B 
 
-Definition at line 32 of file Lab5.\+java.
+Definition at line 49 of file Lab5.\+java.
 
 \mbox{\Hypertarget{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a957a526ed669e9d8b7fc485e21385ee9}\label{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a957a526ed669e9d8b7fc485e21385ee9}} 
 \index{ca\+::mcgill\+::ecse211\+::lab5\+::\+Lab5@{ca\+::mcgill\+::ecse211\+::lab5\+::\+Lab5}!L\+Lx@{L\+Lx}}
@@ -136,27 +165,32 @@ Definition at line 32 of file Lab5.\+java.
 
 These are the coordinates for our search area. LL = Lower Left UR = Upper Right 
 
-Definition at line 73 of file Lab5.\+java.
+Definition at line 88 of file Lab5.\+java.
 
 \mbox{\Hypertarget{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a70575e1c6e84cd9d22cadd141ad6ceae}\label{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a70575e1c6e84cd9d22cadd141ad6ceae}} 
 \index{ca\+::mcgill\+::ecse211\+::lab5\+::\+Lab5@{ca\+::mcgill\+::ecse211\+::lab5\+::\+Lab5}!right\+Motor@{right\+Motor}}
 \index{right\+Motor@{right\+Motor}!ca\+::mcgill\+::ecse211\+::lab5\+::\+Lab5@{ca\+::mcgill\+::ecse211\+::lab5\+::\+Lab5}}
 \subsubsection{\texorpdfstring{right\+Motor}{rightMotor}}
-{\footnotesize\ttfamily final E\+V3\+Large\+Regulated\+Motor ca.\+mcgill.\+ecse211.\+lab5.\+Lab5.\+right\+Motor = new E\+V3\+Large\+Regulated\+Motor(Local\+E\+V3.\+get().get\+Port(\char`\"{}D\char`\"{}))\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily final E\+V3\+Large\+Regulated\+Motor ca.\+mcgill.\+ecse211.\+lab5.\+Lab5.\+right\+Motor\hspace{0.3cm}{\ttfamily [static]}}
 
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      \textcolor{keyword}{new} EV3LargeRegulatedMotor(LocalEV3.get().getPort(\textcolor{stringliteral}{"D"}))
+\end{DoxyCode}
 Motor object instance that allows control of the right motor connected to port A 
 
-Definition at line 38 of file Lab5.\+java.
+Definition at line 55 of file Lab5.\+java.
 
 \mbox{\Hypertarget{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a39cbd32759fdb575b92b694f2713085d}\label{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a39cbd32759fdb575b92b694f2713085d}} 
 \index{ca\+::mcgill\+::ecse211\+::lab5\+::\+Lab5@{ca\+::mcgill\+::ecse211\+::lab5\+::\+Lab5}!SC@{SC}}
 \index{SC@{SC}!ca\+::mcgill\+::ecse211\+::lab5\+::\+Lab5@{ca\+::mcgill\+::ecse211\+::lab5\+::\+Lab5}}
 \subsubsection{\texorpdfstring{SC}{SC}}
-{\footnotesize\ttfamily final int \mbox{[}$\,$\mbox{]} ca.\+mcgill.\+ecse211.\+lab5.\+Lab5.\+SC = \{ 1, 1 \}\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily final int \mbox{[}$\,$\mbox{]} ca.\+mcgill.\+ecse211.\+lab5.\+Lab5.\+SC = \{1, 1\}\hspace{0.3cm}{\ttfamily [static]}}
 
 This variables holds the starting corner coordinates for our robot. 
 
-Definition at line 60 of file Lab5.\+java.
+Definition at line 77 of file Lab5.\+java.
 
 \mbox{\Hypertarget{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a099ba21be1cd8d54a57c40cd0d35701d}\label{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a099ba21be1cd8d54a57c40cd0d35701d}} 
 \index{ca\+::mcgill\+::ecse211\+::lab5\+::\+Lab5@{ca\+::mcgill\+::ecse211\+::lab5\+::\+Lab5}!T\+I\+LE@{T\+I\+LE}}
@@ -166,7 +200,7 @@ Definition at line 60 of file Lab5.\+java.
 
 length of the tile 
 
-Definition at line 43 of file Lab5.\+java.
+Definition at line 60 of file Lab5.\+java.
 
 \mbox{\Hypertarget{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a0dd5ea6f697d2221ed8c8bb4df1cac7f}\label{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a0dd5ea6f697d2221ed8c8bb4df1cac7f}} 
 \index{ca\+::mcgill\+::ecse211\+::lab5\+::\+Lab5@{ca\+::mcgill\+::ecse211\+::lab5\+::\+Lab5}!TR@{TR}}
@@ -176,7 +210,7 @@ Definition at line 43 of file Lab5.\+java.
 
 This variable holds the color of the target ring in the range \mbox{[}1,4\mbox{]}. 1 indicates a O\+R\+A\+N\+GE ring 2 indicates a G\+R\+E\+EN ring 3 indicates a B\+L\+UE ring 4 indicates a Y\+E\+L\+L\+OW ring 
 
-Definition at line 67 of file Lab5.\+java.
+Definition at line 83 of file Lab5.\+java.
 
 \mbox{\Hypertarget{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a3d2e7eb578ce6ef7f7453feed3835e1d}\label{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a3d2e7eb578ce6ef7f7453feed3835e1d}} 
 \index{ca\+::mcgill\+::ecse211\+::lab5\+::\+Lab5@{ca\+::mcgill\+::ecse211\+::lab5\+::\+Lab5}!T\+R\+A\+CK@{T\+R\+A\+CK}}
@@ -186,17 +220,22 @@ Definition at line 67 of file Lab5.\+java.
 
 This variable denotes the track distance between the center of the wheels in cm (measured and adjusted based on trial and error). 
 
-Definition at line 54 of file Lab5.\+java.
+Definition at line 71 of file Lab5.\+java.
 
 \mbox{\Hypertarget{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a27ae00bb6fbeed54573af9cc5c3dc32e}\label{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a27ae00bb6fbeed54573af9cc5c3dc32e}} 
 \index{ca\+::mcgill\+::ecse211\+::lab5\+::\+Lab5@{ca\+::mcgill\+::ecse211\+::lab5\+::\+Lab5}!visited\+Search\+Area\+Coordinates@{visited\+Search\+Area\+Coordinates}}
 \index{visited\+Search\+Area\+Coordinates@{visited\+Search\+Area\+Coordinates}!ca\+::mcgill\+::ecse211\+::lab5\+::\+Lab5@{ca\+::mcgill\+::ecse211\+::lab5\+::\+Lab5}}
 \subsubsection{\texorpdfstring{visited\+Search\+Area\+Coordinates}{visitedSearchAreaCoordinates}}
-{\footnotesize\ttfamily boolean \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} ca.\+mcgill.\+ecse211.\+lab5.\+Lab5.\+visited\+Search\+Area\+Coordinates = new boolean\mbox{[}U\+Rx -\/ \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a957a526ed669e9d8b7fc485e21385ee9}{L\+Lx} + 1\mbox{]}\mbox{[}U\+Ry -\/ L\+Ly + 1\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily boolean \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} ca.\+mcgill.\+ecse211.\+lab5.\+Lab5.\+visited\+Search\+Area\+Coordinates\hspace{0.3cm}{\ttfamily [static]}}
 
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+      \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[URx - \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a957a526ed669e9d8b7fc485e21385ee9}{LLx} + 1][URy - LLy + 1]
+\end{DoxyCode}
 This array contains the set of all coordinates that our robot has visited. By default all values are set to false. 
 
-Definition at line 79 of file Lab5.\+java.
+Definition at line 94 of file Lab5.\+java.
 
 \mbox{\Hypertarget{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_ab9b6fc96d3fb1ac6c7d69d1727b3bbdd}\label{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_ab9b6fc96d3fb1ac6c7d69d1727b3bbdd}} 
 \index{ca\+::mcgill\+::ecse211\+::lab5\+::\+Lab5@{ca\+::mcgill\+::ecse211\+::lab5\+::\+Lab5}!W\+H\+E\+E\+L\+\_\+\+R\+AD@{W\+H\+E\+E\+L\+\_\+\+R\+AD}}
@@ -206,7 +245,7 @@ Definition at line 79 of file Lab5.\+java.
 
 This variable denotes the radius of our wheels in cm. 
 
-Definition at line 48 of file Lab5.\+java.
+Definition at line 65 of file Lab5.\+java.
 
 
 

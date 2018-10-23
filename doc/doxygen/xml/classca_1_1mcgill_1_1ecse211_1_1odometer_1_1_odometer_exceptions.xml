@@ -27,37 +27,37 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerExceptions.java" line="16" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerExceptions.java" bodystart="16" bodyend="18"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerExceptions.java" line="17" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerExceptions.java" bodystart="17" bodyend="19"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>This class is used to handle errors regarding the singleton pattern used for the odometer and odometerData</para><para><simplesect kind="author"><para>Caspar Cedro &amp; Patrick Erath </para></simplesect>
+<para>This class is used to handle errors regarding the singleton pattern used for the odometer and odometerData</para><para><simplesect kind="author"><para>Caspar Cedro &amp; Percy Chen &amp; Patrick Erath &amp; Anssam Ghezala &amp; Susan Matuszewski &amp; Kamy Moussavi Kafi </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="32">
+      <node id="40">
         <label>Exception</label>
       </node>
-      <node id="31">
+      <node id="39">
         <label>ca.mcgill.ecse211.odometer.OdometerExceptions</label>
         <link refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions"/>
-        <childnode refid="32" relation="public-inheritance">
+        <childnode refid="40" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="34">
+      <node id="42">
         <label>Exception</label>
       </node>
-      <node id="33">
+      <node id="41">
         <label>ca.mcgill.ecse211.odometer.OdometerExceptions</label>
         <link refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions"/>
-        <childnode refid="34" relation="public-inheritance">
+        <childnode refid="42" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerExceptions.java" line="10" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerExceptions.java" bodystart="10" bodyend="19"/>
+    <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerExceptions.java" line="11" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerExceptions.java" bodystart="11" bodyend="20"/>
     <listofallmembers>
       <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions_1a25aa31baebe4906716a920929f0284d2" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::OdometerExceptions</scope><name>OdometerExceptions</name></member>
     </listofallmembers>
