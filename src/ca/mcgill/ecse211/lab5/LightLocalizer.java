@@ -67,14 +67,14 @@ public class LightLocalizer {
 		leftMotor.setSpeed(100);
 		rightMotor.setSpeed(100);
 		// 3. Go backwards by sensor-wheel center distance in x-direction
-		leftMotor.rotate(Navigation.convertDistance(Lab5.WHEEL_RAD, -SENSOR_DIS), true);
-		rightMotor.rotate(Navigation.convertDistance(Lab5.WHEEL_RAD, -SENSOR_DIS), false);
+		leftMotor.rotate(Navigation.convertDistance(Lab5.LOCALIZE_WHEEL_RAD, -SENSOR_DIS), true);
+		rightMotor.rotate(Navigation.convertDistance(Lab5.LOCALIZE_WHEEL_RAD, -SENSOR_DIS), false);
 		// 4. Go backwards by sensor-wheel center distance in y-direction
 		navigation.turnTo(0, false);
 		leftMotor.setSpeed(100);
 		rightMotor.setSpeed(100);
-	    leftMotor.rotate(Navigation.convertDistance(Lab5.WHEEL_RAD, -SENSOR_DIS-3.5), true);
-	    rightMotor.rotate(Navigation.convertDistance(Lab5.WHEEL_RAD, -SENSOR_DIS-3.5), false);
+	    leftMotor.rotate(Navigation.convertDistance(Lab5.LOCALIZE_WHEEL_RAD, -SENSOR_DIS-2.5), true);
+	    rightMotor.rotate(Navigation.convertDistance(Lab5.LOCALIZE_WHEEL_RAD, -SENSOR_DIS-2.5), false);
 		odometer.setTheta(0);
 		odometer.setX(sC[0]);
 		odometer.setY(sC[1]);
