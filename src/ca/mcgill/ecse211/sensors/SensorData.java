@@ -8,8 +8,12 @@ import ca.mcgill.ecse211.odometer.OdometerExceptions;
 /**
  * This class implements methods to manage data from our sensors
  * 
- * @author Caspar Cedro & Percy Chen & Patrick Erath & Anssam Ghezala & Susan Matuszewski & Kamy
- *         Moussavi Kafi
+ * @author Caspar Cedro
+ * @author Percy Chen
+ * @author Patrick Erath
+ * @author Anssam Ghezala
+ * @author Susan Matuszewski
+ * @author Kamy Moussavi Kafi
  */
 public class SensorData {
   // Sensor data parameters

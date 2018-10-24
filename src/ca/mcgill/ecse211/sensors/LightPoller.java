@@ -6,8 +6,12 @@ import lejos.robotics.SampleProvider;
 /**
  * This class implements the Light Sensor Poller for our robot
  * 
- * @author Caspar Cedro & Percy Chen & Patrick Erath & Anssam Ghezala & Susan Matuszewski & Kamy
- *         Moussavi Kafi
+ * @author Caspar Cedro
+ * @author Percy Chen
+ * @author Patrick Erath
+ * @author Anssam Ghezala
+ * @author Susan Matuszewski
+ * @author Kamy Moussavi Kafi
  */
 public class LightPoller extends Thread {
   protected SampleProvider us;
