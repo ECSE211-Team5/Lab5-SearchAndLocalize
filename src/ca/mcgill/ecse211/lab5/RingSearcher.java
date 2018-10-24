@@ -68,11 +68,11 @@ public class RingSearcher {
     while (leftMotor.isMoving() || rightMotor.isMoving()) {
       if (ColorCalibrator.getColor() == target) {
         navigation.stop();
-        Sound.twoBeeps();
+        Sound.beep();
         foundRing = true;
         break;
       } else if (ColorCalibrator.getColor() != ColorCalibrator.Color.Other) {
-        Sound.beep();
+        Sound.twoBeeps();
         navigation.stop();
         break;
       }

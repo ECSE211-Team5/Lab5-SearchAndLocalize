@@ -8,6 +8,7 @@ import ca.mcgill.ecse211.sensors.RGBPoller;
 import ca.mcgill.ecse211.sensors.SensorData;
 import ca.mcgill.ecse211.sensors.UltrasonicPoller;
 import lejos.hardware.Button;
+import lejos.hardware.Sound;
 import lejos.hardware.ev3.LocalEV3;
 import lejos.hardware.lcd.TextLCD;
 import lejos.hardware.motor.EV3LargeRegulatedMotor;
@@ -193,12 +194,14 @@ public class Lab5 {
           // STEP 2: MOVE TO START OF SEARCH AREA
           navigation.travelTo(LLx, LLy, false);
           Lab5.TRACK = LOCALIZE_TRACK;
+          Sound.beep();
           // STEP 3: SEARCH ALL COORDINATES
           searchArea(navigation, searcher, targetColor);
           double URyOffset = 0.5;
           navigation.travelTo(odometer.getXYT()[0], URy + URyOffset, true);
           navigation.travelTo(URx, URy + URyOffset, true);
           navigation.travelTo(URx, URy, false);
+          Sound.beep();
           // STEP 4: NAVIGATE TO URx, URy
         } catch (OdometerExceptions e) {
           // TODO Auto-generated catch block
