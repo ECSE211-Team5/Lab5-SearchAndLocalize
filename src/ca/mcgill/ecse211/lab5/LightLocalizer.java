@@ -55,7 +55,7 @@ public class LightLocalizer {
 		Sound.beep();
 		odometer.setY(0);
 		// 2. Turn and go forward find the x=0 line
-		navigation.turnTo(90, false);
+		navigation.turnTo(90, false, false);
 		leftMotor.setSpeed(100);
 		rightMotor.setSpeed(100);
 		leftMotor.forward();
@@ -70,7 +70,7 @@ public class LightLocalizer {
 		leftMotor.rotate(Navigation.convertDistance(Lab5.LOCALIZE_WHEEL_RAD, -SENSOR_DIS), true);
 		rightMotor.rotate(Navigation.convertDistance(Lab5.LOCALIZE_WHEEL_RAD, -SENSOR_DIS), false);
 		// 4. Go backwards by sensor-wheel center distance in y-direction
-		navigation.turnTo(0, false);
+		navigation.turnTo(0, false, false);
 		leftMotor.setSpeed(100);
 		rightMotor.setSpeed(100);
 		leftMotor.rotate(Navigation.convertDistance(Lab5.LOCALIZE_WHEEL_RAD, -SENSOR_DIS - 2.5), true);

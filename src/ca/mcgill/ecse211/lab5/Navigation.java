@@ -69,7 +69,7 @@ public class Navigation {
       theta += Math.PI;
     double distance = Math.sqrt(Math.pow(dX, 2) + Math.pow(dY, 2));
 
-    turnTo(Math.toDegrees(theta), false);
+    turnTo(Math.toDegrees(theta), false, true);
 
     leftMotor.setSpeed(FORWARD_SPEED);
     rightMotor.setSpeed(FORWARD_SPEED);
@@ -80,58 +80,45 @@ public class Navigation {
     if (!doCorrection)
       return;
     while (leftMotor.isMoving() && rightMotor.isMoving()) {
-      if (data.getDL()[1] < 25 && !corrected) {
+      if (data.getDL()[1] < 25 ) {
         Sound.beep();
         doCorrection(data.getA());
-        corrected = true;
+        //corrected = true;
       }
     }
   }
-
-  public void travelBackTo(double x, double y) {
-    double dX = x - odometer.getXYT()[0];
-    double dY = y - odometer.getXYT()[1];
-    double theta = Math.atan(dX / dY);
-    if (dY < 0 && theta < Math.PI)
-      theta += Math.PI;
-    double distance = Math.sqrt(Math.pow(dX, 2) + Math.pow(dY, 2));
-
-    turnTo(Math.toDegrees(theta) - 180, false);
-
-    leftMotor.setSpeed(FORWARD_SPEED);
-    rightMotor.setSpeed(FORWARD_SPEED);
-
-    leftMotor.rotate(-convertDistance(Lab5.WHEEL_RAD, distance * Lab5.TILE), true);
-    rightMotor.rotate(-convertDistance(Lab5.WHEEL_RAD, distance * Lab5.TILE), false);
-  }
-
+  
   /**
    * This method is where the logic for the odometer will run. Use the methods provided from the
    * OdometerData class to implement the odometer.
    * 
    * @param angle The angle we want our robot to turn to (in degrees)
    */
-  public void turnTo(double angle, boolean async) {
+  public void turnTo(double angle, boolean async, boolean useGyro) {
     double dTheta;
 
-    dTheta = angle - odometer.getXYT()[2];// SensorData.getSensorData().getA();
-    if (dTheta < 0)
-      dTheta += 360;
-
-    // TURN RIGHT
-    if (dTheta > 180) {
-      leftMotor.setSpeed(ROTATE_SPEED);
-      rightMotor.setSpeed(ROTATE_SPEED);
-      leftMotor.rotate(-convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, 360 - dTheta), true);
-      rightMotor.rotate(convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, 360 - dTheta), async);
-    }
-    // TURN LEFT
-    else {
-      leftMotor.setSpeed(ROTATE_SPEED);
-      rightMotor.setSpeed(ROTATE_SPEED);
-      leftMotor.rotate(convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, dTheta), true);
-      rightMotor.rotate(-convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, dTheta), async);
-    }
+    	if(useGyro) {
+    		dTheta = angle - data.getA();
+    	}else {
+    		dTheta = angle - odometer.getXYT()[2];
+    	}
+	if (dTheta < 0)
+	   dTheta += 360;
+	
+	    // TURN RIGHT
+	if (dTheta > 180) {
+	  leftMotor.setSpeed(ROTATE_SPEED);
+	  rightMotor.setSpeed(ROTATE_SPEED);
+	  leftMotor.rotate(-convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, 360 - dTheta), true);
+	  rightMotor.rotate(convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, 360 - dTheta), async);
+	}
+	// TURN LEFT
+	else {
+	  leftMotor.setSpeed(ROTATE_SPEED);
+	  rightMotor.setSpeed(ROTATE_SPEED);
+	  leftMotor.rotate(convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, dTheta), true);
+	  rightMotor.rotate(-convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, dTheta), async);
+	}
   }
 
   /**

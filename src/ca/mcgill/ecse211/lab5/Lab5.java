@@ -25,13 +25,16 @@ import lejos.robotics.SampleProvider;
  * @author Caspar Cedro & Percy Chen & Patrick Erath & Anssam Ghezala & Susan Matuszewski & Kamy
  *         Moussavi Kafi
  */
+
+// Test to make sure latest version pushed
 public class Lab5 {
 	// Motor Objects, and Robot related parameters
 	private static final Port usPort = LocalEV3.get().getPort("S1");
 	// initialize multiple light ports in main
 	private static Port[] lgPorts = new Port[2];
 	private static final TextLCD lcd = LocalEV3.get().getTextLCD();
-
+	private static final Port gPort = LocalEV3.get().getPort("S4");
+	private static EV3GyroSensor gSensor = new EV3GyroSensor(gPort);
 	/**
 	 * Motor object instance that allows control of the left motor connected to port
 	 * B
@@ -51,17 +54,18 @@ public class Lab5 {
 	/**
 	 * This variable denotes the radius of our wheels in cm.
 	 */
-	public static final double WHEEL_RAD = 2.15;
+	public static final double WHEEL_RAD = 2.2;
+	// 2.15
 
 	/**
 	 * This variable denotes the track distance between the center of the wheels in
 	 * cm (measured and adjusted based on trial and error).
 	 */
-	public static double TRACK = 9.7;//10.2;//9.5;// for localization: 10.8;
+	public static double TRACK =  10.3;//10.2;//9.5;// for localization: 10.8;
 	// last TRACK value: 10.4
 
 	public static final double LOCALIZE_WHEEL_RAD = 2.2;
-	public static final double LOCALIZE_TRACK = 10.8;
+	public static final double LOCALIZE_TRACK = 10.8; // 10.8 before
 	/**
 	 * This variables holds the starting corner coordinates for our robot.
 	 */
@@ -78,13 +82,7 @@ public class Lab5 {
 	 * These are the coordinates for our search area. LL = Lower Left UR = Upper
 	 * Right
 	 */
-	public static final int LLx = 2, LLy = 2, URx = 4, URy = 4;
-
-	/**
-	 * This array contains the set of all coordinates that our robot has visited. By
-	 * default all values are set to false.
-	 */
-	public static boolean[][] visitedSearchAreaCoordinates = new boolean[URx - LLx + 1][URy - LLy + 1];
+	public static final int LLx = 2, LLy = 2, URx = 5, URy = 5;
 
 	/**
 	 * This method is our main entry point - instantiate objects used and set up
@@ -122,6 +120,8 @@ public class Lab5 {
 		
 		// SampleProvider frontLight2 = lgSensors[2].getRedMode();
 
+		SampleProvider gProvider = gSensor.getAngleMode();
+		
 		// STEP 1: LOCALIZE to (1,1)
 		// ButtonChoice left or right
 		lcd.clear();
@@ -146,6 +146,8 @@ public class Lab5 {
 		bLgPoller.start();
 		Thread fLgPoller1 = new RGBPoller(frontLight1, new float[frontLight1.sampleSize()], sensorData);
 		fLgPoller1.start();
+		Thread gPoller = new GyroPoller(gProvider, new float[gProvider.sampleSize()], sensorData);
+		gPoller.start();
 		
 		// Run color classification
 		if (buttonChoice == Button.ID_DOWN) {
@@ -169,6 +171,7 @@ public class Lab5 {
 
 			usLoc.localize(buttonChoice);
 			lgLoc.localize(SC);
+			gSensor.reset();
 				// TODO: delete test code
 				try {
 					Odometer odometer = Odometer.getOdometer();
@@ -207,30 +210,30 @@ public class Lab5 {
 			if (counter % 2 == 0) {
 				// if we are at the first, third...etc verticle zone, search up
 				navigation.travelTo(i, LLy+0.3, false);
-				navigation.turnTo(180, false);
+				navigation.turnTo(180, false, true);
 				if (searcher.search(110, targetColor)) return;
-				navigation.turnTo(0, false);
+				navigation.turnTo(0, false, true);
 				for (double j = LLy + 0.7; j < URy; j++) {
 					navigation.travelTo(i, j, true);
 					if (searcher.search(70, targetColor)) return;
-					navigation.turnTo(0, false);
-					if (searcher.search(290, targetColor)) return;
-					navigation.turnTo(0, false);
+					navigation.turnTo(0, false, true);
+					if (searcher.search(280, targetColor)) return;
+					navigation.turnTo(0, false, true);
 				}
 			} else {
 				navigation.travelTo(i, URy-0.3, true);
-				navigation.turnTo(0, false);
+				navigation.turnTo(0, false, true);
 				if (searcher.search(70, targetColor)) return;
-				navigation.turnTo(0, false);
+				navigation.turnTo(0, false, true);
 				if (searcher.search(310, targetColor)) return;
-				navigation.turnTo(180, false);
+				navigation.turnTo(180, false, true);
 				//when we are at the second, fourth... verticle zone, search down
 				for (double j = URy - 1 + 0.3; j > LLy; j--) {
 					navigation.travelTo(i, j, true);
 					if (searcher.search(110, targetColor)) return;
-					navigation.turnTo(180, false);
-					if (searcher.search(250, targetColor)) return;
-					navigation.turnTo(180, false);
+					navigation.turnTo(180, false, true);
+					if (searcher.search(260, targetColor)) return;
+					navigation.turnTo(180, false, true);
 				}
 			}
 			counter ++;
