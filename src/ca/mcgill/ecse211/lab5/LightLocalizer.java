@@ -9,8 +9,12 @@ import lejos.hardware.motor.EV3LargeRegulatedMotor;
 /**
  * This class helps our robot to localize itself using the light sensor
  * 
- * @author Caspar Cedro & Percy Chen & Patrick Erath & Anssam Ghezala & Susan
- *         Matuszewski & Kamy Moussavi Kafi
+ * @author Caspar Cedro
+ * @author Percy Chen
+ * @author Patrick Erath
+ * @author Anssam Ghezala
+ * @author Susan Matuszewski
+ * @author Kamy Moussavi Kafi
  */
 public class LightLocalizer {
 	private EV3LargeRegulatedMotor leftMotor;

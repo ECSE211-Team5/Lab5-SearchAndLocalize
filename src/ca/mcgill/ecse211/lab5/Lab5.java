@@ -22,8 +22,12 @@ import lejos.robotics.SampleProvider;
 /**
  * This class implements the main starting point for the Search and Localize lab
  * 
- * @author Caspar Cedro & Percy Chen & Patrick Erath & Anssam Ghezala & Susan Matuszewski & Kamy
- *         Moussavi Kafi
+ * @author Caspar Cedro
+ * @author Percy Chen
+ * @author Patrick Erath
+ * @author Anssam Ghezala
+ * @author Susan Matuszewski
+ * @author Kamy Moussavi Kafi
  */
 
 // Test to make sure latest version pushed
@@ -196,14 +200,15 @@ public class Lab5 {
 		System.exit(0);
 	}
 
-	/**
-	 * This method finished the search process, it returns when it find the targeted
-	 * run
-	 * 
-	 * @param navigation
-	 * @param searcher
-	 * @param targetColor: target color
-	 */
+	  /**
+	   * This method finished the search process, it returns when it find the targeted run
+	   * 
+	   * @param navigation A Navigation object instance that navigates our robot to the desired spots to
+	   *        search for rings
+	   * @param searcher A RingSearcher object instance that allows our robot to perform a search sweep
+	   *        for rings
+	   * @param targetColor The color of the ring that we are searching for
+	   */
 	public static void searchArea(Navigation navigation, RingSearcher searcher, ColorCalibrator.Color targetColor) {
 		int counter = 0;
 		for (double i = LLx + 0.5; i < URx + 1; ) {

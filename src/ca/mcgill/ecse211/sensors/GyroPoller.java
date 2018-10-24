@@ -5,8 +5,12 @@ import lejos.robotics.SampleProvider;
 
 /**
  * 
- * @author Caspar Cedro & Percy Chen & Patrick Erath & Anssam Ghezala & Susan Matuszewski & Kamy
- *         Moussavi Kafi
+ * @author Caspar Cedro
+ * @author Percy Chen
+ * @author Patrick Erath
+ * @author Anssam Ghezala
+ * @author Susan Matuszewski
+ * @author Kamy Moussavi Kafi
  */
 public class GyroPoller extends Thread {
   protected SampleProvider us;

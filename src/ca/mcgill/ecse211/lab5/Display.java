@@ -9,8 +9,12 @@ import lejos.hardware.lcd.TextLCD;
 /**
  * This class is used to display the content of the odometer variables (x, y, Theta)
  * 
- * @author Caspar Cedro & Percy Chen & Patrick Erath & Anssam Ghezala & Susan Matuszewski & Kamy
- *         Moussavi Kafi
+ * @author Caspar Cedro
+ * @author Percy Chen
+ * @author Patrick Erath
+ * @author Anssam Ghezala
+ * @author Susan Matuszewski
+ * @author Kamy Moussavi Kafi
  */
 public class Display implements Runnable {
   private SensorData sensdata;
@@ -22,11 +26,10 @@ public class Display implements Runnable {
   private final long DISPLAY_PERIOD = 25;
   private long timeout = Long.MAX_VALUE;
 
-
   /**
-   * This is the class constructor
+   * This is the class constructor for a display object that controls an EV3 brick display
    * 
-   * @param odoData
+   * @param lcd A TextLCD object instance to control
    * @throws OdometerExceptions
    */
   public Display(TextLCD lcd) throws OdometerExceptions {
@@ -36,9 +39,10 @@ public class Display implements Runnable {
   }
 
   /**
-   * This is the overloaded class constructor
+   * This is the overloaded class constructor for a display object
    * 
-   * @param odoData
+   * @param lcd A TextLCD object instance to control
+   * @param timeout A duration of time to update the display for
    * @throws OdometerExceptions
    */
   public Display(TextLCD lcd, long timeout) throws OdometerExceptions {
@@ -51,12 +55,12 @@ public class Display implements Runnable {
    * This method is called when the Display thread is started.
    */
   public void run() {
-
     lcd.clear();
 
     long updateStart, updateEnd;
 
     long tStart = System.currentTimeMillis();
+
     do {
       updateStart = System.currentTimeMillis();
 
@@ -77,6 +81,7 @@ public class Display implements Runnable {
           (int) rgb[2]) != ColorCalibrator.Color.Other) {
         lcd.drawString("Object Detected", 0, 5);
       } else {
+        // Draw whitespace on our display
         lcd.drawString("                   ", 0, 5);
       }
 
@@ -87,7 +92,7 @@ public class Display implements Runnable {
       // lcd.drawString(String.format("(g: %f", rgb[1]), 0, 4);
       // lcd.drawString(String.format("(b: %f", rgb[2]), 0, 5);
 
-      // this ensures that the data is updated only once every period
+      // This ensures that the data is updated only once every period
       updateEnd = System.currentTimeMillis();
       if (updateEnd - updateStart < DISPLAY_PERIOD) {
         try {
