@@ -84,9 +84,9 @@ public class Navigation {
     if (!doCorrection)
       return;
     while (leftMotor.isMoving() && rightMotor.isMoving()) {
-      if (data.getDL()[1] < 25 ) {
-        Sound.beep();
-        doCorrection(data.getA());
+      if (data.getDL()[1] < 25) {
+        //Sound.beep();
+        //doCorrection(data.getA());
         //corrected = true;
       }
     }
@@ -129,7 +129,7 @@ public class Navigation {
    * 
    * @param angle
    */
-  public void doCorrection(double angle) {
+  /*public void doCorrection(double angle) {
     double[] position = odometer.getXYT();
     if (angle < 5 || angle > 355) {
       int sensorCoor = (int) Math.round(position[1] - SENSOR_DIS / Lab5.TILE);
@@ -141,7 +141,7 @@ public class Navigation {
       int sensorCoor = (int) Math.round(position[0] - SENSOR_DIS / Lab5.TILE);
       odometer.setX(sensorCoor + SENSOR_DIS / Lab5.TILE);
     }
-  }
+  }*/
 
   /**
    * Rotate the robot by certain angle

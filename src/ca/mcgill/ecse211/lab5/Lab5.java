@@ -9,6 +9,7 @@ import ca.mcgill.ecse211.sensors.RGBPoller;
 import ca.mcgill.ecse211.sensors.SensorData;
 import ca.mcgill.ecse211.sensors.UltrasonicPoller;
 import lejos.hardware.Button;
+import lejos.hardware.Sound;
 import lejos.hardware.ev3.LocalEV3;
 import lejos.hardware.lcd.TextLCD;
 import lejos.hardware.motor.EV3LargeRegulatedMotor;
@@ -39,6 +40,7 @@ public class Lab5 {
 	private static final TextLCD lcd = LocalEV3.get().getTextLCD();
 	private static final Port gPort = LocalEV3.get().getPort("S4");
 	private static EV3GyroSensor gSensor = new EV3GyroSensor(gPort);
+
 	/**
 	 * Motor object instance that allows control of the left motor connected to port
 	 * B
@@ -86,8 +88,10 @@ public class Lab5 {
 	 * These are the coordinates for our search area. LL = Lower Left UR = Upper
 	 * Right
 	 */
-	public static final int LLx = 2, LLy = 2, URx = 5, URy = 5;
+	public static final int LLx = 2, LLy = 3, URx = 5, URy = 5;
 
+	public static  ColorCalibrator.Color targetColor = ColorCalibrator.Color.values()[TR - 1];
+	public static boolean foundRing = false;
 	/**
 	 * This method is our main entry point - instantiate objects used and set up
 	 * sensor.
@@ -166,12 +170,11 @@ public class Lab5 {
 		final UltrasonicLocalizer usLoc = new UltrasonicLocalizer(navigation, leftMotor, rightMotor);
 		final LightLocalizer lgLoc = new LightLocalizer(navigation, leftMotor, rightMotor);
 		final RingSearcher searcher = new RingSearcher(navigation, leftMotor, rightMotor);
-		
+		searcher.start();
 		// spawn a new Thread to avoid localization from blocking
 		(new Thread() {
 			public void run() {
  				// target color
-				ColorCalibrator.Color targetColor = ColorCalibrator.Color.values()[TR - 1];
 
 			usLoc.localize(buttonChoice);
 			lgLoc.localize(SC);
@@ -179,9 +182,11 @@ public class Lab5 {
 				// TODO: delete test code
 				try {
 					Odometer odometer = Odometer.getOdometer();
+                    Lab5.TRACK = 9.8;
+
 					// STEP 2: MOVE TO START OF SEARCH AREA
 					 navigation.travelTo(LLx, LLy, false);
-					 Lab5.TRACK = LOCALIZE_TRACK;
+					 Sound.beep();
 					// STEP 3: SEARCH ALL COORDINATES
 					searchArea(navigation, searcher, targetColor);
 					navigation.travelTo(odometer.getXYT()[0], URy+0.5, true);
@@ -240,6 +245,10 @@ public class Lab5 {
 					if (searcher.search(260, targetColor)) return;
 					navigation.turnTo(180, false, true);
 				}
+			}
+			
+			if(foundRing) {
+			  return;
 			}
 			counter ++;
 			i = (i+2 < URx)? i+2 : (URx-0.5);

@@ -15,7 +15,7 @@ import lejos.hardware.motor.EV3LargeRegulatedMotor;
  * @author Susan Matuszewski
  * @author Kamy Moussavi Kafi
  */
-public class RingSearcher {
+public class RingSearcher extends Thread{
   private static final int FORWARD_SPEED = 100;
   private static final int ROTATE_SPEED = 50;
   private static final int RING_DISTANCE = 30;
@@ -46,6 +46,28 @@ public class RingSearcher {
       motor.setAcceleration(300);
     }
   }
+  
+  public void run() {
+    while(true) {
+      if (ColorCalibrator.getColor() == Lab5.targetColor) {
+        navigation.stop();
+    //    Sound.twoBeeps();
+        Sound.beep();
+        Lab5.foundRing = true;
+      } else if (ColorCalibrator.getColor() != ColorCalibrator.Color.Other) {
+        Sound.twoBeeps();
+        navigation.stop();
+        
+        try {
+          Thread.sleep(30);
+        } catch (InterruptedException e) {
+          // TODO Auto-generated catch block
+          e.printStackTrace();
+        }
+      }
+    }
+    
+  }
 
   /**
    * This method turn the robot for certain angle and see if there is a right if there is, it will
@@ -60,20 +82,7 @@ public class RingSearcher {
     boolean foundRing = false;
     boolean ColorMatched = false;
     // turn to the angle async
-    navigation.turnTo(angle, true, true);
-    // while turnninng, check the value from the us sensor to see if there is a ring
-    while (leftMotor.isMoving() || rightMotor.isMoving()) {
-      if (ColorCalibrator.getColor() == target) {
-        navigation.stop();
-        Sound.twoBeeps();
-        foundRing = true;
-        break;
-      } else if (ColorCalibrator.getColor() != ColorCalibrator.Color.Other) {
-        Sound.beep();
-        navigation.stop();
-        break;
-      }
-    }
+    navigation.turnTo(angle, true, false);
     // if we found a ring, got for the ring and check its color
     // if the color matches, return true
     // if(foundRing) {

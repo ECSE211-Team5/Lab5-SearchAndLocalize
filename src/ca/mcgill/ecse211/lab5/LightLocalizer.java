@@ -25,7 +25,7 @@ public class LightLocalizer {
 	private Navigation navigation;
 	private static final int FORWARD_SPEED = 200;
 	private static final double SENSOR_DIS = 16.3;
-	private static final int blackLineColor = 25;
+	private static final int blackLineColor = 20;
 
 	/**
 	 * This is the class constructor
