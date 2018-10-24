@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/UltrasonicPoller.java" line="19" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/UltrasonicPoller.java" bodystart="19" bodyend="-1"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/UltrasonicPoller.java" line="23" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/UltrasonicPoller.java" bodystart="23" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller_1a67a14911278e7a36fcc96316d920f6cf" prot="private" static="no" mutable="no">
         <type><ref refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data" kindref="compound">SensorData</ref></type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/UltrasonicPoller.java" line="20" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/UltrasonicPoller.java" bodystart="20" bodyend="-1"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/UltrasonicPoller.java" line="24" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/UltrasonicPoller.java" bodystart="24" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller_1acbaff05aab9077535a5d9bce31b5457f" prot="private" static="no" mutable="no">
         <type>float []</type>
@@ -41,7 +41,23 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/UltrasonicPoller.java" line="21" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/UltrasonicPoller.java" bodystart="21" bodyend="-1"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/UltrasonicPoller.java" line="25" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/UltrasonicPoller.java" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller_1a01045a01bd07b962911d116470d315ab" prot="private" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int ca.mcgill.ecse211.sensors.UltrasonicPoller.SLEEP_INTERVAL</definition>
+        <argsstring></argsstring>
+        <name>SLEEP_INTERVAL</name>
+        <initializer>= 30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/UltrasonicPoller.java" line="26" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/UltrasonicPoller.java" bodystart="26" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -90,7 +106,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/UltrasonicPoller.java" line="34" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/UltrasonicPoller.java" bodystart="34" bodyend="38"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/UltrasonicPoller.java" line="39" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/UltrasonicPoller.java" bodystart="39" bodyend="43"/>
       </memberdef>
       <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller_1acc71fac612a72c197244c71d6cf7b6e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -104,16 +120,32 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/UltrasonicPoller.java" line="49" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/UltrasonicPoller.java" bodystart="49" bodyend="87"/>
-        <references refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1ae20bf127c57dcfcb3b7632ca05b6d482" compoundref="_sensor_data_8java" startline="144" endline="155">ca.mcgill.ecse211.sensors.SensorData.setD</references>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/UltrasonicPoller.java" line="54" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/UltrasonicPoller.java" bodystart="54" bodyend="93"/>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1ae20bf127c57dcfcb3b7632ca05b6d482" compoundref="_sensor_data_8java" startline="155" endline="166">ca.mcgill.ecse211.sensors.SensorData.setD</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>This class implements the Ultrasonic Sensor Poller for our Wall Follower.</para><para>Control of the wall follower is applied periodically by the <ref refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller" kindref="compound">UltrasonicPoller</ref> thread. The while loop at the bottom executes in a loop. Assuming that the us.fetchSample, and cont.processUSData methods operate in about 20mS, and that the thread sleeps for 50 mS at the end of each loop, then one cycle through the loop is approximately 70 mS. This corresponds to a sampling rate of 1/70mS or about 14 Hz.</para><para><simplesect kind="author"><para>Caspar Cedro &amp; Percy Chen &amp; Patrick Erath &amp; Anssam Ghezala &amp; Susan Matuszewski &amp; Kamy Moussavi Kafi </para></simplesect>
+<para>This class implements the Ultrasonic Sensor Poller for our Wall Follower.</para><para>Control of the wall follower is applied periodically by the <ref refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller" kindref="compound">UltrasonicPoller</ref> thread. The while loop at the bottom executes in a loop. Assuming that the us.fetchSample, and cont.processUSData methods operate in about 20mS, and that the thread sleeps for 50 mS at the end of each loop, then one cycle through the loop is approximately 70 mS. This corresponds to a sampling rate of 1/70mS or about 14 Hz.</para><para><simplesect kind="author"><para>Caspar Cedro </para></simplesect>
+<simplesect kind="author"><para>Percy Chen </para></simplesect>
+<simplesect kind="author"><para>Patrick Erath </para></simplesect>
+<simplesect kind="author"><para>Anssam Ghezala </para></simplesect>
+<simplesect kind="author"><para>Susan Matuszewski </para></simplesect>
+<simplesect kind="author"><para>Kamy Moussavi Kafi </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
+      <node id="59">
+        <label>ca.mcgill.ecse211.sensors.UltrasonicPoller</label>
+        <link refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller"/>
+        <childnode refid="60" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>Thread</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
       <node id="61">
         <label>ca.mcgill.ecse211.sensors.UltrasonicPoller</label>
         <link refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller"/>
@@ -123,22 +155,12 @@
       <node id="62">
         <label>Thread</label>
       </node>
-    </inheritancegraph>
-    <collaborationgraph>
-      <node id="63">
-        <label>ca.mcgill.ecse211.sensors.UltrasonicPoller</label>
-        <link refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller"/>
-        <childnode refid="64" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="64">
-        <label>Thread</label>
-      </node>
     </collaborationgraph>
-    <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/UltrasonicPoller.java" line="18" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/UltrasonicPoller.java" bodystart="18" bodyend="88"/>
+    <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/UltrasonicPoller.java" line="22" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/UltrasonicPoller.java" bodystart="22" bodyend="94"/>
     <listofallmembers>
       <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller_1a67a14911278e7a36fcc96316d920f6cf" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::sensors::UltrasonicPoller</scope><name>cont</name></member>
       <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller_1acc71fac612a72c197244c71d6cf7b6e1" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::sensors::UltrasonicPoller</scope><name>run</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller_1a01045a01bd07b962911d116470d315ab" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::sensors::UltrasonicPoller</scope><name>SLEEP_INTERVAL</name></member>
       <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller_1a3007841893144cccb37d023f34fb3cfc" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::sensors::UltrasonicPoller</scope><name>UltrasonicPoller</name></member>
       <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller_1a1c27670d086e0e68c506317212871e79" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::sensors::UltrasonicPoller</scope><name>us</name></member>
       <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller_1acbaff05aab9077535a5d9bce31b5457f" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::sensors::UltrasonicPoller</scope><name>usData</name></member>

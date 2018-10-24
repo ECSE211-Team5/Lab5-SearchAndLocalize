@@ -1,4 +1,4 @@
-.TH "ca.mcgill.ecse211.sensors.RGBPoller" 3 "Tue Oct 23 2018" "Version 1.0" "ECSE211 - Fall 2018 - Lab 5 - Search and Localize" \" -*- nroff -*-
+.TH "ca.mcgill.ecse211.sensors.RGBPoller" 3 "Wed Oct 24 2018" "Version 1.0" "ECSE211 - Fall 2018 - Lab 5 - Search and Localize" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -25,16 +25,48 @@ Inherits \fBca\&.mcgill\&.ecse211\&.sensors\&.LightPoller\fP\&.
 .SS "Additional Inherited Members"
 .SH "Detailed Description"
 .PP 
-
+This class polls a light sensor that is used to detect colored rings\&.
 .PP
 \fBAuthor:\fP
 .RS 4
-Caspar Cedro & Percy Chen & Patrick Erath & Anssam Ghezala & Susan Matuszewski & Kamy Moussavi Kafi 
+Caspar Cedro 
+.PP
+Percy Chen 
+.PP
+Patrick Erath 
+.PP
+Anssam Ghezala 
+.PP
+Susan Matuszewski 
+.PP
+Kamy Moussavi Kafi 
 .RE
 .PP
 
 .PP
-Definition at line 11 of file RGBPoller\&.java\&.
+Definition at line 16 of file RGBPoller\&.java\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "ca\&.mcgill\&.ecse211\&.sensors\&.RGBPoller\&.RGBPoller (SampleProvider us, float [] usData, \fBSensorData\fP cont) throws \fBOdometerExceptions\fP"
+This constructor creates an instance of the \fBRGBPoller\fP class to provide color data from an light sensor to our robot\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIus\fP A SampleProvider class instance that helps us to store an array of ultrasonic sensor data\&. 
+.br
+\fIusData\fP An array to store light data\&. 
+.br
+\fIcont\fP A \fBSensorData\fP object that is used to process color data\&. 
+.RE
+.PP
+\fBExceptions:\fP
+.RS 4
+\fIOdometerExceptions\fP 
+.RE
+.PP
+
+.PP
+Definition at line 30 of file RGBPoller\&.java\&.
 
 .SH "Author"
 .PP 

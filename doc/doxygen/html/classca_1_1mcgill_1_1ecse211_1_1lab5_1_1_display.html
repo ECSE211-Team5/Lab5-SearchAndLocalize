@@ -93,9 +93,19 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class is used to display the content of the odometer variables (x, y, Theta)</p>
-<dl class="section author"><dt>Author</dt><dd>Caspar Cedro &amp; Percy Chen &amp; Patrick Erath &amp; Anssam Ghezala &amp; Susan Matuszewski &amp; Kamy Moussavi Kafi </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Caspar Cedro </dd>
+<dd>
+Percy Chen </dd>
+<dd>
+Patrick Erath </dd>
+<dd>
+Anssam Ghezala </dd>
+<dd>
+Susan Matuszewski </dd>
+<dd>
+Kamy Moussavi Kafi </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_display_8java_source.html#l00015">15</a> of file <a class="el" href="_display_8java_source.html">Display.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_display_8java_source.html#l00019">19</a> of file <a class="el" href="_display_8java_source.html">Display.java</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aeb15906f02c60c1ca449d4c37922739b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeb15906f02c60c1ca449d4c37922739b">&#9670;&nbsp;</a></span>Display() <span class="overload">[1/2]</span></h2>
@@ -112,10 +122,10 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This is the class constructor</p>
+<p>This is the class constructor for a display object that controls an EV3 brick display</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">odoData</td><td></td></tr>
+    <tr><td class="paramname">lcd</td><td>A TextLCD object instance to control </td></tr>
   </table>
   </dd>
 </dl>
@@ -126,7 +136,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_display_8java_source.html#l00032">32</a> of file <a class="el" href="_display_8java_source.html">Display.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_display_8java_source.html#l00035">35</a> of file <a class="el" href="_display_8java_source.html">Display.java</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -165,10 +175,11 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This is the overloaded class constructor</p>
+<p>This is the overloaded class constructor for a display object</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">odoData</td><td></td></tr>
+    <tr><td class="paramname">lcd</td><td>A TextLCD object instance to control </td></tr>
+    <tr><td class="paramname">timeout</td><td>A duration of time to update the display for </td></tr>
   </table>
   </dd>
 </dl>
@@ -179,7 +190,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_display_8java_source.html#l00044">44</a> of file <a class="el" href="_display_8java_source.html">Display.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_display_8java_source.html#l00048">48</a> of file <a class="el" href="_display_8java_source.html">Display.java</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -208,15 +219,17 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>This method is called when the <a class="el" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display.html">Display</a> thread is started. </p>
 
-<p class="definition">Definition at line <a class="el" href="_display_8java_source.html#l00053">53</a> of file <a class="el" href="_display_8java_source.html">Display.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_display_8java_source.html#l00057">57</a> of file <a class="el" href="_display_8java_source.html">Display.java</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_a047e885f7170ba80f60fd3b4b2bc79a9_cgraph.png" border="0" usemap="#classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_a047e885f7170ba80f60fd3b4b2bc79a9_cgraph" alt=""/></div>
 <map name="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_a047e885f7170ba80f60fd3b4b2bc79a9_cgraph" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_a047e885f7170ba80f60fd3b4b2bc79a9_cgraph">
-<area shape="rect" id="node2" href="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data.html#a8f40f0264c68f0cbed4fff1723ae7863" title="ca.mcgill.ecse211.odometer.\lOdometerData.getXYT" alt="" coords="279,5,468,47"/>
-<area shape="rect" id="node3" href="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html#a4e0eabd547726c90bd0b7252557d7ad7" title="ca.mcgill.ecse211.sensors.\lSensorData.getDL" alt="" coords="283,71,464,112"/>
-<area shape="rect" id="node4" href="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html#a0abd08431dae67c7ee0e7a18b5305f91" title="ca.mcgill.ecse211.sensors.\lSensorData.getRGB" alt="" coords="283,136,464,177"/>
+<area shape="rect" id="node2" href="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data.html#a8f40f0264c68f0cbed4fff1723ae7863" title="ca.mcgill.ecse211.odometer.\lOdometerData.getXYT" alt="" coords="279,5,469,47"/>
+<area shape="rect" id="node3" href="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html#a4e0eabd547726c90bd0b7252557d7ad7" title="ca.mcgill.ecse211.sensors.\lSensorData.getDL" alt="" coords="283,71,465,112"/>
+<area shape="rect" id="node4" href="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html#a0abd08431dae67c7ee0e7a18b5305f91" title="ca.mcgill.ecse211.sensors.\lSensorData.getRGB" alt="" coords="283,136,465,177"/>
+<area shape="rect" id="node5" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator.html#a115188f4d3b465e09db3482f8a6f25d2" title="ca.mcgill.ecse211.lab5.Color\lCalibrator.getColor" alt="" coords="279,201,469,243"/>
+<area shape="rect" id="node6" href="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html#a7ad543db5c907b4bd3329dbb34b4e9d9" title="ca.mcgill.ecse211.sensors.\lSensorData.getA" alt="" coords="283,267,465,308"/>
 </map>
 </div>
 

@@ -1,4 +1,4 @@
-.TH "ca.mcgill.ecse211.odometer.Odometer" 3 "Tue Oct 23 2018" "Version 1.0" "ECSE211 - Fall 2018 - Lab 5 - Search and Localize" \" -*- nroff -*-
+.TH "ca.mcgill.ecse211.odometer.Odometer" 3 "Wed Oct 24 2018" "Version 1.0" "ECSE211 - Fall 2018 - Lab 5 - Search and Localize" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -32,12 +32,22 @@ This class implements odometry on our robot\&.
 .PP
 \fBAuthor:\fP
 .RS 4
-Caspar Cedro & Percy Chen & Patrick Erath & Anssam Ghezala & Susan Matuszewski & Kamy Moussavi Kafi 
+Caspar Cedro 
+.PP
+Percy Chen 
+.PP
+Patrick Erath 
+.PP
+Anssam Ghezala 
+.PP
+Susan Matuszewski 
+.PP
+Kamy Moussavi Kafi 
 .RE
 .PP
 
 .PP
-Definition at line 22 of file Odometer\&.java\&.
+Definition at line 26 of file Odometer\&.java\&.
 .SH "Member Function Documentation"
 .PP 
 .SS "static synchronized \fBOdometer\fP ca\&.mcgill\&.ecse211\&.odometer\&.Odometer\&.getOdometer (EV3LargeRegulatedMotor leftMotor, EV3LargeRegulatedMotor rightMotor, final double TRACK, final double WHEEL_RAD) throws \fBOdometerExceptions\fP\fC [static]\fP"
@@ -62,7 +72,7 @@ new or existing \fBOdometer\fP Object
 .PP
 
 .PP
-Definition at line 75 of file Odometer\&.java\&.
+Definition at line 79 of file Odometer\&.java\&.
 .SS "static synchronized \fBOdometer\fP ca\&.mcgill\&.ecse211\&.odometer\&.Odometer\&.getOdometer () throws \fBOdometerExceptions\fP\fC [static]\fP"
 This class is meant to return the existing \fBOdometer\fP Object\&. It is meant to be used only if an odometer object has been created
 .PP
@@ -73,11 +83,11 @@ error if no previous odometer exists
 .PP
 
 .PP
-Definition at line 92 of file Odometer\&.java\&.
+Definition at line 96 of file Odometer\&.java\&.
 .SS "void ca\&.mcgill\&.ecse211\&.odometer\&.Odometer\&.run ()"
 This method is called when our \fBOdometer\fP object is started as a thread and begins to keep track of motor rotations 
 .PP
-Definition at line 105 of file Odometer\&.java\&.
+Definition at line 109 of file Odometer\&.java\&.
 
 .SH "Author"
 .PP 

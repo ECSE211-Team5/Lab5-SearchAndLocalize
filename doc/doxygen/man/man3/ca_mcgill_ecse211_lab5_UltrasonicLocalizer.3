@@ -1,4 +1,4 @@
-.TH "ca.mcgill.ecse211.lab5.UltrasonicLocalizer" 3 "Tue Oct 23 2018" "Version 1.0" "ECSE211 - Fall 2018 - Lab 5 - Search and Localize" \" -*- nroff -*-
+.TH "ca.mcgill.ecse211.lab5.UltrasonicLocalizer" 3 "Wed Oct 24 2018" "Version 1.0" "ECSE211 - Fall 2018 - Lab 5 - Search and Localize" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -22,22 +22,32 @@ This class helps our robot to localize itself using the ultrasonic sensor
 .PP
 \fBAuthor:\fP
 .RS 4
-Caspar Cedro & Percy Chen & Patrick Erath & Anssam Ghezala & Susan Matuszewski & Kamy Moussavi Kafi 
+Caspar Cedro 
+.PP
+Percy Chen 
+.PP
+Patrick Erath 
+.PP
+Anssam Ghezala 
+.PP
+Susan Matuszewski 
+.PP
+Kamy Moussavi Kafi 
 .RE
 .PP
 
 .PP
-Definition at line 16 of file UltrasonicLocalizer\&.java\&.
+Definition at line 20 of file UltrasonicLocalizer\&.java\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "ca\&.mcgill\&.ecse211\&.lab5\&.UltrasonicLocalizer\&.UltrasonicLocalizer (\fBNavigation\fP nav, EV3LargeRegulatedMotor leftMotor, EV3LargeRegulatedMotor rightMotor) throws \fBOdometerExceptions\fP"
-This is the class constructor
+This is the class constructor for a class that helps to localize our robot with an ultrasonic sensor
 .PP
 \fBParameters:\fP
 .RS 4
-\fIleftMotor\fP 
+\fIleftMotor\fP A EV3LargeRegularedMotor object instance that allows control of the left motor 
 .br
-\fIrightMotor\fP 
+\fIrightMotor\fP A EV3LargeRegularedMotor object instance that allows control of the right motor 
 .RE
 .PP
 \fBExceptions:\fP
@@ -47,7 +57,7 @@ This is the class constructor
 .PP
 
 .PP
-Definition at line 36 of file UltrasonicLocalizer\&.java\&.
+Definition at line 42 of file UltrasonicLocalizer\&.java\&.
 .SH "Member Function Documentation"
 .PP 
 .SS "void ca\&.mcgill\&.ecse211\&.lab5\&.UltrasonicLocalizer\&.localize (int buttonChoice)"
@@ -60,7 +70,7 @@ Wrapper for risingEdge or falling edge methods\&. Left or Right button option\&.
 .PP
 
 .PP
-Definition at line 50 of file UltrasonicLocalizer\&.java\&.
+Definition at line 56 of file UltrasonicLocalizer\&.java\&.
 
 .SH "Author"
 .PP 

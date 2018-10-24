@@ -3,6 +3,7 @@ var searchData=
   ['search',['search',['../classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher.html#a88a4c77f3c76d74edc8bfd0229f0902f',1,'ca::mcgill::ecse211::lab5::RingSearcher']]],
   ['searcharea',['searchArea',['../classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a0e80ac0068ef1ab41cfb571b8c65845c',1,'ca::mcgill::ecse211::lab5::Lab5']]],
   ['sensordata',['SensorData',['../classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html#a41b9929f62455a15364385a339b4b910',1,'ca::mcgill::ecse211::sensors::SensorData']]],
+  ['seta',['setA',['../classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html#a9828d8b4dfb9b197e8fd149fb7deb63b',1,'ca::mcgill::ecse211::sensors::SensorData']]],
   ['setd',['setD',['../classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html#ae20bf127c57dcfcb3b7632ca05b6d482',1,'ca::mcgill::ecse211::sensors::SensorData']]],
   ['setl',['setL',['../classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html#aeafd49ce71819e8e1a5d5ff6287e7819',1,'ca::mcgill::ecse211::sensors::SensorData']]],
   ['setrgb',['setRGB',['../classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html#ae5e2528566b53218673ebc1ae4683204',1,'ca::mcgill::ecse211::sensors::SensorData']]],

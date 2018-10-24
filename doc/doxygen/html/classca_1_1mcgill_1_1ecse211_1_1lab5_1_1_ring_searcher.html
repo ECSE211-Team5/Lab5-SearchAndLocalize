@@ -80,9 +80,20 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a88a4c77f3c76d74edc8bfd0229f0902f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Caspar Cedro &amp; Percy Chen &amp; Patrick Erath &amp; Anssam Ghezala &amp; Susan Matuszewski &amp; Kamy Moussavi Kafi </dd></dl>
+<div class="textblock"><p>This class helps our robot to search for rings on a grid</p>
+<dl class="section author"><dt>Author</dt><dd>Caspar Cedro </dd>
+<dd>
+Percy Chen </dd>
+<dd>
+Patrick Erath </dd>
+<dd>
+Anssam Ghezala </dd>
+<dd>
+Susan Matuszewski </dd>
+<dd>
+Kamy Moussavi Kafi </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_ring_searcher_8java_source.html#l00014">14</a> of file <a class="el" href="_ring_searcher_8java_source.html">RingSearcher.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ring_searcher_8java_source.html#l00019">19</a> of file <a class="el" href="_ring_searcher_8java_source.html">RingSearcher.java</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa3f2d76984b3b80f32b6ddd6770e24b0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa3f2d76984b3b80f32b6ddd6770e24b0">&#9670;&nbsp;</a></span>RingSearcher()</h2>
@@ -118,9 +129,9 @@ Public Member Functions</h2></td></tr>
 <p>This class provides method to check if there is a ring and if the ring is the color we want</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">nav</td><td></td></tr>
-    <tr><td class="paramname">leftMotor</td><td></td></tr>
-    <tr><td class="paramname">rightMotor</td><td></td></tr>
+    <tr><td class="paramname">nav</td><td>A <a class="el" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html">Navigation</a> class object instance that controls how our robot moves </td></tr>
+    <tr><td class="paramname">leftMotor</td><td>A EV3LargeRegulatedMotor object instance that allows control of the left motor </td></tr>
+    <tr><td class="paramname">rightMotor</td><td>A EV3LargeRegulatedMotor object instance that allows control of the right motor </td></tr>
   </table>
   </dd>
 </dl>
@@ -131,7 +142,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_ring_searcher_8java_source.html#l00032">32</a> of file <a class="el" href="_ring_searcher_8java_source.html">RingSearcher.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ring_searcher_8java_source.html#l00039">39</a> of file <a class="el" href="_ring_searcher_8java_source.html">RingSearcher.java</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -175,13 +186,13 @@ Here is the call graph for this function:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">angle</td><td>angle to turn in order to check the ring </td></tr>
-    <tr><td class="paramname">target</td><td>target color </td></tr>
+    <tr><td class="paramname">target</td><td>target ring color </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>: true if it found a ring and the ring has the right color </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if it found a ring and the ring has the right color </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_ring_searcher_8java_source.html#l00054">54</a> of file <a class="el" href="_ring_searcher_8java_source.html">RingSearcher.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ring_searcher_8java_source.html#l00061">61</a> of file <a class="el" href="_ring_searcher_8java_source.html">RingSearcher.java</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -189,7 +200,8 @@ Here is the call graph for this function:</div>
 <map name="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_a88a4c77f3c76d74edc8bfd0229f0902f_cgraph" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_a88a4c77f3c76d74edc8bfd0229f0902f_cgraph">
 <area shape="rect" id="node2" href="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data.html#a8f40f0264c68f0cbed4fff1723ae7863" title="ca.mcgill.ecse211.odometer.\lOdometerData.getXYT" alt="" coords="551,5,740,47"/>
 <area shape="rect" id="node3" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a2b39928c8062fe6863de8e818d009e91" title="ca.mcgill.ecse211.lab5.Navigation.turnTo" alt="" coords="240,38,503,65"/>
-<area shape="rect" id="node4" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#afe038af6692e7ad28c3587cd979d7223" title="ca.mcgill.ecse211.lab5.Navigation.stop" alt="" coords="246,89,497,115"/>
+<area shape="rect" id="node4" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator.html#a115188f4d3b465e09db3482f8a6f25d2" title="ca.mcgill.ecse211.lab5.Color\lCalibrator.getColor" alt="" coords="276,89,467,131"/>
+<area shape="rect" id="node5" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#afe038af6692e7ad28c3587cd979d7223" title="ca.mcgill.ecse211.lab5.Navigation.stop" alt="" coords="246,155,497,182"/>
 </map>
 </div>
 <div class="dynheader">

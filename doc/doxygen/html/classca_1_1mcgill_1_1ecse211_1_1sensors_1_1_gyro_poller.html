@@ -78,8 +78,6 @@ $(function() {
 Inheritance diagram for ca.mcgill.ecse211.sensors.GyroPoller:</div>
 <div class="dyncontent">
 <div class="center"><img src="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_gyro_poller__inherit__graph.png" border="0" usemap="#ca_8mcgill_8ecse211_8sensors_8_gyro_poller_inherit__map" alt="Inheritance graph"/></div>
-<map name="ca_8mcgill_8ecse211_8sensors_8_gyro_poller_inherit__map" id="ca_8mcgill_8ecse211_8sensors_8_gyro_poller_inherit__map">
-</map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for ca.mcgill.ecse211.sensors.GyroPoller:</div>
@@ -122,9 +120,20 @@ float []&#160;</td><td class="memItemRight" valign="bottom"><b>lgData</b></td></
 <tr class="separator:a6e6759875b42b8ac6947aac140e74fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Caspar Cedro &amp; Percy Chen &amp; Patrick Erath &amp; Anssam Ghezala &amp; Susan Matuszewski &amp; Kamy Moussavi Kafi </dd></dl>
+<div class="textblock"><p>This class helps our robot to navigate using a gyroscope</p>
+<dl class="section author"><dt>Author</dt><dd>Caspar Cedro </dd>
+<dd>
+Percy Chen </dd>
+<dd>
+Patrick Erath </dd>
+<dd>
+Anssam Ghezala </dd>
+<dd>
+Susan Matuszewski </dd>
+<dd>
+Kamy Moussavi Kafi </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_gyro_poller_8java_source.html#l00011">11</a> of file <a class="el" href="_gyro_poller_8java_source.html">GyroPoller.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_gyro_poller_8java_source.html#l00016">16</a> of file <a class="el" href="_gyro_poller_8java_source.html">GyroPoller.java</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a284eec4434708068ce9cb8a9635f7830"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a284eec4434708068ce9cb8a9635f7830">&#9670;&nbsp;</a></span>GyroPoller()</h2>
@@ -157,12 +166,12 @@ float []&#160;</td><td class="memItemRight" valign="bottom"><b>lgData</b></td></
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This constructor creates an instance of the <a class="el" href="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller.html">LightPoller</a> class to provide distance data from an light sensor to our robot.</p>
+<p>This constructor creates an instance of the <a class="el" href="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_gyro_poller.html">GyroPoller</a> class to aid navigation</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">us</td><td>a SampleProvider class instance that helps us to store an array of ultrasonic sensor data. </td></tr>
-    <tr><td class="paramname">lgData</td><td>an array of distance data to be used by our Wall Follower's UltrasonicControllers. </td></tr>
-    <tr><td class="paramname">cont</td><td>a BangBangController or PController instance that has accumulated distance data stored in usData passed to it. </td></tr>
+    <tr><td class="paramname">us</td><td>A SampleProvider class instance that helps us to store an array of ultrasonic sensor data. </td></tr>
+    <tr><td class="paramname">lgData</td><td>An array used to store data. </td></tr>
+    <tr><td class="paramname">cont</td><td>A <a class="el" href="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html">SensorData</a> object instance used to manage sensor data. </td></tr>
   </table>
   </dd>
 </dl>
@@ -173,7 +182,7 @@ float []&#160;</td><td class="memItemRight" valign="bottom"><b>lgData</b></td></
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_gyro_poller_8java_source.html#l00029">29</a> of file <a class="el" href="_gyro_poller_8java_source.html">GyroPoller.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_gyro_poller_8java_source.html#l00031">31</a> of file <a class="el" href="_gyro_poller_8java_source.html">GyroPoller.java</a>.</p>
 
 </div>
 </div>
@@ -196,7 +205,15 @@ float []&#160;</td><td class="memItemRight" valign="bottom"><b>lgData</b></td></
 <p>Sensors now return floats using a uniform protocol. Need to convert US result to an integer [0,255] (non-Javadoc)</p>
 <dl class="section see"><dt>See also</dt><dd>java.lang.Thread::run() </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_gyro_poller_8java_source.html#l00044">44</a> of file <a class="el" href="_gyro_poller_8java_source.html">GyroPoller.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_gyro_poller_8java_source.html#l00046">46</a> of file <a class="el" href="_gyro_poller_8java_source.html">GyroPoller.java</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_gyro_poller_a2a52059192555ece72190fa44a761d28_cgraph.png" border="0" usemap="#classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_gyro_poller_a2a52059192555ece72190fa44a761d28_cgraph" alt=""/></div>
+<map name="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_gyro_poller_a2a52059192555ece72190fa44a761d28_cgraph" id="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_gyro_poller_a2a52059192555ece72190fa44a761d28_cgraph">
+<area shape="rect" id="node2" href="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html#a9828d8b4dfb9b197e8fd149fb7deb63b" title="ca.mcgill.ecse211.sensors.\lSensorData.setA" alt="" coords="235,5,416,47"/>
+</map>
+</div>
 
 </div>
 </div>

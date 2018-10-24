@@ -23,6 +23,7 @@ public class UltrasonicPoller extends Thread {
   private SampleProvider us;
   private SensorData cont;
   private float[] usData;
+  private static final int SLEEP_INTERVAL = 30;
 
   /**
    * This constructor creates an instance of the UltrasonicPoller class to provide distance data
@@ -59,7 +60,8 @@ public class UltrasonicPoller extends Thread {
     int first_five_counter = 0;
     while (true) {
       us.fetchSample(usData, 0); // acquire data
-      distance = (int) (usData[0] * 100.0); // extract from buffer, cast to int
+      // get distance from buffer, multiply by 100 for convenience and allow it to be cast to int
+      distance = (int) (usData[0] * 100.0);
 
       // filter value
       sample[sample_index] = distance;
@@ -69,7 +71,7 @@ public class UltrasonicPoller extends Thread {
       // keep track of how many samples have been taken up to 5
       if (first_five) {
         first_five_counter++;
-        if (first_five_counter > 4) {
+        if (first_five_counter > sample.length - 1) {
           first_five = false;
         }
       }
@@ -81,10 +83,10 @@ public class UltrasonicPoller extends Thread {
       }
 
       cont.setD(distance); // now take action depending on value
-      sample_index = (sample_index + 1) % 5;
+      sample_index = (sample_index + 1) % sample.length;
 
       try {
-        Thread.sleep(30);
+        Thread.sleep(SLEEP_INTERVAL);
       } catch (Exception e) {
       } // Poor man's timed sampling
     }

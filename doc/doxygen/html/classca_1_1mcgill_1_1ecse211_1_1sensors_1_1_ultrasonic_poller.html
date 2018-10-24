@@ -92,9 +92,19 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class implements the Ultrasonic Sensor Poller for our Wall Follower.</p>
 <p>Control of the wall follower is applied periodically by the <a class="el" href="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller.html">UltrasonicPoller</a> thread. The while loop at the bottom executes in a loop. Assuming that the us.fetchSample, and cont.processUSData methods operate in about 20mS, and that the thread sleeps for 50 mS at the end of each loop, then one cycle through the loop is approximately 70 mS. This corresponds to a sampling rate of 1/70mS or about 14 Hz.</p>
-<dl class="section author"><dt>Author</dt><dd>Caspar Cedro &amp; Percy Chen &amp; Patrick Erath &amp; Anssam Ghezala &amp; Susan Matuszewski &amp; Kamy Moussavi Kafi </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Caspar Cedro </dd>
+<dd>
+Percy Chen </dd>
+<dd>
+Patrick Erath </dd>
+<dd>
+Anssam Ghezala </dd>
+<dd>
+Susan Matuszewski </dd>
+<dd>
+Kamy Moussavi Kafi </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_ultrasonic_poller_8java_source.html#l00018">18</a> of file <a class="el" href="_ultrasonic_poller_8java_source.html">UltrasonicPoller.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ultrasonic_poller_8java_source.html#l00022">22</a> of file <a class="el" href="_ultrasonic_poller_8java_source.html">UltrasonicPoller.java</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3007841893144cccb37d023f34fb3cfc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3007841893144cccb37d023f34fb3cfc">&#9670;&nbsp;</a></span>UltrasonicPoller()</h2>
@@ -137,7 +147,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_ultrasonic_poller_8java_source.html#l00034">34</a> of file <a class="el" href="_ultrasonic_poller_8java_source.html">UltrasonicPoller.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ultrasonic_poller_8java_source.html#l00039">39</a> of file <a class="el" href="_ultrasonic_poller_8java_source.html">UltrasonicPoller.java</a>.</p>
 
 </div>
 </div>
@@ -160,7 +170,7 @@ Public Member Functions</h2></td></tr>
 <p>Sensors now return floats using a uniform protocol. Need to convert US result to an integer [0,255] (non-Javadoc)</p>
 <dl class="section see"><dt>See also</dt><dd>java.lang.Thread::run() </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_ultrasonic_poller_8java_source.html#l00049">49</a> of file <a class="el" href="_ultrasonic_poller_8java_source.html">UltrasonicPoller.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ultrasonic_poller_8java_source.html#l00054">54</a> of file <a class="el" href="_ultrasonic_poller_8java_source.html">UltrasonicPoller.java</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">

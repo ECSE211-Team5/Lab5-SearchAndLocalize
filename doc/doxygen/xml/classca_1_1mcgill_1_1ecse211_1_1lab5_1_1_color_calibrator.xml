@@ -15,7 +15,331 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" line="10" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" bodystart="10" bodyend="-1"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" line="14" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a3f89ecd688c9c9271626621fa1d5deca" prot="private" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int ca.mcgill.ecse211.lab5.ColorCalibrator.lowerYellowRBound</definition>
+        <argsstring></argsstring>
+        <name>lowerYellowRBound</name>
+        <initializer>= 8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" line="23" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-static-attrib">
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a48227ee380560e2ce1c324462aa94de9" prot="package" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int ca.mcgill.ecse211.lab5.ColorCalibrator.upperYellowRBound</definition>
+        <argsstring></argsstring>
+        <name>upperYellowRBound</name>
+        <initializer>= 12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" line="23" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1af89102b7e9e4a1eb9314f6187addfddd" prot="package" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int ca.mcgill.ecse211.lab5.ColorCalibrator.lowerYellowGBound</definition>
+        <argsstring></argsstring>
+        <name>lowerYellowGBound</name>
+        <initializer>= 6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" line="23" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a983ee2edffd6425280bdec7c9ef928dd" prot="package" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int ca.mcgill.ecse211.lab5.ColorCalibrator.upperYellowGBound</definition>
+        <argsstring></argsstring>
+        <name>upperYellowGBound</name>
+        <initializer>= 8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" line="24" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a96926828f4033484842f16da33e6886b" prot="package" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int ca.mcgill.ecse211.lab5.ColorCalibrator.lowerYellowBBound</definition>
+        <argsstring></argsstring>
+        <name>lowerYellowBBound</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" line="24" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a700e7f4c4f1b53581b6eff393a77e43e" prot="package" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int ca.mcgill.ecse211.lab5.ColorCalibrator.upperYellowBBound</definition>
+        <argsstring></argsstring>
+        <name>upperYellowBBound</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" line="24" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1ad60a6e1b17a82bfc011b70e0568432c2" prot="package" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int ca.mcgill.ecse211.lab5.ColorCalibrator.lowerBlueRBound</definition>
+        <argsstring></argsstring>
+        <name>lowerBlueRBound</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" line="24" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1aa6bf0db145da53194e5b908eddce5419" prot="package" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int ca.mcgill.ecse211.lab5.ColorCalibrator.upperBlueRBound</definition>
+        <argsstring></argsstring>
+        <name>upperBlueRBound</name>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" line="25" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a98044f548d9d447f7b358a1b3ebd12e5" prot="package" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int ca.mcgill.ecse211.lab5.ColorCalibrator.lowerBlueGBound</definition>
+        <argsstring></argsstring>
+        <name>lowerBlueGBound</name>
+        <initializer>= 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" line="25" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1ab9eda92af704671e0ec51b0acaf30e04" prot="package" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int ca.mcgill.ecse211.lab5.ColorCalibrator.upperBlueGBound</definition>
+        <argsstring></argsstring>
+        <name>upperBlueGBound</name>
+        <initializer>= 12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" line="25" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1afa665e863cc3fbf697cd28814d37812d" prot="package" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int ca.mcgill.ecse211.lab5.ColorCalibrator.lowerBlueBBound</definition>
+        <argsstring></argsstring>
+        <name>lowerBlueBBound</name>
+        <initializer>= 5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" line="25" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a8c7cdccc5a7bb4d8f6157b19e2a53280" prot="package" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int ca.mcgill.ecse211.lab5.ColorCalibrator.upperBlueBBound</definition>
+        <argsstring></argsstring>
+        <name>upperBlueBBound</name>
+        <initializer>= 10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" line="26" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a9f0297a8ee145a3416c3fc14652e4033" prot="package" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int ca.mcgill.ecse211.lab5.ColorCalibrator.lowerGreenRBound</definition>
+        <argsstring></argsstring>
+        <name>lowerGreenRBound</name>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" line="26" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1affed0d1656aed80902851c79be89a2f7" prot="package" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int ca.mcgill.ecse211.lab5.ColorCalibrator.upperGreenRBound</definition>
+        <argsstring></argsstring>
+        <name>upperGreenRBound</name>
+        <initializer>= 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" line="26" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a4ce2097b02b418052ea35d04bfb194b9" prot="package" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int ca.mcgill.ecse211.lab5.ColorCalibrator.lowerGreenGBound</definition>
+        <argsstring></argsstring>
+        <name>lowerGreenGBound</name>
+        <initializer>= 6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" line="26" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1ad2faa395f76d4e05b85dfa78e68496c6" prot="package" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int ca.mcgill.ecse211.lab5.ColorCalibrator.upperGreenGBound</definition>
+        <argsstring></argsstring>
+        <name>upperGreenGBound</name>
+        <initializer>= 9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" line="27" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1ab36b917d60860ad19f02e89fd1be44e0" prot="package" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int ca.mcgill.ecse211.lab5.ColorCalibrator.lowerGreenBBound</definition>
+        <argsstring></argsstring>
+        <name>lowerGreenBBound</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" line="27" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a100cb5509d3ca691612d06740e1f3acf" prot="package" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int ca.mcgill.ecse211.lab5.ColorCalibrator.upperGreenBBound</definition>
+        <argsstring></argsstring>
+        <name>upperGreenBBound</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" line="27" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a68705e718c4b548221e135311fd5059a" prot="package" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int ca.mcgill.ecse211.lab5.ColorCalibrator.lowerOrangeRBound</definition>
+        <argsstring></argsstring>
+        <name>lowerOrangeRBound</name>
+        <initializer>= 6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" line="27" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1ac977bcf2cc6b001321988099c088adb1" prot="package" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int ca.mcgill.ecse211.lab5.ColorCalibrator.upperOrangeRBound</definition>
+        <argsstring></argsstring>
+        <name>upperOrangeRBound</name>
+        <initializer>= 10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" line="28" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a97b0983954129b75b18f74e94540cd6e" prot="package" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int ca.mcgill.ecse211.lab5.ColorCalibrator.lowerOrangeGBound</definition>
+        <argsstring></argsstring>
+        <name>lowerOrangeGBound</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" line="28" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a4c0c575b3f650c23db98ec1ad34d9d22" prot="package" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int ca.mcgill.ecse211.lab5.ColorCalibrator.upperOrangeGBound</definition>
+        <argsstring></argsstring>
+        <name>upperOrangeGBound</name>
+        <initializer>= 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" line="28" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a7d04e925b745bc9bee7317610506f1a6" prot="package" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int ca.mcgill.ecse211.lab5.ColorCalibrator.OrangeBBound</definition>
+        <argsstring></argsstring>
+        <name>OrangeBBound</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" line="28" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" bodystart="28" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -39,10 +363,35 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>This method returns the color of the ring currently under the light sensor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The red value to check for a ring </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>g</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The green value to check for a ring </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The blue value to check for a ring </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A Color enumeration value </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" line="17" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" bodystart="17" bodyend="31"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" line="38" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" bodystart="38" bodyend="59"/>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_1a047e885f7170ba80f60fd3b4b2bc79a9" compoundref="_display_8java" startline="57" endline="106">ca.mcgill.ecse211.lab5.Display.run</referencedby>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1a88a4c77f3c76d74edc8bfd0229f0902f" compoundref="_ring_searcher_8java" startline="61" endline="94">ca.mcgill.ecse211.lab5.RingSearcher.search</referencedby>
       </memberdef>
       <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1ac6a2e41db5bd91b1356f53106178862e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Color</type>
@@ -52,22 +401,51 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>This method gets the last color of the ring under the light sensor</para><para><simplesect kind="return"><para>A Color enumeration value </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" line="33" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" bodystart="33" bodyend="38"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" line="66" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" bodystart="66" bodyend="71"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para><simplesect kind="author"><para>Caspar Cedro &amp; Percy Chen &amp; Patrick Erath &amp; Anssam Ghezala &amp; Susan Matuszewski &amp; Kamy Moussavi Kafi </para></simplesect>
+<para>This class is used to check the color of a ring under a light sensor</para><para><simplesect kind="author"><para>Caspar Cedro </para></simplesect>
+<simplesect kind="author"><para>Percy Chen </para></simplesect>
+<simplesect kind="author"><para>Patrick Erath </para></simplesect>
+<simplesect kind="author"><para>Anssam Ghezala </para></simplesect>
+<simplesect kind="author"><para>Susan Matuszewski </para></simplesect>
+<simplesect kind="author"><para>Kamy Moussavi Kafi </para></simplesect>
 </para>    </detaileddescription>
-    <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" line="9" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" bodystart="9" bodyend="39"/>
+    <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" line="13" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/ColorCalibrator.java" bodystart="13" bodyend="72"/>
     <listofallmembers>
       <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1ab531502eb94e87b4e5db0f548e3c0e2d" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::ColorCalibrator</scope><name>currentColor</name></member>
       <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a115188f4d3b465e09db3482f8a6f25d2" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::ColorCalibrator</scope><name>getColor</name></member>
       <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1ac6a2e41db5bd91b1356f53106178862e" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::ColorCalibrator</scope><name>getColor</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1afa665e863cc3fbf697cd28814d37812d" prot="package" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::ColorCalibrator</scope><name>lowerBlueBBound</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a98044f548d9d447f7b358a1b3ebd12e5" prot="package" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::ColorCalibrator</scope><name>lowerBlueGBound</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1ad60a6e1b17a82bfc011b70e0568432c2" prot="package" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::ColorCalibrator</scope><name>lowerBlueRBound</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1ab36b917d60860ad19f02e89fd1be44e0" prot="package" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::ColorCalibrator</scope><name>lowerGreenBBound</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a4ce2097b02b418052ea35d04bfb194b9" prot="package" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::ColorCalibrator</scope><name>lowerGreenGBound</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a9f0297a8ee145a3416c3fc14652e4033" prot="package" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::ColorCalibrator</scope><name>lowerGreenRBound</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a97b0983954129b75b18f74e94540cd6e" prot="package" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::ColorCalibrator</scope><name>lowerOrangeGBound</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a68705e718c4b548221e135311fd5059a" prot="package" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::ColorCalibrator</scope><name>lowerOrangeRBound</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a96926828f4033484842f16da33e6886b" prot="package" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::ColorCalibrator</scope><name>lowerYellowBBound</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1af89102b7e9e4a1eb9314f6187addfddd" prot="package" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::ColorCalibrator</scope><name>lowerYellowGBound</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a3f89ecd688c9c9271626621fa1d5deca" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::ColorCalibrator</scope><name>lowerYellowRBound</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a7d04e925b745bc9bee7317610506f1a6" prot="package" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::ColorCalibrator</scope><name>OrangeBBound</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a8c7cdccc5a7bb4d8f6157b19e2a53280" prot="package" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::ColorCalibrator</scope><name>upperBlueBBound</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1ab9eda92af704671e0ec51b0acaf30e04" prot="package" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::ColorCalibrator</scope><name>upperBlueGBound</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1aa6bf0db145da53194e5b908eddce5419" prot="package" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::ColorCalibrator</scope><name>upperBlueRBound</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a100cb5509d3ca691612d06740e1f3acf" prot="package" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::ColorCalibrator</scope><name>upperGreenBBound</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1ad2faa395f76d4e05b85dfa78e68496c6" prot="package" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::ColorCalibrator</scope><name>upperGreenGBound</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1affed0d1656aed80902851c79be89a2f7" prot="package" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::ColorCalibrator</scope><name>upperGreenRBound</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a4c0c575b3f650c23db98ec1ad34d9d22" prot="package" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::ColorCalibrator</scope><name>upperOrangeGBound</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1ac977bcf2cc6b001321988099c088adb1" prot="package" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::ColorCalibrator</scope><name>upperOrangeRBound</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a700e7f4c4f1b53581b6eff393a77e43e" prot="package" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::ColorCalibrator</scope><name>upperYellowBBound</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a983ee2edffd6425280bdec7c9ef928dd" prot="package" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::ColorCalibrator</scope><name>upperYellowGBound</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a48227ee380560e2ce1c324462aa94de9" prot="package" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::ColorCalibrator</scope><name>upperYellowRBound</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

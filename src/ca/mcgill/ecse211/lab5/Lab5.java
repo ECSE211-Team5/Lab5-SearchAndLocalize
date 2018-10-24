@@ -1,4 +1,3 @@
-// Lab2.java
 package ca.mcgill.ecse211.lab5;
 
 import ca.mcgill.ecse211.odometer.Odometer;
@@ -184,10 +183,11 @@ public class Lab5 {
           Lab5.TRACK = LOCALIZE_TRACK;
           // STEP 3: SEARCH ALL COORDINATES
           searchArea(navigation, searcher, targetColor);
-          navigation.travelTo(odometer.getXYT()[0], URy + 0.5, true);
-          navigation.travelTo(URx, URy + 0.5, true);
-          navigation.travelTo(URx, URy, false);
+          double URyOffset = 0.5;
+          navigation.travelTo(odometer.getXYT()[0], URy + URyOffset, true);
           // STEP 4: NAVIGATE TO URx, URy
+          navigation.travelTo(URx, URy + URyOffset, true);
+          navigation.travelTo(URx, URy, false);
         } catch (OdometerExceptions e) {
           e.printStackTrace();
         }
@@ -211,15 +211,17 @@ public class Lab5 {
   public static void searchArea(Navigation navigation, RingSearcher searcher,
       ColorCalibrator.Color targetColor) {
     int counter = 0;
-    for (double i = LLx + 0.5; i < URx + 1;) {
+    double LLxOffset = 0.5, URxOffset = 1, LLyOffset = 0.3, SecondLLyOffset = 0.7, URyOffset = 0.3,
+        finalURxOffset = 0.5;
+    for (double i = LLx + LLxOffset; i < URx + URxOffset;) {
       if (counter % 2 == 0) {
         // if we are at the first, third...etc verticle zone, search up
-        navigation.travelTo(i, LLy + 0.3, false);
+        navigation.travelTo(i, LLy + LLyOffset, false);
         navigation.turnTo(180, false);
         if (searcher.search(110, targetColor))
           return;
         navigation.turnTo(0, false);
-        for (double j = LLy + 0.7; j < URy; j++) {
+        for (double j = LLy + SecondLLyOffset; j < URy; j++) {
           navigation.travelTo(i, j, true);
           if (searcher.search(70, targetColor))
             return;
@@ -229,7 +231,7 @@ public class Lab5 {
           navigation.turnTo(0, false);
         }
       } else {
-        navigation.travelTo(i, URy - 0.3, true);
+        navigation.travelTo(i, URy - URyOffset, true);
         navigation.turnTo(0, false);
         if (searcher.search(70, targetColor))
           return;
@@ -238,7 +240,7 @@ public class Lab5 {
           return;
         navigation.turnTo(180, false);
         // when we are at the second, fourth... verticle zone, search down
-        for (double j = URy - 1 + 0.3; j > LLy; j--) {
+        for (double j = URy - 1 + URyOffset; j > LLy; j--) {
           navigation.travelTo(i, j, true);
           if (searcher.search(110, targetColor))
             return;
@@ -249,7 +251,7 @@ public class Lab5 {
         }
       }
       counter++;
-      i = (i + 2 < URx) ? i + 2 : (URx - 0.5);
+      i = (i + 2 < URx) ? i + 2 : (URx - finalURxOffset);
     }
   }
 }

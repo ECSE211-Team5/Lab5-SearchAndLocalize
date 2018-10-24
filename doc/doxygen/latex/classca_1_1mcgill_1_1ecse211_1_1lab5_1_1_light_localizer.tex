@@ -20,11 +20,21 @@ static int \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_a
 This class helps our robot to localize itself using the light sensor
 
 \begin{DoxyAuthor}{Author}
-Caspar Cedro \& Percy Chen \& Patrick Erath \& Anssam Ghezala \& Susan Matuszewski \& Kamy Moussavi Kafi 
+Caspar Cedro 
+
+Percy Chen 
+
+Patrick Erath 
+
+Anssam Ghezala 
+
+Susan Matuszewski 
+
+Kamy Moussavi Kafi 
 \end{DoxyAuthor}
 
 
-Definition at line 15 of file Light\+Localizer.\+java.
+Definition at line 19 of file Light\+Localizer.\+java.
 
 
 
@@ -35,13 +45,13 @@ Definition at line 15 of file Light\+Localizer.\+java.
 \subsubsection{\texorpdfstring{Light\+Localizer()}{LightLocalizer()}}
 {\footnotesize\ttfamily ca.\+mcgill.\+ecse211.\+lab5.\+Light\+Localizer.\+Light\+Localizer (\begin{DoxyParamCaption}\item[{\hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation}{Navigation}}]{nav,  }\item[{E\+V3\+Large\+Regulated\+Motor}]{left\+Motor,  }\item[{E\+V3\+Large\+Regulated\+Motor}]{right\+Motor }\end{DoxyParamCaption}) throws \hyperlink{classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions}{Odometer\+Exceptions}}
 
-This is the class constructor
+This is the class constructor for a \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer}{Light\+Localizer} object
 
 
 \begin{DoxyParams}{Parameters}
-{\em left\+Motor} & \\
+{\em left\+Motor} & The E\+V3\+Large\+Regulated\+Motor instance for our left motor \\
 \hline
-{\em right\+Motor} & \\
+{\em right\+Motor} & The E\+V3\+Large\+Regulated\+Motor instance for our right motor \\
 \hline
 \end{DoxyParams}
 
@@ -51,7 +61,7 @@ This is the class constructor
 \end{DoxyExceptions}
 
 
-Definition at line 33 of file Light\+Localizer.\+java.
+Definition at line 37 of file Light\+Localizer.\+java.
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
@@ -75,7 +85,7 @@ This method allows the conversion of an angle value
 \begin{DoxyParams}{Parameters}
 {\em radius} & The radius of our wheels \\
 \hline
-{\em distance} & The distance travelled \\
+{\em distance} & The distance traveled \\
 \hline
 {\em angle} & The angle to convert \\
 \hline
@@ -85,7 +95,7 @@ A converted angle
 \end{DoxyReturn}
 
 
-Definition at line 103 of file Light\+Localizer.\+java.
+Definition at line 113 of file Light\+Localizer.\+java.
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
@@ -106,7 +116,7 @@ This method allows the conversion of a distance to the total rotation of each wh
 \begin{DoxyParams}{Parameters}
 {\em radius} & The radius of our wheels \\
 \hline
-{\em distance} & The distance travelled \\
+{\em distance} & The distance traveled \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -114,7 +124,7 @@ A converted distance
 \end{DoxyReturn}
 
 
-Definition at line 91 of file Light\+Localizer.\+java.
+Definition at line 101 of file Light\+Localizer.\+java.
 
 Here is the caller graph for this function\+:\nopagebreak
 \begin{figure}[H]
@@ -129,15 +139,29 @@ Here is the caller graph for this function\+:\nopagebreak
 \subsubsection{\texorpdfstring{localize()}{localize()}}
 {\footnotesize\ttfamily void ca.\+mcgill.\+ecse211.\+lab5.\+Light\+Localizer.\+localize (\begin{DoxyParamCaption}\item[{int \mbox{[}$\,$\mbox{]}}]{sC }\end{DoxyParamCaption})}
 
-Once the robot know what angle it is facing, this method looks for the x,y axis origins knowing it is in the first tile facing north. 
+Once the robot know what angle it is facing, this method looks for the x,y axis origins knowing it is in the first tile facing north.
 
-Definition at line 46 of file Light\+Localizer.\+java.
+
+\begin{DoxyParams}{Parameters}
+{\em sC} & An array of integers that holds an x and y coordinate \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 52 of file Light\+Localizer.\+java.
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_a441f56a899fae5bc9c1d6a6d25fbe0bb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_a441f56a899fae5bc9c1d6a6d25fbe0bb_icgraph}
 \end{center}
 \end{figure}
 

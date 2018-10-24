@@ -79,8 +79,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a93b746f61226c3b14532c43d0c2f61dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a318969f4776d0bf4a8721be3d2444a5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a318969f4776d0bf4a8721be3d2444a5c">travelTo</a> (double x, double y, boolean <a class="el" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a73a89ddd822e0ba1cfd7a29c18aa7aea">doCorrection</a>)</td></tr>
 <tr class="separator:a318969f4776d0bf4a8721be3d2444a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aacb83ee18419dcd6095e331975cf2167"><td class="memItemLeft" align="right" valign="top"><a id="aacb83ee18419dcd6095e331975cf2167"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>travelBackTo</b> (double x, double y)</td></tr>
+<tr class="memitem:aacb83ee18419dcd6095e331975cf2167"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#aacb83ee18419dcd6095e331975cf2167">travelBackTo</a> (double x, double y)</td></tr>
 <tr class="separator:aacb83ee18419dcd6095e331975cf2167"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b39928c8062fe6863de8e818d009e91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a2b39928c8062fe6863de8e818d009e91">turnTo</a> (double angle, boolean async)</td></tr>
 <tr class="separator:a2b39928c8062fe6863de8e818d009e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -100,9 +99,19 @@ Static Public Member Functions</h2></td></tr>
 <div class="textblock"><p>The Navigator class extends the functionality of the <a class="el" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html">Navigation</a> class. It offers an alternative <a class="el" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a318969f4776d0bf4a8721be3d2444a5c">travelTo()</a> method which uses a state machine to implement obstacle avoidance.</p>
 <p>The Navigator class does not override any of the methods in <a class="el" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html">Navigation</a>. All methods with the same name are overloaded i.e. the Navigator version takes different parameters than the <a class="el" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html">Navigation</a> version.</p>
 <p>This is useful if, for instance, you want to force travel without obstacle detection over small distances. One place where you might want to do this is in the ObstacleAvoidance class. Another place is methods that implement specific features for future milestones such as retrieving an object.</p>
-<dl class="section author"><dt>Author</dt><dd>Caspar Cedro &amp; Percy Chen &amp; Patrick Erath &amp; Anssam Ghezala &amp; Susan Matuszewski &amp; Kamy Moussavi Kafi </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Caspar Cedro </dd>
+<dd>
+Percy Chen </dd>
+<dd>
+Patrick Erath </dd>
+<dd>
+Anssam Ghezala </dd>
+<dd>
+Susan Matuszewski </dd>
+<dd>
+Kamy Moussavi Kafi </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_navigation_8java_source.html#l00025">25</a> of file <a class="el" href="_navigation_8java_source.html">Navigation.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_navigation_8java_source.html#l00029">29</a> of file <a class="el" href="_navigation_8java_source.html">Navigation.java</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a93b746f61226c3b14532c43d0c2f61dd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a93b746f61226c3b14532c43d0c2f61dd">&#9670;&nbsp;</a></span>Navigation()</h2>
@@ -138,7 +147,7 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_navigation_8java_source.html#l00041">41</a> of file <a class="el" href="_navigation_8java_source.html">Navigation.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_navigation_8java_source.html#l00047">47</a> of file <a class="el" href="_navigation_8java_source.html">Navigation.java</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -190,22 +199,23 @@ Here is the call graph for this function:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">radius</td><td>The radius of our wheels </td></tr>
-    <tr><td class="paramname">distance</td><td>The distance travelled </td></tr>
+    <tr><td class="paramname">distance</td><td>The distance traveled </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A converted distance </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_navigation_8java_source.html#l00181">181</a> of file <a class="el" href="_navigation_8java_source.html">Navigation.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_navigation_8java_source.html#l00197">197</a> of file <a class="el" href="_navigation_8java_source.html">Navigation.java</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a85122ad723d0988c118866f367073be6_icgraph.png" border="0" usemap="#classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a85122ad723d0988c118866f367073be6_icgraph" alt=""/></div>
 <map name="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a85122ad723d0988c118866f367073be6_icgraph" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a85122ad723d0988c118866f367073be6_icgraph">
-<area shape="rect" id="node2" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer.html#a441f56a899fae5bc9c1d6a6d25fbe0bb" title="ca.mcgill.ecse211.lab5.Light\lLocalizer.localize" alt="" coords="364,5,551,47"/>
-<area shape="rect" id="node3" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a318969f4776d0bf4a8721be3d2444a5c" title="ca.mcgill.ecse211.lab5.Navigation.travelTo" alt="" coords="321,71,593,98"/>
-<area shape="rect" id="node4" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a82cca51f550ed0eb016bb2082d3fe755" title="ca.mcgill.ecse211.lab5.Lab5.main" alt="" coords="947,71,1165,98"/>
-<area shape="rect" id="node5" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a0e80ac0068ef1ab41cfb571b8c65845c" title="ca.mcgill.ecse211.lab5.Lab5.searchArea" alt="" coords="641,97,899,123"/>
+<area shape="rect" id="node2" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer.html#a441f56a899fae5bc9c1d6a6d25fbe0bb" title="ca.mcgill.ecse211.lab5.Light\lLocalizer.localize" alt="" coords="677,5,863,47"/>
+<area shape="rect" id="node4" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a318969f4776d0bf4a8721be3d2444a5c" title="ca.mcgill.ecse211.lab5.Navigation.travelTo" alt="" coords="321,71,593,98"/>
+<area shape="rect" id="node6" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#aacb83ee18419dcd6095e331975cf2167" title="ca.mcgill.ecse211.lab5.Navigation.travel\lBackTo" alt="" coords="329,123,586,164"/>
+<area shape="rect" id="node3" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a82cca51f550ed0eb016bb2082d3fe755" title="ca.mcgill.ecse211.lab5.Lab5.main" alt="" coords="947,71,1165,98"/>
+<area shape="rect" id="node5" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a0e80ac0068ef1ab41cfb571b8c65845c" title="ca.mcgill.ecse211.lab5.Lab5.searchArea" alt="" coords="641,122,899,149"/>
 </map>
 </div>
 
@@ -226,14 +236,15 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This method corrects our robot's odometer readings</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">angle</td><td></td></tr>
+    <tr><td class="paramname">angle</td><td>The current angle that the robot is facing </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_navigation_8java_source.html#l00141">141</a> of file <a class="el" href="_navigation_8java_source.html">Navigation.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_navigation_8java_source.html#l00156">156</a> of file <a class="el" href="_navigation_8java_source.html">Navigation.java</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -275,12 +286,12 @@ Here is the caller graph for this function:</div>
 <p>Rotate the robot by certain angle</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">angle</td><td></td></tr>
+    <tr><td class="paramname">angle</td><td>The angle to rotate our robot to </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_navigation_8java_source.html#l00160">160</a> of file <a class="el" href="_navigation_8java_source.html">Navigation.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_navigation_8java_source.html#l00176">176</a> of file <a class="el" href="_navigation_8java_source.html">Navigation.java</a>.</p>
 
 </div>
 </div>
@@ -300,7 +311,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Stop the motor </p>
 
-<p class="definition">Definition at line <a class="el" href="_navigation_8java_source.html#l00168">168</a> of file <a class="el" href="_navigation_8java_source.html">Navigation.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_navigation_8java_source.html#l00184">184</a> of file <a class="el" href="_navigation_8java_source.html">Navigation.java</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -309,6 +320,54 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node2" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher.html#a88a4c77f3c76d74edc8bfd0229f0902f" title="ca.mcgill.ecse211.lab5.Ring\lSearcher.search" alt="" coords="304,5,491,47"/>
 <area shape="rect" id="node3" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a0e80ac0068ef1ab41cfb571b8c65845c" title="ca.mcgill.ecse211.lab5.Lab5.searchArea" alt="" coords="539,13,796,39"/>
 <area shape="rect" id="node4" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a82cca51f550ed0eb016bb2082d3fe755" title="ca.mcgill.ecse211.lab5.Lab5.main" alt="" coords="844,13,1063,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aacb83ee18419dcd6095e331975cf2167"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacb83ee18419dcd6095e331975cf2167">&#9670;&nbsp;</a></span>travelBackTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ca.mcgill.ecse211.lab5.Navigation.travelBackTo </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This method makes our robot travel back to a previous x and y coordinate</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>The x coordinate to travel back to </td></tr>
+    <tr><td class="paramname">y</td><td>The y coordinate to travel back to </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_navigation_8java_source.html#l00105">105</a> of file <a class="el" href="_navigation_8java_source.html">Navigation.java</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_aacb83ee18419dcd6095e331975cf2167_cgraph.png" border="0" usemap="#classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_aacb83ee18419dcd6095e331975cf2167_cgraph" alt=""/></div>
+<map name="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_aacb83ee18419dcd6095e331975cf2167_cgraph" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_aacb83ee18419dcd6095e331975cf2167_cgraph">
+<area shape="rect" id="node2" href="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data.html#a8f40f0264c68f0cbed4fff1723ae7863" title="ca.mcgill.ecse211.odometer.\lOdometerData.getXYT" alt="" coords="627,5,816,47"/>
+<area shape="rect" id="node3" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a2b39928c8062fe6863de8e818d009e91" title="ca.mcgill.ecse211.lab5.Navigation.turnTo" alt="" coords="313,38,576,65"/>
+<area shape="rect" id="node4" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a85122ad723d0988c118866f367073be6" title="ca.mcgill.ecse211.lab5.Navigation.convert\lDistance" alt="" coords="311,89,579,131"/>
 </map>
 </div>
 
@@ -355,19 +414,20 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_navigation_8java_source.html#l00064">64</a> of file <a class="el" href="_navigation_8java_source.html">Navigation.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_navigation_8java_source.html#l00070">70</a> of file <a class="el" href="_navigation_8java_source.html">Navigation.java</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a318969f4776d0bf4a8721be3d2444a5c_cgraph.png" border="0" usemap="#classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a318969f4776d0bf4a8721be3d2444a5c_cgraph" alt=""/></div>
 <map name="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a318969f4776d0bf4a8721be3d2444a5c_cgraph" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a318969f4776d0bf4a8721be3d2444a5c_cgraph">
-<area shape="rect" id="node2" href="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data.html#a8f40f0264c68f0cbed4fff1723ae7863" title="ca.mcgill.ecse211.odometer.\lOdometerData.getXYT" alt="" coords="641,23,831,64"/>
-<area shape="rect" id="node3" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a2b39928c8062fe6863de8e818d009e91" title="ca.mcgill.ecse211.lab5.Navigation.turnTo" alt="" coords="328,30,591,57"/>
-<area shape="rect" id="node4" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a85122ad723d0988c118866f367073be6" title="ca.mcgill.ecse211.lab5.Navigation.convert\lDistance" alt="" coords="325,82,593,123"/>
-<area shape="rect" id="node5" href="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html#a4e0eabd547726c90bd0b7252557d7ad7" title="ca.mcgill.ecse211.sensors.\lSensorData.getDL" alt="" coords="369,147,550,188"/>
-<area shape="rect" id="node6" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a73a89ddd822e0ba1cfd7a29c18aa7aea" title="ca.mcgill.ecse211.lab5.Navigation.do\lCorrection" alt="" coords="340,212,579,254"/>
-<area shape="rect" id="node7" href="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data.html#a82986438cd462e66520bc62bb4bd2b75" title="ca.mcgill.ecse211.odometer.\lOdometerData.setY" alt="" coords="641,179,831,220"/>
-<area shape="rect" id="node8" href="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data.html#a2911d7215e47f3064defe016b46bfeef" title="ca.mcgill.ecse211.odometer.\lOdometerData.setX" alt="" coords="641,244,831,286"/>
+<area shape="rect" id="node2" href="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data.html#a8f40f0264c68f0cbed4fff1723ae7863" title="ca.mcgill.ecse211.odometer.\lOdometerData.getXYT" alt="" coords="641,28,831,70"/>
+<area shape="rect" id="node3" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a2b39928c8062fe6863de8e818d009e91" title="ca.mcgill.ecse211.lab5.Navigation.turnTo" alt="" coords="328,36,591,62"/>
+<area shape="rect" id="node4" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a85122ad723d0988c118866f367073be6" title="ca.mcgill.ecse211.lab5.Navigation.convert\lDistance" alt="" coords="325,87,593,128"/>
+<area shape="rect" id="node5" href="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html#a4e0eabd547726c90bd0b7252557d7ad7" title="ca.mcgill.ecse211.sensors.\lSensorData.getDL" alt="" coords="369,152,550,194"/>
+<area shape="rect" id="node6" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a73a89ddd822e0ba1cfd7a29c18aa7aea" title="ca.mcgill.ecse211.lab5.Navigation.do\lCorrection" alt="" coords="340,218,579,259"/>
+<area shape="rect" id="node9" href="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html#a7ad543db5c907b4bd3329dbb34b4e9d9" title="ca.mcgill.ecse211.sensors.\lSensorData.getA" alt="" coords="369,283,550,324"/>
+<area shape="rect" id="node7" href="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data.html#a82986438cd462e66520bc62bb4bd2b75" title="ca.mcgill.ecse211.odometer.\lOdometerData.setY" alt="" coords="641,184,831,226"/>
+<area shape="rect" id="node8" href="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data.html#a2911d7215e47f3064defe016b46bfeef" title="ca.mcgill.ecse211.odometer.\lOdometerData.setX" alt="" coords="641,250,831,291"/>
 </map>
 </div>
 <div class="dynheader">
@@ -415,7 +475,7 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_navigation_8java_source.html#l00114">114</a> of file <a class="el" href="_navigation_8java_source.html">Navigation.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_navigation_8java_source.html#l00128">128</a> of file <a class="el" href="_navigation_8java_source.html">Navigation.java</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -429,12 +489,13 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a2b39928c8062fe6863de8e818d009e91_icgraph.png" border="0" usemap="#classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a2b39928c8062fe6863de8e818d009e91_icgraph" alt=""/></div>
 <map name="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a2b39928c8062fe6863de8e818d009e91_icgraph" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_a2b39928c8062fe6863de8e818d009e91_icgraph">
-<area shape="rect" id="node2" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a0e80ac0068ef1ab41cfb571b8c65845c" title="ca.mcgill.ecse211.lab5.Lab5.searchArea" alt="" coords="636,116,893,143"/>
-<area shape="rect" id="node4" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer.html#a441f56a899fae5bc9c1d6a6d25fbe0bb" title="ca.mcgill.ecse211.lab5.Light\lLocalizer.localize" alt="" coords="359,41,545,82"/>
-<area shape="rect" id="node5" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a318969f4776d0bf4a8721be3d2444a5c" title="ca.mcgill.ecse211.lab5.Navigation.travelTo" alt="" coords="316,172,588,199"/>
-<area shape="rect" id="node6" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher.html#a88a4c77f3c76d74edc8bfd0229f0902f" title="ca.mcgill.ecse211.lab5.Ring\lSearcher.search" alt="" coords="359,106,545,148"/>
-<area shape="rect" id="node7" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer.html#a7fd82ab7240a07ae6947313c0769d4bc" title="ca.mcgill.ecse211.lab5.Ultrasonic\lLocalizer.localize" alt="" coords="343,224,561,265"/>
-<area shape="rect" id="node3" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a82cca51f550ed0eb016bb2082d3fe755" title="ca.mcgill.ecse211.lab5.Lab5.main" alt="" coords="941,144,1160,171"/>
+<area shape="rect" id="node2" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a0e80ac0068ef1ab41cfb571b8c65845c" title="ca.mcgill.ecse211.lab5.Lab5.searchArea" alt="" coords="636,129,893,155"/>
+<area shape="rect" id="node4" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer.html#a441f56a899fae5bc9c1d6a6d25fbe0bb" title="ca.mcgill.ecse211.lab5.Light\lLocalizer.localize" alt="" coords="671,5,858,47"/>
+<area shape="rect" id="node5" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a318969f4776d0bf4a8721be3d2444a5c" title="ca.mcgill.ecse211.lab5.Navigation.travelTo" alt="" coords="316,238,588,265"/>
+<area shape="rect" id="node6" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#aacb83ee18419dcd6095e331975cf2167" title="ca.mcgill.ecse211.lab5.Navigation.travel\lBackTo" alt="" coords="323,172,581,213"/>
+<area shape="rect" id="node7" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher.html#a88a4c77f3c76d74edc8bfd0229f0902f" title="ca.mcgill.ecse211.lab5.Ring\lSearcher.search" alt="" coords="359,107,545,148"/>
+<area shape="rect" id="node8" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer.html#a7fd82ab7240a07ae6947313c0769d4bc" title="ca.mcgill.ecse211.lab5.Ultrasonic\lLocalizer.localize" alt="" coords="655,275,874,316"/>
+<area shape="rect" id="node3" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a82cca51f550ed0eb016bb2082d3fe755" title="ca.mcgill.ecse211.lab5.Lab5.main" alt="" coords="941,169,1160,195"/>
 </map>
 </div>
 

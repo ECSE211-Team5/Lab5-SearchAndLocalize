@@ -1,4 +1,4 @@
-.TH "ca.mcgill.ecse211.lab5.RingSearcher" 3 "Tue Oct 23 2018" "Version 1.0" "ECSE211 - Fall 2018 - Lab 5 - Search and Localize" \" -*- nroff -*-
+.TH "ca.mcgill.ecse211.lab5.RingSearcher" 3 "Wed Oct 24 2018" "Version 1.0" "ECSE211 - Fall 2018 - Lab 5 - Search and Localize" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -18,16 +18,26 @@ ca.mcgill.ecse211.lab5.RingSearcher
 .in -1c
 .SH "Detailed Description"
 .PP 
-
+This class helps our robot to search for rings on a grid
 .PP
 \fBAuthor:\fP
 .RS 4
-Caspar Cedro & Percy Chen & Patrick Erath & Anssam Ghezala & Susan Matuszewski & Kamy Moussavi Kafi 
+Caspar Cedro 
+.PP
+Percy Chen 
+.PP
+Patrick Erath 
+.PP
+Anssam Ghezala 
+.PP
+Susan Matuszewski 
+.PP
+Kamy Moussavi Kafi 
 .RE
 .PP
 
 .PP
-Definition at line 14 of file RingSearcher\&.java\&.
+Definition at line 19 of file RingSearcher\&.java\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "ca\&.mcgill\&.ecse211\&.lab5\&.RingSearcher\&.RingSearcher (\fBNavigation\fP nav, EV3LargeRegulatedMotor leftMotor, EV3LargeRegulatedMotor rightMotor) throws \fBOdometerExceptions\fP"
@@ -35,11 +45,11 @@ This class provides method to check if there is a ring and if the ring is the co
 .PP
 \fBParameters:\fP
 .RS 4
-\fInav\fP 
+\fInav\fP A \fBNavigation\fP class object instance that controls how our robot moves 
 .br
-\fIleftMotor\fP 
+\fIleftMotor\fP A EV3LargeRegulatedMotor object instance that allows control of the left motor 
 .br
-\fIrightMotor\fP 
+\fIrightMotor\fP A EV3LargeRegulatedMotor object instance that allows control of the right motor 
 .RE
 .PP
 \fBExceptions:\fP
@@ -49,7 +59,7 @@ This class provides method to check if there is a ring and if the ring is the co
 .PP
 
 .PP
-Definition at line 32 of file RingSearcher\&.java\&.
+Definition at line 39 of file RingSearcher\&.java\&.
 .SH "Member Function Documentation"
 .PP 
 .SS "boolean ca\&.mcgill\&.ecse211\&.lab5\&.RingSearcher\&.search (int angle, ColorCalibrator\&.Color target)"
@@ -59,17 +69,17 @@ This method turn the robot for certain angle and see if there is a right if ther
 .RS 4
 \fIangle\fP angle to turn in order to check the ring 
 .br
-\fItarget\fP target color 
+\fItarget\fP target ring color 
 .RE
 .PP
 \fBReturns:\fP
 .RS 4
-: true if it found a ring and the ring has the right color 
+true if it found a ring and the ring has the right color 
 .RE
 .PP
 
 .PP
-Definition at line 54 of file RingSearcher\&.java\&.
+Definition at line 61 of file RingSearcher\&.java\&.
 
 .SH "Author"
 .PP 

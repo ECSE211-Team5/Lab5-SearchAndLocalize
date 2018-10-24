@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['geta',['getA',['../classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html#a7ad543db5c907b4bd3329dbb34b4e9d9',1,'ca::mcgill::ecse211::sensors::SensorData']]],
+  ['getcolor',['getColor',['../classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator.html#a115188f4d3b465e09db3482f8a6f25d2',1,'ca.mcgill.ecse211.lab5.ColorCalibrator.getColor(int r, int g, int b)'],['../classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator.html#ac6a2e41db5bd91b1356f53106178862e',1,'ca.mcgill.ecse211.lab5.ColorCalibrator.getColor()']]],
   ['getdl',['getDL',['../classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html#a4e0eabd547726c90bd0b7252557d7ad7',1,'ca::mcgill::ecse211::sensors::SensorData']]],
   ['getodometer',['getOdometer',['../classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer.html#a99171f11e34dea918fa9dd069d721439',1,'ca.mcgill.ecse211.odometer.Odometer.getOdometer(EV3LargeRegulatedMotor leftMotor, EV3LargeRegulatedMotor rightMotor, final double TRACK, final double WHEEL_RAD)'],['../classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer.html#a4e069b5a96cd43b29af0785244a99b51',1,'ca.mcgill.ecse211.odometer.Odometer.getOdometer()']]],
   ['getodometerdata',['getOdometerData',['../classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data.html#afff2d760dd1f861b580f3eacef37f1cc',1,'ca::mcgill::ecse211::odometer::OdometerData']]],

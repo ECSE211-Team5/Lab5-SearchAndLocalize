@@ -9,6 +9,29 @@
   </compound>
   <compound refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator" kind="class"><name>ca::mcgill::ecse211::lab5::ColorCalibrator</name>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1ab531502eb94e87b4e5db0f548e3c0e2d" kind="variable"><name>currentColor</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a3f89ecd688c9c9271626621fa1d5deca" kind="variable"><name>lowerYellowRBound</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a48227ee380560e2ce1c324462aa94de9" kind="variable"><name>upperYellowRBound</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1af89102b7e9e4a1eb9314f6187addfddd" kind="variable"><name>lowerYellowGBound</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a983ee2edffd6425280bdec7c9ef928dd" kind="variable"><name>upperYellowGBound</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a96926828f4033484842f16da33e6886b" kind="variable"><name>lowerYellowBBound</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a700e7f4c4f1b53581b6eff393a77e43e" kind="variable"><name>upperYellowBBound</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1ad60a6e1b17a82bfc011b70e0568432c2" kind="variable"><name>lowerBlueRBound</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1aa6bf0db145da53194e5b908eddce5419" kind="variable"><name>upperBlueRBound</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a98044f548d9d447f7b358a1b3ebd12e5" kind="variable"><name>lowerBlueGBound</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1ab9eda92af704671e0ec51b0acaf30e04" kind="variable"><name>upperBlueGBound</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1afa665e863cc3fbf697cd28814d37812d" kind="variable"><name>lowerBlueBBound</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a8c7cdccc5a7bb4d8f6157b19e2a53280" kind="variable"><name>upperBlueBBound</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a9f0297a8ee145a3416c3fc14652e4033" kind="variable"><name>lowerGreenRBound</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1affed0d1656aed80902851c79be89a2f7" kind="variable"><name>upperGreenRBound</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a4ce2097b02b418052ea35d04bfb194b9" kind="variable"><name>lowerGreenGBound</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1ad2faa395f76d4e05b85dfa78e68496c6" kind="variable"><name>upperGreenGBound</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1ab36b917d60860ad19f02e89fd1be44e0" kind="variable"><name>lowerGreenBBound</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a100cb5509d3ca691612d06740e1f3acf" kind="variable"><name>upperGreenBBound</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a68705e718c4b548221e135311fd5059a" kind="variable"><name>lowerOrangeRBound</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1ac977bcf2cc6b001321988099c088adb1" kind="variable"><name>upperOrangeRBound</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a97b0983954129b75b18f74e94540cd6e" kind="variable"><name>lowerOrangeGBound</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a4c0c575b3f650c23db98ec1ad34d9d22" kind="variable"><name>upperOrangeGBound</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a7d04e925b745bc9bee7317610506f1a6" kind="variable"><name>OrangeBBound</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1a115188f4d3b465e09db3482f8a6f25d2" kind="function"><name>getColor</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator_1ac6a2e41db5bd91b1356f53106178862e" kind="function"><name>getColor</name></member>
   </compound>
@@ -38,13 +61,13 @@
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1aec878f6f5e57e3b9bb3277f8cc5d08d0" kind="variable"><name>usPort</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1ae96cd27167afc136b11f3632fbb7f27d" kind="variable"><name>lgPorts</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a94ecc8327140aee9515702c39fd0f3bd" kind="variable"><name>lcd</name></member>
-    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a2415c0078b42b8813c3cc9304d6335ce" kind="variable"><name>gPort</name></member>
-    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a0e63e3a6920344136ebfa14780670ee3" kind="variable"><name>gSensor</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a613e69d8f1e90a1161b78020571110fc" kind="variable"><name>leftMotor</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a70575e1c6e84cd9d22cadd141ad6ceae" kind="variable"><name>rightMotor</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a099ba21be1cd8d54a57c40cd0d35701d" kind="variable"><name>TILE</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1ab9b6fc96d3fb1ac6c7d69d1727b3bbdd" kind="variable"><name>WHEEL_RAD</name></member>
-    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a3d2e7eb578ce6ef7f7453feed3835e1d" kind="variable"><name>TRACK</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a401ed72b19795f01e72c8d2a69d9faba" kind="variable"><name>TRACK</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a6bc8fbcc688c767a11226cb7b5da3411" kind="variable"><name>LOCALIZE_WHEEL_RAD</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a971cb3d8a46c2b41bcadf08f21498d6d" kind="variable"><name>LOCALIZE_TRACK</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a39cbd32759fdb575b92b694f2713085d" kind="variable"><name>SC</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a0dd5ea6f697d2221ed8c8bb4df1cac7f" kind="variable"><name>TR</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a957a526ed669e9d8b7fc485e21385ee9" kind="variable"><name>LLx</name></member>
@@ -81,6 +104,8 @@
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1ac39091bff884ffdfb7a9edc194609c94" kind="variable"><name>FORWARD_SPEED</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a731feece6164603180a933d862a25c29" kind="variable"><name>ROTATE_SPEED</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1ae2dbd39c06f074cd57f68017a1cc105f" kind="variable"><name>SENSOR_DIS</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a5e42087919162c4f569f3e0830a8cdba" kind="variable"><name>ACCELERATION</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a6587efae67e199fa0a387d2615f7b591" kind="variable"><name>DISTANCE_THRESHOLD</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1abdf83a9c8c01d36dde6147db1abb4be9" kind="variable"><name>leftMotor</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a4cb1f0d70c4c95ba044bff1876882049" kind="variable"><name>rightMotor</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1ab2a74a850d883ba6d35a9ac17f6a2bbc" kind="variable"><name>odometer</name></member>
@@ -135,6 +160,8 @@
   </compound>
   <compound refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometry_correction" kind="class"><name>ca::mcgill::ecse211::odometer::OdometryCorrection</name>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometry_correction_1a93af515465a6fe959c4fa06e649533b2" kind="variable"><name>CORRECTION_PERIOD</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometry_correction_1a3e105c4e1168088a50e93414ead30169" kind="variable"><name>TILE_WIDTH</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometry_correction_1ab514d70d588f42e5702a5772d0d68eb8" kind="variable"><name>LINE_COLOR_THRESHOLD</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometry_correction_1a772b665357b7c07c133ae385d512bb31" kind="variable"><name>myColor</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometry_correction_1a96a8da570111cf8da08f421d2a34b7bc" kind="variable"><name>myColorSample</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometry_correction_1a8cb0ad451c9bf9a732ceaffe4c850678" kind="variable"><name>sampleColor</name></member>
@@ -152,6 +179,7 @@
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1a28b799f18420f0e031f72b1fd17fc203" kind="variable"><name>FORWARD_SPEED</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1a574fa45096175b587717e8a3c80ee0d1" kind="variable"><name>ROTATE_SPEED</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1a02862007d23c6404af101246b136e3dd" kind="variable"><name>RING_DISTANCE</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1a390b45387dbd5ffb4752990f3424d419" kind="variable"><name>ACCELERATION</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1aa16fb05db54f4531a0b7e3b0987cfcd0" kind="variable"><name>leftMotor</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1aa9659bf6252eadff7d08f828c2c03112" kind="variable"><name>rightMotor</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1aa49d7a2bf4f92661c2210c035d58c211" kind="variable"><name>navigation</name></member>
@@ -203,6 +231,7 @@
     <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller_1a1c27670d086e0e68c506317212871e79" kind="variable"><name>us</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller_1a67a14911278e7a36fcc96316d920f6cf" kind="variable"><name>cont</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller_1acbaff05aab9077535a5d9bce31b5457f" kind="variable"><name>usData</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller_1a01045a01bd07b962911d116470d315ab" kind="variable"><name>SLEEP_INTERVAL</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller_1a3007841893144cccb37d023f34fb3cfc" kind="function"><name>UltrasonicPoller</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_ultrasonic_poller_1acc71fac612a72c197244c71d6cf7b6e1" kind="function"><name>run</name></member>
   </compound>

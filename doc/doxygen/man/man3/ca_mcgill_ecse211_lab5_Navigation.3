@@ -1,4 +1,4 @@
-.TH "ca.mcgill.ecse211.lab5.Navigation" 3 "Tue Oct 23 2018" "Version 1.0" "ECSE211 - Fall 2018 - Lab 5 - Search and Localize" \" -*- nroff -*-
+.TH "ca.mcgill.ecse211.lab5.Navigation" 3 "Wed Oct 24 2018" "Version 1.0" "ECSE211 - Fall 2018 - Lab 5 - Search and Localize" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -48,12 +48,22 @@ This is useful if, for instance, you want to force travel without obstacle detec
 .PP
 \fBAuthor:\fP
 .RS 4
-Caspar Cedro & Percy Chen & Patrick Erath & Anssam Ghezala & Susan Matuszewski & Kamy Moussavi Kafi 
+Caspar Cedro 
+.PP
+Percy Chen 
+.PP
+Patrick Erath 
+.PP
+Anssam Ghezala 
+.PP
+Susan Matuszewski 
+.PP
+Kamy Moussavi Kafi 
 .RE
 .PP
 
 .PP
-Definition at line 25 of file Navigation\&.java\&.
+Definition at line 29 of file Navigation\&.java\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "ca\&.mcgill\&.ecse211\&.lab5\&.Navigation\&.Navigation (EV3LargeRegulatedMotor leftMotor, EV3LargeRegulatedMotor rightMotor) throws \fBOdometerExceptions\fP"
@@ -68,7 +78,7 @@ This navigation class constructor sets up our robot to begin navigating a partic
 .PP
 
 .PP
-Definition at line 41 of file Navigation\&.java\&.
+Definition at line 47 of file Navigation\&.java\&.
 .SH "Member Function Documentation"
 .PP 
 .SS "static int ca\&.mcgill\&.ecse211\&.lab5\&.Navigation\&.convertDistance (double radius, double distance)\fC [static]\fP"
@@ -78,7 +88,7 @@ This method allows the conversion of a distance to the total rotation of each wh
 .RS 4
 \fIradius\fP The radius of our wheels 
 .br
-\fIdistance\fP The distance travelled 
+\fIdistance\fP The distance traveled 
 .RE
 .PP
 \fBReturns:\fP
@@ -88,33 +98,46 @@ A converted distance
 .PP
 
 .PP
-Definition at line 181 of file Navigation\&.java\&.
+Definition at line 197 of file Navigation\&.java\&.
 .SS "void ca\&.mcgill\&.ecse211\&.lab5\&.Navigation\&.doCorrection (double angle)"
-
+This method corrects our robot's odometer readings
 .PP
 \fBParameters:\fP
 .RS 4
-\fIangle\fP 
+\fIangle\fP The current angle that the robot is facing 
 .RE
 .PP
 
 .PP
-Definition at line 141 of file Navigation\&.java\&.
+Definition at line 156 of file Navigation\&.java\&.
 .SS "void ca\&.mcgill\&.ecse211\&.lab5\&.Navigation\&.rotate (int angle)"
 Rotate the robot by certain angle
 .PP
 \fBParameters:\fP
 .RS 4
-\fIangle\fP 
+\fIangle\fP The angle to rotate our robot to 
 .RE
 .PP
 
 .PP
-Definition at line 160 of file Navigation\&.java\&.
+Definition at line 176 of file Navigation\&.java\&.
 .SS "void ca\&.mcgill\&.ecse211\&.lab5\&.Navigation\&.stop ()"
 Stop the motor 
 .PP
-Definition at line 168 of file Navigation\&.java\&.
+Definition at line 184 of file Navigation\&.java\&.
+.SS "void ca\&.mcgill\&.ecse211\&.lab5\&.Navigation\&.travelBackTo (double x, double y)"
+This method makes our robot travel back to a previous x and y coordinate
+.PP
+\fBParameters:\fP
+.RS 4
+\fIx\fP The x coordinate to travel back to 
+.br
+\fIy\fP The y coordinate to travel back to 
+.RE
+.PP
+
+.PP
+Definition at line 105 of file Navigation\&.java\&.
 .SS "void ca\&.mcgill\&.ecse211\&.lab5\&.Navigation\&.travelTo (double x, double y, boolean doCorrection)"
 TravelTo function which takes as arguments the x and y position in cm Will travel to designated position, while constantly updating it's heading
 .PP
@@ -129,7 +152,7 @@ When avoid=true, the nav thread will handle traveling\&. If you want to travel w
 .PP
 
 .PP
-Definition at line 64 of file Navigation\&.java\&.
+Definition at line 70 of file Navigation\&.java\&.
 .SS "void ca\&.mcgill\&.ecse211\&.lab5\&.Navigation\&.turnTo (double angle, boolean async)"
 This method is where the logic for the odometer will run\&. Use the methods provided from the OdometerData class to implement the odometer\&.
 .PP
@@ -140,7 +163,7 @@ This method is where the logic for the odometer will run\&. Use the methods prov
 .PP
 
 .PP
-Definition at line 114 of file Navigation\&.java\&.
+Definition at line 128 of file Navigation\&.java\&.
 
 .SH "Author"
 .PP 

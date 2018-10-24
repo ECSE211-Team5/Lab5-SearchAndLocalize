@@ -1,4 +1,4 @@
-.TH "ca.mcgill.ecse211.sensors.GyroPoller" 3 "Tue Oct 23 2018" "Version 1.0" "ECSE211 - Fall 2018 - Lab 5 - Search and Localize" \" -*- nroff -*-
+.TH "ca.mcgill.ecse211.sensors.GyroPoller" 3 "Wed Oct 24 2018" "Version 1.0" "ECSE211 - Fall 2018 - Lab 5 - Search and Localize" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -47,28 +47,38 @@ Inherits Thread\&.
 .in -1c
 .SH "Detailed Description"
 .PP 
-
+This class helps our robot to navigate using a gyroscope
 .PP
 \fBAuthor:\fP
 .RS 4
-Caspar Cedro & Percy Chen & Patrick Erath & Anssam Ghezala & Susan Matuszewski & Kamy Moussavi Kafi 
+Caspar Cedro 
+.PP
+Percy Chen 
+.PP
+Patrick Erath 
+.PP
+Anssam Ghezala 
+.PP
+Susan Matuszewski 
+.PP
+Kamy Moussavi Kafi 
 .RE
 .PP
 
 .PP
-Definition at line 11 of file GyroPoller\&.java\&.
+Definition at line 16 of file GyroPoller\&.java\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "ca\&.mcgill\&.ecse211\&.sensors\&.GyroPoller\&.GyroPoller (SampleProvider us, float [] lgData, \fBSensorData\fP cont) throws \fBOdometerExceptions\fP"
-This constructor creates an instance of the \fBLightPoller\fP class to provide distance data from an light sensor to our robot\&.
+This constructor creates an instance of the \fBGyroPoller\fP class to aid navigation
 .PP
 \fBParameters:\fP
 .RS 4
-\fIus\fP a SampleProvider class instance that helps us to store an array of ultrasonic sensor data\&. 
+\fIus\fP A SampleProvider class instance that helps us to store an array of ultrasonic sensor data\&. 
 .br
-\fIlgData\fP an array of distance data to be used by our Wall Follower's UltrasonicControllers\&. 
+\fIlgData\fP An array used to store data\&. 
 .br
-\fIcont\fP a BangBangController or PController instance that has accumulated distance data stored in usData passed to it\&. 
+\fIcont\fP A \fBSensorData\fP object instance used to manage sensor data\&. 
 .RE
 .PP
 \fBExceptions:\fP
@@ -78,7 +88,7 @@ This constructor creates an instance of the \fBLightPoller\fP class to provide d
 .PP
 
 .PP
-Definition at line 29 of file GyroPoller\&.java\&.
+Definition at line 31 of file GyroPoller\&.java\&.
 .SH "Member Function Documentation"
 .PP 
 .SS "void ca\&.mcgill\&.ecse211\&.sensors\&.GyroPoller\&.run ()"
@@ -93,7 +103,7 @@ java\&.lang\&.Thread::run()
 .PP
 
 .PP
-Definition at line 44 of file GyroPoller\&.java\&.
+Definition at line 46 of file GyroPoller\&.java\&.
 
 .SH "Author"
 .PP 
