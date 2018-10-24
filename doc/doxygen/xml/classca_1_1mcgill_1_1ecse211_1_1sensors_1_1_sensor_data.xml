@@ -183,7 +183,7 @@
         <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/SensorData.java" line="70" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/SensorData.java" bodystart="70" bodyend="82"/>
         <references refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1a41b9929f62455a15364385a339b4b910" compoundref="_sensor_data_8java" startline="49" endline="60">ca.mcgill.ecse211.sensors.SensorData.SensorData</references>
         <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_1aeb15906f02c60c1ca449d4c37922739b" compoundref="_display_8java" startline="35" endline="39">ca.mcgill.ecse211.lab5.Display.Display</referencedby>
-        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a82cca51f550ed0eb016bb2082d3fe755" compoundref="_lab5_8java" startline="105" endline="200">ca.mcgill.ecse211.lab5.Lab5.main</referencedby>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a82cca51f550ed0eb016bb2082d3fe755" compoundref="_lab5_8java" startline="111" endline="212">ca.mcgill.ecse211.lab5.Lab5.main</referencedby>
         <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a83dbb9eaea19092e27f6f9acdd35d37a" compoundref="_light_localizer_8java" startline="37" endline="44">ca.mcgill.ecse211.lab5.LightLocalizer.LightLocalizer</referencedby>
         <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a93b746f61226c3b14532c43d0c2f61dd" compoundref="_navigation_8java" startline="47" endline="58">ca.mcgill.ecse211.lab5.Navigation.Navigation</referencedby>
         <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1aa3f2d76984b3b80f32b6ddd6770e24b0" compoundref="_ring_searcher_8java" startline="39" endline="51">ca.mcgill.ecse211.lab5.RingSearcher.RingSearcher</referencedby>
@@ -213,7 +213,7 @@
         </inbodydescription>
         <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/SensorData.java" line="90" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/SensorData.java" bodystart="90" bodyend="110"/>
         <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_1a047e885f7170ba80f60fd3b4b2bc79a9" compoundref="_display_8java" startline="57" endline="106">ca.mcgill.ecse211.lab5.Display.run</referencedby>
-        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a441f56a899fae5bc9c1d6a6d25fbe0bb" compoundref="_light_localizer_8java" startline="52" endline="91">ca.mcgill.ecse211.lab5.LightLocalizer.localize</referencedby>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a441f56a899fae5bc9c1d6a6d25fbe0bb" compoundref="_light_localizer_8java" startline="50" endline="89">ca.mcgill.ecse211.lab5.LightLocalizer.localize</referencedby>
         <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a318969f4776d0bf4a8721be3d2444a5c" compoundref="_navigation_8java" startline="70" endline="97">ca.mcgill.ecse211.lab5.Navigation.travelTo</referencedby>
         <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1a7fd82ab7240a07ae6947313c0769d4bc" compoundref="_ultrasonic_localizer_8java" startline="56" endline="62">ca.mcgill.ecse211.lab5.UltrasonicLocalizer.localize</referencedby>
       </memberdef>
@@ -247,6 +247,7 @@
         <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/SensorData.java" line="136" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/SensorData.java" bodystart="136" bodyend="148"/>
         <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_1a047e885f7170ba80f60fd3b4b2bc79a9" compoundref="_display_8java" startline="57" endline="106">ca.mcgill.ecse211.lab5.Display.run</referencedby>
         <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a318969f4776d0bf4a8721be3d2444a5c" compoundref="_navigation_8java" startline="70" endline="97">ca.mcgill.ecse211.lab5.Navigation.travelTo</referencedby>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1ac2c358ea3663ac06fcf757628a4a4a31" compoundref="_navigation_8java" startline="105" endline="130">ca.mcgill.ecse211.lab5.Navigation.turnTo</referencedby>
       </memberdef>
       <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1ae20bf127c57dcfcb3b7632ca05b6d482" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>

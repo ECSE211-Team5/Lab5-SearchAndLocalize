@@ -208,61 +208,20 @@
         </inbodydescription>
         <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Navigation.java" line="70" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Navigation.java" bodystart="70" bodyend="97"/>
         <references refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a8f40f0264c68f0cbed4fff1723ae7863" compoundref="_odometer_data_8java" startline="84" endline="106">ca.mcgill.ecse211.odometer.OdometerData.getXYT</references>
-        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a2b39928c8062fe6863de8e818d009e91" compoundref="_navigation_8java" startline="128" endline="149">ca.mcgill.ecse211.lab5.Navigation.turnTo</references>
-        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a85122ad723d0988c118866f367073be6" compoundref="_navigation_8java" startline="197" endline="199">ca.mcgill.ecse211.lab5.Navigation.convertDistance</references>
-        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1ab9b6fc96d3fb1ac6c7d69d1727b3bbdd" compoundref="_lab5_8java" startline="56">ca.mcgill.ecse211.lab5.Lab5.WHEEL_RAD</references>
-        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a099ba21be1cd8d54a57c40cd0d35701d" compoundref="_lab5_8java" startline="51">ca.mcgill.ecse211.lab5.Lab5.TILE</references>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1ac2c358ea3663ac06fcf757628a4a4a31" compoundref="_navigation_8java" startline="105" endline="130">ca.mcgill.ecse211.lab5.Navigation.turnTo</references>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a85122ad723d0988c118866f367073be6" compoundref="_navigation_8java" startline="178" endline="180">ca.mcgill.ecse211.lab5.Navigation.convertDistance</references>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1ab9b6fc96d3fb1ac6c7d69d1727b3bbdd" compoundref="_lab5_8java" startline="61">ca.mcgill.ecse211.lab5.Lab5.WHEEL_RAD</references>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a099ba21be1cd8d54a57c40cd0d35701d" compoundref="_lab5_8java" startline="56">ca.mcgill.ecse211.lab5.Lab5.TILE</references>
         <references refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1a4e0eabd547726c90bd0b7252557d7ad7" compoundref="_sensor_data_8java" startline="90" endline="110">ca.mcgill.ecse211.sensors.SensorData.getDL</references>
-        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a73a89ddd822e0ba1cfd7a29c18aa7aea" compoundref="_navigation_8java" startline="156" endline="169">ca.mcgill.ecse211.lab5.Navigation.doCorrection</references>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a73a89ddd822e0ba1cfd7a29c18aa7aea" compoundref="_navigation_8java" startline="137" endline="150">ca.mcgill.ecse211.lab5.Navigation.doCorrection</references>
         <references refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1a7ad543db5c907b4bd3329dbb34b4e9d9" compoundref="_sensor_data_8java" startline="136" endline="148">ca.mcgill.ecse211.sensors.SensorData.getA</references>
-        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a82cca51f550ed0eb016bb2082d3fe755" compoundref="_lab5_8java" startline="105" endline="200">ca.mcgill.ecse211.lab5.Lab5.main</referencedby>
-        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a0e80ac0068ef1ab41cfb571b8c65845c" compoundref="_lab5_8java" startline="211" endline="256">ca.mcgill.ecse211.lab5.Lab5.searchArea</referencedby>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a82cca51f550ed0eb016bb2082d3fe755" compoundref="_lab5_8java" startline="111" endline="212">ca.mcgill.ecse211.lab5.Lab5.main</referencedby>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a0e80ac0068ef1ab41cfb571b8c65845c" compoundref="_lab5_8java" startline="223" endline="268">ca.mcgill.ecse211.lab5.Lab5.searchArea</referencedby>
       </memberdef>
-      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1aacb83ee18419dcd6095e331975cf2167" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void ca.mcgill.ecse211.lab5.Navigation.travelBackTo</definition>
-        <argsstring>(double x, double y)</argsstring>
-        <name>travelBackTo</name>
-        <param>
-          <type>double</type>
-          <declname>x</declname>
-        </param>
-        <param>
-          <type>double</type>
-          <declname>y</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>This method makes our robot travel back to a previous x and y coordinate</para><para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>x</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The x coordinate to travel back to </para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>y</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The y coordinate to travel back to </para></parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Navigation.java" line="105" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Navigation.java" bodystart="105" bodyend="120"/>
-        <references refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a8f40f0264c68f0cbed4fff1723ae7863" compoundref="_odometer_data_8java" startline="84" endline="106">ca.mcgill.ecse211.odometer.OdometerData.getXYT</references>
-        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a2b39928c8062fe6863de8e818d009e91" compoundref="_navigation_8java" startline="128" endline="149">ca.mcgill.ecse211.lab5.Navigation.turnTo</references>
-        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a85122ad723d0988c118866f367073be6" compoundref="_navigation_8java" startline="197" endline="199">ca.mcgill.ecse211.lab5.Navigation.convertDistance</references>
-        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1ab9b6fc96d3fb1ac6c7d69d1727b3bbdd" compoundref="_lab5_8java" startline="56">ca.mcgill.ecse211.lab5.Lab5.WHEEL_RAD</references>
-        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a099ba21be1cd8d54a57c40cd0d35701d" compoundref="_lab5_8java" startline="51">ca.mcgill.ecse211.lab5.Lab5.TILE</references>
-      </memberdef>
-      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a2b39928c8062fe6863de8e818d009e91" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1ac2c358ea3663ac06fcf757628a4a4a31" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void ca.mcgill.ecse211.lab5.Navigation.turnTo</definition>
-        <argsstring>(double angle, boolean async)</argsstring>
+        <argsstring>(double angle, boolean async, boolean useGyro)</argsstring>
         <name>turnTo</name>
         <param>
           <type>double</type>
@@ -271,6 +230,10 @@
         <param>
           <type>boolean</type>
           <declname>async</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>useGyro</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -286,14 +249,14 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Navigation.java" line="128" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Navigation.java" bodystart="128" bodyend="149"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Navigation.java" line="105" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Navigation.java" bodystart="105" bodyend="130"/>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1a7ad543db5c907b4bd3329dbb34b4e9d9" compoundref="_sensor_data_8java" startline="136" endline="148">ca.mcgill.ecse211.sensors.SensorData.getA</references>
         <references refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a8f40f0264c68f0cbed4fff1723ae7863" compoundref="_odometer_data_8java" startline="84" endline="106">ca.mcgill.ecse211.odometer.OdometerData.getXYT</references>
-        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1ab9b6fc96d3fb1ac6c7d69d1727b3bbdd" compoundref="_lab5_8java" startline="56">ca.mcgill.ecse211.lab5.Lab5.WHEEL_RAD</references>
-        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a401ed72b19795f01e72c8d2a69d9faba" compoundref="_lab5_8java" startline="62">ca.mcgill.ecse211.lab5.Lab5.TRACK</references>
-        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a0e80ac0068ef1ab41cfb571b8c65845c" compoundref="_lab5_8java" startline="211" endline="256">ca.mcgill.ecse211.lab5.Lab5.searchArea</referencedby>
-        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a441f56a899fae5bc9c1d6a6d25fbe0bb" compoundref="_light_localizer_8java" startline="52" endline="91">ca.mcgill.ecse211.lab5.LightLocalizer.localize</referencedby>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1ab9b6fc96d3fb1ac6c7d69d1727b3bbdd" compoundref="_lab5_8java" startline="61">ca.mcgill.ecse211.lab5.Lab5.WHEEL_RAD</references>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a401ed72b19795f01e72c8d2a69d9faba" compoundref="_lab5_8java" startline="68">ca.mcgill.ecse211.lab5.Lab5.TRACK</references>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a0e80ac0068ef1ab41cfb571b8c65845c" compoundref="_lab5_8java" startline="223" endline="268">ca.mcgill.ecse211.lab5.Lab5.searchArea</referencedby>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a441f56a899fae5bc9c1d6a6d25fbe0bb" compoundref="_light_localizer_8java" startline="50" endline="89">ca.mcgill.ecse211.lab5.LightLocalizer.localize</referencedby>
         <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a318969f4776d0bf4a8721be3d2444a5c" compoundref="_navigation_8java" startline="70" endline="97">ca.mcgill.ecse211.lab5.Navigation.travelTo</referencedby>
-        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1aacb83ee18419dcd6095e331975cf2167" compoundref="_navigation_8java" startline="105" endline="120">ca.mcgill.ecse211.lab5.Navigation.travelBackTo</referencedby>
         <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1a88a4c77f3c76d74edc8bfd0229f0902f" compoundref="_ring_searcher_8java" startline="61" endline="94">ca.mcgill.ecse211.lab5.RingSearcher.search</referencedby>
         <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer_1a7fd82ab7240a07ae6947313c0769d4bc" compoundref="_ultrasonic_localizer_8java" startline="56" endline="62">ca.mcgill.ecse211.lab5.UltrasonicLocalizer.localize</referencedby>
       </memberdef>
@@ -320,9 +283,9 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Navigation.java" line="156" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Navigation.java" bodystart="156" bodyend="169"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Navigation.java" line="137" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Navigation.java" bodystart="137" bodyend="150"/>
         <references refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a8f40f0264c68f0cbed4fff1723ae7863" compoundref="_odometer_data_8java" startline="84" endline="106">ca.mcgill.ecse211.odometer.OdometerData.getXYT</references>
-        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a099ba21be1cd8d54a57c40cd0d35701d" compoundref="_lab5_8java" startline="51">ca.mcgill.ecse211.lab5.Lab5.TILE</references>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a099ba21be1cd8d54a57c40cd0d35701d" compoundref="_lab5_8java" startline="56">ca.mcgill.ecse211.lab5.Lab5.TILE</references>
         <references refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a82986438cd462e66520bc62bb4bd2b75" compoundref="_odometer_data_8java" startline="179" endline="190">ca.mcgill.ecse211.odometer.OdometerData.setY</references>
         <references refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a2911d7215e47f3064defe016b46bfeef" compoundref="_odometer_data_8java" startline="161" endline="172">ca.mcgill.ecse211.odometer.OdometerData.setX</references>
         <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a318969f4776d0bf4a8721be3d2444a5c" compoundref="_navigation_8java" startline="70" endline="97">ca.mcgill.ecse211.lab5.Navigation.travelTo</referencedby>
@@ -350,9 +313,9 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Navigation.java" line="176" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Navigation.java" bodystart="176" bodyend="179"/>
-        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1ab9b6fc96d3fb1ac6c7d69d1727b3bbdd" compoundref="_lab5_8java" startline="56">ca.mcgill.ecse211.lab5.Lab5.WHEEL_RAD</references>
-        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a401ed72b19795f01e72c8d2a69d9faba" compoundref="_lab5_8java" startline="62">ca.mcgill.ecse211.lab5.Lab5.TRACK</references>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Navigation.java" line="157" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Navigation.java" bodystart="157" bodyend="160"/>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1ab9b6fc96d3fb1ac6c7d69d1727b3bbdd" compoundref="_lab5_8java" startline="61">ca.mcgill.ecse211.lab5.Lab5.WHEEL_RAD</references>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a401ed72b19795f01e72c8d2a69d9faba" compoundref="_lab5_8java" startline="68">ca.mcgill.ecse211.lab5.Lab5.TRACK</references>
       </memberdef>
       <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1afe038af6692e7ad28c3587cd979d7223" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -365,7 +328,7 @@
 <para>Stop the motor </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Navigation.java" line="184" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Navigation.java" bodystart="184" bodyend="187"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Navigation.java" line="165" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Navigation.java" bodystart="165" bodyend="168"/>
         <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_1a88a4c77f3c76d74edc8bfd0229f0902f" compoundref="_ring_searcher_8java" startline="61" endline="94">ca.mcgill.ecse211.lab5.RingSearcher.search</referencedby>
       </memberdef>
       </sectiondef>
@@ -405,10 +368,9 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Navigation.java" line="197" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Navigation.java" bodystart="197" bodyend="199"/>
-        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a441f56a899fae5bc9c1d6a6d25fbe0bb" compoundref="_light_localizer_8java" startline="52" endline="91">ca.mcgill.ecse211.lab5.LightLocalizer.localize</referencedby>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Navigation.java" line="178" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Navigation.java" bodystart="178" bodyend="180"/>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a441f56a899fae5bc9c1d6a6d25fbe0bb" compoundref="_light_localizer_8java" startline="50" endline="89">ca.mcgill.ecse211.lab5.LightLocalizer.localize</referencedby>
         <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a318969f4776d0bf4a8721be3d2444a5c" compoundref="_navigation_8java" startline="70" endline="97">ca.mcgill.ecse211.lab5.Navigation.travelTo</referencedby>
-        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1aacb83ee18419dcd6095e331975cf2167" compoundref="_navigation_8java" startline="105" endline="120">ca.mcgill.ecse211.lab5.Navigation.travelBackTo</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-static-func">
@@ -458,7 +420,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Navigation.java" line="209" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Navigation.java" bodystart="209" bodyend="211"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Navigation.java" line="190" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Navigation.java" bodystart="190" bodyend="192"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -471,7 +433,7 @@
 <simplesect kind="author"><para>Susan Matuszewski </para></simplesect>
 <simplesect kind="author"><para>Kamy Moussavi Kafi </para></simplesect>
 </para>    </detaileddescription>
-    <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Navigation.java" line="29" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Navigation.java" bodystart="29" bodyend="212"/>
+    <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Navigation.java" line="29" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/Navigation.java" bodystart="29" bodyend="193"/>
     <listofallmembers>
       <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a5e42087919162c4f569f3e0830a8cdba" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::Navigation</scope><name>ACCELERATION</name></member>
       <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1afb499cf7c2a00a203b6c3d92a0d6e1ef" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::Navigation</scope><name>convertAngle</name></member>
@@ -488,9 +450,8 @@
       <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a731feece6164603180a933d862a25c29" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::Navigation</scope><name>ROTATE_SPEED</name></member>
       <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1ae2dbd39c06f074cd57f68017a1cc105f" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::Navigation</scope><name>SENSOR_DIS</name></member>
       <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1afe038af6692e7ad28c3587cd979d7223" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::Navigation</scope><name>stop</name></member>
-      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1aacb83ee18419dcd6095e331975cf2167" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::Navigation</scope><name>travelBackTo</name></member>
       <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a318969f4776d0bf4a8721be3d2444a5c" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::Navigation</scope><name>travelTo</name></member>
-      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a2b39928c8062fe6863de8e818d009e91" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::Navigation</scope><name>turnTo</name></member>
+      <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1ac2c358ea3663ac06fcf757628a4a4a31" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::Navigation</scope><name>turnTo</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

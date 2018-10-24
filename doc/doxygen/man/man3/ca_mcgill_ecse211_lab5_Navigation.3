@@ -16,10 +16,7 @@ ca.mcgill.ecse211.lab5.Navigation
 .RI "void \fBtravelTo\fP (double x, double y, boolean \fBdoCorrection\fP)"
 .br
 .ti -1c
-.RI "void \fBtravelBackTo\fP (double x, double y)"
-.br
-.ti -1c
-.RI "void \fBturnTo\fP (double angle, boolean async)"
+.RI "void \fBturnTo\fP (double angle, boolean async, boolean useGyro)"
 .br
 .ti -1c
 .RI "void \fBdoCorrection\fP (double angle)"
@@ -98,7 +95,7 @@ A converted distance
 .PP
 
 .PP
-Definition at line 197 of file Navigation\&.java\&.
+Definition at line 178 of file Navigation\&.java\&.
 .SS "void ca\&.mcgill\&.ecse211\&.lab5\&.Navigation\&.doCorrection (double angle)"
 This method corrects our robot's odometer readings
 .PP
@@ -109,7 +106,7 @@ This method corrects our robot's odometer readings
 .PP
 
 .PP
-Definition at line 156 of file Navigation\&.java\&.
+Definition at line 137 of file Navigation\&.java\&.
 .SS "void ca\&.mcgill\&.ecse211\&.lab5\&.Navigation\&.rotate (int angle)"
 Rotate the robot by certain angle
 .PP
@@ -120,24 +117,11 @@ Rotate the robot by certain angle
 .PP
 
 .PP
-Definition at line 176 of file Navigation\&.java\&.
+Definition at line 157 of file Navigation\&.java\&.
 .SS "void ca\&.mcgill\&.ecse211\&.lab5\&.Navigation\&.stop ()"
 Stop the motor 
 .PP
-Definition at line 184 of file Navigation\&.java\&.
-.SS "void ca\&.mcgill\&.ecse211\&.lab5\&.Navigation\&.travelBackTo (double x, double y)"
-This method makes our robot travel back to a previous x and y coordinate
-.PP
-\fBParameters:\fP
-.RS 4
-\fIx\fP The x coordinate to travel back to 
-.br
-\fIy\fP The y coordinate to travel back to 
-.RE
-.PP
-
-.PP
-Definition at line 105 of file Navigation\&.java\&.
+Definition at line 165 of file Navigation\&.java\&.
 .SS "void ca\&.mcgill\&.ecse211\&.lab5\&.Navigation\&.travelTo (double x, double y, boolean doCorrection)"
 TravelTo function which takes as arguments the x and y position in cm Will travel to designated position, while constantly updating it's heading
 .PP
@@ -153,7 +137,7 @@ When avoid=true, the nav thread will handle traveling\&. If you want to travel w
 
 .PP
 Definition at line 70 of file Navigation\&.java\&.
-.SS "void ca\&.mcgill\&.ecse211\&.lab5\&.Navigation\&.turnTo (double angle, boolean async)"
+.SS "void ca\&.mcgill\&.ecse211\&.lab5\&.Navigation\&.turnTo (double angle, boolean async, boolean useGyro)"
 This method is where the logic for the odometer will run\&. Use the methods provided from the OdometerData class to implement the odometer\&.
 .PP
 \fBParameters:\fP
@@ -163,7 +147,7 @@ This method is where the logic for the odometer will run\&. Use the methods prov
 .PP
 
 .PP
-Definition at line 128 of file Navigation\&.java\&.
+Definition at line 105 of file Navigation\&.java\&.
 
 .SH "Author"
 .PP 

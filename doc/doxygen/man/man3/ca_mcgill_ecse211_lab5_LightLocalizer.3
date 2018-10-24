@@ -51,13 +51,13 @@ Definition at line 19 of file LightLocalizer\&.java\&.
 .SH "Constructor & Destructor Documentation"
 .PP 
 .SS "ca\&.mcgill\&.ecse211\&.lab5\&.LightLocalizer\&.LightLocalizer (\fBNavigation\fP nav, EV3LargeRegulatedMotor leftMotor, EV3LargeRegulatedMotor rightMotor) throws \fBOdometerExceptions\fP"
-This is the class constructor for a \fBLightLocalizer\fP object
+This is the class constructor
 .PP
 \fBParameters:\fP
 .RS 4
-\fIleftMotor\fP The EV3LargeRegulatedMotor instance for our left motor 
+\fIleftMotor\fP 
 .br
-\fIrightMotor\fP The EV3LargeRegulatedMotor instance for our right motor 
+\fIrightMotor\fP 
 .RE
 .PP
 \fBExceptions:\fP
@@ -77,7 +77,7 @@ This method allows the conversion of an angle value
 .RS 4
 \fIradius\fP The radius of our wheels 
 .br
-\fIdistance\fP The distance traveled 
+\fIdistance\fP The distance travelled 
 .br
 \fIangle\fP The angle to convert 
 .RE
@@ -89,7 +89,7 @@ A converted angle
 .PP
 
 .PP
-Definition at line 113 of file LightLocalizer\&.java\&.
+Definition at line 111 of file LightLocalizer\&.java\&.
 .SS "static int ca\&.mcgill\&.ecse211\&.lab5\&.LightLocalizer\&.convertDistance (double radius, double distance)\fC [static]\fP"
 This method allows the conversion of a distance to the total rotation of each wheel need to cover that distance\&.
 .PP
@@ -97,7 +97,7 @@ This method allows the conversion of a distance to the total rotation of each wh
 .RS 4
 \fIradius\fP The radius of our wheels 
 .br
-\fIdistance\fP The distance traveled 
+\fIdistance\fP The distance travelled 
 .RE
 .PP
 \fBReturns:\fP
@@ -107,18 +107,11 @@ A converted distance
 .PP
 
 .PP
-Definition at line 101 of file LightLocalizer\&.java\&.
+Definition at line 99 of file LightLocalizer\&.java\&.
 .SS "void ca\&.mcgill\&.ecse211\&.lab5\&.LightLocalizer\&.localize (int [] sC)"
-Once the robot know what angle it is facing, this method looks for the x,y axis origins knowing it is in the first tile facing north\&.
+Once the robot know what angle it is facing, this method looks for the x,y axis origins knowing it is in the first tile facing north\&. 
 .PP
-\fBParameters:\fP
-.RS 4
-\fIsC\fP An array of integers that holds an x and y coordinate 
-.RE
-.PP
-
-.PP
-Definition at line 52 of file LightLocalizer\&.java\&.
+Definition at line 50 of file LightLocalizer\&.java\&.
 
 .SH "Author"
 .PP 

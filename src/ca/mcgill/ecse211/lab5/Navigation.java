@@ -88,14 +88,14 @@ public class Navigation {
     if (!doCorrection)
       return;
     while (leftMotor.isMoving() && rightMotor.isMoving()) {
-      if (data.getDL()[1] < 25 ) {
+      if (data.getDL()[1] < DISTANCE_THRESHOLD) {
         Sound.beep();
         doCorrection(data.getA());
         corrected = true;
       }
     }
   }
-  
+
   /**
    * This method is where the logic for the odometer will run. Use the methods provided from the
    * OdometerData class to implement the odometer.
@@ -105,28 +105,28 @@ public class Navigation {
   public void turnTo(double angle, boolean async, boolean useGyro) {
     double dTheta;
 
-    	if(useGyro) {
-    		dTheta = angle - data.getA();
-    	}else {
-    		dTheta = angle - odometer.getXYT()[2];
-    	}
-	if (dTheta < 0)
-	   dTheta += 360;
-	
-	    // TURN RIGHT
-	if (dTheta > 180) {
-	  leftMotor.setSpeed(ROTATE_SPEED);
-	  rightMotor.setSpeed(ROTATE_SPEED);
-	  leftMotor.rotate(-convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, 360 - dTheta), true);
-	  rightMotor.rotate(convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, 360 - dTheta), async);
-	}
-	// TURN LEFT
-	else {
-	  leftMotor.setSpeed(ROTATE_SPEED);
-	  rightMotor.setSpeed(ROTATE_SPEED);
-	  leftMotor.rotate(convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, dTheta), true);
-	  rightMotor.rotate(-convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, dTheta), async);
-	}
+    if (useGyro) {
+      dTheta = angle - data.getA();
+    } else {
+      dTheta = angle - odometer.getXYT()[2];
+    }
+    if (dTheta < 0)
+      dTheta += 360;
+
+    // TURN RIGHT
+    if (dTheta > 180) {
+      leftMotor.setSpeed(ROTATE_SPEED);
+      rightMotor.setSpeed(ROTATE_SPEED);
+      leftMotor.rotate(-convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, 360 - dTheta), true);
+      rightMotor.rotate(convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, 360 - dTheta), async);
+    }
+    // TURN LEFT
+    else {
+      leftMotor.setSpeed(ROTATE_SPEED);
+      rightMotor.setSpeed(ROTATE_SPEED);
+      leftMotor.rotate(convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, dTheta), true);
+      rightMotor.rotate(-convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, dTheta), async);
+    }
   }
 
   /**

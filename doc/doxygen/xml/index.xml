@@ -61,6 +61,8 @@
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1aec878f6f5e57e3b9bb3277f8cc5d08d0" kind="variable"><name>usPort</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1ae96cd27167afc136b11f3632fbb7f27d" kind="variable"><name>lgPorts</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a94ecc8327140aee9515702c39fd0f3bd" kind="variable"><name>lcd</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1ac93a08dc9e049b0bdd2fb436763afc0e" kind="variable"><name>gPort</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a0e63e3a6920344136ebfa14780670ee3" kind="variable"><name>gSensor</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a613e69d8f1e90a1161b78020571110fc" kind="variable"><name>leftMotor</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a70575e1c6e84cd9d22cadd141ad6ceae" kind="variable"><name>rightMotor</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a099ba21be1cd8d54a57c40cd0d35701d" kind="variable"><name>TILE</name></member>
@@ -112,8 +114,7 @@
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a38a0ddccc485ae9a0d8c560ca8c12390" kind="variable"><name>data</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a93b746f61226c3b14532c43d0c2f61dd" kind="function"><name>Navigation</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a318969f4776d0bf4a8721be3d2444a5c" kind="function"><name>travelTo</name></member>
-    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1aacb83ee18419dcd6095e331975cf2167" kind="function"><name>travelBackTo</name></member>
-    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a2b39928c8062fe6863de8e818d009e91" kind="function"><name>turnTo</name></member>
+    <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1ac2c358ea3663ac06fcf757628a4a4a31" kind="function"><name>turnTo</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a73a89ddd822e0ba1cfd7a29c18aa7aea" kind="function"><name>doCorrection</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a5fcce0063a6b557d349a6fb5bf144c64" kind="function"><name>rotate</name></member>
     <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1afe038af6692e7ad28c3587cd979d7223" kind="function"><name>stop</name></member>

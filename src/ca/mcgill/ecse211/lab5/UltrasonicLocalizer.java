@@ -93,7 +93,7 @@ public class UltrasonicLocalizer {
       theta = lowerAngleBound + (angle1 + angle2) / 2;
     else
       theta = upperAngleBound + (angle1 + angle2) / 2;
-    navigation.turnTo(theta + 180, false);
+    navigation.turnTo(theta + 180, false, false);
     odometer.setTheta(0);
     Button.waitForAnyPress();
   }
@@ -130,7 +130,7 @@ public class UltrasonicLocalizer {
       theta = lowerAngleBound + (angle1 + angle2) / 2;
     else
       theta = upperAngleBound + (angle1 + angle2) / 2;
-    navigation.turnTo(theta, false);
+    navigation.turnTo(theta, false, false);
     odometer.setTheta(0);
     // wait for any button pressure
   }
