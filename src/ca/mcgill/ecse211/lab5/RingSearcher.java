@@ -63,7 +63,7 @@ public class RingSearcher {
     boolean foundRing = false;
     boolean ColorMatched = false;
     // turn to the angle async
-    navigation.turnTo(angle, true);
+    navigation.turnTo(angle, true, true);
     // while turnninng, check the value from the us sensor to see if there is a ring
     while (leftMotor.isMoving() || rightMotor.isMoving()) {
       if (ColorCalibrator.getColor() == target) {

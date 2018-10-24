@@ -88,14 +88,45 @@ public class Navigation {
     if (!doCorrection)
       return;
     while (leftMotor.isMoving() && rightMotor.isMoving()) {
+<<<<<<< HEAD
+      if (data.getDL()[1] < DISTANCE_THRESHOLD && !corrected) {
+=======
       if (data.getDL()[1] < 25 ) {
+>>>>>>> dc14fd91d51803f26489294d3ac4cecc0b54d540
         Sound.beep();
         doCorrection(data.getA());
-        corrected = true;
+        //corrected = true;
       }
     }
   }
+<<<<<<< HEAD
+
+  /**
+   * This method makes our robot travel back to a previous x and y coordinate
+   * 
+   * @param x The x coordinate to travel back to
+   * @param y The y coordinate to travel back to
+   */
+  public void travelBackTo(double x, double y) {
+    double dX = x - odometer.getXYT()[0];
+    double dY = y - odometer.getXYT()[1];
+    double theta = Math.atan(dX / dY);
+    if (dY < 0 && theta < Math.PI)
+      theta += Math.PI;
+    double distance = Math.sqrt(Math.pow(dX, 2) + Math.pow(dY, 2));
+
+    turnTo(Math.toDegrees(theta) - 180, false);
+
+    leftMotor.setSpeed(FORWARD_SPEED);
+    rightMotor.setSpeed(FORWARD_SPEED);
+
+    leftMotor.rotate(-convertDistance(Lab5.WHEEL_RAD, distance * Lab5.TILE), true);
+    rightMotor.rotate(-convertDistance(Lab5.WHEEL_RAD, distance * Lab5.TILE), false);
+  }
+
+=======
   
+>>>>>>> dc14fd91d51803f26489294d3ac4cecc0b54d540
   /**
    * This method is where the logic for the odometer will run. Use the methods provided from the
    * OdometerData class to implement the odometer.

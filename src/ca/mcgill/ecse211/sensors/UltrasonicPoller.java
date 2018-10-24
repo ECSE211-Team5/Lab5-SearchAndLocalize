@@ -78,7 +78,7 @@ public class UltrasonicPoller extends Thread {
       // no adjustments for first 5 samples to fill array
       if (!first_five) {
         if (distance > sorted_sample[2]) {
-          distance = sorted_sample[2];
+          //distance = sorted_sample[2];
         }
       }
 
