@@ -79,7 +79,7 @@ public class Lab5 {
 	 * indicates a ORANGE ring 2 indicates a GREEN ring 3 indicates a BLUE ring 4
 	 * indicates a YELLOW ring
 	 */
-	public static final int TR = 4;
+	public static final int TR = 1;
 
 	/**
 	 * These are the coordinates for our search area. LL = Lower Left UR = Upper
@@ -167,7 +167,6 @@ public class Lab5 {
 		final UltrasonicLocalizer usLoc = new UltrasonicLocalizer(navigation, leftMotor, rightMotor);
 		final LightLocalizer lgLoc = new LightLocalizer(navigation, leftMotor, rightMotor);
 		final RingSearcher searcher = new RingSearcher(navigation, leftMotor, rightMotor);
-		searcher.start();
 		// spawn a new Thread to avoid localization from blocking
 		(new Thread() {
 			public void run() {
@@ -179,7 +178,7 @@ public class Lab5 {
 				// TODO: delete test code
 				try {
 					Odometer odometer = Odometer.getOdometer();
-                    Lab5.TRACK = 9.8;
+                    Lab5.TRACK = 9.6;
 
 					// STEP 2: MOVE TO START OF SEARCH AREA
 					 navigation.travelTo(LLx, LLy, false);
@@ -221,8 +220,11 @@ public class Lab5 {
 				if (searcher.search(110, targetColor)) return;
 				navigation.turnTo(0, false, true);
 				for (double j = LLy + 0.7; j < URy; j++) {
+				  if(foundRing) {
+		              return;
+		            }
 					navigation.travelTo(i, j, true);
-					if (searcher.search(70, targetColor)) return;
+					if (searcher.search(80, targetColor)) return;
 					navigation.turnTo(0, false, true);
 					if (searcher.search(280, targetColor)) return;
 					navigation.turnTo(0, false, true);
@@ -236,15 +238,19 @@ public class Lab5 {
 				navigation.turnTo(180, false, true);
 				//when we are at the second, fourth... verticle zone, search down
 				for (double j = URy - 1 + 0.3; j > LLy; j--) {
+				  if(foundRing) {
+		              return;
+		            }
 					navigation.travelTo(i, j, true);
-					if (searcher.search(110, targetColor)) return;
+					if (searcher.search(100, targetColor)) return;
 					navigation.turnTo(180, false, true);
 					if (searcher.search(260, targetColor)) return;
 					navigation.turnTo(180, false, true);
+					
 				}
 			}
 			
-			if(foundRing) {
+			if(foundRing && counter > 5) {
 			  return;
 			}
 			counter ++;

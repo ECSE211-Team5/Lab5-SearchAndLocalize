@@ -1,6 +1,9 @@
 package ca.mcgill.ecse211.sensors;
 
+import ca.mcgill.ecse211.lab5.ColorCalibrator;
+import ca.mcgill.ecse211.lab5.Lab5;
 import ca.mcgill.ecse211.odometer.OdometerExceptions;
+import lejos.hardware.Sound;
 import lejos.robotics.SampleProvider;
 
 /**
@@ -46,8 +49,22 @@ public class LightPoller extends Thread {
    * @see java.lang.Thread#run()
    */
   public void run() {
-    while (true) {
+    while (!Lab5.foundRing) {
       processData();
+      if (ColorCalibrator.getColor() == Lab5.targetColor) {
+    //    Sound.twoBeeps();
+        Sound.beep();
+        Lab5.foundRing = true;
+      } else if (ColorCalibrator.getColor() != ColorCalibrator.Color.Other) {
+        Sound.twoBeeps();
+        
+        try {
+          Thread.sleep(30);
+        } catch (InterruptedException e) {
+          // TODO Auto-generated catch block
+          e.printStackTrace();
+        }
+      }
       try {
         Thread.sleep(50);
       } catch (Exception e) {
