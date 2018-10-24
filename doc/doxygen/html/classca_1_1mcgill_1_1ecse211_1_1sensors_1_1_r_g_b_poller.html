@@ -92,8 +92,7 @@ Collaboration diagram for ca.mcgill.ecse211.sensors.RGBPoller:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa0e804f9185cb172aa1f63c62d13d168"><td class="memItemLeft" align="right" valign="top"><a id="aa0e804f9185cb172aa1f63c62d13d168"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>RGBPoller</b> (SampleProvider us, float[] usData, <a class="el" href="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html">SensorData</a> cont)  throws OdometerExceptions </td></tr>
+<tr class="memitem:aa0e804f9185cb172aa1f63c62d13d168"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_r_g_b_poller.html#aa0e804f9185cb172aa1f63c62d13d168">RGBPoller</a> (SampleProvider us, float[] usData, <a class="el" href="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html">SensorData</a> cont)  throws OdometerExceptions </td></tr>
 <tr class="separator:aa0e804f9185cb172aa1f63c62d13d168"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller.html">ca.mcgill.ecse211.sensors.LightPoller</a></td></tr>
 <tr class="memitem:aa284d0f6d7e032d3610a7ad428f16132 inherit pub_methods_classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller.html#aa284d0f6d7e032d3610a7ad428f16132">LightPoller</a> (SampleProvider us, float[] lgData, <a class="el" href="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html">SensorData</a> cont)  throws OdometerExceptions </td></tr>
@@ -125,10 +124,81 @@ float []&#160;</td><td class="memItemRight" valign="bottom"><b>lgData</b></td></
 <tr class="separator:af014631d513b89ba9a55f0e7d0e8d754 inherit pro_attribs_classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Caspar Cedro &amp; Percy Chen &amp; Patrick Erath &amp; Anssam Ghezala &amp; Susan Matuszewski &amp; Kamy Moussavi Kafi </dd></dl>
+<div class="textblock"><p>This class polls a light sensor that is used to detect colored rings.</p>
+<dl class="section author"><dt>Author</dt><dd>Caspar Cedro </dd>
+<dd>
+Percy Chen </dd>
+<dd>
+Patrick Erath </dd>
+<dd>
+Anssam Ghezala </dd>
+<dd>
+Susan Matuszewski </dd>
+<dd>
+Kamy Moussavi Kafi </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_r_g_b_poller_8java_source.html#l00011">11</a> of file <a class="el" href="_r_g_b_poller_8java_source.html">RGBPoller.java</a>.</p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<p class="definition">Definition at line <a class="el" href="_r_g_b_poller_8java_source.html#l00016">16</a> of file <a class="el" href="_r_g_b_poller_8java_source.html">RGBPoller.java</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aa0e804f9185cb172aa1f63c62d13d168"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0e804f9185cb172aa1f63c62d13d168">&#9670;&nbsp;</a></span>RGBPoller()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ca.mcgill.ecse211.sensors.RGBPoller.RGBPoller </td>
+          <td>(</td>
+          <td class="paramtype">SampleProvider&#160;</td>
+          <td class="paramname"><em>us</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float []&#160;</td>
+          <td class="paramname"><em>usData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html">SensorData</a>&#160;</td>
+          <td class="paramname"><em>cont</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws <a class="el" href="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions.html">OdometerExceptions</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This constructor creates an instance of the <a class="el" href="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_r_g_b_poller.html">RGBPoller</a> class to provide color data from an light sensor to our robot.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">us</td><td>A SampleProvider class instance that helps us to store an array of ultrasonic sensor data. </td></tr>
+    <tr><td class="paramname">usData</td><td>An array to store light data. </td></tr>
+    <tr><td class="paramname">cont</td><td>A <a class="el" href="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html">SensorData</a> object that is used to process color data. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">OdometerExceptions</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_r_g_b_poller_8java_source.html#l00030">30</a> of file <a class="el" href="_r_g_b_poller_8java_source.html">RGBPoller.java</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_r_g_b_poller_aa0e804f9185cb172aa1f63c62d13d168_cgraph.png" border="0" usemap="#classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_r_g_b_poller_aa0e804f9185cb172aa1f63c62d13d168_cgraph" alt=""/></div>
+<map name="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_r_g_b_poller_aa0e804f9185cb172aa1f63c62d13d168_cgraph" id="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_r_g_b_poller_aa0e804f9185cb172aa1f63c62d13d168_cgraph">
+<area shape="rect" id="node2" href="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html#ae5e2528566b53218673ebc1ae4683204" title="ca.mcgill.ecse211.sensors.\lSensorData.setRGB" alt="" coords="235,5,416,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/sensors/<a class="el" href="_r_g_b_poller_8java_source.html">RGBPoller.java</a></li>
 </ul>
 </div><!-- contents -->

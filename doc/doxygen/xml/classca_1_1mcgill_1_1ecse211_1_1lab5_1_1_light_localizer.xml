@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="16" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="16" bodyend="-1"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="20" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="20" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a32bcc392509dfd249a5e32498d726ac3" prot="private" static="no" mutable="no">
         <type>EV3LargeRegulatedMotor</type>
@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="17" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="17" bodyend="-1"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="21" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="21" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a19c143fed412784a55b804abfe16fd26" prot="private" static="no" mutable="no">
         <type><ref refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer" kindref="compound">Odometer</ref></type>
@@ -40,7 +40,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="19" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="19" bodyend="-1"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="23" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="23" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1ae28eb3871b20141c511589656fb90f48" prot="private" static="no" mutable="no">
         <type><ref refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data" kindref="compound">SensorData</ref></type>
@@ -53,7 +53,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="20" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="20" bodyend="-1"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="24" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="24" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a1c69a2c2d0af2ea90de2dd429a7f4596" prot="private" static="no" mutable="no">
         <type><ref refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation" kindref="compound">Navigation</ref></type>
@@ -66,7 +66,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="21" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="21" bodyend="-1"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="25" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="25" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-static-attrib">
@@ -82,7 +82,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="22" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="22" bodyend="-1"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="26" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="26" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a80ce180591ec488e199b898b44324aa0" prot="private" static="yes" mutable="no">
         <type>final double</type>
@@ -96,7 +96,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="23" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="23" bodyend="-1"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="27" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="27" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a5ea141865d0d5bee7f7ccb6805daccbf" prot="private" static="yes" mutable="no">
         <type>final int</type>
@@ -110,7 +110,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="24" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="24" bodyend="-1"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="28" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="28" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -161,9 +161,9 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="33" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="33" bodyend="40"/>
-        <references refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a99171f11e34dea918fa9dd069d721439" compoundref="_odometer_8java" startline="75" endline="84">ca.mcgill.ecse211.odometer.Odometer.getOdometer</references>
-        <references refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1ab8aef4bdb5d9f3dad399656e00af2539" compoundref="_sensor_data_8java" startline="64" endline="76">ca.mcgill.ecse211.sensors.SensorData.getSensorData</references>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="37" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="37" bodyend="44"/>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_1a99171f11e34dea918fa9dd069d721439" compoundref="_odometer_8java" startline="79" endline="88">ca.mcgill.ecse211.odometer.Odometer.getOdometer</references>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1ab8aef4bdb5d9f3dad399656e00af2539" compoundref="_sensor_data_8java" startline="70" endline="82">ca.mcgill.ecse211.sensors.SensorData.getSensorData</references>
       </memberdef>
       <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a441f56a899fae5bc9c1d6a6d25fbe0bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -180,14 +180,15 @@
 <para>Once the robot know what angle it is facing, this method looks for the x,y axis origins knowing it is in the first tile facing north. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="46" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="46" bodyend="81"/>
-        <references refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1a4e0eabd547726c90bd0b7252557d7ad7" compoundref="_sensor_data_8java" startline="84" endline="104">ca.mcgill.ecse211.sensors.SensorData.getDL</references>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="50" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="50" bodyend="89"/>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data_1a4e0eabd547726c90bd0b7252557d7ad7" compoundref="_sensor_data_8java" startline="90" endline="110">ca.mcgill.ecse211.sensors.SensorData.getDL</references>
         <references refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a82986438cd462e66520bc62bb4bd2b75" compoundref="_odometer_data_8java" startline="179" endline="190">ca.mcgill.ecse211.odometer.OdometerData.setY</references>
-        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a2b39928c8062fe6863de8e818d009e91" compoundref="_navigation_8java" startline="114" endline="135">ca.mcgill.ecse211.lab5.Navigation.turnTo</references>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1ac2c358ea3663ac06fcf757628a4a4a31" compoundref="_navigation_8java" startline="105" endline="130">ca.mcgill.ecse211.lab5.Navigation.turnTo</references>
         <references refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a2911d7215e47f3064defe016b46bfeef" compoundref="_odometer_data_8java" startline="161" endline="172">ca.mcgill.ecse211.odometer.OdometerData.setX</references>
-        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a85122ad723d0988c118866f367073be6" compoundref="_navigation_8java" startline="181" endline="183">ca.mcgill.ecse211.lab5.Navigation.convertDistance</references>
-        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1ab9b6fc96d3fb1ac6c7d69d1727b3bbdd" compoundref="_lab5_8java" startline="65">ca.mcgill.ecse211.lab5.Lab5.WHEEL_RAD</references>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation_1a85122ad723d0988c118866f367073be6" compoundref="_navigation_8java" startline="178" endline="180">ca.mcgill.ecse211.lab5.Navigation.convertDistance</references>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a6bc8fbcc688c767a11226cb7b5da3411" compoundref="_lab5_8java" startline="75">ca.mcgill.ecse211.lab5.Lab5.LOCALIZE_WHEEL_RAD</references>
         <references refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data_1a419b8f07c2c5374411c8e62298e9a402" compoundref="_odometer_data_8java" startline="197" endline="208">ca.mcgill.ecse211.odometer.OdometerData.setTheta</references>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_1a82cca51f550ed0eb016bb2082d3fe755" compoundref="_lab5_8java" startline="111" endline="212">ca.mcgill.ecse211.lab5.Lab5.main</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -226,8 +227,8 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="91" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="91" bodyend="93"/>
-        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1ab9d7289c4badf692fd5c83635305f2c5" compoundref="_light_localizer_8java" startline="103" endline="105">ca.mcgill.ecse211.lab5.LightLocalizer.convertAngle</referencedby>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="99" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="99" bodyend="101"/>
+        <referencedby refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1ab9d7289c4badf692fd5c83635305f2c5" compoundref="_light_localizer_8java" startline="111" endline="113">ca.mcgill.ecse211.lab5.LightLocalizer.convertAngle</referencedby>
       </memberdef>
       <memberdef kind="function" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1ab9d7289c4badf692fd5c83635305f2c5" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -275,16 +276,21 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="103" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="103" bodyend="105"/>
-        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a9eebe889aa2d4d2e881f413cc727cd9c" compoundref="_light_localizer_8java" startline="91" endline="93">ca.mcgill.ecse211.lab5.LightLocalizer.convertDistance</references>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="111" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="111" bodyend="113"/>
+        <references refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a9eebe889aa2d4d2e881f413cc727cd9c" compoundref="_light_localizer_8java" startline="99" endline="101">ca.mcgill.ecse211.lab5.LightLocalizer.convertDistance</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>This class helps our robot to localize itself using the light sensor</para><para><simplesect kind="author"><para>Caspar Cedro &amp; Percy Chen &amp; Patrick Erath &amp; Anssam Ghezala &amp; Susan Matuszewski &amp; Kamy Moussavi Kafi </para></simplesect>
+<para>This class helps our robot to localize itself using the light sensor</para><para><simplesect kind="author"><para>Caspar Cedro </para></simplesect>
+<simplesect kind="author"><para>Percy Chen </para></simplesect>
+<simplesect kind="author"><para>Patrick Erath </para></simplesect>
+<simplesect kind="author"><para>Anssam Ghezala </para></simplesect>
+<simplesect kind="author"><para>Susan Matuszewski </para></simplesect>
+<simplesect kind="author"><para>Kamy Moussavi Kafi </para></simplesect>
 </para>    </detaileddescription>
-    <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="15" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="15" bodyend="106"/>
+    <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" line="19" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/lab5/LightLocalizer.java" bodystart="19" bodyend="114"/>
     <listofallmembers>
       <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1a5ea141865d0d5bee7f7ccb6805daccbf" prot="private" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::LightLocalizer</scope><name>blackLineColor</name></member>
       <member refid="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer_1ab9d7289c4badf692fd5c83635305f2c5" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::lab5::LightLocalizer</scope><name>convertAngle</name></member>

@@ -76,8 +76,6 @@ $(function() {
 Collaboration diagram for ca.mcgill.ecse211.lab5.Lab5:</div>
 <div class="dyncontent">
 <div class="center"><img src="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5__coll__graph.png" border="0" usemap="#ca_8mcgill_8ecse211_8lab5_8_lab5_coll__map" alt="Collaboration graph"/></div>
-<map name="ca_8mcgill_8ecse211_8lab5_8_lab5_coll__map" id="ca_8mcgill_8ecse211_8lab5_8_lab5_coll__map">
-</map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
@@ -89,10 +87,6 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a2415c0078b42b8813c3cc9304d6335ce"><td class="memItemLeft" align="right" valign="top">static Port&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a2415c0078b42b8813c3cc9304d6335ce">gPort</a> = LocalEV3.get().getPort(&quot;S4&quot;)</td></tr>
-<tr class="separator:a2415c0078b42b8813c3cc9304d6335ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e63e3a6920344136ebfa14780670ee3"><td class="memItemLeft" align="right" valign="top">static EV3GyroSensor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a0e63e3a6920344136ebfa14780670ee3">gSensor</a></td></tr>
-<tr class="separator:a0e63e3a6920344136ebfa14780670ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a613e69d8f1e90a1161b78020571110fc"><td class="memItemLeft" align="right" valign="top">static final EV3LargeRegulatedMotor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a613e69d8f1e90a1161b78020571110fc">leftMotor</a></td></tr>
 <tr class="separator:a613e69d8f1e90a1161b78020571110fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70575e1c6e84cd9d22cadd141ad6ceae"><td class="memItemLeft" align="right" valign="top">static final EV3LargeRegulatedMotor&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a70575e1c6e84cd9d22cadd141ad6ceae">rightMotor</a></td></tr>
@@ -101,22 +95,36 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:a099ba21be1cd8d54a57c40cd0d35701d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9b6fc96d3fb1ac6c7d69d1727b3bbdd"><td class="memItemLeft" align="right" valign="top">static final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#ab9b6fc96d3fb1ac6c7d69d1727b3bbdd">WHEEL_RAD</a> = 2.2</td></tr>
 <tr class="separator:ab9b6fc96d3fb1ac6c7d69d1727b3bbdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d2e7eb578ce6ef7f7453feed3835e1d"><td class="memItemLeft" align="right" valign="top">static final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a3d2e7eb578ce6ef7f7453feed3835e1d">TRACK</a> = 10.8</td></tr>
-<tr class="separator:a3d2e7eb578ce6ef7f7453feed3835e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a401ed72b19795f01e72c8d2a69d9faba"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a401ed72b19795f01e72c8d2a69d9faba">TRACK</a> = 9.7</td></tr>
+<tr class="separator:a401ed72b19795f01e72c8d2a69d9faba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bc8fbcc688c767a11226cb7b5da3411"><td class="memItemLeft" align="right" valign="top">static final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a6bc8fbcc688c767a11226cb7b5da3411">LOCALIZE_WHEEL_RAD</a> = 2.2</td></tr>
+<tr class="separator:a6bc8fbcc688c767a11226cb7b5da3411"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a971cb3d8a46c2b41bcadf08f21498d6d"><td class="memItemLeft" align="right" valign="top">static final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a971cb3d8a46c2b41bcadf08f21498d6d">LOCALIZE_TRACK</a> = 10.8</td></tr>
+<tr class="separator:a971cb3d8a46c2b41bcadf08f21498d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39cbd32759fdb575b92b694f2713085d"><td class="memItemLeft" align="right" valign="top">static final int []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a39cbd32759fdb575b92b694f2713085d">SC</a> = {1, 1}</td></tr>
 <tr class="separator:a39cbd32759fdb575b92b694f2713085d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dd5ea6f697d2221ed8c8bb4df1cac7f"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a0dd5ea6f697d2221ed8c8bb4df1cac7f">TR</a> = 1</td></tr>
+<tr class="memitem:a0dd5ea6f697d2221ed8c8bb4df1cac7f"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a0dd5ea6f697d2221ed8c8bb4df1cac7f">TR</a> = 4</td></tr>
 <tr class="separator:a0dd5ea6f697d2221ed8c8bb4df1cac7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a957a526ed669e9d8b7fc485e21385ee9"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a957a526ed669e9d8b7fc485e21385ee9">LLx</a> = 3</td></tr>
+<tr class="memitem:a957a526ed669e9d8b7fc485e21385ee9"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a957a526ed669e9d8b7fc485e21385ee9">LLx</a> = 2</td></tr>
 <tr class="separator:a957a526ed669e9d8b7fc485e21385ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27ae00bb6fbeed54573af9cc5c3dc32e"><td class="memItemLeft" align="right" valign="top">static boolean [][]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a27ae00bb6fbeed54573af9cc5c3dc32e">visitedSearchAreaCoordinates</a></td></tr>
 <tr class="separator:a27ae00bb6fbeed54573af9cc5c3dc32e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class implements the main starting point for the Search and Localize lab</p>
-<dl class="section author"><dt>Author</dt><dd>Caspar Cedro &amp; Percy Chen &amp; Patrick Erath &amp; Anssam Ghezala &amp; Susan Matuszewski &amp; Kamy Moussavi Kafi </dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Caspar Cedro </dd>
+<dd>
+Percy Chen </dd>
+<dd>
+Patrick Erath </dd>
+<dd>
+Anssam Ghezala </dd>
+<dd>
+Susan Matuszewski </dd>
+<dd>
+Kamy Moussavi Kafi </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_lab5_8java_source.html#l00028">28</a> of file <a class="el" href="_lab5_8java_source.html">Lab5.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_lab5_8java_source.html#l00031">31</a> of file <a class="el" href="_lab5_8java_source.html">Lab5.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a82cca51f550ed0eb016bb2082d3fe755"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a82cca51f550ed0eb016bb2082d3fe755">&#9670;&nbsp;</a></span>main()</h2>
@@ -149,27 +157,31 @@ Static Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_lab5_8java_source.html#l00102">102</a> of file <a class="el" href="_lab5_8java_source.html">Lab5.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_lab5_8java_source.html#l00111">111</a> of file <a class="el" href="_lab5_8java_source.html">Lab5.java</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a82cca51f550ed0eb016bb2082d3fe755_cgraph.png" border="0" usemap="#classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a82cca51f550ed0eb016bb2082d3fe755_cgraph" alt=""/></div>
 <map name="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a82cca51f550ed0eb016bb2082d3fe755_cgraph" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a82cca51f550ed0eb016bb2082d3fe755_cgraph">
-<area shape="rect" id="node2" href="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer.html#a99171f11e34dea918fa9dd069d721439" title="ca.mcgill.ecse211.odometer.\lOdometer.getOdometer" alt="" coords="306,33,495,75"/>
-<area shape="rect" id="node3" href="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html#ab8aef4bdb5d9f3dad399656e00af2539" title="ca.mcgill.ecse211.sensors.\lSensorData.getSensorData" alt="" coords="309,99,492,140"/>
-<area shape="rect" id="node5" href="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data.html#a2ebc18a13aea6276122d9ef4ee100bb9" title="ca.mcgill.ecse211.odometer.\lOdometerData.setXYT" alt="" coords="306,164,495,205"/>
-<area shape="rect" id="node6" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a0e80ac0068ef1ab41cfb571b8c65845c" title="ca.mcgill.ecse211.lab5.Lab5.searchArea" alt="" coords="272,281,529,307"/>
-<area shape="rect" id="node7" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a318969f4776d0bf4a8721be3d2444a5c" title="ca.mcgill.ecse211.lab5.Navigation.travelTo" alt="" coords="577,230,849,257"/>
-<area shape="rect" id="node8" href="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data.html#a8f40f0264c68f0cbed4fff1723ae7863" title="ca.mcgill.ecse211.odometer.\lOdometerData.getXYT" alt="" coords="1213,277,1403,319"/>
-<area shape="rect" id="node4" href="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html#a41b9929f62455a15364385a339b4b910" title="ca.mcgill.ecse211.sensors.\lSensorData.SensorData" alt="" coords="623,99,804,140"/>
-<area shape="rect" id="node9" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a2b39928c8062fe6863de8e818d009e91" title="ca.mcgill.ecse211.lab5.Navigation.turnTo" alt="" coords="900,285,1163,311"/>
-<area shape="rect" id="node15" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher.html#a88a4c77f3c76d74edc8bfd0229f0902f" title="ca.mcgill.ecse211.lab5.Ring\lSearcher.search" alt="" coords="620,332,807,373"/>
-<area shape="rect" id="node10" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a85122ad723d0988c118866f367073be6" title="ca.mcgill.ecse211.lab5.Navigation.convert\lDistance" alt="" coords="897,103,1165,144"/>
-<area shape="rect" id="node11" href="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html#a4e0eabd547726c90bd0b7252557d7ad7" title="ca.mcgill.ecse211.sensors.\lSensorData.getDL" alt="" coords="941,168,1122,209"/>
-<area shape="rect" id="node12" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a73a89ddd822e0ba1cfd7a29c18aa7aea" title="ca.mcgill.ecse211.lab5.Navigation.do\lCorrection" alt="" coords="912,37,1151,79"/>
-<area shape="rect" id="node13" href="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data.html#a82986438cd462e66520bc62bb4bd2b75" title="ca.mcgill.ecse211.odometer.\lOdometerData.setY" alt="" coords="1213,71,1403,112"/>
-<area shape="rect" id="node14" href="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data.html#a2911d7215e47f3064defe016b46bfeef" title="ca.mcgill.ecse211.odometer.\lOdometerData.setX" alt="" coords="1213,5,1403,47"/>
-<area shape="rect" id="node16" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#afe038af6692e7ad28c3587cd979d7223" title="ca.mcgill.ecse211.lab5.Navigation.stop" alt="" coords="906,335,1157,362"/>
+<area shape="rect" id="node2" href="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer.html#a99171f11e34dea918fa9dd069d721439" title="ca.mcgill.ecse211.odometer.\lOdometer.getOdometer" alt="" coords="306,5,495,47"/>
+<area shape="rect" id="node3" href="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html#ab8aef4bdb5d9f3dad399656e00af2539" title="ca.mcgill.ecse211.sensors.\lSensorData.getSensorData" alt="" coords="309,71,492,112"/>
+<area shape="rect" id="node5" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer.html#a7fd82ab7240a07ae6947313c0769d4bc" title="ca.mcgill.ecse211.lab5.Ultrasonic\lLocalizer.localize" alt="" coords="604,628,823,669"/>
+<area shape="rect" id="node6" href="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data.html#a8f40f0264c68f0cbed4fff1723ae7863" title="ca.mcgill.ecse211.odometer.\lOdometerData.getXYT" alt="" coords="1213,440,1403,481"/>
+<area shape="rect" id="node11" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer.html#a441f56a899fae5bc9c1d6a6d25fbe0bb" title="ca.mcgill.ecse211.lab5.Light\lLocalizer.localize" alt="" coords="620,693,807,735"/>
+<area shape="rect" id="node15" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a318969f4776d0bf4a8721be3d2444a5c" title="ca.mcgill.ecse211.lab5.Navigation.travelTo" alt="" coords="577,457,849,483"/>
+<area shape="rect" id="node17" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a0e80ac0068ef1ab41cfb571b8c65845c" title="ca.mcgill.ecse211.lab5.Lab5.searchArea" alt="" coords="272,406,529,433"/>
+<area shape="rect" id="node4" href="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html#a41b9929f62455a15364385a339b4b910" title="ca.mcgill.ecse211.sensors.\lSensorData.SensorData" alt="" coords="623,71,804,112"/>
+<area shape="rect" id="node7" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#ac2c358ea3663ac06fcf757628a4a4a31" title="ca.mcgill.ecse211.lab5.Navigation.turnTo" alt="" coords="900,406,1163,433"/>
+<area shape="rect" id="node9" href="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data.html#a419b8f07c2c5374411c8e62298e9a402" title="ca.mcgill.ecse211.odometer.\lOdometerData.setTheta" alt="" coords="937,756,1126,797"/>
+<area shape="rect" id="node10" href="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html#a4e0eabd547726c90bd0b7252557d7ad7" title="ca.mcgill.ecse211.sensors.\lSensorData.getDL" alt="" coords="941,691,1122,732"/>
+<area shape="rect" id="node8" href="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html#a7ad543db5c907b4bd3329dbb34b4e9d9" title="ca.mcgill.ecse211.sensors.\lSensorData.getA" alt="" coords="1217,357,1399,399"/>
+<area shape="rect" id="node12" href="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data.html#a82986438cd462e66520bc62bb4bd2b75" title="ca.mcgill.ecse211.odometer.\lOdometerData.setY" alt="" coords="1213,587,1403,628"/>
+<area shape="rect" id="node13" href="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data.html#a2911d7215e47f3064defe016b46bfeef" title="ca.mcgill.ecse211.odometer.\lOdometerData.setX" alt="" coords="1213,795,1403,836"/>
+<area shape="rect" id="node14" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a85122ad723d0988c118866f367073be6" title="ca.mcgill.ecse211.lab5.Navigation.convert\lDistance" alt="" coords="897,573,1165,615"/>
+<area shape="rect" id="node16" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a73a89ddd822e0ba1cfd7a29c18aa7aea" title="ca.mcgill.ecse211.lab5.Navigation.do\lCorrection" alt="" coords="912,508,1151,549"/>
+<area shape="rect" id="node18" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher.html#a88a4c77f3c76d74edc8bfd0229f0902f" title="ca.mcgill.ecse211.lab5.Ring\lSearcher.search" alt="" coords="620,297,807,339"/>
+<area shape="rect" id="node19" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator.html#a115188f4d3b465e09db3482f8a6f25d2" title="ca.mcgill.ecse211.lab5.Color\lCalibrator.getColor" alt="" coords="936,239,1127,280"/>
+<area shape="rect" id="node20" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#afe038af6692e7ad28c3587cd979d7223" title="ca.mcgill.ecse211.lab5.Navigation.stop" alt="" coords="906,187,1157,214"/>
 </map>
 </div>
 
@@ -217,29 +229,31 @@ Here is the call graph for this function:</div>
 <p>This method finished the search process, it returns when it find the targeted run</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">navigation</td><td>A <a class="el" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html">Navigation</a> class object instance to aid the robot navigate the grid </td></tr>
-    <tr><td class="paramname">searcher</td><td>A <a class="el" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher.html">RingSearcher</a> class object instance with methods that search for a ring </td></tr>
-    <tr><td class="paramname">targetColor</td><td>The color of the ring that the robot should search for </td></tr>
+    <tr><td class="paramname">navigation</td><td>A <a class="el" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html">Navigation</a> object instance that navigates our robot to the desired spots to search for rings </td></tr>
+    <tr><td class="paramname">searcher</td><td>A <a class="el" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher.html">RingSearcher</a> object instance that allows our robot to perform a search sweep for rings </td></tr>
+    <tr><td class="paramname">targetColor</td><td>The color of the ring that we are searching for </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_lab5_8java_source.html#l00214">214</a> of file <a class="el" href="_lab5_8java_source.html">Lab5.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_lab5_8java_source.html#l00223">223</a> of file <a class="el" href="_lab5_8java_source.html">Lab5.java</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a0e80ac0068ef1ab41cfb571b8c65845c_cgraph.png" border="0" usemap="#classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a0e80ac0068ef1ab41cfb571b8c65845c_cgraph" alt=""/></div>
 <map name="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a0e80ac0068ef1ab41cfb571b8c65845c_cgraph" id="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5_a0e80ac0068ef1ab41cfb571b8c65845c_cgraph">
-<area shape="rect" id="node2" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a318969f4776d0bf4a8721be3d2444a5c" title="ca.mcgill.ecse211.lab5.Navigation.travelTo" alt="" coords="311,166,583,193"/>
-<area shape="rect" id="node4" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a2b39928c8062fe6863de8e818d009e91" title="ca.mcgill.ecse211.lab5.Navigation.turnTo" alt="" coords="633,254,896,281"/>
-<area shape="rect" id="node10" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher.html#a88a4c77f3c76d74edc8bfd0229f0902f" title="ca.mcgill.ecse211.lab5.Ring\lSearcher.search" alt="" coords="353,297,540,339"/>
-<area shape="rect" id="node3" href="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data.html#a8f40f0264c68f0cbed4fff1723ae7863" title="ca.mcgill.ecse211.odometer.\lOdometerData.getXYT" alt="" coords="947,208,1136,249"/>
-<area shape="rect" id="node5" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a85122ad723d0988c118866f367073be6" title="ca.mcgill.ecse211.lab5.Navigation.convert\lDistance" alt="" coords="631,188,899,229"/>
-<area shape="rect" id="node6" href="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html#a4e0eabd547726c90bd0b7252557d7ad7" title="ca.mcgill.ecse211.sensors.\lSensorData.getDL" alt="" coords="674,5,855,47"/>
-<area shape="rect" id="node7" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a73a89ddd822e0ba1cfd7a29c18aa7aea" title="ca.mcgill.ecse211.lab5.Navigation.do\lCorrection" alt="" coords="645,71,884,112"/>
-<area shape="rect" id="node8" href="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data.html#a82986438cd462e66520bc62bb4bd2b75" title="ca.mcgill.ecse211.odometer.\lOdometerData.setY" alt="" coords="947,104,1136,145"/>
-<area shape="rect" id="node9" href="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data.html#a2911d7215e47f3064defe016b46bfeef" title="ca.mcgill.ecse211.odometer.\lOdometerData.setX" alt="" coords="947,39,1136,80"/>
-<area shape="rect" id="node11" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#afe038af6692e7ad28c3587cd979d7223" title="ca.mcgill.ecse211.lab5.Navigation.stop" alt="" coords="639,355,890,382"/>
+<area shape="rect" id="node2" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a318969f4776d0bf4a8721be3d2444a5c" title="ca.mcgill.ecse211.lab5.Navigation.travelTo" alt="" coords="311,195,583,222"/>
+<area shape="rect" id="node4" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#ac2c358ea3663ac06fcf757628a4a4a31" title="ca.mcgill.ecse211.lab5.Navigation.turnTo" alt="" coords="633,305,896,331"/>
+<area shape="rect" id="node11" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher.html#a88a4c77f3c76d74edc8bfd0229f0902f" title="ca.mcgill.ecse211.lab5.Ring\lSearcher.search" alt="" coords="353,352,540,393"/>
+<area shape="rect" id="node3" href="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data.html#a8f40f0264c68f0cbed4fff1723ae7863" title="ca.mcgill.ecse211.odometer.\lOdometerData.getXYT" alt="" coords="947,281,1136,323"/>
+<area shape="rect" id="node5" href="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html#a7ad543db5c907b4bd3329dbb34b4e9d9" title="ca.mcgill.ecse211.sensors.\lSensorData.getA" alt="" coords="951,185,1132,227"/>
+<area shape="rect" id="node6" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a85122ad723d0988c118866f367073be6" title="ca.mcgill.ecse211.lab5.Navigation.convert\lDistance" alt="" coords="631,188,899,229"/>
+<area shape="rect" id="node7" href="classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html#a4e0eabd547726c90bd0b7252557d7ad7" title="ca.mcgill.ecse211.sensors.\lSensorData.getDL" alt="" coords="674,5,855,47"/>
+<area shape="rect" id="node8" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a73a89ddd822e0ba1cfd7a29c18aa7aea" title="ca.mcgill.ecse211.lab5.Navigation.do\lCorrection" alt="" coords="645,71,884,112"/>
+<area shape="rect" id="node9" href="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data.html#a82986438cd462e66520bc62bb4bd2b75" title="ca.mcgill.ecse211.odometer.\lOdometerData.setY" alt="" coords="947,39,1136,80"/>
+<area shape="rect" id="node10" href="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data.html#a2911d7215e47f3064defe016b46bfeef" title="ca.mcgill.ecse211.odometer.\lOdometerData.setX" alt="" coords="947,104,1136,145"/>
+<area shape="rect" id="node12" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator.html#a115188f4d3b465e09db3482f8a6f25d2" title="ca.mcgill.ecse211.lab5.Color\lCalibrator.getColor" alt="" coords="669,407,860,448"/>
+<area shape="rect" id="node13" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#afe038af6692e7ad28c3587cd979d7223" title="ca.mcgill.ecse211.lab5.Navigation.stop" alt="" coords="639,473,890,499"/>
 </map>
 </div>
 <div class="dynheader">
@@ -254,56 +268,6 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a2415c0078b42b8813c3cc9304d6335ce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2415c0078b42b8813c3cc9304d6335ce">&#9670;&nbsp;</a></span>gPort</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Port ca.mcgill.ecse211.lab5.Lab5.gPort = LocalEV3.get().getPort(&quot;S4&quot;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Port object instance for our gyroscope sensor </p>
-
-<p class="definition">Definition at line <a class="el" href="_lab5_8java_source.html#l00039">39</a> of file <a class="el" href="_lab5_8java_source.html">Lab5.java</a>.</p>
-
-</div>
-</div>
-<a id="a0e63e3a6920344136ebfa14780670ee3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e63e3a6920344136ebfa14780670ee3">&#9670;&nbsp;</a></span>gSensor</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">EV3GyroSensor ca.mcgill.ecse211.lab5.Lab5.gSensor</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>EV3GyroSensor object instance for our gyroscope sensor </p>
-
-<p class="definition">Definition at line <a class="el" href="_lab5_8java_source.html#l00044">44</a> of file <a class="el" href="_lab5_8java_source.html">Lab5.java</a>.</p>
-
-</div>
-</div>
 <a id="a613e69d8f1e90a1161b78020571110fc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a613e69d8f1e90a1161b78020571110fc">&#9670;&nbsp;</a></span>leftMotor</h2>
 
@@ -323,9 +287,9 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">      <span class="keyword">new</span> EV3LargeRegulatedMotor(LocalEV3.get().getPort(<span class="stringliteral">&quot;A&quot;</span>))</div></div><!-- fragment --><p>Motor object instance that allows control of the left motor connected to port B </p>
+<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">      <span class="keyword">new</span> EV3LargeRegulatedMotor(LocalEV3.get().getPort(<span class="stringliteral">&quot;A&quot;</span>))</div></div><!-- fragment --><p>Motor object instance that allows control of the left motor connected to port A </p>
 
-<p class="definition">Definition at line <a class="el" href="_lab5_8java_source.html#l00049">49</a> of file <a class="el" href="_lab5_8java_source.html">Lab5.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_lab5_8java_source.html#l00044">44</a> of file <a class="el" href="_lab5_8java_source.html">Lab5.java</a>.</p>
 
 </div>
 </div>
@@ -339,7 +303,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final int ca.mcgill.ecse211.lab5.Lab5.LLx = 3</td>
+          <td class="memname">final int ca.mcgill.ecse211.lab5.Lab5.LLx = 2</td>
         </tr>
       </table>
   </td>
@@ -350,7 +314,57 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>These are the coordinates for our search area. LL = Lower Left UR = Upper Right </p>
 
-<p class="definition">Definition at line <a class="el" href="_lab5_8java_source.html#l00088">88</a> of file <a class="el" href="_lab5_8java_source.html">Lab5.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_lab5_8java_source.html#l00097">97</a> of file <a class="el" href="_lab5_8java_source.html">Lab5.java</a>.</p>
+
+</div>
+</div>
+<a id="a971cb3d8a46c2b41bcadf08f21498d6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a971cb3d8a46c2b41bcadf08f21498d6d">&#9670;&nbsp;</a></span>LOCALIZE_TRACK</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final double ca.mcgill.ecse211.lab5.Lab5.LOCALIZE_TRACK = 10.8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This variable denotes the track distance between the center of the wheels in cm (measured and adjusted based on trial and error). Used only during the localization phase in our main method. </p>
+
+<p class="definition">Definition at line <a class="el" href="_lab5_8java_source.html#l00081">81</a> of file <a class="el" href="_lab5_8java_source.html">Lab5.java</a>.</p>
+
+</div>
+</div>
+<a id="a6bc8fbcc688c767a11226cb7b5da3411"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bc8fbcc688c767a11226cb7b5da3411">&#9670;&nbsp;</a></span>LOCALIZE_WHEEL_RAD</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final double ca.mcgill.ecse211.lab5.Lab5.LOCALIZE_WHEEL_RAD = 2.2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This variable denotes the radius of our wheels in cm. Used only during the localization phase in our main method. </p>
+
+<p class="definition">Definition at line <a class="el" href="_lab5_8java_source.html#l00075">75</a> of file <a class="el" href="_lab5_8java_source.html">Lab5.java</a>.</p>
 
 </div>
 </div>
@@ -373,9 +387,9 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">      <span class="keyword">new</span> EV3LargeRegulatedMotor(LocalEV3.get().getPort(<span class="stringliteral">&quot;D&quot;</span>))</div></div><!-- fragment --><p>Motor object instance that allows control of the right motor connected to port A </p>
+<b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">      <span class="keyword">new</span> EV3LargeRegulatedMotor(LocalEV3.get().getPort(<span class="stringliteral">&quot;D&quot;</span>))</div></div><!-- fragment --><p>Motor object instance that allows control of the right motor connected to port D </p>
 
-<p class="definition">Definition at line <a class="el" href="_lab5_8java_source.html#l00055">55</a> of file <a class="el" href="_lab5_8java_source.html">Lab5.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_lab5_8java_source.html#l00050">50</a> of file <a class="el" href="_lab5_8java_source.html">Lab5.java</a>.</p>
 
 </div>
 </div>
@@ -400,7 +414,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>This variables holds the starting corner coordinates for our robot. </p>
 
-<p class="definition">Definition at line <a class="el" href="_lab5_8java_source.html#l00077">77</a> of file <a class="el" href="_lab5_8java_source.html">Lab5.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_lab5_8java_source.html#l00086">86</a> of file <a class="el" href="_lab5_8java_source.html">Lab5.java</a>.</p>
 
 </div>
 </div>
@@ -423,9 +437,9 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>length of the tile </p>
+<p>length of one tile in cm. </p>
 
-<p class="definition">Definition at line <a class="el" href="_lab5_8java_source.html#l00060">60</a> of file <a class="el" href="_lab5_8java_source.html">Lab5.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_lab5_8java_source.html#l00056">56</a> of file <a class="el" href="_lab5_8java_source.html">Lab5.java</a>.</p>
 
 </div>
 </div>
@@ -439,7 +453,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final int ca.mcgill.ecse211.lab5.Lab5.TR = 1</td>
+          <td class="memname">final int ca.mcgill.ecse211.lab5.Lab5.TR = 4</td>
         </tr>
       </table>
   </td>
@@ -450,12 +464,12 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>This variable holds the color of the target ring in the range [1,4]. 1 indicates a ORANGE ring 2 indicates a GREEN ring 3 indicates a BLUE ring 4 indicates a YELLOW ring </p>
 
-<p class="definition">Definition at line <a class="el" href="_lab5_8java_source.html#l00083">83</a> of file <a class="el" href="_lab5_8java_source.html">Lab5.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_lab5_8java_source.html#l00092">92</a> of file <a class="el" href="_lab5_8java_source.html">Lab5.java</a>.</p>
 
 </div>
 </div>
-<a id="a3d2e7eb578ce6ef7f7453feed3835e1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d2e7eb578ce6ef7f7453feed3835e1d">&#9670;&nbsp;</a></span>TRACK</h2>
+<a id="a401ed72b19795f01e72c8d2a69d9faba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a401ed72b19795f01e72c8d2a69d9faba">&#9670;&nbsp;</a></span>TRACK</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -464,7 +478,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final double ca.mcgill.ecse211.lab5.Lab5.TRACK = 10.8</td>
+          <td class="memname">double ca.mcgill.ecse211.lab5.Lab5.TRACK = 9.7</td>
         </tr>
       </table>
   </td>
@@ -475,7 +489,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>This variable denotes the track distance between the center of the wheels in cm (measured and adjusted based on trial and error). </p>
 
-<p class="definition">Definition at line <a class="el" href="_lab5_8java_source.html#l00071">71</a> of file <a class="el" href="_lab5_8java_source.html">Lab5.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_lab5_8java_source.html#l00068">68</a> of file <a class="el" href="_lab5_8java_source.html">Lab5.java</a>.</p>
 
 </div>
 </div>
@@ -500,7 +514,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div><div class="line">      <span class="keyword">new</span> <span class="keywordtype">boolean</span>[URx - <a class="code" href="classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a957a526ed669e9d8b7fc485e21385ee9">LLx</a> + 1][URy - LLy + 1]</div></div><!-- fragment --><p>This array contains the set of all coordinates that our robot has visited. By default all values are set to false. </p>
 
-<p class="definition">Definition at line <a class="el" href="_lab5_8java_source.html#l00094">94</a> of file <a class="el" href="_lab5_8java_source.html">Lab5.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_lab5_8java_source.html#l00103">103</a> of file <a class="el" href="_lab5_8java_source.html">Lab5.java</a>.</p>
 
 </div>
 </div>
@@ -525,7 +539,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>This variable denotes the radius of our wheels in cm. </p>
 
-<p class="definition">Definition at line <a class="el" href="_lab5_8java_source.html#l00065">65</a> of file <a class="el" href="_lab5_8java_source.html">Lab5.java</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_lab5_8java_source.html#l00061">61</a> of file <a class="el" href="_lab5_8java_source.html">Lab5.java</a>.</p>
 
 </div>
 </div>

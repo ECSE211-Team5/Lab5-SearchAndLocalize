@@ -2,8 +2,7 @@
 \label{classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_gyro_poller}\index{ca.\+mcgill.\+ecse211.\+sensors.\+Gyro\+Poller@{ca.\+mcgill.\+ecse211.\+sensors.\+Gyro\+Poller}}
 
 
-Inheritance diagram for ca.\+mcgill.\+ecse211.\+sensors.\+Gyro\+Poller\+:
-\nopagebreak
+Inheritance diagram for ca.\+mcgill.\+ecse211.\+sensors.\+Gyro\+Poller\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -12,8 +11,7 @@ Inheritance diagram for ca.\+mcgill.\+ecse211.\+sensors.\+Gyro\+Poller\+:
 \end{figure}
 
 
-Collaboration diagram for ca.\+mcgill.\+ecse211.\+sensors.\+Gyro\+Poller\+:
-\nopagebreak
+Collaboration diagram for ca.\+mcgill.\+ecse211.\+sensors.\+Gyro\+Poller\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -54,12 +52,24 @@ float \mbox{[}$\,$\mbox{]} {\bfseries lg\+Data}
 
 
 \subsection{Detailed Description}
+This class helps our robot to navigate using a gyroscope
+
 \begin{DoxyAuthor}{Author}
-Caspar Cedro \& Percy Chen \& Patrick Erath \& Anssam Ghezala \& Susan Matuszewski \& Kamy Moussavi Kafi 
+Caspar Cedro 
+
+Percy Chen 
+
+Patrick Erath 
+
+Anssam Ghezala 
+
+Susan Matuszewski 
+
+Kamy Moussavi Kafi 
 \end{DoxyAuthor}
 
 
-Definition at line 11 of file Gyro\+Poller.\+java.
+Definition at line 16 of file Gyro\+Poller.\+java.
 
 
 
@@ -70,15 +80,15 @@ Definition at line 11 of file Gyro\+Poller.\+java.
 \subsubsection{\texorpdfstring{Gyro\+Poller()}{GyroPoller()}}
 {\footnotesize\ttfamily ca.\+mcgill.\+ecse211.\+sensors.\+Gyro\+Poller.\+Gyro\+Poller (\begin{DoxyParamCaption}\item[{Sample\+Provider}]{us,  }\item[{float \mbox{[}$\,$\mbox{]}}]{lg\+Data,  }\item[{\hyperlink{classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data}{Sensor\+Data}}]{cont }\end{DoxyParamCaption}) throws \hyperlink{classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions}{Odometer\+Exceptions}}
 
-This constructor creates an instance of the \hyperlink{classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_light_poller}{Light\+Poller} class to provide distance data from an light sensor to our robot.
+This constructor creates an instance of the \hyperlink{classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_gyro_poller}{Gyro\+Poller} class to aid navigation
 
 
 \begin{DoxyParams}{Parameters}
-{\em us} & a Sample\+Provider class instance that helps us to store an array of ultrasonic sensor data. \\
+{\em us} & A Sample\+Provider class instance that helps us to store an array of ultrasonic sensor data. \\
 \hline
-{\em lg\+Data} & an array of distance data to be used by our Wall Follower\textquotesingle{}s Ultrasonic\+Controllers. \\
+{\em lg\+Data} & An array used to store data. \\
 \hline
-{\em cont} & a Bang\+Bang\+Controller or P\+Controller instance that has accumulated distance data stored in us\+Data passed to it. \\
+{\em cont} & A \hyperlink{classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data}{Sensor\+Data} object instance used to manage sensor data. \\
 \hline
 \end{DoxyParams}
 
@@ -88,7 +98,7 @@ This constructor creates an instance of the \hyperlink{classca_1_1mcgill_1_1ecse
 \end{DoxyExceptions}
 
 
-Definition at line 29 of file Gyro\+Poller.\+java.
+Definition at line 31 of file Gyro\+Poller.\+java.
 
 
 
@@ -108,8 +118,15 @@ java.\+lang.\+Thread\+::run()
 \end{DoxySeeAlso}
 
 
-Definition at line 44 of file Gyro\+Poller.\+java.
+Definition at line 46 of file Gyro\+Poller.\+java.
 
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_gyro_poller_a2a52059192555ece72190fa44a761d28_cgraph}
+\end{center}
+\end{figure}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

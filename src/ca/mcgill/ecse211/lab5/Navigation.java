@@ -30,6 +30,8 @@ public class Navigation {
   private static final int FORWARD_SPEED = 250;
   private static final int ROTATE_SPEED = 80;
   private static final double SENSOR_DIS = 15.5;
+  private static final int ACCELERATION = 300;
+  private static final int DISTANCE_THRESHOLD = 25;
 
   private EV3LargeRegulatedMotor leftMotor;
   private EV3LargeRegulatedMotor rightMotor;
@@ -51,7 +53,7 @@ public class Navigation {
     for (EV3LargeRegulatedMotor motor : new EV3LargeRegulatedMotor[] {this.leftMotor,
         this.rightMotor}) {
       motor.stop();
-      motor.setAcceleration(300);
+      motor.setAcceleration(ACCELERATION);
     }
   }
 
@@ -71,6 +73,8 @@ public class Navigation {
     double theta = Math.atan(dX / dY);
     if (dY < 0 && theta < Math.PI)
       theta += Math.PI;
+
+    // Euclidean distance calculation.
     double distance = Math.sqrt(Math.pow(dX, 2) + Math.pow(dY, 2));
 
     turnTo(Math.toDegrees(theta), false, true);
@@ -91,7 +95,7 @@ public class Navigation {
       }
     }
   }
-  
+
   /**
    * This method is where the logic for the odometer will run. Use the methods provided from the
    * OdometerData class to implement the odometer.
@@ -101,36 +105,38 @@ public class Navigation {
   public void turnTo(double angle, boolean async, boolean useGyro) {
     double dTheta;
 
-    	if(useGyro) {
-    		dTheta = angle - data.getA();
-    	}else {
-    		dTheta = angle - odometer.getXYT()[2];
-    	}
-	if (dTheta < 0)
-	   dTheta += 360;
-	
-	    // TURN RIGHT
-	if (dTheta > 180) {
-	  leftMotor.setSpeed(ROTATE_SPEED);
-	  rightMotor.setSpeed(ROTATE_SPEED);
-	  leftMotor.rotate(-convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, 360 - dTheta), true);
-	  rightMotor.rotate(convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, 360 - dTheta), async);
-	}
-	// TURN LEFT
-	else {
-	  leftMotor.setSpeed(ROTATE_SPEED);
-	  rightMotor.setSpeed(ROTATE_SPEED);
-	  leftMotor.rotate(convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, dTheta), true);
-	  rightMotor.rotate(-convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, dTheta), async);
-	}
+    if (useGyro) {
+      dTheta = angle - data.getA();
+    } else {
+      dTheta = angle - odometer.getXYT()[2];
+    }
+    if (dTheta < 0)
+      dTheta += 360;
+
+    // TURN RIGHT
+    if (dTheta > 180) {
+      leftMotor.setSpeed(ROTATE_SPEED);
+      rightMotor.setSpeed(ROTATE_SPEED);
+      leftMotor.rotate(-convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, 360 - dTheta), true);
+      rightMotor.rotate(convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, 360 - dTheta), async);
+    }
+    // TURN LEFT
+    else {
+      leftMotor.setSpeed(ROTATE_SPEED);
+      rightMotor.setSpeed(ROTATE_SPEED);
+      leftMotor.rotate(convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, dTheta), true);
+      rightMotor.rotate(-convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, dTheta), async);
+    }
   }
 
   /**
+   * This method corrects our robot's odometer readings
    * 
-   * @param angle
+   * @param angle The current angle that the robot is facing
    */
   /*public void doCorrection(double angle) {
     double[] position = odometer.getXYT();
+    // Check that our robot's angle is within certain bounds and correct odometer if required.
     if (angle < 5 || angle > 355) {
       int sensorCoor = (int) Math.round(position[1] - SENSOR_DIS / Lab5.TILE);
       odometer.setY(sensorCoor + SENSOR_DIS / Lab5.TILE);
@@ -146,7 +152,7 @@ public class Navigation {
   /**
    * Rotate the robot by certain angle
    * 
-   * @param angle
+   * @param angle The angle to rotate our robot to
    */
   public void rotate(int angle) {
     leftMotor.rotate(convertAngle(Lab5.WHEEL_RAD, Lab5.TRACK, angle), true);
@@ -166,7 +172,7 @@ public class Navigation {
    * cover that distance.
    * 
    * @param radius The radius of our wheels
-   * @param distance The distance travelled
+   * @param distance The distance traveled
    * @return A converted distance
    */
   public static int convertDistance(double radius, double distance) {
@@ -177,7 +183,7 @@ public class Navigation {
    * This method allows the conversion of an angle value
    * 
    * @param radius The radius of our wheels
-   * @param distance The distance travelled
+   * @param distance The distance traveled
    * @param angle The angle to convert
    * @return A converted angle
    */

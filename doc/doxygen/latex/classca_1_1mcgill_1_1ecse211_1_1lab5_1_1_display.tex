@@ -33,11 +33,21 @@ void \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display_a047e885f7170ba
 This class is used to display the content of the odometer variables (x, y, Theta)
 
 \begin{DoxyAuthor}{Author}
-Caspar Cedro \& Percy Chen \& Patrick Erath \& Anssam Ghezala \& Susan Matuszewski \& Kamy Moussavi Kafi 
+Caspar Cedro 
+
+Percy Chen 
+
+Patrick Erath 
+
+Anssam Ghezala 
+
+Susan Matuszewski 
+
+Kamy Moussavi Kafi 
 \end{DoxyAuthor}
 
 
-Definition at line 15 of file Display.\+java.
+Definition at line 19 of file Display.\+java.
 
 
 
@@ -48,11 +58,11 @@ Definition at line 15 of file Display.\+java.
 \subsubsection{\texorpdfstring{Display()}{Display()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily ca.\+mcgill.\+ecse211.\+lab5.\+Display.\+Display (\begin{DoxyParamCaption}\item[{Text\+L\+CD}]{lcd }\end{DoxyParamCaption}) throws \hyperlink{classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions}{Odometer\+Exceptions}}
 
-This is the class constructor
+This is the class constructor for a display object that controls an E\+V3 brick display
 
 
 \begin{DoxyParams}{Parameters}
-{\em odo\+Data} & \\
+{\em lcd} & A Text\+L\+CD object instance to control \\
 \hline
 \end{DoxyParams}
 
@@ -62,7 +72,7 @@ This is the class constructor
 \end{DoxyExceptions}
 
 
-Definition at line 32 of file Display.\+java.
+Definition at line 35 of file Display.\+java.
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
@@ -77,11 +87,13 @@ Here is the call graph for this function\+:\nopagebreak
 \subsubsection{\texorpdfstring{Display()}{Display()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily ca.\+mcgill.\+ecse211.\+lab5.\+Display.\+Display (\begin{DoxyParamCaption}\item[{Text\+L\+CD}]{lcd,  }\item[{long}]{timeout }\end{DoxyParamCaption}) throws \hyperlink{classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions}{Odometer\+Exceptions}}
 
-This is the overloaded class constructor
+This is the overloaded class constructor for a display object
 
 
 \begin{DoxyParams}{Parameters}
-{\em odo\+Data} & \\
+{\em lcd} & A Text\+L\+CD object instance to control \\
+\hline
+{\em timeout} & A duration of time to update the display for \\
 \hline
 \end{DoxyParams}
 
@@ -91,7 +103,7 @@ This is the overloaded class constructor
 \end{DoxyExceptions}
 
 
-Definition at line 44 of file Display.\+java.
+Definition at line 48 of file Display.\+java.
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
@@ -111,7 +123,7 @@ Here is the call graph for this function\+:\nopagebreak
 
 This method is called when the \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display}{Display} thread is started. 
 
-Definition at line 53 of file Display.\+java.
+Definition at line 57 of file Display.\+java.
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]

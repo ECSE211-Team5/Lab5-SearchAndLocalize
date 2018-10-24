@@ -20,6 +20,8 @@ import lejos.robotics.SampleProvider;
  */
 public class OdometryCorrection implements Runnable {
   private static final long CORRECTION_PERIOD = 10;
+  private static final double TILE_WIDTH = 30.48;
+  private static final double LINE_COLOR_THRESHOLD = 0.35;
   private Odometer odometer;
   private static final SensorModes myColor = new EV3ColorSensor(LocalEV3.get().getPort("S2"));
   private static SampleProvider myColorSample = myColor.getMode("Red");
@@ -50,10 +52,11 @@ public class OdometryCorrection implements Runnable {
       correctionStart = System.currentTimeMillis();
 
       // TODO Trigger correction (When do I have information to correct?)
+      // Fetch the sample at offset 0
       myColorSample.fetchSample(sampleColor, 0);
 
       // Check if sensor read black line and didn't already read the same one
-      if (sampleColor[0] < .35 && !onTopOfLine) {
+      if (sampleColor[0] < LINE_COLOR_THRESHOLD && !onTopOfLine) {
 
         // Sensed new line
         Sound.beep();
@@ -62,14 +65,13 @@ public class OdometryCorrection implements Runnable {
         double x = odometer.getXYT()[0];
         double y = odometer.getXYT()[1];
 
-        if (Math.abs(x % 30.48) < Math.abs(y % 30.48)) {
-          ;
-          odometer.setX(Math.round(x / 30.48) * 30.48);
+        if (Math.abs(x % TILE_WIDTH) < Math.abs(y % TILE_WIDTH)) {
+          odometer.setX(Math.round(x / TILE_WIDTH) * TILE_WIDTH);
         } else {
-          odometer.setY(Math.round(y / 30.48) * 30.48);
+          odometer.setY(Math.round(y / TILE_WIDTH) * TILE_WIDTH);
         }
 
-      } else if (sampleColor[0] > .35) {
+      } else if (sampleColor[0] > LINE_COLOR_THRESHOLD) {
         // No longer on top of line, reset to false
         onTopOfLine = false;
       }

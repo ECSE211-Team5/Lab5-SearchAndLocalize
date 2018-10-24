@@ -57,7 +57,8 @@ public class LightPoller extends Thread {
 
   protected void processData() {
     us.fetchSample(lgData, 0); // acquire data
-    int distance = (int) (lgData[0] * 100); // extract from buffer, cast to int
+    int distance = (int) (lgData[0] * 100); // extract from buffer, multiply by 100 for convenience
+                                            // and allow it to be cast to int
     cont.setL(distance); // now take action depending on value
   }
 }

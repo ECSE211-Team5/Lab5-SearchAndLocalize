@@ -1,4 +1,3 @@
-// Lab2.java
 package ca.mcgill.ecse211.lab5;
 
 import ca.mcgill.ecse211.odometer.Odometer;
@@ -30,8 +29,6 @@ import lejos.robotics.SampleProvider;
  * @author Susan Matuszewski
  * @author Kamy Moussavi Kafi
  */
-
-// Test to make sure latest version pushed
 public class Lab5 {
 	// Motor Objects, and Robot related parameters
 	private static final Port usPort = LocalEV3.get().getPort("S1");

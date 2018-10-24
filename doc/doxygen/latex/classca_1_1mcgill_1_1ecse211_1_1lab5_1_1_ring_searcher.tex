@@ -10,12 +10,24 @@ boolean \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher_a88a4c
 
 
 \subsection{Detailed Description}
+This class helps our robot to search for rings on a grid
+
 \begin{DoxyAuthor}{Author}
-Caspar Cedro \& Percy Chen \& Patrick Erath \& Anssam Ghezala \& Susan Matuszewski \& Kamy Moussavi Kafi 
+Caspar Cedro 
+
+Percy Chen 
+
+Patrick Erath 
+
+Anssam Ghezala 
+
+Susan Matuszewski 
+
+Kamy Moussavi Kafi 
 \end{DoxyAuthor}
 
 
-Definition at line 14 of file Ring\+Searcher.\+java.
+Definition at line 19 of file Ring\+Searcher.\+java.
 
 
 
@@ -30,11 +42,11 @@ This class provides method to check if there is a ring and if the ring is the co
 
 
 \begin{DoxyParams}{Parameters}
-{\em nav} & \\
+{\em nav} & A \hyperlink{classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation}{Navigation} class object instance that controls how our robot moves \\
 \hline
-{\em left\+Motor} & \\
+{\em left\+Motor} & A E\+V3\+Large\+Regulated\+Motor object instance that allows control of the left motor \\
 \hline
-{\em right\+Motor} & \\
+{\em right\+Motor} & A E\+V3\+Large\+Regulated\+Motor object instance that allows control of the right motor \\
 \hline
 \end{DoxyParams}
 
@@ -44,7 +56,7 @@ This class provides method to check if there is a ring and if the ring is the co
 \end{DoxyExceptions}
 
 
-Definition at line 32 of file Ring\+Searcher.\+java.
+Definition at line 39 of file Ring\+Searcher.\+java.
 
 Here is the call graph for this function\+:\nopagebreak
 \begin{figure}[H]
@@ -68,15 +80,15 @@ This method turn the robot for certain angle and see if there is a right if ther
 \begin{DoxyParams}{Parameters}
 {\em angle} & angle to turn in order to check the ring \\
 \hline
-{\em target} & target color \\
+{\em target} & target ring color \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-\+: true if it found a ring and the ring has the right color 
+true if it found a ring and the ring has the right color 
 \end{DoxyReturn}
 
 
-Definition at line 54 of file Ring\+Searcher.\+java.
+Definition at line 61 of file Ring\+Searcher.\+java.
 
 Here is the call graph for this function\+:
 \nopagebreak

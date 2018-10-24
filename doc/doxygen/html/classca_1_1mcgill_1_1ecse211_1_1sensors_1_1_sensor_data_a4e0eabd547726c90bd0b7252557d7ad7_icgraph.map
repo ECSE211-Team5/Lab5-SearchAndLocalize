@@ -1,8 +1,8 @@
 <map id="ca.mcgill.ecse211.sensors.SensorData.getDL" name="ca.mcgill.ecse211.sensors.SensorData.getDL">
 <area shape="rect" id="node2" href="$classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display.html#a047e885f7170ba80f60fd3b4b2bc79a9" title="ca.mcgill.ecse211.lab5.Display.run" alt="" coords="258,5,483,32"/>
-<area shape="rect" id="node3" href="$classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer.html#a441f56a899fae5bc9c1d6a6d25fbe0bb" title="ca.mcgill.ecse211.lab5.Light\lLocalizer.localize" alt="" coords="277,57,464,98"/>
-<area shape="rect" id="node4" href="$classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a318969f4776d0bf4a8721be3d2444a5c" title="ca.mcgill.ecse211.lab5.Navigation.travelTo" alt="" coords="235,123,507,149"/>
-<area shape="rect" id="node7" href="$classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer.html#a7fd82ab7240a07ae6947313c0769d4bc" title="ca.mcgill.ecse211.lab5.Ultrasonic\lLocalizer.localize" alt="" coords="261,174,480,215"/>
-<area shape="rect" id="node5" href="$classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a82cca51f550ed0eb016bb2082d3fe755" title="ca.mcgill.ecse211.lab5.Lab5.main" alt="" coords="860,123,1079,149"/>
-<area shape="rect" id="node6" href="$classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a0e80ac0068ef1ab41cfb571b8c65845c" title="ca.mcgill.ecse211.lab5.Lab5.searchArea" alt="" coords="555,148,812,175"/>
+<area shape="rect" id="node3" href="$classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer.html#a441f56a899fae5bc9c1d6a6d25fbe0bb" title="ca.mcgill.ecse211.lab5.Light\lLocalizer.localize" alt="" coords="590,15,777,57"/>
+<area shape="rect" id="node5" href="$classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a318969f4776d0bf4a8721be3d2444a5c" title="ca.mcgill.ecse211.lab5.Navigation.travelTo" alt="" coords="235,107,507,133"/>
+<area shape="rect" id="node7" href="$classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer.html#a7fd82ab7240a07ae6947313c0769d4bc" title="ca.mcgill.ecse211.lab5.Ultrasonic\lLocalizer.localize" alt="" coords="574,183,793,225"/>
+<area shape="rect" id="node4" href="$classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a82cca51f550ed0eb016bb2082d3fe755" title="ca.mcgill.ecse211.lab5.Lab5.main" alt="" coords="860,107,1079,133"/>
+<area shape="rect" id="node6" href="$classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a0e80ac0068ef1ab41cfb571b8c65845c" title="ca.mcgill.ecse211.lab5.Lab5.searchArea" alt="" coords="555,132,812,159"/>
 </map>

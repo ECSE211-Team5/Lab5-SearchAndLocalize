@@ -31,10 +31,12 @@ public class UltrasonicLocalizer {
   private static final double wallDistanceError = 5;
 
   /**
-   * This is the class constructor
+   * This is the class constructor for a class that helps to localize our robot with an ultrasonic
+   * sensor
    * 
-   * @param leftMotor
-   * @param rightMotor
+   * @param leftMotor A EV3LargeRegularedMotor object instance that allows control of the left motor
+   * @param rightMotor A EV3LargeRegularedMotor object instance that allows control of the right
+   *        motor
    * @throws OdometerExceptions
    */
   public UltrasonicLocalizer(Navigation nav, EV3LargeRegulatedMotor leftMotor,
@@ -86,10 +88,11 @@ public class UltrasonicLocalizer {
     angle2 = odometer.getXYT()[2];
 
     // 3. Turn to calculate angle, then turn to face y-axis, wait for button press
+    int lowerAngleBound = -222, upperAngleBound = -46;
     if (angle1 < angle2)
-      theta = -222 + (angle1 + angle2) / 2;
+      theta = lowerAngleBound + (angle1 + angle2) / 2;
     else
-      theta = -46 + (angle1 + angle2) / 2;
+      theta = upperAngleBound + (angle1 + angle2) / 2;
     navigation.turnTo(theta + 180, false, false);
     odometer.setTheta(0);
     Button.waitForAnyPress();
@@ -122,10 +125,11 @@ public class UltrasonicLocalizer {
     angle2 = odometer.getXYT()[2];
 
     // 3. Calculate the angle and face y-axis 0
+    int lowerAngleBound = -222, upperAngleBound = -45;
     if (angle1 < angle2)
-      theta = -222 + (angle1 + angle2) / 2;
+      theta = lowerAngleBound + (angle1 + angle2) / 2;
     else
-      theta = -45 + (angle1 + angle2) / 2;
+      theta = upperAngleBound + (angle1 + angle2) / 2;
     navigation.turnTo(theta, false, false);
     odometer.setTheta(0);
     // wait for any button pressure

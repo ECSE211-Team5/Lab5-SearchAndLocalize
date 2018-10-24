@@ -1,0 +1,10 @@
+<map id="ca.mcgill.ecse211.sensors.SensorData.getA" name="ca.mcgill.ecse211.sensors.SensorData.getA">
+<area shape="rect" id="node2" href="$classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_display.html#a047e885f7170ba80f60fd3b4b2bc79a9" title="ca.mcgill.ecse211.lab5.Display.run" alt="" coords="253,5,479,32"/>
+<area shape="rect" id="node3" href="$classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#a318969f4776d0bf4a8721be3d2444a5c" title="ca.mcgill.ecse211.lab5.Navigation.travelTo" alt="" coords="545,41,817,68"/>
+<area shape="rect" id="node6" href="$classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_navigation.html#ac2c358ea3663ac06fcf757628a4a4a31" title="ca.mcgill.ecse211.lab5.Navigation.turnTo" alt="" coords="235,136,497,163"/>
+<area shape="rect" id="node4" href="$classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a82cca51f550ed0eb016bb2082d3fe755" title="ca.mcgill.ecse211.lab5.Lab5.main" alt="" coords="1171,136,1389,163"/>
+<area shape="rect" id="node5" href="$classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_lab5.html#a0e80ac0068ef1ab41cfb571b8c65845c" title="ca.mcgill.ecse211.lab5.Lab5.searchArea" alt="" coords="865,101,1123,128"/>
+<area shape="rect" id="node7" href="$classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_light_localizer.html#a441f56a899fae5bc9c1d6a6d25fbe0bb" title="ca.mcgill.ecse211.lab5.Light\lLocalizer.localize" alt="" coords="901,163,1087,205"/>
+<area shape="rect" id="node8" href="$classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ring_searcher.html#a88a4c77f3c76d74edc8bfd0229f0902f" title="ca.mcgill.ecse211.lab5.Ring\lSearcher.search" alt="" coords="588,143,775,185"/>
+<area shape="rect" id="node9" href="$classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_ultrasonic_localizer.html#a7fd82ab7240a07ae6947313c0769d4bc" title="ca.mcgill.ecse211.lab5.Ultrasonic\lLocalizer.localize" alt="" coords="885,250,1103,291"/>
+</map>

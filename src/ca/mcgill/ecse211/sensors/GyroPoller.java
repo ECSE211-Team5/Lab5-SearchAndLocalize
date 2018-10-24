@@ -4,6 +4,7 @@ import ca.mcgill.ecse211.odometer.OdometerExceptions;
 import lejos.robotics.SampleProvider;
 
 /**
+ * This class helps our robot to navigate using a gyroscope
  * 
  * @author Caspar Cedro
  * @author Percy Chen
@@ -19,15 +20,12 @@ public class GyroPoller extends Thread {
   public GyroPoller Instance;
 
   /**
-   * This constructor creates an instance of the LightPoller class to provide distance data from an
-   * light sensor to our robot.
+   * This constructor creates an instance of the GyroPoller class to aid navigation
    * 
-   * @param us a SampleProvider class instance that helps us to store an array of ultrasonic sensor
+   * @param us A SampleProvider class instance that helps us to store an array of ultrasonic sensor
    *        data.
-   * @param lgData an array of distance data to be used by our Wall Follower's
-   *        UltrasonicControllers.
-   * @param cont a BangBangController or PController instance that has accumulated distance data
-   *        stored in usData passed to it.
+   * @param lgData An array used to store data.
+   * @param cont A SensorData object instance used to manage sensor data.
    * @throws OdometerExceptions
    */
   public GyroPoller(SampleProvider us, float[] lgData, SensorData cont) throws OdometerExceptions {
@@ -54,6 +52,7 @@ public class GyroPoller extends Thread {
   protected void processData() {
     us.fetchSample(lgData, 0); // acquire data
     int distance = (int) (lgData[0]); // extract from buffer, cast to int
+    // Ensure the distance is between 0 and 360
     while (distance < 0) {
       distance += 360;
     }

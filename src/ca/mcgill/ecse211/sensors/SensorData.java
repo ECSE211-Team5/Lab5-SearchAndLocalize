@@ -47,7 +47,9 @@ public class SensorData {
    * instance of this class is ever created.
    */
   protected SensorData() {
+    // Default distance value is 40 cm from any walls.
     this.distance = 40;
+    // Default light value is 0.5
     this.light = 0.5;
     rgb = new int[1][3];
     for (int i = 0; i < rgb.length; i++) {
@@ -126,6 +128,11 @@ public class SensorData {
     return rgb.clone();
   }
 
+  /**
+   * This method returns the currently stored angle value
+   * 
+   * @return The current angle value
+   */
   public double getA() {
     lock.lock();
     try {
@@ -141,9 +148,9 @@ public class SensorData {
   }
 
   /**
-   * Overrides distance. Use for ultra sonic sensor.
+   * This method overwrites the distance value. Use for ultrasonic sensor.
    * 
-   * @param d the value of d
+   * @param d The value to overwrite distance with
    */
   public void setD(double d) {
     lock.lock();
@@ -158,6 +165,11 @@ public class SensorData {
     }
   }
 
+  /**
+   * This method overwrites the angle value.
+   * 
+   * @param a The value to overwrite angle with
+   */
   public void setA(double a) {
     lock.lock();
     isReseting = true;
@@ -195,9 +207,9 @@ public class SensorData {
   }
 
   /**
-   * Overrides light. Use for light sensor.
+   * This method overwrites the light value.
    * 
-   * @param l the value of l
+   * @param l The value to overwrite the current light value with
    */
   public void setL(double l) {
     lock.lock();

@@ -1,5 +1,7 @@
 <map id="ca.mcgill.ecse211.lab5.Display.run" name="ca.mcgill.ecse211.lab5.Display.run">
-<area shape="rect" id="node2" href="$classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data.html#a8f40f0264c68f0cbed4fff1723ae7863" title="ca.mcgill.ecse211.odometer.\lOdometerData.getXYT" alt="" coords="279,5,468,47"/>
-<area shape="rect" id="node3" href="$classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html#a4e0eabd547726c90bd0b7252557d7ad7" title="ca.mcgill.ecse211.sensors.\lSensorData.getDL" alt="" coords="283,71,464,112"/>
-<area shape="rect" id="node4" href="$classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html#a0abd08431dae67c7ee0e7a18b5305f91" title="ca.mcgill.ecse211.sensors.\lSensorData.getRGB" alt="" coords="283,136,464,177"/>
+<area shape="rect" id="node2" href="$classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_data.html#a8f40f0264c68f0cbed4fff1723ae7863" title="ca.mcgill.ecse211.odometer.\lOdometerData.getXYT" alt="" coords="279,5,469,47"/>
+<area shape="rect" id="node3" href="$classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html#a4e0eabd547726c90bd0b7252557d7ad7" title="ca.mcgill.ecse211.sensors.\lSensorData.getDL" alt="" coords="283,71,465,112"/>
+<area shape="rect" id="node4" href="$classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html#a0abd08431dae67c7ee0e7a18b5305f91" title="ca.mcgill.ecse211.sensors.\lSensorData.getRGB" alt="" coords="283,136,465,177"/>
+<area shape="rect" id="node5" href="$classca_1_1mcgill_1_1ecse211_1_1lab5_1_1_color_calibrator.html#a115188f4d3b465e09db3482f8a6f25d2" title="ca.mcgill.ecse211.lab5.Color\lCalibrator.getColor" alt="" coords="279,201,469,243"/>
+<area shape="rect" id="node6" href="$classca_1_1mcgill_1_1ecse211_1_1sensors_1_1_sensor_data.html#a7ad543db5c907b4bd3329dbb34b4e9d9" title="ca.mcgill.ecse211.sensors.\lSensorData.getA" alt="" coords="283,267,465,308"/>
 </map>

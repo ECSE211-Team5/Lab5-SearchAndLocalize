@@ -1,4 +1,4 @@
-.TH "ca.mcgill.ecse211.lab5.ColorCalibrator" 3 "Tue Oct 23 2018" "Version 1.0" "ECSE211 - Fall 2018 - Lab 5 - Search and Localize" \" -*- nroff -*-
+.TH "ca.mcgill.ecse211.lab5.ColorCalibrator" 3 "Wed Oct 24 2018" "Version 1.0" "ECSE211 - Fall 2018 - Lab 5 - Search and Localize" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -25,16 +25,59 @@ ca.mcgill.ecse211.lab5.ColorCalibrator
 .in -1c
 .SH "Detailed Description"
 .PP 
-
+This class is used to check the color of a ring under a light sensor
 .PP
 \fBAuthor:\fP
 .RS 4
-Caspar Cedro & Percy Chen & Patrick Erath & Anssam Ghezala & Susan Matuszewski & Kamy Moussavi Kafi 
+Caspar Cedro 
+.PP
+Percy Chen 
+.PP
+Patrick Erath 
+.PP
+Anssam Ghezala 
+.PP
+Susan Matuszewski 
+.PP
+Kamy Moussavi Kafi 
 .RE
 .PP
 
 .PP
-Definition at line 9 of file ColorCalibrator\&.java\&.
+Definition at line 13 of file ColorCalibrator\&.java\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "static Color ca\&.mcgill\&.ecse211\&.lab5\&.ColorCalibrator\&.getColor (int r, int g, int b)\fC [static]\fP"
+This method returns the color of the ring currently under the light sensor
+.PP
+\fBParameters:\fP
+.RS 4
+\fIr\fP The red value to check for a ring 
+.br
+\fIg\fP The green value to check for a ring 
+.br
+\fIb\fP The blue value to check for a ring 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+A Color enumeration value 
+.RE
+.PP
+
+.PP
+Definition at line 38 of file ColorCalibrator\&.java\&.
+.SS "static Color ca\&.mcgill\&.ecse211\&.lab5\&.ColorCalibrator\&.getColor ()\fC [static]\fP"
+This method gets the last color of the ring under the light sensor
+.PP
+\fBReturns:\fP
+.RS 4
+A Color enumeration value 
+.RE
+.PP
+
+.PP
+Definition at line 66 of file ColorCalibrator\&.java\&.
 
 .SH "Author"
 .PP 

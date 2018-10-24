@@ -27,15 +27,31 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerExceptions.java" line="17" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerExceptions.java" bodystart="17" bodyend="19"/>
+        <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerExceptions.java" line="21" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerExceptions.java" bodystart="21" bodyend="23"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para>This class is used to handle errors regarding the singleton pattern used for the odometer and odometerData</para><para><simplesect kind="author"><para>Caspar Cedro &amp; Percy Chen &amp; Patrick Erath &amp; Anssam Ghezala &amp; Susan Matuszewski &amp; Kamy Moussavi Kafi </para></simplesect>
+<para>This class is used to handle errors regarding the singleton pattern used for the odometer and odometerData</para><para><simplesect kind="author"><para>Caspar Cedro </para></simplesect>
+<simplesect kind="author"><para>Percy Chen </para></simplesect>
+<simplesect kind="author"><para>Patrick Erath </para></simplesect>
+<simplesect kind="author"><para>Anssam Ghezala </para></simplesect>
+<simplesect kind="author"><para>Susan Matuszewski </para></simplesect>
+<simplesect kind="author"><para>Kamy Moussavi Kafi </para></simplesect>
 </para>    </detaileddescription>
     <inheritancegraph>
+      <node id="38">
+        <label>Exception</label>
+      </node>
+      <node id="37">
+        <label>ca.mcgill.ecse211.odometer.OdometerExceptions</label>
+        <link refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions"/>
+        <childnode refid="38" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
       <node id="40">
         <label>Exception</label>
       </node>
@@ -45,19 +61,8 @@
         <childnode refid="40" relation="public-inheritance">
         </childnode>
       </node>
-    </inheritancegraph>
-    <collaborationgraph>
-      <node id="42">
-        <label>Exception</label>
-      </node>
-      <node id="41">
-        <label>ca.mcgill.ecse211.odometer.OdometerExceptions</label>
-        <link refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions"/>
-        <childnode refid="42" relation="public-inheritance">
-        </childnode>
-      </node>
     </collaborationgraph>
-    <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerExceptions.java" line="11" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerExceptions.java" bodystart="11" bodyend="20"/>
+    <location file="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerExceptions.java" line="15" column="1" bodyfile="/home/ccc/Eclipse-Workspace-Oxygen/Lab5-SearchAndLocalize/src/ca/mcgill/ecse211/odometer/OdometerExceptions.java" bodystart="15" bodyend="24"/>
     <listofallmembers>
       <member refid="classca_1_1mcgill_1_1ecse211_1_1odometer_1_1_odometer_exceptions_1a25aa31baebe4906716a920929f0284d2" prot="public" virt="non-virtual"><scope>ca::mcgill::ecse211::odometer::OdometerExceptions</scope><name>OdometerExceptions</name></member>
     </listofallmembers>
